@@ -1,7 +1,8 @@
 import {getCliClient} from 'sanity/cli'
 
 import {client as readClient} from './client'
-import {sampleCanons} from './data/canons.sample'
+import {allCanons} from './data/canons'
+import {structuralUnits} from './data/structuralUnits'
 import {canonicalTextToPortableText, normalizeCanonicalText} from './portableText'
 import type {CanonInput, CanonSegmentInput, CanonVersionInput} from './types'
 
@@ -40,19 +41,105 @@ async function getCorpus() {
   return corpora[0]
 }
 
-async function getStructuralUnit(canonicalId: string) {
+async function getSingleStructuralUnit(canonicalId: string) {
   const units = await client.fetch(
-    `*[_type == "structuralUnit" && canonicalId == $canonicalId]{_id, canonicalId, title}`,
+    `*[_type == "structuralUnit" && canonicalId == $canonicalId]{
+      _id,
+      canonicalId,
+      unitType,
+      number,
+      title,
+      parent->{canonicalId},
+      order
+    }`,
     {canonicalId},
   )
 
-  if (units.length !== 1) {
+  if (units.length > 1) {
     throw new Error(
-      `Unità strutturale ${canonicalId}: atteso 1 documento, trovati ${units.length}.`,
+      `Unità strutturale ${canonicalId}: trovati ${units.length} documenti.`,
     )
   }
 
-  return units[0]
+  return units[0] ?? null
+}
+
+async function ensureStructuralUnits(corpusId: string) {
+  const resolved = new Map<string, string>()
+
+  console.log(`Unità strutturali sorgente: ${structuralUnits.length}`)
+
+  for (const unit of structuralUnits) {
+    const existing = await getSingleStructuralUnit(unit.canonicalId)
+
+    let parentId = resolved.get(unit.parentCanonicalId)
+
+    if (!parentId) {
+      const parent = await getSingleStructuralUnit(unit.parentCanonicalId)
+      if (!parent) {
+        throw new Error(
+          `${unit.canonicalId}: unità superiore non trovata: ${unit.parentCanonicalId}`,
+        )
+      }
+      parentId = parent._id
+    }
+
+    const documentId =
+      existing?._id ?? deterministicId(`structural-${unit.canonicalId}`)
+
+    const fields = compactObject({
+      corpus: {_type: 'reference', _ref: corpusId},
+      unitType: unit.unitType,
+      number: unit.number,
+      title: unit.title,
+      canonicalId: unit.canonicalId,
+      slug: {_type: 'slug', current: unit.canonicalId},
+      parent: {_type: 'reference', _ref: parentId},
+      order: unit.order,
+      canonicalLabel: unit.canonicalLabel,
+    })
+
+    console.log(
+      `${existing ? 'UPDATE' : 'CREATE'} STRUCTURE — ${unit.canonicalLabel ?? unit.title}`,
+    )
+
+    if (commitMode) {
+      let transaction = client.transaction()
+
+      if (!existing) {
+        transaction = transaction.createIfNotExists({
+          _id: documentId,
+          _type: 'structuralUnit',
+          ...fields,
+        })
+      }
+
+      transaction = transaction.patch(documentId, {set: fields})
+      const result = await transaction.commit({autoGenerateArrayKeys: true})
+      console.log(`  COMMIT OK — transactionId: ${result.transactionId}`)
+    } else {
+      console.log('  DRY RUN — nessuna scrittura')
+    }
+
+    resolved.set(unit.canonicalId, documentId)
+  }
+
+  return resolved
+}
+
+async function resolveStructuralUnitId(
+  canonicalId: string,
+  plannedUnits: Map<string, string>,
+) {
+  const planned = plannedUnits.get(canonicalId)
+  if (planned) return planned
+
+  const existing = await getSingleStructuralUnit(canonicalId)
+  if (!existing) {
+    throw new Error(`Unità strutturale non trovata: ${canonicalId}`)
+  }
+
+  return existing._id
 }
 
 async function getSourceDocument(title?: string) {
@@ -192,9 +279,16 @@ function buildSegmentFields(
   })
 }
 
-async function importCanon(canon: CanonInput, corpusId: string) {
+async function importCanon(
+  canon: CanonInput,
+  corpusId: string,
+  plannedUnits: Map<string, string>,
+) {
   const canonicalId = `cic-1983-can-${canon.number}`
-  const structuralUnit = await getStructuralUnit(canon.structuralUnitCanonicalId)
+  const structuralUnitId = await resolveStructuralUnitId(
+    canon.structuralUnitCanonicalId,
+    plannedUnits,
+  )
   const existingCanon = await getExistingCanon(canon, corpusId)
   const canonDocumentId = existingCanon?._id ?? deterministicId(`canon-${canonicalId}`)
 
@@ -206,12 +300,12 @@ async function importCanon(canon: CanonInput, corpusId: string) {
     transaction = transaction.createIfNotExists({
       _id: canonDocumentId,
       _type: 'canon',
-      ...buildCanonFields(canon, corpusId, structuralUnit._id),
+      ...buildCanonFields(canon, corpusId, structuralUnitId),
     })
   }
 
   transaction = transaction.patch(canonDocumentId, {
-    set: buildCanonFields(canon, corpusId, structuralUnit._id),
+    set: buildCanonFields(canon, corpusId, structuralUnitId),
   })
 
   for (const version of canon.versions) {
@@ -277,7 +371,6 @@ async function importCanon(canon: CanonInput, corpusId: string) {
 
       for (const segment of version.segments) {
         const segmentDocumentId = segmentDocumentIds.get(segment.segmentId)
-
         if (!segmentDocumentId) {
           throw new Error(`ID segmento non risolto: ${segment.segmentId}`)
         }
@@ -331,10 +424,13 @@ async function main() {
 
   const corpus = await getCorpus()
   console.log(`Corpus: ${corpus.title}`)
-  console.log(`Canoni sorgente: ${sampleCanons.length}`)
 
-  for (const canon of sampleCanons) {
-    await importCanon(canon, corpus._id)
+  const plannedUnits = await ensureStructuralUnits(corpus._id)
+
+  console.log(`Canoni sorgente: ${allCanons.length}`)
+
+  for (const canon of allCanons) {
+    await importCanon(canon, corpus._id, plannedUnits)
   }
 
   console.log(
