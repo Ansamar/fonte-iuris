@@ -1,15 +1,26 @@
 import type {CanonInput} from '../types'
 
-const VATICAN_368_374_URL =
+const STRUCTURAL_UNIT =
+  'cic-1983-book-2-part-2-section-2-title-1-chapter-1'
+
+const SOURCE_TITLE = 'Codice di Diritto Canonico'
+const SOURCE_URL =
   'https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_368-374_it.html'
 
 export const sampleCanons: CanonInput[] = [
   {
     number: 368,
     editorialTitle: 'Le Chiese particolari',
-    keywords: ['Chiesa particolare', 'diocesi', 'vescovo diocesano', 'popolo di Dio'],
-    structuralUnitCanonicalId:
-      'cic-1983-book-2-part-2-section-2-title-1-chapter-1',
+    keywords: [
+      'Chiesa particolare',
+      'diocesi',
+      'prelatura territoriale',
+      'abbazia territoriale',
+      'vicariato apostolico',
+      'prefettura apostolica',
+      'amministrazione apostolica',
+    ],
+    structuralUnitCanonicalId: STRUCTURAL_UNIT,
     status: 'inForce',
     versions: [
       {
@@ -18,11 +29,10 @@ export const sampleCanons: CanonInput[] = [
         status: 'current',
         validFrom: '1983-11-27',
         language: 'it',
-        text:
-          "Le Chiese particolari, nelle quali e dalle quali sussiste la sola e unica Chiesa cattolica, sono innanzitutto le diocesi, alle quali, se non consta altro, vengono assimilate la prelatura territoriale e l'abbazia territoriale, il vicariato apostolico e la prefettura apostolica e altresì l'amministrazione apostolica eretta stabilmente.",
-        sourceDocumentTitle: 'Codice di Diritto Canonico',
+        text: "Le Chiese particolari, nelle quali e dalle quali sussiste la sola e unica Chiesa cattolica, sono innanzitutto le diocesi, alle quali, se non consta altro, vengono assimilate la prelatura territoriale e l'abbazia territoriale, il vicariato apostolico e la prefettura apostolica e altresì l'amministrazione apostolica eretta stabilmente.",
+        sourceDocumentTitle: SOURCE_TITLE,
         sourceCitation: 'CIC 1983, can. 368',
-        sourceUrl: VATICAN_368_374_URL,
+        sourceUrl: SOURCE_URL,
         segments: [],
       },
     ],
@@ -32,13 +42,14 @@ export const sampleCanons: CanonInput[] = [
     editorialTitle: 'La diocesi',
     keywords: [
       'diocesi',
-      'vescovo diocesano',
       'popolo di Dio',
-      'Chiesa particolare',
+      'Vescovo',
       'presbiterio',
+      'Chiesa particolare',
+      'Vangelo',
+      'Eucaristia',
     ],
-    structuralUnitCanonicalId:
-      'cic-1983-book-2-part-2-section-2-title-1-chapter-1',
+    structuralUnitCanonicalId: STRUCTURAL_UNIT,
     status: 'inForce',
     versions: [
       {
@@ -47,12 +58,206 @@ export const sampleCanons: CanonInput[] = [
         status: 'current',
         validFrom: '1983-11-27',
         language: 'it',
-        text:
-          "La diocesi è la porzione del popolo di Dio che viene affidata alla cura pastorale del Vescovo con la cooperazione del presbiterio, in modo che, aderendo al suo pastore e da lui riunita nello Spirito Santo mediante il Vangelo e l'Eucaristia, costituisca una Chiesa particolare in cui è veramente presente e operante la Chiesa di Cristo una, santa, cattolica e apostolica.",
-        sourceDocumentTitle: 'Codice di Diritto Canonico',
+        text: "La diocesi è la porzione del popolo di Dio che viene affidata alla cura pastorale del Vescovo con la cooperazione del presbiterio, in modo che, aderendo al suo pastore e da lui riunita nello Spirito Santo mediante il Vangelo e l'Eucaristia, costituisca una Chiesa particolare in cui è veramente presente e operante la Chiesa di Cristo una, santa, cattolica e apostolica.",
+        sourceDocumentTitle: SOURCE_TITLE,
         sourceCitation: 'CIC 1983, can. 369',
-        sourceUrl: VATICAN_368_374_URL,
+        sourceUrl: SOURCE_URL,
         segments: [],
+      },
+    ],
+  },
+  {
+    number: 370,
+    editorialTitle: 'Prelatura territoriale e abbazia territoriale',
+    keywords: [
+      'prelatura territoriale',
+      'abbazia territoriale',
+      'popolo di Dio',
+      'Prelato',
+      'Abate',
+      'Vescovo diocesano',
+    ],
+    structuralUnitCanonicalId: STRUCTURAL_UNIT,
+    status: 'inForce',
+    versions: [
+      {
+        versionId: 'cic-1983-can-370-it-1983',
+        versionLabel: 'Versione originaria 1983',
+        status: 'current',
+        validFrom: '1983-11-27',
+        language: 'it',
+        text: "La prelatura territoriale, o l'abbazia territoriale, è una determinata porzione del popolo di Dio, circoscritta territorialmente, la cura della quale viene affidata, per circostanze speciali, ad un Prelato o ad un Abate che la governa a modo di Vescovo diocesano, come suo pastore proprio.",
+        sourceDocumentTitle: SOURCE_TITLE,
+        sourceCitation: 'CIC 1983, can. 370',
+        sourceUrl: SOURCE_URL,
+        segments: [],
+      },
+    ],
+  },
+  {
+    number: 371,
+    editorialTitle: 'Vicariato, prefettura e amministrazione apostolica',
+    keywords: [
+      'vicariato apostolico',
+      'prefettura apostolica',
+      'amministrazione apostolica',
+      'Vicario apostolico',
+      'Prefetto apostolico',
+      'Amministratore apostolico',
+      'Sommo Pontefice',
+    ],
+    structuralUnitCanonicalId: STRUCTURAL_UNIT,
+    status: 'inForce',
+    versions: [
+      {
+        versionId: 'cic-1983-can-371-it-1983',
+        versionLabel: 'Versione originaria 1983',
+        status: 'current',
+        validFrom: '1983-11-27',
+        language: 'it',
+        text: "§1. Il vicariato apostolico, o la prefettura apostolica, è una determinata porzione del popolo di Dio che, per circostanze peculiari, non è ancora stata costituita come diocesi ed è affidata alla cura pastorale di un Vicario apostolico o di un Prefetto apostolico, che la governano in nome del Sommo Pontefice.\n\n§2. L'amministrazione apostolica è una determinata porzione del popolo di Dio che, per ragioni speciali e particolarmente gravi, non viene eretta come diocesi dal Sommo Pontefice e la cui cura pastorale viene affidata ad un Amministratore apostolico, che la governa in nome del Sommo Pontefice.",
+        sourceDocumentTitle: SOURCE_TITLE,
+        sourceCitation: 'CIC 1983, can. 371',
+        sourceUrl: SOURCE_URL,
+        segments: [
+          {
+            segmentId: 'can-371-par-1',
+            segmentType: 'paragraph',
+            label: '§ 1',
+            order: 1,
+            startOffset: 0,
+            endOffset: 310,
+            isFormalDivision: true,
+          },
+          {
+            segmentId: 'can-371-par-2',
+            segmentType: 'paragraph',
+            label: '§ 2',
+            order: 2,
+            startOffset: 312,
+            endOffset: 606,
+            isFormalDivision: true,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    number: 372,
+    editorialTitle: 'Criteri territoriali e personali',
+    keywords: [
+      'territorio',
+      'Chiesa particolare',
+      'Conferenze Episcopali',
+      'rito',
+      'fedeli',
+      'suprema autorità',
+    ],
+    structuralUnitCanonicalId: STRUCTURAL_UNIT,
+    status: 'inForce',
+    versions: [
+      {
+        versionId: 'cic-1983-can-372-it-1983',
+        versionLabel: 'Versione originaria 1983',
+        status: 'current',
+        validFrom: '1983-11-27',
+        language: 'it',
+        text: "§1. Di regola la porzione del popolo di Dio, che costituisce una diocesi o un'altra Chiesa particolare, sia circoscritta entro un determinato territorio, in modo da comprendere tutti i fedeli che abitano in quel territorio.\n\n§2. Tuttavia, dove a giudizio della suprema autorità della Chiesa, sentite le Conferenze Episcopali interessate, l'utilità lo suggerisca, nello stesso territorio possono essere erette Chiese particolari distinte sulla base del rito dei fedeli o per altri simili motivi.",
+        sourceDocumentTitle: SOURCE_TITLE,
+        sourceCitation: 'CIC 1983, can. 372',
+        sourceUrl: SOURCE_URL,
+        segments: [
+          {
+            segmentId: 'can-372-par-1',
+            segmentType: 'paragraph',
+            label: '§ 1',
+            order: 1,
+            startOffset: 0,
+            endOffset: 223,
+            isFormalDivision: true,
+          },
+          {
+            segmentId: 'can-372-par-2',
+            segmentType: 'paragraph',
+            label: '§ 2',
+            order: 2,
+            startOffset: 225,
+            endOffset: 494,
+            isFormalDivision: true,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    number: 373,
+    editorialTitle: 'Erezione delle Chiese particolari',
+    keywords: [
+      'erezione',
+      'Chiesa particolare',
+      'suprema autorità',
+      'personalità giuridica',
+    ],
+    structuralUnitCanonicalId: STRUCTURAL_UNIT,
+    status: 'inForce',
+    versions: [
+      {
+        versionId: 'cic-1983-can-373-it-1983',
+        versionLabel: 'Versione originaria 1983',
+        status: 'current',
+        validFrom: '1983-11-27',
+        language: 'it',
+        text: 'Spetta unicamente alla suprema autorità erigere Chiese particolari; queste, una volta legittimamente erette, godono per il diritto stesso di personalità giuridica.',
+        sourceDocumentTitle: SOURCE_TITLE,
+        sourceCitation: 'CIC 1983, can. 373',
+        sourceUrl: SOURCE_URL,
+        segments: [],
+      },
+    ],
+  },
+  {
+    number: 374,
+    editorialTitle: 'Parrocchie e raggruppamenti pastorali',
+    keywords: [
+      'diocesi',
+      'Chiesa particolare',
+      'parrocchie',
+      'cura pastorale',
+      'vicariati foranei',
+    ],
+    structuralUnitCanonicalId: STRUCTURAL_UNIT,
+    status: 'inForce',
+    versions: [
+      {
+        versionId: 'cic-1983-can-374-it-1983',
+        versionLabel: 'Versione originaria 1983',
+        status: 'current',
+        validFrom: '1983-11-27',
+        language: 'it',
+        text: "§1. Ogni diocesi o altra Chiesa particolare sia divisa in parti distinte o parrocchie.\n\n§2. Per favorire la cura pastorale mediante un'azione comune, più parrocchie vicine possono essere riunite in peculiari raggruppamenti, quali sono i vicariati foranei.",
+        sourceDocumentTitle: SOURCE_TITLE,
+        sourceCitation: 'CIC 1983, can. 374',
+        sourceUrl: SOURCE_URL,
+        segments: [
+          {
+            segmentId: 'can-374-par-1',
+            segmentType: 'paragraph',
+            label: '§ 1',
+            order: 1,
+            startOffset: 0,
+            endOffset: 86,
+            isFormalDivision: true,
+          },
+          {
+            segmentId: 'can-374-par-2',
+            segmentType: 'paragraph',
+            label: '§ 2',
+            order: 2,
+            startOffset: 88,
+            endOffset: 255,
+            isFormalDivision: true,
+          },
+        ],
       },
     ],
   },
