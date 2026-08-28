@@ -1,0 +1,13 @@
+{
+  "name": "fonte-iuris",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:studio": "npm run dev -w apps/studio",
+    "build:studio": "npm run build -w apps/studio",
+    "dev:web": "npm run dev -w apps/web"
+  }
+}
