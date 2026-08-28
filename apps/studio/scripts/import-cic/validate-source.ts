@@ -1,4 +1,6 @@
-import {sampleCanons} from './data/canons.sample'
+import {allCanons} from './data/canons'
+import {structuralUnits} from './data/structuralUnits'
+import {normalizeCanonicalText} from './portableText'
 import type {CanonInput, CanonSegmentInput} from './types'
 
 type ValidationError = {
@@ -10,58 +12,41 @@ function validateSegment(
   segment: CanonSegmentInput,
   textLength: number,
   path: string,
-  siblingIds: Set<string>,
+  segmentIds: Set<string>,
 ): ValidationError[] {
   const errors: ValidationError[] = []
 
   if (!segment.segmentId.trim()) {
-    errors.push({
-      path: `${path}.segmentId`,
-      message: 'segmentId mancante',
-    })
+    errors.push({path: `${path}.segmentId`, message: 'segmentId mancante'})
   }
 
-  if (siblingIds.has(segment.segmentId)) {
+  if (segmentIds.has(segment.segmentId)) {
     errors.push({
       path: `${path}.segmentId`,
       message: `segmentId duplicato: ${segment.segmentId}`,
     })
   } else {
-    siblingIds.add(segment.segmentId)
+    segmentIds.add(segment.segmentId)
   }
 
   if (!segment.label.trim()) {
-    errors.push({
-      path: `${path}.label`,
-      message: 'Etichetta mancante',
-    })
+    errors.push({path: `${path}.label`, message: 'Etichetta mancante'})
   }
 
   if (!Number.isInteger(segment.order) || segment.order < 0) {
-    errors.push({
-      path: `${path}.order`,
-      message: 'order deve essere un intero >= 0',
-    })
+    errors.push({path: `${path}.order`, message: 'order deve essere un intero >= 0'})
   }
 
-  if (
-    segment.startOffset !== undefined &&
-    (!Number.isInteger(segment.startOffset) || segment.startOffset < 0)
-  ) {
-    errors.push({
-      path: `${path}.startOffset`,
-      message: 'startOffset deve essere un intero >= 0',
-    })
-  }
-
-  if (
-    segment.endOffset !== undefined &&
-    (!Number.isInteger(segment.endOffset) || segment.endOffset < 0)
-  ) {
-    errors.push({
-      path: `${path}.endOffset`,
-      message: 'endOffset deve essere un intero >= 0',
-    })
+  for (const [field, value] of [
+    ['startOffset', segment.startOffset],
+    ['endOffset', segment.endOffset],
+  ] as const) {
+    if (value !== undefined && (!Number.isInteger(value) || value < 0)) {
+      errors.push({
+        path: `${path}.${field}`,
+        message: `${field} deve essere un intero >= 0`,
+      })
+    }
   }
 
   if (
@@ -69,26 +54,17 @@ function validateSegment(
     segment.endOffset !== undefined &&
     segment.endOffset < segment.startOffset
   ) {
-    errors.push({
-      path,
-      message: 'endOffset è inferiore a startOffset',
-    })
+    errors.push({path, message: 'endOffset è inferiore a startOffset'})
   }
 
-  if (
-    segment.startOffset !== undefined &&
-    segment.startOffset > textLength
-  ) {
+  if (segment.startOffset !== undefined && segment.startOffset > textLength) {
     errors.push({
       path: `${path}.startOffset`,
       message: `startOffset ${segment.startOffset} supera la lunghezza del testo ${textLength}`,
     })
   }
 
-  if (
-    segment.endOffset !== undefined &&
-    segment.endOffset > textLength
-  ) {
+  if (segment.endOffset !== undefined && segment.endOffset > textLength) {
     errors.push({
       path: `${path}.endOffset`,
       message: `endOffset ${segment.endOffset} supera la lunghezza del testo ${textLength}`,
@@ -98,26 +74,46 @@ function validateSegment(
   return errors
 }
 
+function validateStructuralUnits(): ValidationError[] {
+  const errors: ValidationError[] = []
+  const ids = new Set<string>()
+
+  for (const [index, unit] of structuralUnits.entries()) {
+    const path = `structuralUnits[${index}]`
+
+    if (ids.has(unit.canonicalId)) {
+      errors.push({path, message: `canonicalId duplicato: ${unit.canonicalId}`})
+    }
+    ids.add(unit.canonicalId)
+
+    if (!unit.title.trim()) {
+      errors.push({path: `${path}.title`, message: 'Titolo mancante'})
+    }
+
+    if (!unit.parentCanonicalId.trim()) {
+      errors.push({path: `${path}.parentCanonicalId`, message: 'Unità superiore mancante'})
+    }
+
+    if (!Number.isInteger(unit.order) || unit.order < 0) {
+      errors.push({path: `${path}.order`, message: 'order deve essere un intero >= 0'})
+    }
+  }
+
+  return errors
+}
+
 function validateCanons(canons: CanonInput[]): ValidationError[] {
   const errors: ValidationError[] = []
-
   const canonNumbers = new Set<number>()
   const versionIds = new Set<string>()
 
   for (const [canonIndex, canon] of canons.entries()) {
     const canonPath = `canons[${canonIndex}]`
 
-    if (!Number.isInteger(canon.number)) {
+    if (!Number.isInteger(canon.number) || canon.number < 1 || canon.number > 1752) {
       errors.push({
         path: `${canonPath}.number`,
-        message: 'Numero del canone non valido',
-      })
-    }
-
-    if (canon.number < 1 || canon.number > 1752) {
-      errors.push({
-        path: `${canonPath}.number`,
-        message: `Numero fuori intervallo CIC: ${canon.number}`,
+        message: `Numero canone non valido: ${canon.number}`,
       })
     }
 
@@ -126,9 +122,8 @@ function validateCanons(canons: CanonInput[]): ValidationError[] {
         path: `${canonPath}.number`,
         message: `Canone duplicato: ${canon.number}`,
       })
-    } else {
-      canonNumbers.add(canon.number)
     }
+    canonNumbers.add(canon.number)
 
     if (!canon.structuralUnitCanonicalId.trim()) {
       errors.push({
@@ -137,18 +132,16 @@ function validateCanons(canons: CanonInput[]): ValidationError[] {
       })
     }
 
-    if (!Array.isArray(canon.versions) || canon.versions.length === 0) {
+    if (!canon.versions.length) {
       errors.push({
         path: `${canonPath}.versions`,
         message: `Can. ${canon.number}: nessuna versione presente`,
       })
-
       continue
     }
 
     for (const [versionIndex, version] of canon.versions.entries()) {
       const versionPath = `${canonPath}.versions[${versionIndex}]`
-
       const expectedPrefix = `cic-1983-can-${canon.number}-`
 
       if (!version.versionId.startsWith(expectedPrefix)) {
@@ -158,11 +151,7 @@ function validateCanons(canons: CanonInput[]): ValidationError[] {
         })
       }
 
-      if (
-        !/^cic-1983-can-\d+-(it|la)-[a-z0-9-]+$/.test(
-          version.versionId,
-        )
-      ) {
+      if (!/^cic-1983-can-\d+-(it|la)-[a-z0-9-]+$/.test(version.versionId)) {
         errors.push({
           path: `${versionPath}.versionId`,
           message: `Formato versionId non valido: ${version.versionId}`,
@@ -174,31 +163,21 @@ function validateCanons(canons: CanonInput[]): ValidationError[] {
           path: `${versionPath}.versionId`,
           message: `versionId duplicato: ${version.versionId}`,
         })
-      } else {
-        versionIds.add(version.versionId)
       }
+      versionIds.add(version.versionId)
 
       if (!version.versionLabel.trim()) {
-        errors.push({
-          path: `${versionPath}.versionLabel`,
-          message: 'Etichetta versione mancante',
-        })
+        errors.push({path: `${versionPath}.versionLabel`, message: 'Etichetta versione mancante'})
       }
 
-      if (
-        version.validFrom &&
-        Number.isNaN(Date.parse(version.validFrom))
-      ) {
+      if (version.validFrom && Number.isNaN(Date.parse(version.validFrom))) {
         errors.push({
           path: `${versionPath}.validFrom`,
           message: `Data non valida: ${version.validFrom}`,
         })
       }
 
-      if (
-        version.validUntil &&
-        Number.isNaN(Date.parse(version.validUntil))
-      ) {
+      if (version.validUntil && Number.isNaN(Date.parse(version.validUntil))) {
         errors.push({
           path: `${versionPath}.validUntil`,
           message: `Data non valida: ${version.validUntil}`,
@@ -210,37 +189,32 @@ function validateCanons(canons: CanonInput[]): ValidationError[] {
         version.validUntil &&
         version.validUntil < version.validFrom
       ) {
-        errors.push({
-          path: versionPath,
-          message: 'validUntil è precedente a validFrom',
-        })
+        errors.push({path: versionPath, message: 'validUntil è precedente a validFrom'})
       }
 
+      const normalizedText = normalizeCanonicalText(version.text)
       const segmentIds = new Set<string>()
 
-      for (const [segmentIndex, segment] of version.segments.entries()) {
+      for (const [segmentIndex, item] of version.segments.entries()) {
         errors.push(
           ...validateSegment(
-            segment,
-            version.text.length,
+            item,
+            normalizedText.length,
             `${versionPath}.segments[${segmentIndex}]`,
             segmentIds,
           ),
         )
       }
 
-      for (const [segmentIndex, segment] of version.segments.entries()) {
-        if (
-          segment.parentSegmentId &&
-          !segmentIds.has(segment.parentSegmentId)
-        ) {
+      for (const [segmentIndex, item] of version.segments.entries()) {
+        if (item.parentSegmentId && !segmentIds.has(item.parentSegmentId)) {
           errors.push({
             path: `${versionPath}.segments[${segmentIndex}].parentSegmentId`,
-            message: `Segmento superiore inesistente: ${segment.parentSegmentId}`,
+            message: `Segmento superiore inesistente: ${item.parentSegmentId}`,
           })
         }
 
-        if (segment.parentSegmentId === segment.segmentId) {
+        if (item.parentSegmentId === item.segmentId) {
           errors.push({
             path: `${versionPath}.segments[${segmentIndex}].parentSegmentId`,
             message: 'Un segmento non può essere padre di sé stesso',
@@ -254,27 +228,22 @@ function validateCanons(canons: CanonInput[]): ValidationError[] {
 }
 
 function main() {
-  const errors = validateCanons(sampleCanons)
+  const errors = [...validateStructuralUnits(), ...validateCanons(allCanons)]
 
-  console.log('\nVALIDAZIONE SORGENTE CIC 1983')
-  console.log(`Canoni: ${sampleCanons.length}`)
-
-  const versionCount = sampleCanons.reduce(
+  const versionCount = allCanons.reduce(
     (total, canon) => total + canon.versions.length,
     0,
   )
 
-  const segmentCount = sampleCanons.reduce(
+  const segmentCount = allCanons.reduce(
     (total, canon) =>
-      total +
-      canon.versions.reduce(
-        (subtotal, version) =>
-          subtotal + version.segments.length,
-        0,
-      ),
+      total + canon.versions.reduce((subtotal, version) => subtotal + version.segments.length, 0),
     0,
   )
 
+  console.log('\nVALIDAZIONE SORGENTE CIC 1983')
+  console.log(`Unità strutturali nuove: ${structuralUnits.length}`)
+  console.log(`Canoni: ${allCanons.length}`)
   console.log(`Versioni: ${versionCount}`)
   console.log(`Segmenti: ${segmentCount}`)
 
@@ -287,7 +256,7 @@ function main() {
   console.error(`\n✖ ${errors.length} errori trovati\n`)
 
   for (const error of errors) {
-    console.error(`${error.path}`)
+    console.error(error.path)
     console.error(`  ${error.message}\n`)
   }
 
