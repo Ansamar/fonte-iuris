@@ -90,7 +90,7 @@ function validateStructuralUnits(): ValidationError[] {
       errors.push({path: `${path}.title`, message: 'Titolo mancante'})
     }
 
-    if (!unit.parentCanonicalId.trim()) {
+    if (unit.unitType !== 'book' && !unit.parentCanonicalId?.trim()) {
       errors.push({path: `${path}.parentCanonicalId`, message: 'Unità superiore mancante'})
     }
 
