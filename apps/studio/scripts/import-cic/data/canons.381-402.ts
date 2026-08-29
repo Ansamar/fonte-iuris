@@ -7,19 +7,22 @@ const UNIT =
   'cic-1983-book-2-part-2-section-2-title-1-chapter-2-article-2'
 
 function paragraphSegments(canon: number, text: string): CanonSegmentInput[] {
-  const matches = [...text.matchAll(/§(\d+)\./g)]
+  const matches = [...text.matchAll(/(^|\n\n)§(\d+)\./g)]
 
   return matches.map((match, index) => {
-    const startOffset = match.index ?? 0
-    const endOffset =
-      index + 1 < matches.length ? (matches[index + 1].index ?? text.length) : text.length
+    const prefix = match[1] ?? ''
+    const startOffset = (match.index ?? 0) + prefix.length
+    const nextMatch = matches[index + 1]
+    const endOffset = nextMatch
+      ? (nextMatch.index ?? text.length) + (nextMatch[1]?.length ?? 0)
+      : text.length
 
     let trimmedEndOffset = endOffset
     while (trimmedEndOffset > startOffset && /\s/.test(text[trimmedEndOffset - 1])) {
       trimmedEndOffset -= 1
     }
 
-    const paragraphNumber = Number(match[1])
+    const paragraphNumber = Number(match[2])
 
     return {
       segmentId: `can-${canon}-par-${paragraphNumber}`,
