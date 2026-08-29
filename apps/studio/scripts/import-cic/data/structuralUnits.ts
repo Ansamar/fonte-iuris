@@ -4,7 +4,7 @@ export type StructuralUnitInput = {
   number?: string
   title: string
   canonicalLabel?: string
-  parentCanonicalId: string
+  parentCanonicalId?: string
   order: number
 }
 
@@ -61,4 +61,15 @@ export const structuralUnits: StructuralUnitInput[] = [
   {canonicalId:'cic-1983-book-2-part-3-section-1-title-2-chapter-8',unitType:'chapter',number:'VIII',title:'Le conferenze dei Superiori maggiori',canonicalLabel:'CAPITOLO VIII — LE CONFERENZE DEI SUPERIORI MAGGIORI',parentCanonicalId:'cic-1983-book-2-part-3-section-1-title-2',order:8},
   {canonicalId:'cic-1983-book-2-part-3-section-1-title-3',unitType:'title',number:'III',title:'Gli istituti secolari',canonicalLabel:'TITOLO III — GLI ISTITUTI SECOLARI',parentCanonicalId:'cic-1983-book-2-part-3-section-1',order:3},
   {canonicalId:'cic-1983-book-2-part-3-section-2',unitType:'section',number:'II',title:'Le società di vita apostolica',canonicalLabel:'SEZIONE II — LE SOCIETÀ DI VITA APOSTOLICA',parentCanonicalId:'cic-1983-book-2-part-3',order:2},
+  {canonicalId:'cic-1983-book-3',unitType:'book',number:'III',title:'La funzione di insegnare della Chiesa',canonicalLabel:'LIBRO III — LA FUNZIONE DI INSEGNARE DELLA CHIESA',order:3},
+  {canonicalId:'cic-1983-book-3-title-1',unitType:'title',number:'I',title:'Il ministero della parola divina',canonicalLabel:'TITOLO I — IL MINISTERO DELLA PAROLA DIVINA',parentCanonicalId:'cic-1983-book-3',order:1},
+  {canonicalId:'cic-1983-book-3-title-1-chapter-1',unitType:'chapter',number:'I',title:'La predicazione della parola di Dio',canonicalLabel:'CAPITOLO I — LA PREDICAZIONE DELLA PAROLA DI DIO',parentCanonicalId:'cic-1983-book-3-title-1',order:1},
+  {canonicalId:'cic-1983-book-3-title-1-chapter-2',unitType:'chapter',number:'II',title:'L’istruzione catechetica',canonicalLabel:'CAPITOLO II — L’ISTRUZIONE CATECHETICA',parentCanonicalId:'cic-1983-book-3-title-1',order:2},
+  {canonicalId:'cic-1983-book-3-title-2',unitType:'title',number:'II',title:'L’azione missionaria della Chiesa',canonicalLabel:'TITOLO II — L’AZIONE MISSIONARIA DELLA CHIESA',parentCanonicalId:'cic-1983-book-3',order:2},
+  {canonicalId:'cic-1983-book-3-title-3',unitType:'title',number:'III',title:'L’educazione cattolica',canonicalLabel:'TITOLO III — L’EDUCAZIONE CATTOLICA',parentCanonicalId:'cic-1983-book-3',order:3},
+  {canonicalId:'cic-1983-book-3-title-3-chapter-1',unitType:'chapter',number:'I',title:'Le scuole',canonicalLabel:'CAPITOLO I — LE SCUOLE',parentCanonicalId:'cic-1983-book-3-title-3',order:1},
+  {canonicalId:'cic-1983-book-3-title-3-chapter-2',unitType:'chapter',number:'II',title:'Le università cattoliche e gli altri istituti di studi superiori',canonicalLabel:'CAPITOLO II — LE UNIVERSITÀ CATTOLICHE E GLI ALTRI ISTITUTI DI STUDI SUPERIORI',parentCanonicalId:'cic-1983-book-3-title-3',order:2},
+  {canonicalId:'cic-1983-book-3-title-3-chapter-3',unitType:'chapter',number:'III',title:'Le università e le facoltà ecclesiastiche',canonicalLabel:'CAPITOLO III — LE UNIVERSITÀ E LE FACOLTÀ ECCLESIASTICHE',parentCanonicalId:'cic-1983-book-3-title-3',order:3},
+  {canonicalId:'cic-1983-book-3-title-4',unitType:'title',number:'IV',title:'Gli strumenti di comunicazione sociale e in specie i libri',canonicalLabel:'TITOLO IV — GLI STRUMENTI DI COMUNICAZIONE SOCIALE E IN SPECIE I LIBRI',parentCanonicalId:'cic-1983-book-3',order:4},
+  {canonicalId:'cic-1983-book-3-title-5',unitType:'title',number:'V',title:'La professione di fede',canonicalLabel:'TITOLO V — LA PROFESSIONE DI FEDE',parentCanonicalId:'cic-1983-book-3',order:5},
 ]
