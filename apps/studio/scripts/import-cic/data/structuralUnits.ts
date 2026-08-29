@@ -189,4 +189,13 @@ export const structuralUnits: StructuralUnitInput[] = [
     parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-3',
     order: 4,
   },
+  {
+    canonicalId: 'cic-1983-book-2-part-2-section-2-title-3-chapter-5',
+    unitType: 'chapter',
+    number: 'V',
+    title: 'Il consiglio pastorale',
+    canonicalLabel: 'CAPITOLO V — IL CONSIGLIO PASTORALE',
+    parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-3',
+    order: 5,
+  },
 ]
