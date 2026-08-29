@@ -8,7 +8,10 @@ import {segments} from './canonSource'
 
 const PRESS_BASE = 'https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/'
 const WWW_BASE = 'https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/'
-const CACHE_FILE = join(tmpdir(), 'fonte-iuris-cic-book4-v3.json')
+const CACHE_FILE = join(tmpdir(), 'fonte-iuris-cic-book4-v4.json')
+const FIRST_CANON = 834
+const LAST_CANON = 1253
+const MAX_PAGE_SPAN = 40
 
 const amendedCanons = new Set([
   838,
@@ -43,6 +46,12 @@ type UnitRange = {
   unit: string
 }
 
+type OfficialPage = {
+  url: string
+  html: string
+  canons: CachedCanon[]
+}
+
 const ranges: UnitRange[] = [
   {from:834,to:839,unit:'cic-1983-book-4'},
   {from:840,to:848,unit:'cic-1983-book-4-part-1'},
@@ -73,11 +82,12 @@ const ranges: UnitRange[] = [
   {from:992,to:997,unit:'cic-1983-book-4-part-1-title-4-chapter-4'},
   {from:998,to:998,unit:'cic-1983-book-4-part-1-title-5'},
   {from:999,to:1002,unit:'cic-1983-book-4-part-1-title-5-chapter-1'},
-  {from:1003,to:1004,unit:'cic-1983-book-4-part-1-title-5-chapter-2'},
-  {from:1005,to:1007,unit:'cic-1983-book-4-part-1-title-5-chapter-3'},
+  {from:1003,to:1003,unit:'cic-1983-book-4-part-1-title-5-chapter-2'},
+  {from:1004,to:1007,unit:'cic-1983-book-4-part-1-title-5-chapter-3'},
   {from:1008,to:1009,unit:'cic-1983-book-4-part-1-title-6'},
   {from:1010,to:1023,unit:'cic-1983-book-4-part-1-title-6-chapter-1'},
-  {from:1024,to:1032,unit:'cic-1983-book-4-part-1-title-6-chapter-2-article-1'},
+  {from:1024,to:1025,unit:'cic-1983-book-4-part-1-title-6-chapter-2'},
+  {from:1026,to:1032,unit:'cic-1983-book-4-part-1-title-6-chapter-2-article-1'},
   {from:1033,to:1039,unit:'cic-1983-book-4-part-1-title-6-chapter-2-article-2'},
   {from:1040,to:1049,unit:'cic-1983-book-4-part-1-title-6-chapter-2-article-3'},
   {from:1050,to:1052,unit:'cic-1983-book-4-part-1-title-6-chapter-2-article-4'},
@@ -120,45 +130,16 @@ function unitForCanon(number: number) {
   return match.unit
 }
 
-function pageToken(range: UnitRange) {
-  return range.from === range.to ? `${range.from}` : `${range.from}-${range.to}`
-}
-
-function candidateUrls(range: UnitRange) {
-  const token = pageToken(range)
-  const file = `cic_libroIV_${token}_it.html`
-  const urls = [`${PRESS_BASE}${file}`, `${WWW_BASE}${file}`]
-
-  // Alcune vecchie pagine possono usare eccezionalmente N-N anche per un singolo canone.
-  if (range.from === range.to) {
-    const legacy = `cic_libroIV_${range.from}-${range.to}_it.html`
-    urls.push(`${PRESS_BASE}${legacy}`, `${WWW_BASE}${legacy}`)
+function tryCurl(url: string) {
+  try {
+    return execFileSync(
+      'curl',
+      ['-fsSL', '--connect-timeout', '10', '--max-time', '30', url],
+      {encoding: 'utf8', maxBuffer: 20 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore']},
+    )
+  } catch {
+    return null
   }
-
-  return urls
-}
-
-function fetchOfficialPage(range: UnitRange) {
-  const attempted: string[] = []
-
-  for (const url of candidateUrls(range)) {
-    attempted.push(url)
-    try {
-      const html = execFileSync(
-        'curl',
-        ['-fsSL', '--retry', '2', '--connect-timeout', '15', '--max-time', '45', url],
-        {encoding: 'utf8', maxBuffer: 20 * 1024 * 1024},
-      )
-      return {url, html}
-    } catch {
-      // Prova il mirror o la variante successiva.
-    }
-  }
-
-  throw new Error(
-    `Libro IV: nessuna pagina ufficiale raggiungibile per Cann. ${range.from}–${range.to}.\n` +
-      attempted.map((url) => `  - ${url}`).join('\n'),
-  )
 }
 
 function decodeEntities(value: string) {
@@ -229,7 +210,7 @@ function extractCanonsFromPage(url: string, html: string): CachedCanon[] {
   for (let i = 0; i < matches.length; i += 1) {
     const match = matches[i]
     const number = Number(match[1])
-    if (number < 834 || number > 1253) continue
+    if (number < FIRST_CANON || number > LAST_CANON) continue
 
     const start = (match.index ?? 0) + match[0].length
     const end = matches[i + 1]?.index ?? text.length
@@ -241,25 +222,76 @@ function extractCanonsFromPage(url: string, html: string): CachedCanon[] {
   return result
 }
 
+function candidateEndpoints(start: number) {
+  const preferred = ranges
+    .filter((range) => range.from === start)
+    .map((range) => range.to)
+
+  const fallback: number[] = []
+  for (let end = start; end <= Math.min(start + MAX_PAGE_SPAN, LAST_CANON); end += 1) {
+    fallback.push(end)
+  }
+
+  return [...new Set([...preferred, ...fallback])]
+}
+
+function candidateUrls(start: number, end: number) {
+  const token = start === end ? `${start}` : `${start}-${end}`
+  const file = `cic_libroIV_${token}_it.html`
+  return [`${PRESS_BASE}${file}`, `${WWW_BASE}${file}`]
+}
+
+function fetchPageStartingAt(start: number): OfficialPage {
+  const attempted: string[] = []
+
+  for (const end of candidateEndpoints(start)) {
+    for (const url of candidateUrls(start, end)) {
+      attempted.push(url)
+      const html = tryCurl(url)
+      if (!html) continue
+
+      const canons = extractCanonsFromPage(url, html)
+      if (canons.length === 0 || canons[0].number !== start) continue
+
+      for (let i = 0; i < canons.length; i += 1) {
+        if (canons[i].number !== start + i) {
+          throw new Error(`Libro IV: sequenza non continua nella pagina ${url}`)
+        }
+      }
+
+      return {url, html, canons}
+    }
+  }
+
+  throw new Error(
+    `Libro IV: non trovo una pagina ufficiale che inizi dal Can. ${start}.\n` +
+      `Provati ${attempted.length} URL sui domini ufficiali della Santa Sede.`,
+  )
+}
+
 function buildCache(): CachePayload {
   console.log('Libro IV: scarico il testo vigente dalle pagine ufficiali della Santa Sede...')
   const byNumber = new Map<number, CachedCanon>()
+  let current = FIRST_CANON
+  let pageNumber = 0
 
-  for (const [index, range] of ranges.entries()) {
-    process.stdout.write(`\rLibro IV: pagina ${index + 1}/${ranges.length} — Cann. ${range.from}–${range.to}`)
-    const page = fetchOfficialPage(range)
-    const found = extractCanonsFromPage(page.url, page.html)
+  while (current <= LAST_CANON) {
+    const page = fetchPageStartingAt(current)
+    pageNumber += 1
 
-    const expected = range.to - range.from + 1
-    const inRange = found.filter((canon) => canon.number >= range.from && canon.number <= range.to)
-    if (inRange.length !== expected) {
-      const got = inRange.map((canon) => canon.number).join(', ') || 'nessuno'
-      throw new Error(
-        `Libro IV: pagina Cann. ${range.from}–${range.to} incompleta: attesi ${expected}, trovati ${inRange.length} (${got}).\n${page.url}`,
-      )
+    const pageCanons = page.canons.filter(
+      (canon) => canon.number >= current && canon.number <= LAST_CANON,
+    )
+    const last = pageCanons.at(-1)?.number
+    if (!last || last < current) {
+      throw new Error(`Libro IV: pagina senza avanzamento per Can. ${current}: ${page.url}`)
     }
 
-    for (const canon of inRange) {
+    process.stdout.write(
+      `\rLibro IV: pagina ${pageNumber} — Cann. ${current}–${last}`,
+    )
+
+    for (const canon of pageCanons) {
       const previous = byNumber.get(canon.number)
       if (previous && previous.text !== canon.text) {
         throw new Error(
@@ -268,11 +300,13 @@ function buildCache(): CachePayload {
       }
       byNumber.set(canon.number, previous ?? canon)
     }
+
+    current = last + 1
   }
   process.stdout.write('\n')
 
   const missing: number[] = []
-  for (let number = 834; number <= 1253; number += 1) {
+  for (let number = FIRST_CANON; number <= LAST_CANON; number += 1) {
     if (!byNumber.has(number)) missing.push(number)
   }
   if (missing.length > 0) {
