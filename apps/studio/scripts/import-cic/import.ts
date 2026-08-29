@@ -143,16 +143,20 @@ async function ensureStructuralUnits(corpusId: string) {
   for (const unit of structuralUnits) {
     const existing = await getSingleStructuralUnit(unit.canonicalId)
 
-    let parentId = resolved.get(unit.parentCanonicalId)
+    let parentId: string | undefined
 
-    if (!parentId) {
-      const parent = await getSingleStructuralUnit(unit.parentCanonicalId)
-      if (!parent) {
-        throw new Error(
-          `${unit.canonicalId}: unità superiore non trovata: ${unit.parentCanonicalId}`,
-        )
+    if (unit.parentCanonicalId) {
+      parentId = resolved.get(unit.parentCanonicalId)
+
+      if (!parentId) {
+        const parent = await getSingleStructuralUnit(unit.parentCanonicalId)
+        if (!parent) {
+          throw new Error(
+            `${unit.canonicalId}: unità superiore non trovata: ${unit.parentCanonicalId}`,
+          )
+        }
+        parentId = parent._id
       }
-      parentId = parent._id
     }
 
     const documentId =
@@ -165,7 +169,7 @@ async function ensureStructuralUnits(corpusId: string) {
       title: unit.title,
       canonicalId: unit.canonicalId,
       slug: {_type: 'slug', current: unit.canonicalId},
-      parent: {_type: 'reference', _ref: parentId},
+      parent: parentId ? {_type: 'reference', _ref: parentId} : undefined,
       order: unit.order,
       canonicalLabel: unit.canonicalLabel,
     })
