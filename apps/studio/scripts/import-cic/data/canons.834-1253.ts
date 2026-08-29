@@ -6,8 +6,9 @@ import {join} from 'node:path'
 import type {CanonInput} from '../types'
 import {segments} from './canonSource'
 
-const INDEX_URL = 'https://press.vatican.va/archive/cod-iuris-canonici/cic_index_it.html'
-const CACHE_FILE = join(tmpdir(), 'fonte-iuris-cic-book4-v1.json')
+const DOCUMENTS_BASE =
+  'https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/'
+const CACHE_FILE = join(tmpdir(), 'fonte-iuris-cic-book4-v2.json')
 
 const amendedCanons = new Set([
   838,
@@ -194,17 +195,11 @@ function normalizeCanonText(value: string) {
   return text
 }
 
-function pageUrlsFromIndex(indexHtml: string) {
+function pageUrls() {
   const urls = new Set<string>()
-  const regex = /href\s*=\s*["']([^"']*cic_libroIV_[^"']*_it\.html)["']/gi
 
-  for (const match of indexHtml.matchAll(regex)) {
-    const url = new URL(match[1], INDEX_URL).toString()
-    if (url.includes('/archive/cod-iuris-canonici/ita/documents/cic_libroIV_')) urls.add(url)
-  }
-
-  if (urls.size < 40) {
-    throw new Error(`Libro IV: indice Vaticano incompleto, trovati soltanto ${urls.size} collegamenti.`)
+  for (const range of ranges) {
+    urls.add(`${DOCUMENTS_BASE}cic_libroIV_${range.from}-${range.to}_it.html`)
   }
 
   return [...urls]
@@ -237,8 +232,7 @@ function extractCanonsFromPage(url: string, html: string): CachedCanon[] {
 
 function buildCache(): CachePayload {
   console.log('Libro IV: scarico il testo vigente dalle pagine ufficiali della Santa Sede...')
-  const indexHtml = curl(INDEX_URL)
-  const urls = pageUrlsFromIndex(indexHtml)
+  const urls = pageUrls()
   const byNumber = new Map<number, CachedCanon>()
 
   for (const [index, url] of urls.entries()) {
