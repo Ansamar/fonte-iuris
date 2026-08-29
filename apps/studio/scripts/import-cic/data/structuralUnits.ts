@@ -198,4 +198,13 @@ export const structuralUnits: StructuralUnitInput[] = [
     parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-3',
     order: 5,
   },
+  {
+    canonicalId: 'cic-1983-book-2-part-2-section-2-title-3-chapter-6',
+    unitType: 'chapter',
+    number: 'VI',
+    title: 'Le parrocchie, i parroci e i vicari parrocchiali',
+    canonicalLabel: 'CAPITOLO VI — LE PARROCCHIE, I PARROCI E I VICARI PARROCCHIALI',
+    parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-3',
+    order: 6,
+  },
 ]
