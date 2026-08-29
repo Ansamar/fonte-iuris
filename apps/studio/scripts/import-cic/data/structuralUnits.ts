@@ -117,4 +117,22 @@ export const structuralUnits: StructuralUnitInput[] = [
     parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-2',
     order: 4,
   },
+  {
+    canonicalId: 'cic-1983-book-2-part-2-section-2-title-3',
+    unitType: 'title',
+    number: 'III',
+    title: 'Struttura interna delle Chiese particolari',
+    canonicalLabel: 'TITOLO III — STRUTTURA INTERNA DELLE CHIESE PARTICOLARI',
+    parentCanonicalId: 'cic-1983-book-2-part-2-section-2',
+    order: 3,
+  },
+  {
+    canonicalId: 'cic-1983-book-2-part-2-section-2-title-3-chapter-1',
+    unitType: 'chapter',
+    number: 'I',
+    title: 'Il sinodo diocesano',
+    canonicalLabel: 'CAPITOLO I — IL SINODO DIOCESANO',
+    parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-3',
+    order: 1,
+  },
 ]
