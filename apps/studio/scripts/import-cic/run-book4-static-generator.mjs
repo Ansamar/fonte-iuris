@@ -15,11 +15,19 @@ const replacements = [
   ],
   [
     "deg:'°'};return s.replace",
-    "deg:'°',sect:'§',laquo:'«',raquo:'»'};return s.replace",
+    "deg:'°',sect:'§',laquo:'«',raquo:'»',aacute:'á',Aacute:'Á',iacute:'í',Iacute:'Í',oacute:'ó',Oacute:'Ó',uacute:'ú',Uacute:'Ú'};return s.replace",
   ],
   [
     "let text=toText(html);const foot=text.indexOf('Indica che il testo corrisponde');if(foot>=0)text=text.slice(0,foot);",
     "let text=toText(html);const note=text.search(/\\(\\s*\\^\\{n\\}\\s*:/);if(note>=0)text=text.slice(0,note);const foot=text.indexOf('Indica che il testo corrisponde');if(foot>=0)text=text.slice(0,foot);",
+  ],
+  [
+    "t=t.replace(/§\\s+(\\d+)\\s*\\./g,'§$1.').replace(/§(\\d+)\\s*\\./g,'§$1.')",
+    "t=t.replace(/§\\s+(\\d+)\\s*\\./g,'§$1.').replace(/§(\\d+)\\s*\\./g,'§$1.').replace(/(^|\\n\\n)(\\d+)\\.\\s/g,'$1§$2. ').replace(/(§\\d+\\.)\\n\\n\\1/g,'$1')",
+  ],
+  [
+    "let best=null;for(const m of occ){const start=(m.index??0)+m[0].length;const later=ms.filter(x=>(x.index??0)>start&&Number(x[1])>n).sort((x,y)=>(x.index??0)-(y.index??0))[0];const end=later?.index??text.length;let body=cleanBody(text.slice(start,end),n);if(m[2])body=`§${m[2]}. ${body}`;if(!best||body.length>best.length)best=body}if(!best||best.length<3)throw new Error(`Empty Can. ${n} in ${url}`);out.push({number:n,text:best,sourceUrl:url})",
+    "const m=occ.sort((x,y)=>(x.index??0)-(y.index??0)).at(-1);const start=(m.index??0)+m[0].length;const later=ms.filter(x=>(x.index??0)>start&&Number(x[1])>n).sort((x,y)=>(x.index??0)-(y.index??0))[0];const end=later?.index??text.length;let body=cleanBody(text.slice(start,end),n);if(m[2])body=`§${m[2]}. ${body}`;if(!body||body.length<3)throw new Error(`Empty Can. ${n} in ${url}`);out.push({number:n,text:body,sourceUrl:url})",
   ],
 ]
 
