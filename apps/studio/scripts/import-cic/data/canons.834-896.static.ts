@@ -282,7 +282,7 @@ export const canons834to896: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "878); Codice di Diritto Canonico\n\nCODICE DI DIRITTO CANONICO\n\nLIBRO IV\n\nLA FUNZIONE\nDI SANTIFICARE DELLA CHIESA\n\nPARTE I\n\nI SACRAMENTI\n\nTITOLO I\nIL BATTESIMO\n(Can. 849-878)\n\nCan. 849 - Il battesimo, porta dei sacramenti, necessario di fatto o almeno nel desiderio per la salvezza, mediante il quale gli uomini vengono liberati dai peccati, sono rigenerati come figli di Dio e, configurati a Cristo con un carattere indelebile, vengono incorporati alla Chiesa, è validamente conferito soltanto mediante il lavacro di acqua vera e con la forma verbale stabilita.",
+        "text": "Il battesimo, porta dei sacramenti, necessario di fatto o almeno nel desiderio per la salvezza, mediante il quale gli uomini vengono liberati dai peccati, sono rigenerati come figli di Dio e, configurati a Cristo con un carattere indelebile, vengono incorporati alla Chiesa, è validamente conferito soltanto mediante il lavacro di acqua vera e con la forma verbale stabilita.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 849 — testo vigente",
         "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_849_it.html",
@@ -555,7 +555,7 @@ export const canons834to896: CanonInput[] = [
         "text": "È capace di ricevere il battesimo ogni uomo e solo l'uomo non ancora battezzato.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 864 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
         "segments": []
       }
     ]
@@ -573,7 +573,7 @@ export const canons834to896: CanonInput[] = [
         "text": "§1. Affinché un adulto possa essere battezzato, è necessario che abbia manifestato la volontà di ricevere il battesimo, sia sufficientemente istruito nelle verità della fede e sui doveri cristiani e sia provato nella vita cristiana per mezzo del catecumenato; sia anche esortato a pentirsi dei propri peccati.\n\n§2. L'adulto, che si trova in pericolo di morte, può essere battezzato qualora, avendo una qualche conoscenza delle verità principali della fede, in qualunque modo abbia manifestato l'intenzione di ricevere il battesimo e prometta che osserverà i comandamenti della religione cristiana.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 865 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
         "segments": []
       }
     ]
@@ -591,7 +591,7 @@ export const canons834to896: CanonInput[] = [
         "text": "L'adulto che viene battezzato, se non vi si oppone una grave ragione, subito dopo il battesimo riceva la confermazione e partecipi alla celebrazione eucaristica, ricevendo anche la comunione.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 866 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
         "segments": []
       }
     ]
@@ -609,7 +609,7 @@ export const canons834to896: CanonInput[] = [
         "text": "§1. I genitori sono tenuti all'obbligo di provvedere che i bambini siano battezzati entro le prime settimane; al più presto dopo la nascita, anzi anche prima di essa, si rechino dal parroco per chiedere il sacramento per il figlio e vi si preparino debitamente.\n\n§2. Se il bambino è in pericolo di morte, lo si battezzi senza alcun indugio.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 867 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
         "segments": []
       }
     ]
@@ -627,7 +627,7 @@ export const canons834to896: CanonInput[] = [
         "text": "§1. Per battezzare lecitamente un bambino si esige:\n1) che i genitori o almeno uno di essi o chi tiene legittimamente il loro posto, vi consentano;\n2) ^{n} che vi sia la fondata speranza che sarà educato nella religione cattolica fermo restando il §3 ; se tale speranza manca del tutto, il battesimo venga differito, secondo le disposizioni del diritto particolare, dandone ragione ai genitori.\n\n§2. Il bambino di genitori cattolici e persino di non cattolici, in pericolo di morte è battezzato lecitamente anche contro la volontà dei genitori.\n\n§3. ^{n} Il bambino di cristiani non cattolici è lecitamente battezzato, se i genitori o almeno uno di essi o colui che tiene legittimamente il loro posto lo chiedono e se agli stessi sia impossibile, fisicamente o moralmente, accedere al proprio ministro.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 868 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
         "segments": []
       }
     ]
@@ -645,7 +645,7 @@ export const canons834to896: CanonInput[] = [
         "text": "§1. Se si dubita che uno sia stato battezzato, o che il battesimo non gli sia stato amministrato validamente e il dubbio persiste anche dopo una seria ricerca, il battesimo gli sia conferito sotto condizione.\n\n§2. I battezzati in una comunità ecclesiale non cattolica non vanno battezzati sotto condizione, a meno che, esaminata la materia e la forma verbale usata nel conferimento del battesimo, considerata inoltre l'intenzione del battezzato adulto e del ministro battezzante, non persista una seria ragione per dubitare della validità del battesimo.\n\n§3. Se nei casi di cui nei §§1 e 2 il conferimento o la validità del battesimo rimanessero dubbi, il battesimo non venga conferito se non dopo che al battezzando sia stata esposta la dottrina sul sacramento del battesimo, se adulto, e che al medesimo o ai suoi genitori, se si tratta di un bambino, siano state illustrate le ragioni della dubbia validità del battesimo celebrato.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 869 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
         "segments": []
       }
     ]
@@ -663,7 +663,7 @@ export const canons834to896: CanonInput[] = [
         "text": "Il bambino esposto o trovatello sia battezzato, a meno che, condotta una diligente ricerca, non consti del suo battesimo.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 870 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
         "segments": []
       }
     ]
@@ -681,7 +681,7 @@ export const canons834to896: CanonInput[] = [
         "text": "I feti abortivi, se vivono, nei limiti del possibile, siano battezzati.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 871 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
         "segments": []
       }
     ]
@@ -822,7 +822,7 @@ export const canons834to896: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "896); Codice di Diritto Canonico\n\nCODICE DI DIRITTO CANONICO\n\nLIBRO IV\n\nLA FUNZIONE\nDI SANTIFICARE DELLA CHIESA\n\nPARTE I\n\nI SACRAMENTI\n\nTITOLO II\nIL SACRAMENTO DELLA CONFERMAZIONE\n(Can. 879-896)\n\nCan. 879 - Il sacramento della confermazione, che imprime il carattere e per il quale i battezzati, proseguendo il cammino dell'iniziazione cristiana, sono arricchiti del dono dello Spirito Santo e vincolati più perfettamente alla Chiesa, corrobora coloro che lo ricevono e li obbliga più strettamente ad essere con le parole e le opere testimoni di Cristo e a diffondere e difendere la fede.",
+        "text": "Il sacramento della confermazione, che imprime il carattere e per il quale i battezzati, proseguendo il cammino dell'iniziazione cristiana, sono arricchiti del dono dello Spirito Santo e vincolati più perfettamente alla Chiesa, corrobora coloro che lo ricevono e li obbliga più strettamente ad essere con le parole e le opere testimoni di Cristo e a diffondere e difendere la fede.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 879 — testo vigente",
         "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_879_it.html",
@@ -879,7 +879,7 @@ export const canons834to896: CanonInput[] = [
         "text": "Ministro ordinario della confermazione è il Vescovo; conferisce validamente questo sacramento anche il presbitero provvisto di questa facoltà in forza del diritto universale o per speciale concessione della competente autorità.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 882 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
         "segments": []
       }
     ]
@@ -897,7 +897,7 @@ export const canons834to896: CanonInput[] = [
         "text": "Per il diritto stesso hanno facoltà di amministrare la confermazione:\n1) entro i confini della propria circoscrizione, coloro che sono equiparati dal diritto al Vescovo diocesano;\n2) relativamente alla persona di cui si tratta, il presbitero, che, in forza dell'ufficio o del mandato del Vescovo diocesano, battezza uno uscito dall'infanzia o ammette uno già battezzato nella piena comunione della Chiesa cattolica;\n3) in riferimento a coloro che si trovano in pericolo di morte, il parroco, anzi ogni presbitero.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 883 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
         "segments": []
       }
     ]
@@ -915,7 +915,7 @@ export const canons834to896: CanonInput[] = [
         "text": "§1. Il Vescovo diocesano amministri personalmente la confermazione o provveda che sia amministrata da un altro Vescovo; qualora lo richiedesse una necessità, può concedere la facoltà di amministrarlo a uno o più presbiteri determinati.\n\n§2. Per una causa grave il Vescovo e similmente il presbitero che possiede la facoltà di confermare in forza del diritto o per speciale concessione della competente autorità, possono, in singoli casi, associarsi dei presbiteri, perché anch'essi amministrino il sacramento.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 884 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
         "segments": []
       }
     ]
@@ -933,7 +933,7 @@ export const canons834to896: CanonInput[] = [
         "text": "§1. Il Vescovo diocesano è tenuto all'obbligo di curare che il sacramento della confermazione sia conferito ai sudditi che lo richiedono nel dovuto modo e ragionevolmente.\n\n§2. Il presbitero che ha questa facoltà deve servirsene per coloro in favore dei quali la facoltà venne concessa.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 885 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
         "segments": []
       }
     ]
@@ -951,7 +951,7 @@ export const canons834to896: CanonInput[] = [
         "text": "§1. Il Vescovo nella sua diocesi amministra legittimamente il sacramento della confermazione anche ai fedeli non sudditi, a meno che non si opponga una espressa proibizione del loro Ordinario proprio.\n\n§2. Per amministrare lecitamente la confermazione in un'altra diocesi, il Vescovo, a meno che non si tratti dei suoi sudditi, deve avere la licenza almeno ragionevolmente presunta del Vescovo diocesano.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 886 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
         "segments": []
       }
     ]
@@ -969,7 +969,7 @@ export const canons834to896: CanonInput[] = [
         "text": "Il presbitero che gode della facoltà di amministrare la confermazione, conferisce lecitamente questo sacramento anche agli estranei, entro il territorio per lui designato, a meno che non si opponga il divieto del loro Ordinario proprio; fuori del proprio territorio non lo conferisce validamente a nessuno, salvo il disposto del can. 883, n. 3.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 887 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
         "segments": []
       }
     ]
@@ -987,7 +987,7 @@ export const canons834to896: CanonInput[] = [
         "text": "Entro il territorio nel quale hanno la facoltà di conferire la confermazione, i ministri la possono amministrare anche nei luoghi esenti.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 888 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_882-888_it.html",
         "segments": []
       }
     ]

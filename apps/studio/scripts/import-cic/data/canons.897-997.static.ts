@@ -12,7 +12,7 @@ export const canons897to997: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "958); Codice di Diritto Canonico\n\nCODICE DI DIRITTO CANONICO\n\nLIBRO IV\n\nLA FUNZIONE DI\nSANTIFICARE DELLA CHIESA\n\nPARTE I\n\nI SACRAMENTI\n\nTITOLO III\nLA SANTISSIMA EUCARESTIA\n(Cann. 897 –\n958)\n\nCan. 897 - Augustissimo sacramento è la santissima Eucaristia, nella quale lo stesso Cristo Signore è presente, viene offerto ed è assunto, e mediante la quale continuamente vive e cresce la Chiesa. Il Sacrificio eucaristico, memoriale della morte e della risurrezione del Signore, nel quale si perpetua nei secoli il Sacrificio della croce, è culmine e fonte di tutto il culto e della vita cristiana. Mediante esso è significata e prodotta l'unità del popolo di Dio e si compie l'edificazione del Corpo di Cristo. Gli altri sacramenti infatti e tutte le opere ecclesiastiche di apostolato sono strettamente uniti alla santissima Eucaristia e ad essa sono ordinati.",
+        "text": "Augustissimo sacramento è la santissima Eucaristia, nella quale lo stesso Cristo Signore è presente, viene offerto ed è assunto, e mediante la quale continuamente vive e cresce la Chiesa. Il Sacrificio eucaristico, memoriale della morte e della risurrezione del Signore, nel quale si perpetua nei secoli il Sacrificio della croce, è culmine e fonte di tutto il culto e della vita cristiana. Mediante esso è significata e prodotta l'unità del popolo di Dio e si compie l'edificazione del Corpo di Cristo. Gli altri sacramenti infatti e tutte le opere ecclesiastiche di apostolato sono strettamente uniti alla santissima Eucaristia e ad essa sono ordinati.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 897 — testo vigente",
         "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_897-898_it.html",
@@ -48,7 +48,7 @@ export const canons897to997: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "933)\n\nLA CELEBRAZIONE EUCARISTICA\nCan. 899 -\n\n§1. La celebrazione eucaristica è azione di Cristo stesso e della Chiesa; in essa Cristo Signore, mediante il ministero del sacerdote, offre a Dio Padre se stesso, sostanzialmente presente sotto le specie del pane e del vino, e si dona come cibo spirituale ai fedeli associati nella sua offerta.\n\n§2. Nella Sinassi eucaristica il popolo di Dio è chiamato a radunarsi in unità sotto la presidenza del Vescovo o, in dipendenza dalla sua autorità, del presbitero, che agiscono nella persona di Cristo, e tutti i fedeli che prendono parte, sia chierici sia laici, concorrono partecipandovi ciascuno a suo modo secondo la diversità degli ordini e dei c&oacute;mpiti liturgici.\n\n§3. La celebrazione eucaristica sia ordinata in modo che tutti coloro che vi partecipano traggano da essa abbondanza di frutti, per il conseguimento dei quali Cristo Signore ha istituito il Sacrificio eucaristico.",
+        "text": "§1. La celebrazione eucaristica è azione di Cristo stesso e della Chiesa; in essa Cristo Signore, mediante il ministero del sacerdote, offre a Dio Padre se stesso, sostanzialmente presente sotto le specie del pane e del vino, e si dona come cibo spirituale ai fedeli associati nella sua offerta.\n\n§2. Nella Sinassi eucaristica il popolo di Dio è chiamato a radunarsi in unità sotto la presidenza del Vescovo o, in dipendenza dalla sua autorità, del presbitero, che agiscono nella persona di Cristo, e tutti i fedeli che prendono parte, sia chierici sia laici, concorrono partecipandovi ciascuno a suo modo secondo la diversità degli ordini e dei cómpiti liturgici.\n\n§3. La celebrazione eucaristica sia ordinata in modo che tutti coloro che vi partecipano traggano da essa abbondanza di frutti, per il conseguimento dei quali Cristo Signore ha istituito il Sacrificio eucaristico.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 899 — testo vigente",
         "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_899_it.html",
@@ -681,7 +681,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. La santissima Eucaristia:\n1) deve essere conservata nella chiesa cattedrale o a questa equiparata, in ogni chiesa parrocchiale e nella chiesa o oratorio annesso alla casa di un istituto religioso o di una società di vita apostolica;\n2) può essere conservata nella cappella privata del Vescovo e, su licenza dell'Ordinario del luogo, nelle altre chiese, oratori o cappelle private.\n\n§2. Nei luoghi sacri dove viene conservata la santissima Eucaristia, vi deve essere sempre chi ne abbia cura e, per quanto possibile, il sacerdote vi celebri la Messa almeno due volte al mese.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 934 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -699,7 +699,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Non è lecito ad alcuno conservare presso di sé la santissima Eucaristia o portarsela in viaggio, a meno che non vi sia una necessità pastorale urgente e osservate le disposizioni del Vescovo diocesano.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 935 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -717,7 +717,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Nella casa di un istituto religioso o in un'altra pia casa, la santissima Eucaristia venga conservata soltanto nella chiesa o nell'oratorio principale annesso alla casa; l'Ordinario può tuttavia permettere per una giusta causa che venga conservata anche in un altro oratorio della medesima casa.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 936 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -735,7 +735,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Se non vi si oppone una grave ragione, la chiesa nella quale viene conservata la santissima Eucaristia, resti aperta ai fedeli almeno per qualche ora al giorno, affinché possano trattenersi in preghiera dinanzi al santissimo Sacramento.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 937 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -753,7 +753,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. La santissima Eucaristia venga custodita abitualmente in un solo tabernacolo della chiesa o dell'oratorio.\n\n§2. Il tabernacolo nel quale si custodisce la santissima Eucaristia sia collocato in una parte della chiesa o dell'oratorio che sia distinta, visibile, ornata decorosamente, adatta alla preghiera.\n\n§3. Il tabernacolo nel quale si custodisce abitualmente la santissima Eucaristia sia inamovibile, costruito con materiale solido non trasparente e chiuso in modo tale che sia evitato il più possibile ogni pericolo di profanazione.\n\n§4. Per causa grave è consentito conservare la santissima Eucaristia, soprattutto durante la notte, in altro luogo più sicuro e decoroso.\n\n§5. Chi ha la cura della chiesa o dell'oratorio, provveda che la chiave del tabernacolo, nel quale è conservata la santissima Eucaristia, sia custodita con la massima diligenza.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 938 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -771,7 +771,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Le ostie consacrate vengano conservate nella pisside o in un piccolo vaso in quantità sufficiente alle necessità dei fedeli e, consumate nel debito modo le precedenti, siano rinnovate con frequenza.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 939 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -789,7 +789,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Davanti al tabernacolo nel quale si custodisce la santissima Eucaristia, brilli perennemente una speciale lampada, mediante la quale venga indicata e sia onorata la presenza di Cristo.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 940 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -807,7 +807,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. Nelle chiese e negli oratori a cui è concesso conservare la santissima Eucaristia, si possono compiere esposizioni sia con la pisside, sia con l'ostensorio, osservando le norme stabilite nei libri liturgici.\n\n§2. Durante la celebrazione della Messa non vi sia nella stessa navata della chiesa o dell'oratorio l'esposizione del santissimo Sacramento.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 941 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -825,7 +825,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Si raccomanda che nelle stesse chiese e oratori ogni anno si compia l'esposizione solenne del santissimo Sacramento prolungata per un tempo conveniente, anche se non continuo, affinché la comunità locale mediti e adori con intensa devozione il mistero eucaristico; però tale esposizione si faccia soltanto se si prevede una adeguata affluenza di fedeli e osservando le norme stabilite.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 942 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -843,7 +843,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Ministro dell'esposizione del santissimo Sacramento e della benedizione eucaristica è il sacerdote o il diacono; in speciali circostanze sono ministri della sola esposizione e riposizione, ma non della benedizione, l'accolito, il ministro straordinario della sacra comunione o altra persona designata dall'Ordinario del luogo, osservando le disposizioni del Vescovo diocesano.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 943 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -861,7 +861,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. Ove, a giudizio del Vescovo diocesano, è possibile, si svolga, quale pubblica testimonianza di venerazione verso la santissima Eucaristia e specialmente nella solennità del Corpo e Sangue di Cristo, la processione condotta attraverso le pubbliche vie.\n\n§2. Spetta al Vescovo diocesano stabilire delle direttive circa le processioni, con cui provvedere alla loro partecipazione e dignità.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 944 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -1128,7 +1128,7 @@ export const canons897to997: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "997); Codice di Diritto Canonico\n\nCODICE DI DIRITTO CANONICO\nLIBRO IV\nLA FUNZIONE DI\nSANTIFICARE DELLA CHIESA\n\nPARTE I\nI SACRAMENTI\n\nTITOLO IV\nIL SACRAMENTO DELLA PENITENZA\n(Cann. 959 –\n997)\n\nCan. 959 - Nel sacramento della penitenza i fedeli, confessando i peccati al ministro legittimo, essendone contriti ed insieme avendo il proposito di emendarsi, per l'assoluzione impartita dallo stesso ministro ottengono da Dio il perdono dei peccati, che hanno commesso dopo il battesimo e contemporaneamente vengono riconciliati con la Chiesa che, peccando, hanno ferito.",
+        "text": "Nel sacramento della penitenza i fedeli, confessando i peccati al ministro legittimo, essendone contriti ed insieme avendo il proposito di emendarsi, per l'assoluzione impartita dallo stesso ministro ottengono da Dio il perdono dei peccati, che hanno commesso dopo il battesimo e contemporaneamente vengono riconciliati con la Chiesa che, peccando, hanno ferito.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 959 — testo vigente",
         "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_959_it.html",
@@ -1725,7 +1725,7 @@ export const canons897to997: CanonInput[] = [
         "text": "L'indulgenza è la remissione dinanzi a Dio della pena temporale per i peccati, già rimessi quanto alla colpa, che il fedele, debitamente disposto e a determinate condizioni, acquista per intervento della Chiesa, la quale, come ministra della redenzione, dispensa ed applica autoritativamente il tesoro delle soddisfazioni di Cristo e dei Santi.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 992 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
         "segments": []
       }
     ]
@@ -1743,7 +1743,7 @@ export const canons897to997: CanonInput[] = [
         "text": "L'indulgenza è parziale o plenaria secondo che libera in parte o in tutto dalla pena temporale dovuta per i peccati.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 993 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
         "segments": []
       }
     ]
@@ -1761,7 +1761,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Ogni fedele può lucrare per se stesso o applicare ai defunti a modo di suffragio indulgenze sia parziali sia plenarie.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 994 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
         "segments": []
       }
     ]
@@ -1779,7 +1779,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. Oltre alla suprema autorità della Chiesa possono elargire indulgenze solamente quelli cui questa potestà viene riconosciuta dal diritto o è concessa dal Romano Pontefice.\n\n§2. Nessuna autorità sotto il Romano Pontefice può comunicare ad altri la facoltà di concedere indulgenze, se ciò non sia stato ad essa concesso espressamente dalla Sede Apostolica.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 995 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
         "segments": []
       }
     ]
@@ -1797,7 +1797,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. È capace di lucrare indulgenze chi è battezzato, non scomunicato, in stato di grazia almeno al termine delle opere prescritte.\n\n§2. Per lucrare di fatto le indulgenze il soggetto capace deve avere almeno l'intenzione di acquistarle e adempiere le opere ingiunte nel tempo stabilito e nel modo dovuto, a tenore della concessione.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 996 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
         "segments": []
       }
     ]
@@ -1815,7 +1815,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Per quanto attiene alla concessione e all'uso delle indulgenze, debbono essere inoltre osservate le altre disposizioni che sono contenute nelle leggi peculiari della Chiesa.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 997 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_992-997_it.html",
         "segments": []
       }
     ]

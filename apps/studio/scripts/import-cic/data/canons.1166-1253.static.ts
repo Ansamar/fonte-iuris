@@ -195,7 +195,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "§1. Per i fedeli defunti si devono celebrare le esequie ecclesiastiche a norma del diritto.\n\n§2. Le esequie ecclesiastiche, con le quali la Chiesa impetra l'aiuto spirituale per i defunti e ne onora i corpi, e insieme arreca ai vivi il conforto della speranza, devono essere celebrate a norma delle leggi liturgiche.\n\n§3. La Chiesa raccomanda vivamente che si conservi la pia consuetudine di seppellire i corpi dei defunti; tuttavia non proibisce la cremazione, a meno che questa non sia stata scelta per ragioni contrarie alla dottrina cristiana.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1176 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1176_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1176_it.html",
         "segments": []
       }
     ]
@@ -375,7 +375,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Per favorire la santificazione del popolo di Dio, la Chiesa affida alla speciale e filiale venerazione dei fedeli la Beata Maria sempre Vergine, la Madre di Dio, che Cristo costituì Madre di tutti gli uomini, e promuove inoltre il vero e autentico culto degli altri Santi, perché i fedeli siano edificati dal loro esempio e sostenuti dalla loro intercessione.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1186 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
         "segments": []
       }
     ]
@@ -393,7 +393,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "E lecito venerare con culto pubblico solo quei servi di Dio che, per l'autorità della Chiesa, sono riportati nel catalogo dei Santi o dei Beati.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1187 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
         "segments": []
       }
     ]
@@ -411,7 +411,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Sia mantenuta la prassi di esporre nelle chiese le sacre immagini alla venerazione dei fedeli; tuttavia siano esposte in numero moderato e con un conveniente ordine, affinché non suscitino la meraviglia del popolo cristiano e non diano occasione a devozione meno retta.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1188 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
         "segments": []
       }
     ]
@@ -429,7 +429,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Le immagini preziose, ossia insigni per antichità, arte o culto, che sono esposte alla venerazione dei fedeli nelle chiese o negli oratori, qualora necessitino di riparazione, non siano mai restaurate senza la licenza scritta dell'Ordinario; e questi, prima di concederla, consulti dei periti.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1189 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
         "segments": []
       }
     ]
@@ -447,7 +447,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "§1. È assolutamente illecito vendere le sacre reliquie.\n\n§2. Le reliquie insigni, come pure quelle onorate da grande pietà popolare, non possono essere alienate validamente in nessun modo né essere trasferite in modo definitivo senza la licenza della Sede Apostolica.\n\n§3. Il disposto del §2 vale anche per le immagini che in taluna chiesa sono onorate da grande pietà popolare.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1190 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
         "segments": []
       }
     ]
@@ -609,7 +609,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "§1. Il giuramento, ossia l'invocazione del nome di Dio a testimonianza della verità, non può essere prestato se non secondo verità, prudenza e giustizia.\n\n§2. Il giuramento richiesto o ammesso dai canoni, non può essere prestato validamente tramite procuratore.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1199 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
         "segments": []
       }
     ]
@@ -627,7 +627,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "§1. Chi giura liberamente di fare qualcosa, è tenuto da peculiare obbligo di religione a compiere quanto ha sancito con il giuramento.\n\n§2. Il giuramento estorto con dolo, violenza o timore grave, è nullo per il diritto stesso.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1200 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
         "segments": []
       }
     ]
@@ -645,7 +645,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "§1. Il giuramento promissorio partecipa della natura e delle condizioni dell'atto a cui è unito.\n\n§2. Se il giuramento è unito a un atto direttamente rivolto a danno degli altri oppure a pregiudizio del bene pubblico o della salvezza eterna, tale atto non consegue dal giuramento alcuna consistenza.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1201 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
         "segments": []
       }
     ]
@@ -663,7 +663,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "L'obbligo causato da un giuramento promissorio, cessa:\n1) se viene condonato da colui a vantaggio del quale fu emesso il giuramento;\n2) se la materia giurata muta sostanzialmente oppure, per le mutate circostanze, diviene o cattiva o del tutto indifferente o impedisce un bene maggiore;\n3) se viene meno la causa finale o la condizione sotto cui il giuramento fu eventualmente prestato;\n4) con la dispensa o la commutazione a norma del can. 1203.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1202 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
         "segments": []
       }
     ]
@@ -681,7 +681,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Coloro che possono sospendere, dispensare, commutare il voto, hanno la medesima potestà, con le stesse modalità circa il giuramento promissorio; se però la dispensa da un giuramento torna a pregiudizio di terzi che si rifiutino di condonare l'obbligo, da tale giuramento può dispensare solo la Sede Apostolica.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1203 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
         "segments": []
       }
     ]
@@ -699,7 +699,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Il giuramento va interpretato in senso stretto secondo il diritto e l'intenzione di chi giura oppure, se questi agisce con dolo, secondo l'intenzione di colui al quale viene prestato il giuramento.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1204 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1199-1204_it.html",
         "segments": []
       }
     ]
@@ -1416,7 +1416,7 @@ export const canons1166to1253: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "§1. Stabilire, trasferire, abolire i giorni di festa e parimenti i giorni di penitenza comuni alla Chiesa universale, spetta unicamente alla suprema autorità ecclesiastica, fermo restando il disposto del can. 1246,\n\n§2.\n\n§2. I Vescovi diocesani possono indire peculiari giorni di festa o di penitenza per la diocesi o i luoghi propri, ma solo per modo di atto.",
+        "text": "§1. Stabilire, trasferire, abolire i giorni di festa e parimenti i giorni di penitenza comuni alla Chiesa universale, spetta unicamente alla suprema autorità ecclesiastica, fermo restando il disposto del can. 1246,\n\n§2. I Vescovi diocesani possono indire peculiari giorni di festa o di penitenza per la diocesi o i luoghi propri, ma solo per modo di atto.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1244 — testo vigente",
         "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1244-1245_it.html",

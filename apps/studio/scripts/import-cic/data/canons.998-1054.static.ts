@@ -12,7 +12,7 @@ export const canons998to1054: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "1007); Codice di Diritto Canonico\n\nCODICE DI DIRITTO CANONICO\n\nLIBRO IV\n\nLA FUNZIONE DI\nSANTIFICARE DELLA CHIESA\n\nPARTE I\n\nI SACRAMENTI\n\nTITOLO V\nIL SACRAMENTO DELL'UNZIONE DEGLI INFERMI\n(Cann. 998 –\n1007)\n\nCan. 998 - L'unzione degli infermi, con la quale la Chiesa raccomanda al Signore sofferente e glorificato i fedeli gravemente infermi affinché li sollevi e li salvi, viene conferita ungendoli con olio e pronunciando le parole stabilite nei libri liturgici.",
+        "text": "L'unzione degli infermi, con la quale la Chiesa raccomanda al Signore sofferente e glorificato i fedeli gravemente infermi affinché li sollevi e li salvi, viene conferita ungendoli con olio e pronunciando le parole stabilite nei libri liturgici.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 998 — testo vigente",
         "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_998_it.html",
@@ -120,7 +120,7 @@ export const canons998to1054: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "1007)\nA CHI VA CONFERITA L'UNZIONE DEGLI INFERMI\nCan. 1004 -\n\n§1. L'unzione degli infermi può essere amministrata al fedele che, raggiunto l'uso di ragione, per malattia o vecchiaia comincia a trovarsi in pericolo.\n\n§2. Questo sacramento può essere ripetuto se l'infermo, dopo essersi ristabilito, sia ricaduto nuovamente in una grave malattia o se, nel decorso della medesima, il pericolo sia divenuto più grave.",
+        "text": "§1. L'unzione degli infermi può essere amministrata al fedele che, raggiunto l'uso di ragione, per malattia o vecchiaia comincia a trovarsi in pericolo.\n\n§2. Questo sacramento può essere ripetuto se l'infermo, dopo essersi ristabilito, sia ricaduto nuovamente in una grave malattia o se, nel decorso della medesima, il pericolo sia divenuto più grave.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1004 — testo vigente",
         "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1004-1007_it.html",
@@ -192,7 +192,7 @@ export const canons998to1054: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "1054); Codice di Diritto Canonico\n\nCODICE DI DIRITTO CANONICO\nLIBRO IV\nLA FUNZIONE DI\nSANTIFICARE DELLA CHIESA\n\nPARTE I\nI SACRAMENTI\n\nTITOLO VI\nORDINE\n(Cann. 1008 –\n1054)\n\nCan. 1008 ^{n} - Con il sacramento dell'ordine per divina istituzione alcuni tra i fedeli, mediante il carattere indelebile con il quale vengono segnati, sono costituiti ministri sacri; coloro cioè che sono consacrati e destinati a servire, ciascuno nel suo grado, con nuovo e peculiare titolo, il popolo di Dio.",
+        "text": "Con il sacramento dell'ordine per divina istituzione alcuni tra i fedeli, mediante il carattere indelebile con il quale vengono segnati, sono costituiti ministri sacri; coloro cioè che sono consacrati e destinati a servire, ciascuno nel suo grado, con nuovo e peculiare titolo, il popolo di Dio.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1008 — testo vigente",
         "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1008-1009_it.html",
@@ -645,7 +645,7 @@ export const canons998to1054: CanonInput[] = [
         "text": "È promosso lecitamente agli ordini soltanto chi ha ricevuto il sacramento della sacra confermazione.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1033 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
         "segments": []
       }
     ]
@@ -663,7 +663,7 @@ export const canons998to1054: CanonInput[] = [
         "text": "§1. L'aspirante al diaconato o al presbiterato non sia ordinato se non avrà ottenuto in antecedenza mediante il rito liturgico dell'ammissione da parte dell'autorità di cui nei cann. 1016 e 1019 , la ascrizione tra i candidati, fatta previa domanda, redatta e firmata di suo pugno, accettata per iscritto dalla medesima autorità.\n\n§2. Non è tenuto a richiedere la medesima ammissione chi è stato cooptato in un istituto clericale mediante i voti.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1034 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
         "segments": []
       }
     ]
@@ -681,7 +681,7 @@ export const canons998to1054: CanonInput[] = [
         "text": "§1. Prima che uno venga promosso al diaconato sia permanente sia transeunte, si richiede che abbia ricevuto i ministeri di lettore e accolito e li abbia esercitati per un tempo conveniente.\n\n§2. Tra il conferimento dell'accolitato e del diaconato intercorra un periodo di almeno sei mesi.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1035 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
         "segments": []
       }
     ]
@@ -699,7 +699,7 @@ export const canons998to1054: CanonInput[] = [
         "text": "Il candidato, per poter essere promosso all'ordine del diaconato o del presbiterato, consegni al Vescovo proprio o al Superiore maggiore competente, una dichiarazione, redatta e firmata di suo pugno, nella quale attesta che intende ricevere il sacro ordine spontaneamente e liberamente e si dedicherà per sempre al ministero ecclesiastico, e nella quale chiede simultaneamente di essere ammesso all'ordine da ricevere.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1036 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
         "segments": []
       }
     ]
@@ -717,7 +717,7 @@ export const canons998to1054: CanonInput[] = [
         "text": "Il promovendo al diaconato permanente, che non sia sposato, e così pure il promovendo al presbiterato, non siano ammessi all'ordine del diaconato, se non hanno assunto, mediante il rito prescritto, pubblicamente, davanti a Dio e alla Chiesa, l'obbligo del celibato oppure non hanno emesso i voti perpetui in un istituto religioso.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1037 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
         "segments": []
       }
     ]
@@ -735,7 +735,7 @@ export const canons998to1054: CanonInput[] = [
         "text": "Il diacono che rifiuta di essere promosso al presbiterato, non può essere impedito di esercitare l'ordine ricevuto, a meno che non vi sia trattenuto da un impedimento canonico o da altra grave causa, da valutarsi a giudizio del Vescovo diocesano o del Superiore maggiore competente.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1038 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
         "segments": []
       }
     ]
@@ -753,7 +753,7 @@ export const canons998to1054: CanonInput[] = [
         "text": "Tutti coloro che debbono essere promossi a qualche ordine, attendano agli esercizi spirituali per almeno cinque giorni, nel luogo e nel modo stabiliti dall'Ordinario; il Vescovo, prima di procedere all'ordinazione, deve accertarsi che i candidati li abbiano debitamente compiuti.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1039 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1033-1039_it.html",
         "segments": []
       }
     ]

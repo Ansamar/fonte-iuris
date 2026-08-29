@@ -12,7 +12,7 @@ export const canons1055to1165: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "1165); Codice di Diritto Canonico\n\nCODICE DI DIRITTO CANONICO\nLIBRO IV\nLA FUNZIONE DI\nSANTIFICARE DELLA CHIESA\n\nPARTE I\nI SACRAMENTI\n\nTITOLO VII\nIL MATRIMONIO\n(Cann. 1055 –\n1165)\n\nCan. 1055 -\n\n§1. Il patto matrimoniale con cui l'uomo e la donna stabiliscono tra loro la comunità di tutta la vita, per sua natura ordinata al bene dei coniugi e alla generazione e educazione della prole, tra i battezzati è stato elevato da Cristo Signore alla dignità di sacramento.\n\n§2. Pertanto tra i battezzati non può sussistere un valido contratto matrimoniale, che non sia per ciò stesso sacramento.",
+        "text": "§1. Il patto matrimoniale con cui l'uomo e la donna stabiliscono tra loro la comunità di tutta la vita, per sua natura ordinata al bene dei coniugi e alla generazione e educazione della prole, tra i battezzati è stato elevato da Cristo Signore alla dignità di sacramento.\n\n§2. Pertanto tra i battezzati non può sussistere un valido contratto matrimoniale, che non sia per ciò stesso sacramento.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1055 — testo vigente",
         "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1055-1062_it.html",
@@ -159,7 +159,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "I pastori d'anime sono tenuti all'obbligo di provvedere che la propria comunità ecclesiastica presti ai fedeli quell'assistenza mediante la quale lo stato matrimoniale perseveri nello spirito cristiano e progredisca in perfezione. Tale assistenza va prestata innanzitutto:\n1) con la predicazione, con una adeguata catechesi ai minori, ai giovani e agli adulti, e anche con l'uso degli strumenti di comunicazione sociale, mediante i quali i fedeli vengano istruiti sul significato del matrimonio cristiano e sul compito dei coniugi e genitori cristiani;\n2) con la preparazione personale alla celebrazione del matrimonio, per cui gli sposi si dispongano alla santità e ai doveri del loro nuovo stato;\n3) con una fruttuosa celebrazione liturgica del matrimonio, in cui appaia manifesto che i coniugi significano e partecipano al mistero di unione e di amore fecondo tra Cristo e la Chiesa;\n4) offrendo aiuto ai coniugi perché questi, osservando e custodendo con fedeltà il patto coniugale, giungano a condurre una vita familiare ogni giorno più santa e più intensa.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1063 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
         "segments": []
       }
     ]
@@ -177,7 +177,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Spetta all'Ordinario del luogo curare che tale assistenza sia debitamente organizzata, consultando anche, se sembra opportuno, uomini e donne di provata esperienza e competenza.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1064 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
         "segments": []
       }
     ]
@@ -195,7 +195,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. I cattolici che non hanno ancora ricevuto il sacramento della confermazione, lo ricevano prima di essere ammessi al matrimonio, se è possibile farlo senza grave incomodo.\n\n§2. Si raccomanda vivamente agli sposi che, per ricevere fruttuosamente il sacramento del matrimonio, si accostino ai sacramenti della penitenza e della santissima Eucaristia.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1065 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
         "segments": []
       }
     ]
@@ -213,7 +213,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Prima che si celebri il matrimonio, deve constare che nulla si oppone alla sua celebrazione valida e lecita.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1066 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
         "segments": []
       }
     ]
@@ -231,7 +231,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "La Conferenza Episcopale stabilisca le norme circa l'esame degli sposi, nonché circa le pubblicazioni matrimoniali e gli altri mezzi opportuni per compiere le necessarie investigazioni prematrimoniali, dopo la cui diligente osservanza il parroco possa procedere all'assistenza del matrimonio.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1067 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
         "segments": []
       }
     ]
@@ -249,7 +249,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "In pericolo di morte, qualora non sia possibile avere altre prove, né sussistano indizi contrari, è sufficiente l'affermazione dei contraenti, anche giurata se il caso lo richiede, che essi sono battezzati e non trattenuti da impedimento.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1068 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
         "segments": []
       }
     ]
@@ -267,7 +267,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Prima della celebrazione di un matrimonio, tutti i fedeli sono tenuti all'obbligo di rivelare al parroco o all'Ordinario del luogo, gli impedimenti di cui fossero a conoscenza.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1069 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
         "segments": []
       }
     ]
@@ -285,7 +285,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Se eseguì le investigazioni un parroco diverso da quello cui compete assistere al matrimonio, informi questo quanto prima del loro esito mediante un documento autentico.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1070 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
         "segments": []
       }
     ]
@@ -303,7 +303,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Tranne che in caso di necessità, nessuno assista senza la licenza dell'Ordinario del luogo:\n1) al matrimonio dei girovaghi;\n2) al matrimonio che non può essere riconosciuto o celebrato a norma della legge civile;\n3) al matrimonio di chi è vincolato da obblighi naturali derivati da una precedente unione verso un'altra parte o i figli;\n4) al matrimonio di chi ha notoriamente abbandonato la fede cattolica;\n5) al matrimonio di chi è irretito da censura;\n6) al matrimonio di un figlio minorenne, se ne sono ignari o ragionevolmente contrari i genitori;\n7) ai matrimonio da celebrarsi mediante procuratore, di cui nel can. 1105 .\n\n§2. L'Ordinario del luogo non conceda la licenza di assistere al matrimonio di chi ha notoriamente abbandonato la fede cattolica, se non dopo che siano state osservate, con opportuno riferimento, le norme di cui nel can. 1125 .",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1071 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
         "segments": []
       }
     ]
@@ -321,7 +321,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "I pastori d'anime si adoperino a distogliere i giovani dal celebrare il matrimonio prima dell'età in cui si è soliti farlo secondo le usanze della regione.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1072 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1063-1072_it.html",
         "segments": []
       }
     ]
@@ -1365,7 +1365,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Per una grave e urgente causa l'Ordinario del luogo può permettere che il matrimonio sia celebrato in segreto.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1130 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
         "segments": []
       }
     ]
@@ -1383,7 +1383,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Il permesso di celebrare il matrimonio in segreto comporta:\n1) che si facciano in segreto le debite indagini prematrimoniali;\n2) che dell'avvenuta celebrazione del matrimonio conservino il segreto l'Ordinario del luogo, l'assistente, i testimoni e i coniugi.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1131 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
         "segments": []
       }
     ]
@@ -1401,7 +1401,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "L'obbligo di conservare il segreto di cui nel can. 1131, n. 2, cessa per l'Ordinario del luogo se dall'osservanza del segreto incombe un grave scandalo o una grave ingiuria alla santità del matrimonio: e ciò sia reso noto alle parti prima della celebrazione del matrimonio.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1132 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
         "segments": []
       }
     ]
@@ -1419,7 +1419,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Il matrimonio celebrato in segreto sia annotato solo nello speciale registro da conservarsi nell'archivio segreto della curia.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1133 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
         "segments": []
       }
     ]
@@ -1434,10 +1434,10 @@ export const canons1055to1165: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "Dalla valida celebrazione del matrimonio sorge tra i coniugi un vincolo di sua natura perpetuo ed esclusivo; inoltre nel matrimonio cristiano i coniugi, per i c&oacute;mpiti e la dignità del loro stato, vengono corroborati e come consacrati da uno speciale sacramento.",
+        "text": "Dalla valida celebrazione del matrimonio sorge tra i coniugi un vincolo di sua natura perpetuo ed esclusivo; inoltre nel matrimonio cristiano i coniugi, per i cómpiti e la dignità del loro stato, vengono corroborati e come consacrati da uno speciale sacramento.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1134 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
         "segments": []
       }
     ]
@@ -1455,7 +1455,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Entrambi i coniugi hanno pari dovere e diritto per quanto riguarda la comunità di vita coniugale.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1135 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
         "segments": []
       }
     ]
@@ -1473,7 +1473,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "I genitori hanno il dovere gravissimo e il diritto primario di curare secondo le proprie forze, l'educazione della prole, sia fisica, sociale e culturale, sia morale e religiosa.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1136 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
         "segments": []
       }
     ]
@@ -1491,7 +1491,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Sono legittimi i figli concepiti o nati da matrimonio valido o putativo.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1137 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
         "segments": []
       }
     ]
@@ -1509,7 +1509,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Il padre è colui che indicano le giuste nozze, eccetto che si provi il contrario con argomenti evidenti.\n\n§2. Si presumono legittimi i figli nati almeno 180 giorni dopo la celebrazione del matrimonio, o entro 300 giorni da quello della cessazione della vita coniugale.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1138 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
         "segments": []
       }
     ]
@@ -1527,7 +1527,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "I figli illegittimi sono legittimati per il susseguente matrimonio dei genitori, sia valido sia putativo, o per rescritto della Santa Sede.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1139 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
         "segments": []
       }
     ]
@@ -1545,7 +1545,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "I figli legittimati, relativamente agli effetti canonici, sono in tutto equiparati ai legittimi, a meno che il diritto non abbia disposto altro espressamente.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1140 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1134-1140_it.html",
         "segments": []
       }
     ]
@@ -1563,7 +1563,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Il matrimonio rato e consumato non può essere sciolto da nessuna potestà umana e per nessuna causa, eccetto la morte.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1141 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1581,7 +1581,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Il matrimonio non consumato fra battezzati o tra una parte battezzata e una non battezzata, per una giusta causa può essere sciolto dal Romano Pontefice, su richiesta di entrambe le parti o di una delle due, anche se l'altra fosse contraria.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1142 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1599,7 +1599,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Il matrimonio celebrato tra due non battezzati, per il privilegio paolino si scioglie in favore della fede della parte che ha ricevuto il battesimo, per lo stesso fatto che questa contrae un nuovo matrimonio, purché si separi la parte non battezzata.\n\n§2. Si ritiene che la parte non battezzata si separa se non vuol coabitare con la parte battezzata o non vuol coabitare pacificamente senza offesa al Creatore, eccetto che sia stata questa a darle, dopo il battesimo, una giusta causa per separarsi.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1143 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1617,7 +1617,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Perché la parte battezzata possa contrarre validamente un nuovo matrimonio, si deve sempre interpellare la parte non battezzata:\n1) se voglia essa pure ricevere il battesimo;\n2) se almeno voglia coabitare con la parte battezzata pacificamente, senza offesa al Creatore.\n\n§2. Detta interpellazione deve essere fatta dopo il battesimo; tuttavia l'Ordinario del luogo può, per una grave causa, permettere che l'interpellazione sia fatta prima del battesimo; anzi può anche dispensare da essa, sia prima sia dopo il battesimo, purché da un procedimento almeno sommario ed extragiudiziale risulti che non è possibile o che sarebbe inutile farla.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1144 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1635,7 +1635,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Di regola l'interpellazione va fatta per autorità dell'Ordinario del luogo della parte convertita, e al medesimo Ordinario spetta pure concedere all'altro coniuge, se mai lo richiede, un intervallo di tempo per rispondere, ammonendolo tuttavia che, trascorso inutilmente l'intervallo, il suo silenzio verrà ritenuto come una risposta negativa.\n\n§2. È valida anche l'interpellazione fatta privatamente dalla stessa parte convertita, che anzi è lecita se non è possibile osservare la forma sopra stabilita.\n\n§3. In entrambi i casi, l'interpellazione compiuta e il suo esito devono constare legittimamente nel foro esterno.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1145 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1653,7 +1653,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "La parte battezzata ha diritto a contrarre nuove nozze con una parte cattolica:\n1) se l'altra parte rispose negativamente all'interpellazione, o se questa fu legittimamente omessa;\n2) se la parte non battezzata, già interpellata o no, prima perseverante nella pacifica coabitazione senza offesa al Creatore, in seguito si sia separata senza una giusta causa, ferme restando le disposizioni dei cann. 1144 e 1145.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1146 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1671,7 +1671,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Tuttavia l'Ordinario del luogo, per una grave causa, può concedere alla parte battezzata che usufruisce del privilegio paolino, di contrarre matrimonio con una parte non cattolica, sia battezzata sia non battezzata, ottemperando anche alle disposizioni dei canoni sui matrimoni misti.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1147 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1689,7 +1689,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Il non battezzato che abbia contemporaneamente più mogli non battezzate, ricevuto il battesimo nella Chiesa cattolica, se per lui è gravoso rimanere con la prima di esse, può ritenerne una qualsiasi licenziando le altre. Lo stesso vale per la moglie non battezzata che abbia contemporaneamente più mariti non battezzati.\n\n§2. Nei casi di cui nel §1, il matrimonio, dopo che si è ricevuto il battesimo, deve essere contratto secondo la forma legittima, osservando anche, se necessario, le norme sui matrimoni misti e le altre disposizioni del diritto.\n\n§3. L'Ordinario del luogo, considerata la condizione morale, sociale ed economica dei luoghi e delle persone, curi che sia provveduto sufficientemente alle necessità della prima moglie e delle altre licenziate, secondo le norme della giustizia, della carità cristiana e dell'equità naturale.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1148 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1707,7 +1707,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Il non battezzato che, ricevuto il battesimo nella Chiesa cattolica, non può ristabilire la coabitazione con il coniuge non battezzato a causa della prigionia o della persecuzione, può contrarre un altro matrimonio, anche se nel frattempo l'altra parte avesse ricevuto il battesimo, fermo restando il disposto del can. 1141.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1149 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1725,7 +1725,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Nel dubbio, il privilegio della fede gode del favore del diritto.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1150 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
