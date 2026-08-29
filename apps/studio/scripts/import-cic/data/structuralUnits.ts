@@ -40,4 +40,15 @@ export const structuralUnits: StructuralUnitInput[] = [
       'cic-1983-book-2-part-2-section-2-title-1-chapter-2',
     order: 2,
   },
+  {
+    canonicalId:
+      'cic-1983-book-2-part-2-section-2-title-1-chapter-2-article-3',
+    unitType: 'article',
+    number: '3',
+    title: 'I Vescovi coadiutori e ausiliari',
+    canonicalLabel: 'Articolo 3 — I Vescovi coadiutori e ausiliari',
+    parentCanonicalId:
+      'cic-1983-book-2-part-2-section-2-title-1-chapter-2',
+    order: 3,
+  },
 ]
