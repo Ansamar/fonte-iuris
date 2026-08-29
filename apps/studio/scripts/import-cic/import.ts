@@ -9,13 +9,64 @@ import type {CanonInput, CanonSegmentInput, CanonVersionInput} from './types'
 const API_VERSION = '2026-03-25'
 const CORPUS_CODE = 'cic-1983'
 
-const commitMode = process.argv.includes('--commit')
-const unknownArgs = process.argv.slice(2).filter((arg) => arg !== '--commit')
-
-if (unknownArgs.length > 0) {
-  throw new Error(`Argomenti non riconosciuti: ${unknownArgs.join(', ')}`)
+type CliOptions = {
+  commitMode: boolean
+  from?: number
+  to?: number
 }
 
+function parsePositiveIntegerOption(args: string[], name: '--from' | '--to') {
+  const index = args.indexOf(name)
+  if (index === -1) return undefined
+
+  const raw = args[index + 1]
+  if (!raw || raw.startsWith('--')) {
+    throw new Error(`${name} richiede un numero di canone.`)
+  }
+
+  const value = Number(raw)
+  if (!Number.isInteger(value) || value <= 0) {
+    throw new Error(`${name} deve essere un intero positivo; ricevuto: ${raw}`)
+  }
+
+  return value
+}
+
+function readCliOptions(): CliOptions {
+  const args = process.argv.slice(2)
+  const allowedFlags = new Set(['--commit', '--from', '--to'])
+
+  for (let i = 0; i < args.length; i += 1) {
+    const arg = args[i]
+
+    if (!allowedFlags.has(arg)) {
+      if (i > 0 && (args[i - 1] === '--from' || args[i - 1] === '--to')) continue
+      throw new Error(`Argomento non riconosciuto: ${arg}`)
+    }
+
+    if (arg === '--from' || arg === '--to') {
+      i += 1
+      if (i >= args.length) {
+        throw new Error(`${arg} richiede un numero di canone.`)
+      }
+    }
+  }
+
+  const from = parsePositiveIntegerOption(args, '--from')
+  const to = parsePositiveIntegerOption(args, '--to')
+
+  if (from !== undefined && to !== undefined && from > to) {
+    throw new Error(`Intervallo non valido: --from ${from} è maggiore di --to ${to}.`)
+  }
+
+  return {
+    commitMode: args.includes('--commit'),
+    from,
+    to,
+  }
+}
+
+const {commitMode, from, to} = readCliOptions()
 const client = commitMode ? getCliClient({apiVersion: API_VERSION}) : readClient
 
 function deterministicId(value: string): string {
@@ -26,6 +77,26 @@ function compactObject<T extends Record<string, unknown>>(value: T): T {
   return Object.fromEntries(
     Object.entries(value).filter(([, item]) => item !== undefined),
   ) as T
+}
+
+function canonInSelectedRange(canon: CanonInput) {
+  if (from !== undefined && canon.number < from) return false
+  if (to !== undefined && canon.number > to) return false
+  return true
+}
+
+function selectedCanons() {
+  const selected = allCanons.filter(canonInSelectedRange)
+
+  if (selected.length === 0) {
+    const rangeLabel =
+      from !== undefined || to !== undefined
+        ? `${from ?? 'inizio'}–${to ?? 'fine'}`
+        : 'completo'
+    throw new Error(`Nessun canone trovato nell’intervallo ${rangeLabel}.`)
+  }
+
+  return selected
 }
 
 async function getCorpus() {
@@ -422,14 +493,21 @@ async function main() {
     console.log('Le scritture sono abilitate tramite il token utente Sanity CLI.')
   }
 
+  const canons = selectedCanons()
+  if (from !== undefined || to !== undefined) {
+    console.log(`Intervallo canoni: ${from ?? canons[0].number}–${to ?? canons[canons.length - 1].number}`)
+  } else {
+    console.log('Intervallo canoni: completo')
+  }
+
   const corpus = await getCorpus()
   console.log(`Corpus: ${corpus.title}`)
 
   const plannedUnits = await ensureStructuralUnits(corpus._id)
 
-  console.log(`Canoni sorgente: ${allCanons.length}`)
+  console.log(`Canoni sorgente selezionati: ${canons.length}`)
 
-  for (const canon of allCanons) {
+  for (const canon of canons) {
     await importCanon(canon, corpus._id, plannedUnits)
   }
 
