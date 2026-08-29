@@ -1,0 +1,43 @@
+name: Build Book IV static corpus
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'apps/studio/scripts/import-cic/generate-book4-static.mjs'
+      - '.github/workflows/build-book4-static.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generate static Book IV corpus
+        run: node apps/studio/scripts/import-cic/generate-book4-static.mjs
+      - name: Verify generated files
+        run: |
+          test -f apps/studio/scripts/import-cic/data/canons.834-896.static.ts
+          test -f apps/studio/scripts/import-cic/data/canons.897-997.static.ts
+          test -f apps/studio/scripts/import-cic/data/canons.998-1054.static.ts
+          test -f apps/studio/scripts/import-cic/data/canons.1055-1165.static.ts
+          test -f apps/studio/scripts/import-cic/data/canons.1166-1253.static.ts
+      - name: Commit generated corpus
+        run: |
+          git config user.name 'fonte-iuris-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add apps/studio/scripts/import-cic/data/canons.*.static.ts
+          if git diff --cached --quiet; then
+            echo 'No generated changes'
+          else
+            git commit -m 'data: materialize static CIC Book IV corpus'
+            git push origin HEAD:master
+          fi
