@@ -29,4 +29,15 @@ export const structuralUnits: StructuralUnitInput[] = [
       'cic-1983-book-2-part-2-section-2-title-1-chapter-2',
     order: 1,
   },
+  {
+    canonicalId:
+      'cic-1983-book-2-part-2-section-2-title-1-chapter-2-article-2',
+    unitType: 'article',
+    number: '2',
+    title: 'I Vescovi diocesani',
+    canonicalLabel: 'Articolo 2 — I Vescovi diocesani',
+    parentCanonicalId:
+      'cic-1983-book-2-part-2-section-2-title-1-chapter-2',
+    order: 2,
+  },
 ]
