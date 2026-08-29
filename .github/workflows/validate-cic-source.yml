@@ -19,5 +19,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Validate complete static CIC source offline
+      - name: Validate final static CIC source offline
         run: npx --yes tsx@4.20.5 apps/studio/scripts/import-cic/validate-source.ts
