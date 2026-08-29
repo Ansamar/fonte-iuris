@@ -444,7 +444,7 @@ export const canons1055to1165: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "§1. In urgente pericolo di morte, l'Ordinario del luogo può dispensare i propri sudditi, dovunque dimorino, e quanti vivono attualmente nel suo territorio, sia dalla osservanza della forma prescritta per la celebrazione del matrimonio, sia da tutti e singoli gli impedimenti di diritto ecclesiastico, pubblici e occulti, eccetto l'impedimento proveniente dal sacro ordine del presbiterato.\n\n§2. Nelle medesime circostanze di cui nel §1, ma solo nei casi in cui non sia possibile ricorrere neppure all'Ordinario del luogo, hanno uguale facoltà di dispensare, sia il parroco sia il ministro sacro legittimamente delegato sia il sacerdote o diacono che assiste al matrimonio a norma del can. 1116,\n\n§2.\n\n§3. In pericolo di morte il confessore ha la facoltà di dispensare dagli impedimenti occulti nel foro interno, sia durante sia fuori della confessione sacramentale.\n\n§4. Nel caso di cui al §2, si ritiene impossibile il ricorso all'Ordinario del luogo, se lo si può fare solo tramite telegrafo o telefono.",
+        "text": "§1. In urgente pericolo di morte, l'Ordinario del luogo può dispensare i propri sudditi, dovunque dimorino, e quanti vivono attualmente nel suo territorio, sia dalla osservanza della forma prescritta per la celebrazione del matrimonio, sia da tutti e singoli gli impedimenti di diritto ecclesiastico, pubblici e occulti, eccetto l'impedimento proveniente dal sacro ordine del presbiterato.\n\n§2. Nelle medesime circostanze di cui nel §1, ma solo nei casi in cui non sia possibile ricorrere neppure all'Ordinario del luogo, hanno uguale facoltà di dispensare, sia il parroco sia il ministro sacro legittimamente delegato sia il sacerdote o diacono che assiste al matrimonio a norma del can. 1116,\n\n§3. In pericolo di morte il confessore ha la facoltà di dispensare dagli impedimenti occulti nel foro interno, sia durante sia fuori della confessione sacramentale.\n\n§4. Nel caso di cui al §2, si ritiene impossibile il ricorso all'Ordinario del luogo, se lo si può fare solo tramite telegrafo o telefono.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1079 — testo vigente",
         "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1073-1082_it.html",
@@ -519,7 +519,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. L'uomo prima dei sedici anni compiuti, la donna prima dei quattordici pure compiuti, non possono celebrare un valido matrimonio.\n\n§2. La Conferenza Episcopale è libera di fissare una età maggiore per la lecita celebrazione del matrimonio.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1083 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -537,7 +537,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. L'impotenza copulativa antecedente e perpetua, sia da parte dell'uomo sia da parte della donna, assoluta o relativa, per sua stessa natura rende nullo il matrimonio.\n\n§2. Se l'impedimento di impotenza è dubbio, sia per dubbio di diritto sia per dubbio di fatto, il matrimonio non deve essere impedito né, stante il dubbio, dichiarato nullo.\n\n§3. La sterilità né proibisce né dirime il matrimonio, fermo restando il disposto del can. 1098 .",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1084 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -555,7 +555,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Attenta invalidamente il matrimonio chi è legato dal vincolo di un matrimonio precedente, anche se non consumato.\n\n§2. Quantunque il matrimonio precedente sia, per qualunque causa, nullo o sciolto, non per questo è lecito contrarne un altro prima che si sia constatata legittimamente e con certezza la nullità o lo scioglimento del precedente.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1085 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -573,7 +573,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1 ^{n} . È invalido il matrimonio tra due persone, di cui una sia battezzata nella Chiesa cattolica o in essa accolta, e l'altra non battezzata.\n\n§2. Non si dispensi da questo impedimento se non dopo che siano state adempiute le condizioni di cui ai cann. 1125 e 1126.\n\n§3. Se al tempo della celebrazione del matrimonio una parte era ritenuta comunemente battezzata o era dubbio il suo battesimo, si deve presumere a norma del can. 1060 la validità del matrimonio finché non sia provato con certezza che una parte era battezzata e l'altra invece non battezzata.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1086 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -591,7 +591,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Attentano invalidamente al matrimonio coloro che sono costituiti nei sacri ordini.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1087 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -609,7 +609,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Attentano invalidamente il matrimonio coloro che sono vincolati dal voto pubblico perpetuo di castità emesso in un istituto religioso.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1088 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -627,7 +627,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Non è possibile costituire un valido matrimonio tra l'uomo e la donna rapita o almeno trattenuta allo scopo di contrarre matrimonio con essa, se non dopo che la donna, separata dal rapitore e posta in un luogo sicuro e libero, scelga spontaneamente il matrimonio.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1089 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -645,7 +645,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Chi, allo scopo di celebrare il matrimonio con una determinata persona, uccide il coniuge di questa o il proprio, attenta invalidamente a tale matrimonio.\n\n§2. Attentano pure invalidamente il matrimonio tra loro quelli che hanno cooperato fisicamente o moralmente all'uccisione di un coniuge.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1090 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -663,7 +663,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Nella linea retta della consanguineità è nullo il matrimonio tra tutti gli ascendenti e i discendenti, sia legittimi sia naturali.\n\n§2. Nella linea collaterale il matrimonio è nullo fino al quarto grado incluso.\n\n§3. L'impedimento di consanguineità non si moltiplica.\n\n§4. Non si permetta mai il matrimonio, se sussiste qualche dubbio che le parti siano consanguinei in qualunque grado della linea retta o nel secondo grado della linea collaterale.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1091 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -681,7 +681,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "L'affinità nella linea retta rende nullo il matrimonio in qualunque grado.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1092 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -699,7 +699,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "L'impedimento di pubblica onestà sorge dal matrimonio invalido in cui vi sia stata vita comune o da concubinato notorio o pubblico; e rende nulle le nozze nel primo grado della linea retta tra l'uomo e le consanguinee della donna, e viceversa.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1093 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -717,7 +717,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Non possono contrarre validamente il matrimonio quelli che sono uniti tra loro da parentela legale sorta dall'adozione, nella linea retta o nel secondo grado della linea collaterale.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1094 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1083-1094_it.html",
         "segments": []
       }
     ]
@@ -1020,7 +1020,7 @@ export const canons1055to1165: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "§1 ^{n} . L'Ordinario del luogo e il parroco, fintanto che esercitano validamente l'ufficio, possono delegare a sacerdoti e diaconi la facoltà anche generale di assistere ai matrimoni entro i confini del proprio territorio, fermo restando quanto disposto dal can. 1108\n\n§3.\n\n§2. Perché sia valida, la delega della facoltà di assistere ai matrimoni deve essere data espressamente a persone determinate; e se si tratta di delega speciale, deve essere data anche per un matrimonio determinato; se poi si tratta di delega generale, deve essere concessa per iscritto.",
+        "text": "§1 ^{n} . L'Ordinario del luogo e il parroco, fintanto che esercitano validamente l'ufficio, possono delegare a sacerdoti e diaconi la facoltà anche generale di assistere ai matrimoni entro i confini del proprio territorio, fermo restando quanto disposto dal can. 1108\n\n§2. Perché sia valida, la delega della facoltà di assistere ai matrimoni deve essere data espressamente a persone determinate; e se si tratta di delega speciale, deve essere data anche per un matrimonio determinato; se poi si tratta di delega generale, deve essere concessa per iscritto.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1111 — testo vigente",
         "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1108-1123_it.html",
@@ -1038,7 +1038,7 @@ export const canons1055to1165: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "§1 ^{n} . Dove mancano sacerdoti e diaconi, il Vescovo diocesano, previo il voto favorevole della Conferenza Episcopale e ottenuta la licenza dalla Santa Sede, può delegare dei laici perché assistano ai matrimoni, fermo restando quanto disposto dal can. 1108\n\n§3.\n\n§2. Si scelga un laico idoneo, capace di istruire gli sposi e preparato a compiere nel debito modo la liturgia del matrimonio.",
+        "text": "§1 ^{n} . Dove mancano sacerdoti e diaconi, il Vescovo diocesano, previo il voto favorevole della Conferenza Episcopale e ottenuta la licenza dalla Santa Sede, può delegare dei laici perché assistano ai matrimoni, fermo restando quanto disposto dal can. 1108\n\n§2. Si scelga un laico idoneo, capace di istruire gli sposi e preparato a compiere nel debito modo la liturgia del matrimonio.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1112 — testo vigente",
         "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1108-1123_it.html",
@@ -1365,7 +1365,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Per una grave e urgente causa l'Ordinario del luogo può permettere che il matrimonio sia celebrato in segreto.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1130 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
         "segments": []
       }
     ]
@@ -1383,7 +1383,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Il permesso di celebrare il matrimonio in segreto comporta:\n1) che si facciano in segreto le debite indagini prematrimoniali;\n2) che dell'avvenuta celebrazione del matrimonio conservino il segreto l'Ordinario del luogo, l'assistente, i testimoni e i coniugi.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1131 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
         "segments": []
       }
     ]
@@ -1401,7 +1401,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "L'obbligo di conservare il segreto di cui nel can. 1131, n. 2, cessa per l'Ordinario del luogo se dall'osservanza del segreto incombe un grave scandalo o una grave ingiuria alla santità del matrimonio: e ciò sia reso noto alle parti prima della celebrazione del matrimonio.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1132 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
         "segments": []
       }
     ]
@@ -1419,7 +1419,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Il matrimonio celebrato in segreto sia annotato solo nello speciale registro da conservarsi nell'archivio segreto della curia.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1133 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1130-1133_it.html",
         "segments": []
       }
     ]
@@ -1563,7 +1563,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Il matrimonio rato e consumato non può essere sciolto da nessuna potestà umana e per nessuna causa, eccetto la morte.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1141 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1581,7 +1581,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Il matrimonio non consumato fra battezzati o tra una parte battezzata e una non battezzata, per una giusta causa può essere sciolto dal Romano Pontefice, su richiesta di entrambe le parti o di una delle due, anche se l'altra fosse contraria.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1142 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1599,7 +1599,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Il matrimonio celebrato tra due non battezzati, per il privilegio paolino si scioglie in favore della fede della parte che ha ricevuto il battesimo, per lo stesso fatto che questa contrae un nuovo matrimonio, purché si separi la parte non battezzata.\n\n§2. Si ritiene che la parte non battezzata si separa se non vuol coabitare con la parte battezzata o non vuol coabitare pacificamente senza offesa al Creatore, eccetto che sia stata questa a darle, dopo il battesimo, una giusta causa per separarsi.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1143 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1617,7 +1617,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Perché la parte battezzata possa contrarre validamente un nuovo matrimonio, si deve sempre interpellare la parte non battezzata:\n1) se voglia essa pure ricevere il battesimo;\n2) se almeno voglia coabitare con la parte battezzata pacificamente, senza offesa al Creatore.\n\n§2. Detta interpellazione deve essere fatta dopo il battesimo; tuttavia l'Ordinario del luogo può, per una grave causa, permettere che l'interpellazione sia fatta prima del battesimo; anzi può anche dispensare da essa, sia prima sia dopo il battesimo, purché da un procedimento almeno sommario ed extragiudiziale risulti che non è possibile o che sarebbe inutile farla.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1144 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1635,7 +1635,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Di regola l'interpellazione va fatta per autorità dell'Ordinario del luogo della parte convertita, e al medesimo Ordinario spetta pure concedere all'altro coniuge, se mai lo richiede, un intervallo di tempo per rispondere, ammonendolo tuttavia che, trascorso inutilmente l'intervallo, il suo silenzio verrà ritenuto come una risposta negativa.\n\n§2. È valida anche l'interpellazione fatta privatamente dalla stessa parte convertita, che anzi è lecita se non è possibile osservare la forma sopra stabilita.\n\n§3. In entrambi i casi, l'interpellazione compiuta e il suo esito devono constare legittimamente nel foro esterno.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1145 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1653,7 +1653,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "La parte battezzata ha diritto a contrarre nuove nozze con una parte cattolica:\n1) se l'altra parte rispose negativamente all'interpellazione, o se questa fu legittimamente omessa;\n2) se la parte non battezzata, già interpellata o no, prima perseverante nella pacifica coabitazione senza offesa al Creatore, in seguito si sia separata senza una giusta causa, ferme restando le disposizioni dei cann. 1144 e 1145.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1146 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1671,7 +1671,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Tuttavia l'Ordinario del luogo, per una grave causa, può concedere alla parte battezzata che usufruisce del privilegio paolino, di contrarre matrimonio con una parte non cattolica, sia battezzata sia non battezzata, ottemperando anche alle disposizioni dei canoni sui matrimoni misti.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1147 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1689,7 +1689,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "§1. Il non battezzato che abbia contemporaneamente più mogli non battezzate, ricevuto il battesimo nella Chiesa cattolica, se per lui è gravoso rimanere con la prima di esse, può ritenerne una qualsiasi licenziando le altre. Lo stesso vale per la moglie non battezzata che abbia contemporaneamente più mariti non battezzati.\n\n§2. Nei casi di cui nel §1, il matrimonio, dopo che si è ricevuto il battesimo, deve essere contratto secondo la forma legittima, osservando anche, se necessario, le norme sui matrimoni misti e le altre disposizioni del diritto.\n\n§3. L'Ordinario del luogo, considerata la condizione morale, sociale ed economica dei luoghi e delle persone, curi che sia provveduto sufficientemente alle necessità della prima moglie e delle altre licenziate, secondo le norme della giustizia, della carità cristiana e dell'equità naturale.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1148 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1707,7 +1707,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Il non battezzato che, ricevuto il battesimo nella Chiesa cattolica, non può ristabilire la coabitazione con il coniuge non battezzato a causa della prigionia o della persecuzione, può contrarre un altro matrimonio, anche se nel frattempo l'altra parte avesse ricevuto il battesimo, fermo restando il disposto del can. 1141.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1149 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1725,7 +1725,7 @@ export const canons1055to1165: CanonInput[] = [
         "text": "Nel dubbio, il privilegio della fede gode del favore del diritto.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1150 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1141-1150_it.html",
         "segments": []
       }
     ]
@@ -1866,7 +1866,7 @@ export const canons1055to1165: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "§1. Se l'impedimento è pubblico, il consenso deve essere rinnovato da entrambe le parti secondo la forma canonica, salvo il disposto del can. 1127,\n\n§2.\n\n§2. Se l'impedimento non può essere provato, è sufficiente che il consenso sia rinnovato privatamente e in segreto, e certamente dalla parte consapevole dell'impedimento, purché l'altra perseveri nel consenso dato, o da entrambe le parti se l'impedimento è noto ad ambedue.",
+        "text": "§1. Se l'impedimento è pubblico, il consenso deve essere rinnovato da entrambe le parti secondo la forma canonica, salvo il disposto del can. 1127,\n\n§2. Se l'impedimento non può essere provato, è sufficiente che il consenso sia rinnovato privatamente e in segreto, e certamente dalla parte consapevole dell'impedimento, purché l'altra perseveri nel consenso dato, o da entrambe le parti se l'impedimento è noto ad ambedue.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1158 — testo vigente",
         "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1156-1160_it.html",

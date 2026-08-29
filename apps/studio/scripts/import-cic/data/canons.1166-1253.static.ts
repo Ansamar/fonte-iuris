@@ -195,7 +195,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "§1. Per i fedeli defunti si devono celebrare le esequie ecclesiastiche a norma del diritto.\n\n§2. Le esequie ecclesiastiche, con le quali la Chiesa impetra l'aiuto spirituale per i defunti e ne onora i corpi, e insieme arreca ai vivi il conforto della speranza, devono essere celebrate a norma delle leggi liturgiche.\n\n§3. La Chiesa raccomanda vivamente che si conservi la pia consuetudine di seppellire i corpi dei defunti; tuttavia non proibisce la cremazione, a meno che questa non sia stata scelta per ragioni contrarie alla dottrina cristiana.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1176 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1176_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1176_it.html",
         "segments": []
       }
     ]
@@ -213,7 +213,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "§1. Per qualsiasi fedele defunto, le esequie devono essere celebrate di norma nella chiesa della propria parrocchia.\n\n§2. Tuttavia è consentito a ciascun fedele, o a coloro cui compete provvedere alle esequie del fedele defunto, scegliere un'altra chiesa per il funerale, con il consenso del rettore di questa e avvertito il parroco proprio del defunto.\n\n§3. Se la morte è avvenuta fuori della propria parrocchia, e il cadavere non è stato trasportato in essa, né è stata legittimamente scelta alcuna chiesa per il funerale, le esequie siano celebrate nella chiesa della parrocchia in cui è avvenuta la morte, a meno che non ne sia designata un'altra dal diritto particolare.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1177 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
         "segments": []
       }
     ]
@@ -231,7 +231,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Le esequie del Vescovo diocesano siano celebrate nella sua chiesa cattedrale, eccetto che egli stesso ne abbia scelta un'altra.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1178 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
         "segments": []
       }
     ]
@@ -249,7 +249,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Le esequie dei religiosi o dei membri di una società di vita apostolica, di norma siano celebrate nella loro chiesa od oratorio dal Superiore, se l'istituto o la società sono clericali, diversamente dal cappellano.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1179 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
         "segments": []
       }
     ]
@@ -267,7 +267,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "§1. Se la parrocchia ha un proprio cimitero, i fedeli defunti devono essere tumulati in esso, a meno che non ne sia stato legittimamente scelto un altro dal medesimo defunto o da coloro cui compete provvedere alla sua sepoltura.\n\n§2. A tutti, poi, se non ne hanno la proibizione dal diritto, è consentito scegliere il cimitero della propria sepoltura.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1180 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
         "segments": []
       }
     ]
@@ -285,7 +285,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Per quanto riguarda le offerte date in occasione dei funerali, si osservino le disposizioni del can. 1264 , procurando, tuttavia, che nelle esequie non si faccia alcuna preferenza di persone, e che i poveri non siano privati delle dovute esequie.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1181 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
         "segments": []
       }
     ]
@@ -303,7 +303,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Compiuta la tumulazione, si faccia la registrazione nel libro dei defunti a norma del diritto particolare.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1182 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1177-1182_it.html",
         "segments": []
       }
     ]
@@ -375,7 +375,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Per favorire la santificazione del popolo di Dio, la Chiesa affida alla speciale e filiale venerazione dei fedeli la Beata Maria sempre Vergine, la Madre di Dio, che Cristo costituì Madre di tutti gli uomini, e promuove inoltre il vero e autentico culto degli altri Santi, perché i fedeli siano edificati dal loro esempio e sostenuti dalla loro intercessione.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1186 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
         "segments": []
       }
     ]
@@ -393,7 +393,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "E lecito venerare con culto pubblico solo quei servi di Dio che, per l'autorità della Chiesa, sono riportati nel catalogo dei Santi o dei Beati.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1187 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
         "segments": []
       }
     ]
@@ -411,7 +411,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Sia mantenuta la prassi di esporre nelle chiese le sacre immagini alla venerazione dei fedeli; tuttavia siano esposte in numero moderato e con un conveniente ordine, affinché non suscitino la meraviglia del popolo cristiano e non diano occasione a devozione meno retta.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1188 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
         "segments": []
       }
     ]
@@ -429,7 +429,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "Le immagini preziose, ossia insigni per antichità, arte o culto, che sono esposte alla venerazione dei fedeli nelle chiese o negli oratori, qualora necessitino di riparazione, non siano mai restaurate senza la licenza scritta dell'Ordinario; e questi, prima di concederla, consulti dei periti.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1189 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
         "segments": []
       }
     ]
@@ -447,7 +447,7 @@ export const canons1166to1253: CanonInput[] = [
         "text": "§1. È assolutamente illecito vendere le sacre reliquie.\n\n§2. Le reliquie insigni, come pure quelle onorate da grande pietà popolare, non possono essere alienate validamente in nessun modo né essere trasferite in modo definitivo senza la licenza della Sede Apostolica.\n\n§3. Il disposto del §2 vale anche per le immagini che in taluna chiesa sono onorate da grande pietà popolare.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 1190 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1186-1190_it.html",
         "segments": []
       }
     ]

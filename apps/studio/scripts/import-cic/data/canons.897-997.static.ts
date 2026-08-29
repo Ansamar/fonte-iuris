@@ -681,7 +681,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. La santissima Eucaristia:\n1) deve essere conservata nella chiesa cattedrale o a questa equiparata, in ogni chiesa parrocchiale e nella chiesa o oratorio annesso alla casa di un istituto religioso o di una società di vita apostolica;\n2) può essere conservata nella cappella privata del Vescovo e, su licenza dell'Ordinario del luogo, nelle altre chiese, oratori o cappelle private.\n\n§2. Nei luoghi sacri dove viene conservata la santissima Eucaristia, vi deve essere sempre chi ne abbia cura e, per quanto possibile, il sacerdote vi celebri la Messa almeno due volte al mese.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 934 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -699,7 +699,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Non è lecito ad alcuno conservare presso di sé la santissima Eucaristia o portarsela in viaggio, a meno che non vi sia una necessità pastorale urgente e osservate le disposizioni del Vescovo diocesano.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 935 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -717,7 +717,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Nella casa di un istituto religioso o in un'altra pia casa, la santissima Eucaristia venga conservata soltanto nella chiesa o nell'oratorio principale annesso alla casa; l'Ordinario può tuttavia permettere per una giusta causa che venga conservata anche in un altro oratorio della medesima casa.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 936 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -735,7 +735,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Se non vi si oppone una grave ragione, la chiesa nella quale viene conservata la santissima Eucaristia, resti aperta ai fedeli almeno per qualche ora al giorno, affinché possano trattenersi in preghiera dinanzi al santissimo Sacramento.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 937 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -753,7 +753,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. La santissima Eucaristia venga custodita abitualmente in un solo tabernacolo della chiesa o dell'oratorio.\n\n§2. Il tabernacolo nel quale si custodisce la santissima Eucaristia sia collocato in una parte della chiesa o dell'oratorio che sia distinta, visibile, ornata decorosamente, adatta alla preghiera.\n\n§3. Il tabernacolo nel quale si custodisce abitualmente la santissima Eucaristia sia inamovibile, costruito con materiale solido non trasparente e chiuso in modo tale che sia evitato il più possibile ogni pericolo di profanazione.\n\n§4. Per causa grave è consentito conservare la santissima Eucaristia, soprattutto durante la notte, in altro luogo più sicuro e decoroso.\n\n§5. Chi ha la cura della chiesa o dell'oratorio, provveda che la chiave del tabernacolo, nel quale è conservata la santissima Eucaristia, sia custodita con la massima diligenza.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 938 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -771,7 +771,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Le ostie consacrate vengano conservate nella pisside o in un piccolo vaso in quantità sufficiente alle necessità dei fedeli e, consumate nel debito modo le precedenti, siano rinnovate con frequenza.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 939 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -789,7 +789,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Davanti al tabernacolo nel quale si custodisce la santissima Eucaristia, brilli perennemente una speciale lampada, mediante la quale venga indicata e sia onorata la presenza di Cristo.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 940 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -807,7 +807,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. Nelle chiese e negli oratori a cui è concesso conservare la santissima Eucaristia, si possono compiere esposizioni sia con la pisside, sia con l'ostensorio, osservando le norme stabilite nei libri liturgici.\n\n§2. Durante la celebrazione della Messa non vi sia nella stessa navata della chiesa o dell'oratorio l'esposizione del santissimo Sacramento.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 941 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -825,7 +825,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Si raccomanda che nelle stesse chiese e oratori ogni anno si compia l'esposizione solenne del santissimo Sacramento prolungata per un tempo conveniente, anche se non continuo, affinché la comunità locale mediti e adori con intensa devozione il mistero eucaristico; però tale esposizione si faccia soltanto se si prevede una adeguata affluenza di fedeli e osservando le norme stabilite.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 942 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -843,7 +843,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Ministro dell'esposizione del santissimo Sacramento e della benedizione eucaristica è il sacerdote o il diacono; in speciali circostanze sono ministri della sola esposizione e riposizione, ma non della benedizione, l'accolito, il ministro straordinario della sacra comunione o altra persona designata dall'Ordinario del luogo, osservando le disposizioni del Vescovo diocesano.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 943 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -861,7 +861,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. Ove, a giudizio del Vescovo diocesano, è possibile, si svolga, quale pubblica testimonianza di venerazione verso la santissima Eucaristia e specialmente nella solennità del Corpo e Sangue di Cristo, la processione condotta attraverso le pubbliche vie.\n\n§2. Spetta al Vescovo diocesano stabilire delle direttive circa le processioni, con cui provvedere alla loro partecipazione e dignità.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 944 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_934-944_it.html",
         "segments": []
       }
     ]
@@ -1131,7 +1131,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Nel sacramento della penitenza i fedeli, confessando i peccati al ministro legittimo, essendone contriti ed insieme avendo il proposito di emendarsi, per l'assoluzione impartita dallo stesso ministro ottengono da Dio il perdono dei peccati, che hanno commesso dopo il battesimo e contemporaneamente vengono riconciliati con la Chiesa che, peccando, hanno ferito.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 959 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_959_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_959_it.html",
         "segments": []
       }
     ]
@@ -1149,7 +1149,7 @@ export const canons897to997: CanonInput[] = [
         "text": "La confessione individuale e integra e l'assoluzione costituiscono l'unico modo ordinario con cui il fedele, consapevole di peccato grave, è riconciliato con Dio e con la Chiesa; solamente una impossibilità fisica o morale scusa da una tale confessione, nel qual caso la riconciliazione si può ottenere anche in altri modi.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 960 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_960-964_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_960-964_it.html",
         "segments": []
       }
     ]
@@ -1167,7 +1167,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. L'assoluzione a più penitenti insieme senza la previa confessione individuale non può essere impartita in modo generale se non:\n1) vi sia imminente pericolo di morte ed al sacerdote o ai sacerdoti non basti il tempo per ascoltare le confessioni dei singoli penitenti;\n2) vi sia grave necessità, ossia quando, tenuto conto del numero dei penitenti, non si hanno a confessori sufficienti per ascoltare, come si conviene, le confessioni dei singoli entro un un tempo conveniente, sicché i penitenti, senza loro colpa, sarebbero costretti a rimanere a lungo privi della grazia sacramentale o della sacra comunione; però la necessità non si considera sufficiente quando non possono essere a disposizione dei confessori, per la sola ragione di una grave affluenza di penitenti, quale può aversi in occasione di una grande festa o di un pellegrinaggio.\n\n§2. Giudicare se ricorrano le condizioni richieste a norma del §1, n. 2, spetta al Vescovo diocesano, il quale, tenuto conto dei criteri concordati con gli altri membri della Conferenza Episcopale, può determinare i casi di tale necessità.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 961 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_960-964_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_960-964_it.html",
         "segments": []
       }
     ]
@@ -1185,7 +1185,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. Affinché un fedele usufruisca validamente della assoluzione sacramentale impartita simultaneamente a più persone, si richiede che non solo sia ben disposto, ma insieme faccia il proposito di confessare a tempo debito i singoli peccati gravi, che al momento non può confessare.\n\n§2. I fedeli, per quanto è possibile anche nell'occasione di ricevere l'assoluzione generale, vengano istruiti circa i requisiti di cui al §1 e all'assoluzione generale, anche nel caso di pericolo di morte, qualora vi sia tempo sufficiente, venga premessa l'esortazione che ciascuno provveda a porre l'atto di contrizione.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 962 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_960-964_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_960-964_it.html",
         "segments": []
       }
     ]
@@ -1203,7 +1203,7 @@ export const canons897to997: CanonInput[] = [
         "text": "Fermo restando l'obbligo di cui nel can. 989 , colui al quale sono rimessi i peccati gravi mediante l'assoluzione generale, si accosti quanto prima, offrendosene l'occasione, alla confessione individuale, prima che abbia a ricevere un'altra assoluzione generale, a meno che non sopraggiunga una giusta causa.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 963 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_960-964_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_960-964_it.html",
         "segments": []
       }
     ]
@@ -1221,7 +1221,7 @@ export const canons897to997: CanonInput[] = [
         "text": "§1. Il luogo proprio per ricevere le confessioni sacramentali è la chiesa o l'oratorio.\n\n§2. Relativamente alla sede per le confessioni, le norme vengano stabilite dalla Conferenza Episcopale, garantendo tuttavia che si trovino sempre in un luogo visibile i confessionali, provvisti di una grata fissa tra il penitente e il confessore, cosicché i fedeli che lo desiderano possano liberamente servirsene.\n\n§3. Non si ricevano le confessioni fuori del confessionale, se non per giusta causa.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 964 — testo vigente",
-        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_960-964_it.html",
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_960-964_it.html",
         "segments": []
       }
     ]

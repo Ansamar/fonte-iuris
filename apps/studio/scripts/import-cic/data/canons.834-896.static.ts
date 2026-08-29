@@ -192,7 +192,7 @@ export const canons834to896: CanonInput[] = [
         "versionLabel": "Testo vigente — fonte ufficiale della Santa Sede",
         "status": "current",
         "language": "it",
-        "text": "§1. I ministri cattolici amministrano lecitamente i sacramenti ai soli fedeli cattolici, i quali parimenti li ricevono lecitamente dai soli ministri cattolici, salve le disposizioni dei §§2, 3 e 4 di questo canone e del can. 861,\n\n§2.\n\n§2. Ogniqualvolta una necessità lo esiga o una vera utilità spirituale lo consigli e purché sia evitato il pericolo di errore o di indifferentismo, è lecito ai fedeli, ai quali sia fisicamente o moralmente impossibile accedere al ministro cattolico, ricevere i sacramenti della penitenza, dell'Eucaristia e dell'unzione degli infermi da ministri non cattolici, nella cui Chiesa sono validi i predetti sacramenti.\n\n§3. I ministri cattolici amministrano lecitamente i sacramenti della penitenza, dell'Eucaristia e dell'unzione degli infermi ai membri delle Chiese orientali, che non hanno comunione piena con la Chiesa cattolica, qualora li richiedano spontaneamente e siano ben disposti; ciò vale anche per i membri delle altre Chiese, le quali, a giudizio della Sede Apostolica, relativamente ai sacramenti in questione, si trovino nella stessa condizione delle predette Chiese orientali.\n\n§4. Se vi sia pericolo di morte o qualora, a giudizio del Vescovo diocesano o della Conferenza Episcopale, urgesse altra grave necessità, i ministri cattolici amministrano lecitamente i medesimi sacramenti anche agli altri cristiani che non hanno piena comunione con la Chiesa cattolica, i quali non possano accedere al ministro della propria comunità e li chiedano spontaneamente, purché manifestino, circa questi sacramenti, la fede cattolica e siano ben disposti.\n\n§5. Per i casi di cui nei §§2, 3 e 4, il Vescovo diocesano o la conferenza dei Vescovi non diano norme generali, se non dopo aver consultato l'autorità competente almeno locale della Chiesa o della comunità non cattolica interessata.",
+        "text": "§1. I ministri cattolici amministrano lecitamente i sacramenti ai soli fedeli cattolici, i quali parimenti li ricevono lecitamente dai soli ministri cattolici, salve le disposizioni dei §§2, 3 e 4 di questo canone e del can. 861,\n\n§2. Ogniqualvolta una necessità lo esiga o una vera utilità spirituale lo consigli e purché sia evitato il pericolo di errore o di indifferentismo, è lecito ai fedeli, ai quali sia fisicamente o moralmente impossibile accedere al ministro cattolico, ricevere i sacramenti della penitenza, dell'Eucaristia e dell'unzione degli infermi da ministri non cattolici, nella cui Chiesa sono validi i predetti sacramenti.\n\n§3. I ministri cattolici amministrano lecitamente i sacramenti della penitenza, dell'Eucaristia e dell'unzione degli infermi ai membri delle Chiese orientali, che non hanno comunione piena con la Chiesa cattolica, qualora li richiedano spontaneamente e siano ben disposti; ciò vale anche per i membri delle altre Chiese, le quali, a giudizio della Sede Apostolica, relativamente ai sacramenti in questione, si trovino nella stessa condizione delle predette Chiese orientali.\n\n§4. Se vi sia pericolo di morte o qualora, a giudizio del Vescovo diocesano o della Conferenza Episcopale, urgesse altra grave necessità, i ministri cattolici amministrano lecitamente i medesimi sacramenti anche agli altri cristiani che non hanno piena comunione con la Chiesa cattolica, i quali non possano accedere al ministro della propria comunità e li chiedano spontaneamente, purché manifestino, circa questi sacramenti, la fede cattolica e siano ben disposti.\n\n§5. Per i casi di cui nei §§2, 3 e 4, il Vescovo diocesano o la conferenza dei Vescovi non diano norme generali, se non dopo aver consultato l'autorità competente almeno locale della Chiesa o della comunità non cattolica interessata.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 844 — testo vigente",
         "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_840-848_it.html",
@@ -753,7 +753,7 @@ export const canons834to896: CanonInput[] = [
         "text": "Colui che amministra il battesimo faccia in modo che, qualora non sia presente il padrino, vi sia almeno un testimone mediante il quale possa essere provato il conferimento del battesimo.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 875 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_875-878_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_875-878_it.html",
         "segments": []
       }
     ]
@@ -771,7 +771,7 @@ export const canons834to896: CanonInput[] = [
         "text": "Per provare l'avvenuto conferimento del battesimo, se non si reca pregiudizio ad alcuno, è sufficiente la dichiarazione di un solo testimone al di sopra di ogni sospetto, o il giuramento dello stesso battezzato, se egli ha ricevuto il battesimo in età adulta.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 876 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_875-878_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_875-878_it.html",
         "segments": []
       }
     ]
@@ -789,7 +789,7 @@ export const canons834to896: CanonInput[] = [
         "text": "§1. Il parroco del luogo dove si celebra il battesimo, deve diligentemente e senza alcun indugio registrare nel libro dei battesimi i nomi dei battezzati, facendo menzione del ministro, dei genitori, dei padrini e, se vi sono, dei testimoni, del luogo e del giorno del battesimo conferito, indicando al tempo stesso il giorno e il luogo della nascita.\n\n§2. Trattandosi di un bambino nato da madre non sposata, si deve annotare il nome della madre, se consta pubblicamente della sua maternità o lei stessa spontaneamente lo richiede, per iscritto o davanti a due testimoni; ugualmente si deve scrivere il nome del padre, se la sua paternità è provata con documento pubblico, o per sua dichiarazione fatta davanti al parroco e due testimoni; negli altri casi si iscriva il battezzato senza porre alcuna indicazione circa il nome del padre o dei genitori.\n\n§3. Se si tratta di un figlio adottivo, si scrivano i nomi degli adottanti, e, almeno se così viene fatto nell'atto civile della regione, dei genitori naturali a norma dei §§1 e 2, attese le disposizioni della Conferenza Episcopale.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 877 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_875-878_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_875-878_it.html",
         "segments": []
       }
     ]
@@ -807,7 +807,7 @@ export const canons834to896: CanonInput[] = [
         "text": "Qualora il battesimo non sia stato amministrato né dal parroco, né alla sua presenza, il ministro del battesimo, chiunque egli sia, è tenuto a informare del suo conferimento il parroco della parrocchia nella quale il battesimo è stato amministrato, perché lo annoti a norma del can. 877,\n\n§1.",
         "sourceDocumentTitle": "Codice di Diritto Canonico",
         "sourceCitation": "CIC, can. 878 — testo vigente",
-        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_875-878_it.html",
+        "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_875-878_it.html",
         "segments": []
       }
     ]
