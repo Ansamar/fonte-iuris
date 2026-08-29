@@ -6,11 +6,8 @@ on:
     paths:
       - 'apps/studio/scripts/import-cic/data/**'
       - 'apps/studio/scripts/import-cic/validate-source.ts'
-      - 'apps/studio/scripts/import-cic/canonSource.ts'
       - 'apps/studio/scripts/import-cic/portableText.ts'
       - 'apps/studio/scripts/import-cic/types.ts'
-      - 'apps/studio/package.json'
-      - 'package-lock.json'
       - '.github/workflows/validate-cic-source.yml'
   workflow_dispatch:
 
@@ -22,7 +19,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-      - run: npm ci
-      - name: Validate CIC source without network acquisition
-        run: npm run cic:validate -w apps/studio
+      - name: Validate CIC source offline
+        run: npx --yes tsx@4.20.5 apps/studio/scripts/import-cic/validate-source.ts
