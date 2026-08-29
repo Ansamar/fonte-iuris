@@ -51,4 +51,35 @@ export const structuralUnits: StructuralUnitInput[] = [
       'cic-1983-book-2-part-2-section-2-title-1-chapter-2',
     order: 3,
   },
+  {
+    canonicalId: 'cic-1983-book-2-part-2-section-2-title-1-chapter-3',
+    unitType: 'chapter',
+    number: 'III',
+    title: 'Sede impedita e sede vacante',
+    canonicalLabel: 'CAPITOLO III — SEDE IMPEDITA E SEDE VACANTE',
+    parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-1',
+    order: 3,
+  },
+  {
+    canonicalId:
+      'cic-1983-book-2-part-2-section-2-title-1-chapter-3-article-1',
+    unitType: 'article',
+    number: '1',
+    title: 'La sede impedita',
+    canonicalLabel: 'Articolo 1 — La sede impedita',
+    parentCanonicalId:
+      'cic-1983-book-2-part-2-section-2-title-1-chapter-3',
+    order: 1,
+  },
+  {
+    canonicalId:
+      'cic-1983-book-2-part-2-section-2-title-1-chapter-3-article-2',
+    unitType: 'article',
+    number: '2',
+    title: 'La sede vacante',
+    canonicalLabel: 'Articolo 2 — La sede vacante',
+    parentCanonicalId:
+      'cic-1983-book-2-part-2-section-2-title-1-chapter-3',
+    order: 2,
+  },
 ]
