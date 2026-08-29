@@ -207,4 +207,13 @@ export const structuralUnits: StructuralUnitInput[] = [
     parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-3',
     order: 6,
   },
+  {
+    canonicalId: 'cic-1983-book-2-part-2-section-2-title-3-chapter-7',
+    unitType: 'chapter',
+    number: 'VII',
+    title: 'I vicari foranei',
+    canonicalLabel: 'CAPITOLO VII — I VICARI FORANEI',
+    parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-3',
+    order: 7,
+  },
 ]
