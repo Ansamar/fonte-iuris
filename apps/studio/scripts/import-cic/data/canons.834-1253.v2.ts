@@ -8,7 +8,7 @@ import {segments} from './canonSource'
 
 const PRESS_BASE = 'https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/'
 const WWW_BASE = 'https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/'
-const CACHE_FILE = join(tmpdir(), 'fonte-iuris-cic-book4-v4.json')
+const CACHE_FILE = join(tmpdir(), 'fonte-iuris-cic-book4-v5.json')
 const FIRST_CANON = 834
 const LAST_CANON = 1253
 const MAX_PAGE_SPAN = 40
@@ -176,8 +176,8 @@ function htmlToText(html: string) {
 function normalizeCanonText(value: string) {
   let text = value
     .replace(/\s+\(\^\{n\}[^)]*\)/g, '')
-    .replace(/§\s+(\d+)\s*\./g, '§$1.')
-    .replace(/§(\d+)\s*\./g, '§$1.')
+    .replace(/\^\{?n\}?/g, '')
+    .replace(/§\s*(\d+)\s*\.?/g, '§$1.')
     .replace(/\s+(?=§\d+\.)/g, '\n\n')
     .replace(/\s+(?=\d+\)\s)/g, '\n')
     .replace(/[ \t]+/g, ' ')
@@ -204,7 +204,13 @@ function extractCanonsFromPage(url: string, html: string): CachedCanon[] {
   const footnoteIndex = text.indexOf('Indica che il testo corrisponde')
   if (footnoteIndex >= 0) text = text.slice(0, footnoteIndex)
 
-  const matches = [...text.matchAll(/Can\.\s*(\d+)\s*[-–—]\s*(?!\d)/g)]
+  // Le pagine ufficiali marcano alcuni canoni modificati come
+  // "Can. 1127 §1 ^{n}- ..." invece del normale "Can. 1127 - ...".
+  // Il delimitatore deve quindi riconoscere anche il § iniziale e il marker ^{n},
+  // conservando il paragrafo nel testo del canone.
+  const matches = [
+    ...text.matchAll(/Can\.\s*(\d+)\s*(§\s*\d+\s*)?(?:\^\{?n\}?\s*)?[-–—]\s*/g),
+  ]
   const result: CachedCanon[] = []
 
   for (let i = 0; i < matches.length; i += 1) {
@@ -214,7 +220,10 @@ function extractCanonsFromPage(url: string, html: string): CachedCanon[] {
 
     const start = (match.index ?? 0) + match[0].length
     const end = matches[i + 1]?.index ?? text.length
-    const canonText = normalizeCanonText(text.slice(start, end))
+    const initialParagraph = match[2]
+      ? `${match[2].replace(/\s+/g, '').replace(/\.$/, '')}. `
+      : ''
+    const canonText = normalizeCanonText(`${initialParagraph}${text.slice(start, end)}`)
     if (!canonText) throw new Error(`Libro IV: testo vuoto per Can. ${number} (${url})`)
     result.push({number, text: canonText, sourceUrl: url})
   }
@@ -255,7 +264,10 @@ function fetchPageStartingAt(start: number): OfficialPage {
 
       for (let i = 0; i < canons.length; i += 1) {
         if (canons[i].number !== start + i) {
-          throw new Error(`Libro IV: sequenza non continua nella pagina ${url}`)
+          throw new Error(
+            `Libro IV: sequenza non continua nella pagina ${url}: ` +
+              canons.map((canon) => canon.number).join(', '),
+          )
         }
       }
 
