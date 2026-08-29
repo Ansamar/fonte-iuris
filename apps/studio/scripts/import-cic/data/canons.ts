@@ -9,6 +9,7 @@ import {canons469to494} from './canons.469-494'
 import {canons495to502} from './canons.495-502'
 import {canons503to510} from './canons.503-510'
 import {canons511to514} from './canons.511-514'
+import {canons515to552} from './canons.515-552'
 
 export const allCanons = [
   ...sampleCanons,
@@ -22,4 +23,5 @@ export const allCanons = [
   ...canons495to502,
   ...canons503to510,
   ...canons511to514,
+  ...canons515to552,
 ]
