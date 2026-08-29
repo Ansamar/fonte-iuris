@@ -23,12 +23,11 @@ import {canons756to780} from './canons.756-780'
 import {canons781to792} from './canons.781-792'
 import {canons793to821} from './canons.793-821'
 import {canons822to833} from './canons.822-833'
-
-// IMPORTANT:
-// Runtime validation/import must be deterministic and offline.
-// Book IV is intentionally NOT imported from the experimental live scraper.
-// It will be re-enabled only as checked-in static CanonInput data after acquisition
-// and verification against the official Holy See sources.
+import {canons834to896} from './canons.834-896.static'
+import {canons897to997} from './canons.897-997.static'
+import {canons998to1054} from './canons.998-1054.static'
+import {canons1055to1165} from './canons.1055-1165.static'
+import {canons1166to1253} from './canons.1166-1253.static'
 
 export const allCanons = [
   ...sampleCanons,
@@ -56,4 +55,9 @@ export const allCanons = [
   ...canons781to792,
   ...canons793to821,
   ...canons822to833,
+  ...canons834to896,
+  ...canons897to997,
+  ...canons998to1054,
+  ...canons1055to1165,
+  ...canons1166to1253,
 ]
