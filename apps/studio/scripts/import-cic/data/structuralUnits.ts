@@ -171,4 +171,13 @@ export const structuralUnits: StructuralUnitInput[] = [
     parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-3-chapter-2',
     order: 3,
   },
+  {
+    canonicalId: 'cic-1983-book-2-part-2-section-2-title-3-chapter-3',
+    unitType: 'chapter',
+    number: 'III',
+    title: 'Il consiglio presbiterale e il collegio dei consultori',
+    canonicalLabel: 'CAPITOLO III — IL CONSIGLIO PRESBITERALE E IL COLLEGIO DEI CONSULTORI',
+    parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-3',
+    order: 3,
+  },
 ]
