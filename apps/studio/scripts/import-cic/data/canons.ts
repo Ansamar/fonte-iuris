@@ -23,7 +23,7 @@ import {canons756to780} from './canons.756-780'
 import {canons781to792} from './canons.781-792'
 import {canons793to821} from './canons.793-821'
 import {canons822to833} from './canons.822-833'
-import {canons834to1253} from './canons.834-1253'
+import {canons834to1253} from './canons.834-1253.v2'
 
 export const allCanons = [
   ...sampleCanons,
