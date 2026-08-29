@@ -180,4 +180,13 @@ export const structuralUnits: StructuralUnitInput[] = [
     parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-3',
     order: 3,
   },
+  {
+    canonicalId: 'cic-1983-book-2-part-2-section-2-title-3-chapter-4',
+    unitType: 'chapter',
+    number: 'IV',
+    title: 'I capitoli dei canonici',
+    canonicalLabel: 'CAPITOLO IV — I CAPITOLI DEI CANONICI',
+    parentCanonicalId: 'cic-1983-book-2-part-2-section-2-title-3',
+    order: 4,
+  },
 ]
