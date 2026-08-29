@@ -55,6 +55,7 @@ async function main() {
       }
 
       if (
+        unit.parentCanonicalId &&
         existing.parent?.canonicalId &&
         existing.parent.canonicalId !== unit.parentCanonicalId
       ) {
@@ -63,23 +64,32 @@ async function main() {
           message: `Unità superiore incompatibile: dataset=${existing.parent.canonicalId}, sorgente=${unit.parentCanonicalId}`,
         })
       }
-    }
 
-    const parentInSource = structuralUnits.some(
-      (candidate) => candidate.canonicalId === unit.parentCanonicalId,
-    )
-
-    if (!parentInSource) {
-      const parentCount = await client.fetch(
-        `count(*[_type == "structuralUnit" && canonicalId == $canonicalId])`,
-        {canonicalId: unit.parentCanonicalId},
-      )
-
-      if (parentCount !== 1) {
+      if (!unit.parentCanonicalId && existing.parent?.canonicalId) {
         errors.push({
           scope: unit.canonicalId,
-          message: `Unità superiore non risolvibile: ${unit.parentCanonicalId}`,
+          message: `L'unità radice ha un'unità superiore nel dataset: ${existing.parent.canonicalId}`,
         })
+      }
+    }
+
+    if (unit.parentCanonicalId) {
+      const parentInSource = structuralUnits.some(
+        (candidate) => candidate.canonicalId === unit.parentCanonicalId,
+      )
+
+      if (!parentInSource) {
+        const parentCount = await client.fetch(
+          `count(*[_type == "structuralUnit" && canonicalId == $canonicalId])`,
+          {canonicalId: unit.parentCanonicalId},
+        )
+
+        if (parentCount !== 1) {
+          errors.push({
+            scope: unit.canonicalId,
+            message: `Unità superiore non risolvibile: ${unit.parentCanonicalId}`,
+          })
+        }
       }
     }
   }
