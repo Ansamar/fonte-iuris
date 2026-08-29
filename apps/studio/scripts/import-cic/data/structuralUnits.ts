@@ -60,4 +60,5 @@ export const structuralUnits: StructuralUnitInput[] = [
   {canonicalId:'cic-1983-book-2-part-3-section-1-title-2-chapter-7',unitType:'chapter',number:'VII',title:'I religiosi elevati all’episcopato',canonicalLabel:'CAPITOLO VII — I RELIGIOSI ELEVATI ALL’EPISCOPATO',parentCanonicalId:'cic-1983-book-2-part-3-section-1-title-2',order:7},
   {canonicalId:'cic-1983-book-2-part-3-section-1-title-2-chapter-8',unitType:'chapter',number:'VIII',title:'Le conferenze dei Superiori maggiori',canonicalLabel:'CAPITOLO VIII — LE CONFERENZE DEI SUPERIORI MAGGIORI',parentCanonicalId:'cic-1983-book-2-part-3-section-1-title-2',order:8},
   {canonicalId:'cic-1983-book-2-part-3-section-1-title-3',unitType:'title',number:'III',title:'Gli istituti secolari',canonicalLabel:'TITOLO III — GLI ISTITUTI SECOLARI',parentCanonicalId:'cic-1983-book-2-part-3-section-1',order:3},
+  {canonicalId:'cic-1983-book-2-part-3-section-2',unitType:'section',number:'II',title:'Le società di vita apostolica',canonicalLabel:'SEZIONE II — LE SOCIETÀ DI VITA APOSTOLICA',parentCanonicalId:'cic-1983-book-2-part-3',order:2},
 ]
