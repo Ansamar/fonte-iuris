@@ -23,7 +23,11 @@ const replacements = [
   ],
   [
     "t=t.replace(/§\\s+(\\d+)\\s*\\./g,'§$1.').replace(/§(\\d+)\\s*\\./g,'§$1.')",
-    "t=t.replace(/§\\s+(\\d+)\\s*\\./g,'§$1.').replace(/§(\\d+)\\s*\\./g,'§$1.').replace(/(^|\\n\\n)(\\d+)\\.\\s/g,'$1§$2. ').replace(/(§\\d+\\.)\\n\\n\\1/g,'$1')",
+    "t=t.replace(/§\\s+(\\d+)\\s*\\./g,'§$1.').replace(/§(\\d+)\\s*\\./g,'§$1.').replace(/(^|\\n\\n)(\\d+)\\.\\s/g,'$1§$2. ')"
+  ],
+  [
+    "if(n===838&&/^1\\.\\s/.test(t)&&/§2\\./.test(t))t=t.replace(/^1\\.\\s/,'§1. ');return t}",
+    "if(n===838&&/^1\\.\\s/.test(t)&&/§2\\./.test(t))t=t.replace(/^1\\.\\s/,'§1. ');t=t.replace(/\\n\\n§\\d+\\.\\s*\\n\\n(?=§\\d+\\.)/g,'\\n\\n');return t}"
   ],
   [
     "let best=null;for(const m of occ){const start=(m.index??0)+m[0].length;const later=ms.filter(x=>(x.index??0)>start&&Number(x[1])>n).sort((x,y)=>(x.index??0)-(y.index??0))[0];const end=later?.index??text.length;let body=cleanBody(text.slice(start,end),n);if(m[2])body=`§${m[2]}. ${body}`;if(!best||body.length>best.length)best=body}if(!best||best.length<3)throw new Error(`Empty Can. ${n} in ${url}`);out.push({number:n,text:best,sourceUrl:url})",
