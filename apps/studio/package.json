@@ -14,6 +14,7 @@
     "cic:preflight": "tsx scripts/import-cic/preflight-dataset.ts",
     "cic:dry-run": "tsx scripts/import-cic/import.ts",
     "cic:commit": "sanity exec scripts/import-cic/import.ts --with-user-token -- --commit",
+    "cic:readback": "sanity exec scripts/import-cic/readback-final.ts --with-user-token",
     "cic:book4-structure": "sanity exec scripts/import-cic/setup-book4-structure.ts --with-user-token",
     "cic:book5-structure": "sanity exec scripts/import-cic/setup-book5-structure.ts --with-user-token",
     "cic:book6-structure": "sanity exec scripts/import-cic/setup-book6-structure.ts --with-user-token",
