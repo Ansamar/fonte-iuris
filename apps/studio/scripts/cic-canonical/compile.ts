@@ -1,6 +1,6 @@
 import {createHash} from 'node:crypto'
-import {readFile, writeFile} from 'node:fs/promises'
-import {resolve} from 'node:path'
+import {mkdir, readFile, writeFile} from 'node:fs/promises'
+import {dirname, resolve} from 'node:path'
 import type {CanonicalBook, CanonicalCanon, CanonicalSegment} from './types'
 
 const FROM = 1400
@@ -113,6 +113,7 @@ async function main() {
     canons,
   }
 
+  await mkdir(dirname(outputPath), {recursive: true})
   await writeFile(outputPath, `${JSON.stringify(book, null, 2)}\n`, 'utf8')
   console.log(`CANONICAL_BUILD ${canons.length}/${EXPECTED}`)
   console.log(`SOURCE_SHA256 ${sha256}`)
