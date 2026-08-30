@@ -1,0 +1,41 @@
+name: Build Book V static corpus
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'apps/studio/scripts/import-cic/generate-book5-static.mjs'
+      - '.github/workflows/build-book5-static.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generate static Book V corpus
+        run: node apps/studio/scripts/import-cic/generate-book5-static.mjs
+      - name: Verify generated corpus
+        run: |
+          test -f apps/studio/scripts/import-cic/data/canons.1254-1310.static.ts
+          grep -q 'canons1254to1310' apps/studio/scripts/import-cic/data/canons.ts
+      - name: Commit generated corpus
+        run: |
+          git config user.name 'fonte-iuris-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add apps/studio/scripts/import-cic/data/canons.1254-1310.static.ts apps/studio/scripts/import-cic/data/canons.ts
+          if git diff --cached --quiet; then
+            echo 'No generated changes'
+          else
+            git commit -m 'data: materialize static CIC Book V corpus'
+            git pull --rebase origin master
+            git push origin HEAD:master
+          fi
