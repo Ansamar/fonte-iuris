@@ -8,7 +8,7 @@ const BASES = [
 
 const pages = [
   [1311,1312],[1313,1320],[1321,1330],[1331,1335],[1336,1338],[1339,1340],
-  [1341,1353],[1354,1363],[1364,1369],[1370,1377],[1378,1389],[1390,1391],
+  [1341,1353],[1354,1363],[1364,1369],[1370,1377],[1379,1389],[1390,1391],
   [1392,1396],[1397,1398],[1399,1399],
 ]
 
@@ -40,10 +40,20 @@ function unitFor(n){const row=unitRanges.find(([a,b])=>n>=a&&n<=b);if(!row)throw
 
 const collected=[]
 for(const [a,b] of pages){const {url,html}=await fetchOfficial(a,b);const part=extractCurrent(url,html,a,b);collected.push(...part);console.log(`${a}-${b}: ${part.length}`)}
+// Can. 1378 belongs to Title II but is printed on the Vatican Title II page 1370-1377.
+// Acquire it from the official whole-book Italian page if it is not present in the page manifest.
+if(!collected.some(x=>x.number===1378)){
+  const url='https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroVI_it.html'
+  const r=await fetch(url,{headers:{'user-agent':'Fonte-Iuris-Corpus-Builder/1.0'}})
+  if(!r.ok)throw new Error('Cannot fetch official whole Book VI page for Can. 1378')
+  collected.push(...extractCurrent(url,await r.text(),1378,1378))
+  console.log('1378: 1 (whole-book official page)')
+}
+collected.sort((a,b)=>a.number-b.number)
 if(collected.length!==89||new Set(collected.map(x=>x.number)).size!==89)throw new Error(`Expected 89 unique canons, got ${collected.length}`)
 for(let n=1311;n<=1399;n++)if(!collected.some(x=>x.number===n))throw new Error(`Missing ${n}`)
 
-const data=collected.map(x=>({number:x.number,structuralUnitCanonicalId:unitFor(x.number),status:'amended',versions:[{versionId:`cic-1983-can-${x.number}-it-2021`,versionLabel:'Libro VI riformato — testo vigente dal 8 dicembre 2021',status:'current',validFrom:'2021-12-08',language:'it',text:x.text,sourceDocumentTitle:'Costituzione Apostolica Pascite gregem Dei',sourceCitation:`CIC, can. ${x.number} — Libro VI riformato`,sourceUrl:x.sourceUrl,changeSummary:'Testo del Libro VI riformato dalla Costituzione Apostolica Pascite gregem Dei, in vigore dall’8 dicembre 2021.',segments:null}]}))
+const data=collected.map(x=>({number:x.number,structuralUnitCanonicalId:unitFor(x.number),status:'inForce',versions:[{versionId:`cic-1983-can-${x.number}-it-2021`,versionLabel:'Libro VI riformato — testo vigente dall’8 dicembre 2021',status:'current',validFrom:'2021-12-08',language:'it',text:x.text,sourceDocumentTitle:'Costituzione Apostolica Pascite gregem Dei',sourceCitation:`CIC, can. ${x.number} — Libro VI riformato`,sourceUrl:x.sourceUrl,changeSummary:'Testo del Libro VI riformato dalla Costituzione Apostolica Pascite gregem Dei, in vigore dall’8 dicembre 2021.',segments:null}]}))
 const p=join('apps/studio/scripts/import-cic/data','canons.1311-1399.static.ts');await mkdir(dirname(p),{recursive:true});const body=`import type {CanonInput} from '../types'\nimport {segments} from './canonSource'\n\nexport const canons1311to1399: CanonInput[] = ${JSON.stringify(data,null,2).replace(/"segments": null/g,'"segments": []')}\n\nfor (const canon of canons1311to1399) {\n  for (const version of canon.versions) version.segments = segments(canon.number, version.text)\n}\n`;await writeFile(p,body,'utf8')
 
 const indexPath='apps/studio/scripts/import-cic/data/canons.ts';let index=await readFile(indexPath,'utf8');if(!index.includes("./canons.1311-1399.static")){index=index.replace("import {canons1254to1310} from './canons.1254-1310.static'", "import {canons1254to1310} from './canons.1254-1310.static'\nimport {canons1311to1399} from './canons.1311-1399.static'");index=index.replace('  ...canons1254to1310,\n]', '  ...canons1254to1310,\n  ...canons1311to1399,\n]');await writeFile(indexPath,index,'utf8')}
