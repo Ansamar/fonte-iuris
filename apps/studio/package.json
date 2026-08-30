@@ -19,7 +19,9 @@
     "cic:book6-structure": "sanity exec scripts/import-cic/setup-book6-structure.ts --with-user-token",
     "cic:book7-structure": "sanity exec scripts/import-cic/setup-book7-structure.ts --with-user-token",
     "cic:pascite-source": "sanity exec scripts/import-cic/setup-pascite-source.ts --with-user-token",
-    "cic:canonical:book7-source": "tsx scripts/cic-canonical/acquire-book7.ts"
+    "cic:canonical:book7-source": "tsx scripts/cic-canonical/acquire-book7.ts",
+    "cic:canonical:book7-build": "tsx scripts/cic-canonical/compile.ts",
+    "cic:canonical:book7-validate": "tsx scripts/cic-canonical/validate.ts"
   },
   "keywords": ["sanity"],
   "dependencies": {
