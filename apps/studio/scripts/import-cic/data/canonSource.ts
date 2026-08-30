@@ -7,9 +7,8 @@ function isParagraphStart(text: string, match: RegExpMatchArray): boolean {
   const markerEnd = markerStart + match[0].length - prefix.length
   const after = text.slice(markerEnd)
 
-  // A formal paragraph marker must begin a paragraph and be followed by the
-  // paragraph's own text. Vatican pages sometimes wrap cross-references such as
-  // "can. 1333,\n\n§1." onto a new line; those are not structural divisions.
+  // Vatican HTML can wrap a cross-reference onto a new paragraph-like line,
+  // for example "can. 1333,\n\n§1.". It must not become a structural segment.
   const before = text.slice(Math.max(0, markerStart - 40), markerStart)
   if (/can\.\s*\d+\s*,?\s*$/i.test(before.replace(/\s+/g, ' '))) return false
 
@@ -17,7 +16,7 @@ function isParagraphStart(text: string, match: RegExpMatchArray): boolean {
 }
 
 export function segments(canon: number, text: string): CanonSegmentInput[] {
-  const paragraphMatches = [...text.matchAll(/(^|\n\n)§\s*(\d+)\./g)].filter((match) =>
+  const paragraphMatches = [...text.matchAll(/(^|\n\n)§\s*(\d+)[.:]?/g)].filter((match) =>
     isParagraphStart(text, match),
   )
   const result: CanonSegmentInput[] = []
