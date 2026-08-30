@@ -50,13 +50,22 @@ async function get(url: string) {
   return response.text()
 }
 
+function discoverBook7Urls(indexHtml: string) {
+  const paths = [...indexHtml.matchAll(/(?:\.\.\/)?ita\/documents\/cic_libroVII_[0-9-]+_it\.html/gi)].map(
+    (match) => match[0],
+  )
+  const fallback = [...indexHtml.matchAll(/cic_libroVII_[0-9-]+_it\.html/gi)].map(
+    (match) => `ita/documents/${match[0]}`,
+  )
+  return [...new Set([...paths, ...fallback].map((path) => new URL(path.replace(/^\.\.\//, ''), 'https://www.vatican.va/archive/cod-iuris-canonici/').href))]
+}
+
 async function main() {
   const indexHtml = await get(INDEX)
-  const urls = [
-    ...indexHtml.matchAll(/href=["']([^"']*cic_libroVII_[^"']+_it\.html)["']/gi),
-  ].map((match) => new URL(match[1], INDEX).href)
-  const unique = [...new Set(urls)]
-  if (unique.length < 40) throw new Error(`Indice Libro VII incompleto: ${unique.length} pagine`)
+  const unique = discoverBook7Urls(indexHtml)
+  if (unique.length < 40) {
+    throw new Error(`Indice Libro VII incompleto: ${unique.length} pagine`)
+  }
 
   const canonMap = new Map<number, string>()
   for (const url of unique) {
