@@ -75,7 +75,8 @@ async function main() {
   const ids=new Map<string,string>()
   for(const unit of units){
     const existing=await client.fetch(`*[_type=="structuralUnit" && canonicalId==$id][0]{_id}`,{id:unit.canonicalId})
-    const id=existing?._id:`structural-${unit.canonicalId}`; ids.set(unit.canonicalId,id)
+    const id=existing?._id ?? `structural-${unit.canonicalId}`
+    ids.set(unit.canonicalId,id)
     const parentId=unit.parentCanonicalId?ids.get(unit.parentCanonicalId):undefined
     if(unit.parentCanonicalId&&!parentId) throw new Error(`Unità superiore non risolta: ${unit.parentCanonicalId}`)
     await client.createOrReplace({_id:id,_type:'structuralUnit',corpus:{_type:'reference',_ref:corpus._id},unitType:unit.unitType,...(unit.number?{number:unit.number}:{}),title:unit.title,canonicalId:unit.canonicalId,slug:{_type:'slug',current:unit.canonicalId.replace(/^cic-1983-/,'')},...(parentId?{parent:{_type:'reference',_ref:parentId}}:{}),order:unit.order,canonicalLabel:unit.canonicalLabel})
