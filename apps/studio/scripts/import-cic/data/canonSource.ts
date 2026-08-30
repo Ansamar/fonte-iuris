@@ -1,11 +1,29 @@
 import type {CanonInput, CanonSegmentInput} from '../types'
 
+function isParagraphStart(text: string, match: RegExpMatchArray): boolean {
+  const prefix = match[1] ?? ''
+  const index = match.index ?? 0
+  const markerStart = index + prefix.length
+  const markerEnd = markerStart + match[0].length - prefix.length
+  const after = text.slice(markerEnd)
+
+  // A formal paragraph marker must begin a paragraph and be followed by the
+  // paragraph's own text. Vatican pages sometimes wrap cross-references such as
+  // "can. 1333,\n\n§1." onto a new line; those are not structural divisions.
+  const before = text.slice(Math.max(0, markerStart - 40), markerStart)
+  if (/can\.\s*\d+\s*,?\s*$/i.test(before.replace(/\s+/g, ' '))) return false
+
+  return /^\s*\S/.test(after)
+}
+
 export function segments(canon: number, text: string): CanonSegmentInput[] {
-  const paragraphMatches = [...text.matchAll(/(^|\n\n)§(\d+)\./g)]
+  const paragraphMatches = [...text.matchAll(/(^|\n\n)§\s*(\d+)\./g)].filter((match) =>
+    isParagraphStart(text, match),
+  )
   const result: CanonSegmentInput[] = []
 
   if (paragraphMatches.length === 0) {
-    const numberMatches = [...text.matchAll(/(?:^|\n)(\d+)\)/g)]
+    const numberMatches = [...text.matchAll(/(?:^|\n)(\d+)[º°)]\s/g)]
     for (let i = 0; i < numberMatches.length; i += 1) {
       const match = numberMatches[i]
       const number = Number(match[1])
@@ -55,7 +73,7 @@ export function segments(canon: number, text: string): CanonSegmentInput[] {
     })
 
     const paragraphText = text.slice(startOffset, nextParagraphOffset)
-    const numberMatches = [...paragraphText.matchAll(/(?:^|\n)(\d+)\)/g)]
+    const numberMatches = [...paragraphText.matchAll(/(?:^|\n)(\d+)[º°)]\s/g)]
     for (let j = 0; j < numberMatches.length; j += 1) {
       const numberMatch = numberMatches[j]
       const number = Number(numberMatch[1])
