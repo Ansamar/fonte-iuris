@@ -30,10 +30,7 @@ import {canons1055to1165} from './canons.1055-1165.static'
 import {canons1166to1253} from './canons.1166-1253.static'
 import {canons1254to1310} from './canons.1254-1310.static'
 import {canons1311to1399} from './canons.1311-1399.static'
-import {canons1400to1499} from './canons.1400-1499.static'
-import {canons1500to1599} from './canons.1500-1599.static'
-import {canons1600to1699} from './canons.1600-1699.static'
-import {canons1700to1752} from './canons.1700-1752.static'
+import {canons1400to1752Canonical} from './canons.1400-1752.canonical'
 
 export const allCanons = [
   ...sampleCanons,
@@ -68,8 +65,5 @@ export const allCanons = [
   ...canons1166to1253,
   ...canons1254to1310,
   ...canons1311to1399,
-  ...canons1400to1499,
-  ...canons1500to1599,
-  ...canons1600to1699,
-  ...canons1700to1752,
+  ...canons1400to1752Canonical,
 ]
