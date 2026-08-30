@@ -16,7 +16,8 @@
     "cic:commit": "sanity exec scripts/import-cic/import.ts --with-user-token -- --commit",
     "cic:book4-structure": "sanity exec scripts/import-cic/setup-book4-structure.ts --with-user-token",
     "cic:book5-structure": "sanity exec scripts/import-cic/setup-book5-structure.ts --with-user-token",
-    "cic:book6-structure": "sanity exec scripts/import-cic/setup-book6-structure.ts --with-user-token"
+    "cic:book6-structure": "sanity exec scripts/import-cic/setup-book6-structure.ts --with-user-token",
+    "cic:pascite-source": "sanity exec scripts/import-cic/setup-pascite-source.ts --with-user-token"
   },
   "keywords": ["sanity"],
   "dependencies": {
