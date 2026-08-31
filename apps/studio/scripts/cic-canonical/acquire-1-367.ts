@@ -18,28 +18,44 @@ function discover(indexHtml:string){
  return [...new Set([...matches,...fallback].map(p=>new URL(p.replace(/^\.\.\//,''),BASE).href))];
 }
 
-function extract(body:string,map:Map<number,string>){
- const matches=[...body.matchAll(/(?:^|\n|\s)Can\.\s*(\d+)\s*-\s*/gi)];
+function currentNormativeBody(body:string){
+ const historicalMarkers=[
+  'Indica che il testo corrisponde alla nuova versione',
+  'Redazione originaria degli articoli modificati',
+  'Redazione originaria dei canoni modificati',
+ ]
+ let cut=body.length
+ for(const marker of historicalMarkers){
+  const index=body.indexOf(marker)
+  if(index!==-1)cut=Math.min(cut,index)
+ }
+ return body.slice(0,cut)
+}
+
+function extract(rawBody:string,map:Map<number,string>){
+ const body=currentNormativeBody(rawBody)
+ const matches=[...body.matchAll(/(?:^|\n|\s)Can\.\s*(\d+)(?:\^?\{?n\}?)?\s*-\s*/gi)]
  for(let i=0;i<matches.length;i++){
-  const number=Number(matches[i][1]); if(number<1||number>367)continue;
-  const start=(matches[i].index??0)+matches[i][0].length;
-  const end=i+1<matches.length?(matches[i+1].index??body.length):body.length;
-  let value=body.slice(start,end).trim().split(/\n(?:CODICE DI DIRITTO CANONICO|LIBRO [IVX]+|PARTE |SEZIONE |TITOLO |CAPITOLO |Articolo |Cf:)/i)[0].trim();
-  if(!value)throw new Error(`Can. ${number}: testo vuoto`);
-  const prior=map.get(number); if(prior&&prior!==value)throw new Error(`Can. ${number}: testi discordanti tra pagine ufficiali`);
-  map.set(number,value);
+  const number=Number(matches[i][1]); if(number<1||number>367)continue
+  const start=(matches[i].index??0)+matches[i][0].length
+  const end=i+1<matches.length?(matches[i+1].index??body.length):body.length
+  let value=body.slice(start,end).trim().split(/\n(?:CODICE DI DIRITTO CANONICO|LIBRO [IVX]+|PARTE |SEZIONE |TITOLO |CAPITOLO |Articolo |Cf:)/i)[0].trim()
+  if(!value)throw new Error(`Can. ${number}: testo vuoto`)
+  const prior=map.get(number)
+  if(prior&&prior!==value)throw new Error(`Can. ${number}: testi discordanti tra pagine ufficiali`)
+  map.set(number,value)
  }
 }
 
 async function main(){
- const indexHtml=await get(INDEX); const urls=discover(indexHtml); if(urls.length<30)throw new Error(`Indice sorgenti 1-367 incompleto: ${urls.length} pagine`);
- const map=new Map<number,string>();
- for(const url of urls)extract(text(await get(url)),map);
- const missing:number[]=[];for(let n=1;n<=367;n++)if(!map.has(n))missing.push(n);
- if(missing.length)throw new Error(`Canoni mancanti (${missing.length}): ${missing.join(', ')}`);
- const source=[...map].sort((a,b)=>a[0]-b[0]).map(([n,v])=>`@@CANON ${n}\n${v}\n@@END`).join('\n\n')+'\n';
- const sha256=createHash('sha256').update(source).digest('hex');
- await mkdir(OUT,{recursive:true});await writeFile(SOURCE,source,'utf8');await writeFile(MANIFEST,JSON.stringify({range:[1,367],expectedCanons:367,language:'it',source:'Santa Sede',indexUrl:INDEX,retrievedAt:new Date().toISOString(),pages:urls.length,sha256},null,2)+'\n','utf8');
- console.log(`CIC_SOURCE_OK 367/367 pages=${urls.length} sha256=${sha256}`);
+ const indexHtml=await get(INDEX); const urls=discover(indexHtml); if(urls.length<30)throw new Error(`Indice sorgenti 1-367 incompleto: ${urls.length} pagine`)
+ const map=new Map<number,string>()
+ for(const url of urls)extract(text(await get(url)),map)
+ const missing:number[]=[];for(let n=1;n<=367;n++)if(!map.has(n))missing.push(n)
+ if(missing.length)throw new Error(`Canoni mancanti (${missing.length}): ${missing.join(', ')}`)
+ const source=[...map].sort((a,b)=>a[0]-b[0]).map(([n,v])=>`@@CANON ${n}\n${v}\n@@END`).join('\n\n')+'\n'
+ const sha256=createHash('sha256').update(source).digest('hex')
+ await mkdir(OUT,{recursive:true});await writeFile(SOURCE,source,'utf8');await writeFile(MANIFEST,JSON.stringify({range:[1,367],expectedCanons:367,language:'it',source:'Santa Sede',indexUrl:INDEX,retrievedAt:new Date().toISOString(),pages:urls.length,sha256},null,2)+'\n','utf8')
+ console.log(`CIC_SOURCE_OK 367/367 pages=${urls.length} sha256=${sha256}`)
 }
-main().catch(e=>{console.error(e instanceof Error?e.message:e);process.exitCode=1});
+main().catch(e=>{console.error(e instanceof Error?e.message:e);process.exitCode=1})
