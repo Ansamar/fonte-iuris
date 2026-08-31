@@ -1,3 +1,4 @@
+import {canons1to367Canonical} from './canons.1-367.canonical'
 import {sampleCanons} from './canons.sample'
 import {canons375to380} from './canons.375-380'
 import {canons381to402} from './canons.381-402'
@@ -33,6 +34,7 @@ import {canons1311to1399} from './canons.1311-1399.static'
 import {canons1400to1752Canonical} from './canons.1400-1752.canonical'
 
 export const allCanons = [
+  ...canons1to367Canonical,
   ...sampleCanons,
   ...canons375to380,
   ...canons381to402,
