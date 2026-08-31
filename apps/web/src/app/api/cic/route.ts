@@ -15,31 +15,42 @@ async function sanity<T>(query:string, params:Record<string,string|number> = {})
   return payload.result as T;
 }
 
-const projection = `{
+const structureProjection = `{
+  _id, unitType, number, title, canonicalLabel, canonicalId,
+  "parent": parent->{
+    _id, unitType, number, title, canonicalLabel, canonicalId,
+    "parent": parent->{
+      _id, unitType, number, title, canonicalLabel, canonicalId,
+      "parent": parent->{
+        _id, unitType, number, title, canonicalLabel, canonicalId,
+        "parent": parent->{
+          _id, unitType, number, title, canonicalLabel, canonicalId,
+          "parent": parent->{_id, unitType, number, title, canonicalLabel, canonicalId}
+        }
+      }
+    }
+  }
+}`;
+
+const canonProjection = `{
   _id,
   number,
   canonicalId,
   editorialTitle,
+  keywords,
   status,
-  "structure": structuralUnit->{
-    _id, unitType, number, title, canonicalLabel,
-    "parent": parent->{
-      _id, unitType, number, title, canonicalLabel,
-      "parent": parent->{
-        _id, unitType, number, title, canonicalLabel,
-        "parent": parent->{
-          _id, unitType, number, title, canonicalLabel,
-          "parent": parent->{
-            _id, unitType, number, title, canonicalLabel,
-            "parent": parent->{_id, unitType, number, title, canonicalLabel}
-          }
-        }
-      }
-    }
-  },
+  "structure": structuralUnit->${structureProjection},
   "version": *[_type == "canonVersion" && canon._ref == ^._id && language == "it" && status == "current"] | order(validFrom desc)[0]{
     _id, versionId, versionLabel, status, validFrom, validUntil,
     "text": pt::text(fullText), sourceCitation, sourceUrl, changeSummary
+  },
+  "versions": *[_type == "canonVersion" && canon._ref == ^._id && language == "it"] | order(validFrom desc){
+    _id, versionId, versionLabel, status, validFrom, validUntil,
+    "text": pt::text(fullText), sourceCitation, sourceUrl, changeSummary
+  },
+  "segments": *[_type == "canonSegment" && canon._ref == ^._id] | order(order asc){
+    _id, segmentId, segmentType, label, order, startOffset, endOffset, isFormalDivision,
+    "parentId": parentSegment->_id
   }
 }`;
 
@@ -47,29 +58,56 @@ export async function GET(request:NextRequest){
   try{
     const numberParam = request.nextUrl.searchParams.get("number");
     const queryParam = request.nextUrl.searchParams.get("q")?.trim();
+    const browse = request.nextUrl.searchParams.get("browse");
+    const bookId = request.nextUrl.searchParams.get("book")?.trim();
 
     if(numberParam){
       const number = Number(numberParam);
-      if(!Number.isInteger(number) || number < 368 || number > 1752) return NextResponse.json({error:"Numero di canone non valido"},{status:400});
-      const canon = await sanity(`*[_type == "canon" && number == $number][0]${projection}`,{number});
+      if(!Number.isInteger(number) || number < 368 || number > 1752){
+        return NextResponse.json({error:"Numero di canone non valido"},{status:400});
+      }
+      const canon = await sanity(`*[_type == "canon" && number == $number][0]${canonProjection}`,{number});
       if(!canon) return NextResponse.json({error:"Canone non trovato"},{status:404});
-      const nearby = await sanity(`*[_type == "canon" && number >= $from && number <= $to] | order(number asc){_id,number,editorialTitle,status,"text": *[_type == "canonVersion" && canon._ref == ^._id && language == "it" && status == "current"][0].fullText[]{children[]{text}}}` ,{from:Math.max(368,number-2),to:Math.min(1752,number+2)});
+      const nearby = await sanity(`*[_type == "canon" && number >= $from && number <= $to] | order(number asc){
+        _id, number, editorialTitle, status,
+        "text": *[_type == "canonVersion" && canon._ref == ^._id && language == "it" && status == "current"][0].fullText[]{children[]{text}}
+      }`,{from:Math.max(368,number-2),to:Math.min(1752,number+2)});
       return NextResponse.json({canon,nearby});
     }
 
+    if(bookId){
+      const prefix = `${bookId}*`;
+      const canons = await sanity(`*[_type == "canon" && structuralUnit->canonicalId match $prefix] | order(number asc){
+        _id, number, editorialTitle, status,
+        "text": *[_type == "canonVersion" && canon._ref == ^._id && language == "it" && status == "current"][0].fullText[]{children[]{text}}
+      }`,{prefix});
+      return NextResponse.json({canons});
+    }
+
     if(queryParam){
-      const numeric = Number(queryParam.replace(/[^0-9]/g,""));
+      const digits = queryParam.match(/\d{3,4}/)?.[0];
+      const numeric = digits ? Number(digits) : NaN;
       if(Number.isInteger(numeric) && numeric >= 368 && numeric <= 1752){
         const exact = await sanity(`*[_type == "canon" && number == $number][0]{_id,number,editorialTitle,status}`,{number:numeric});
         if(exact) return NextResponse.json({results:[exact]});
       }
       const term = `*${queryParam.toLowerCase()}*`;
-      const results = await sanity(`*[_type == "canon" && (lower(editorialTitle) match $term || keywords[] match $term)] | order(number asc)[0...20]{_id,number,editorialTitle,status}`,{term});
+      const results = await sanity(`*[
+        _type == "canon" && (
+          lower(coalesce(editorialTitle,"")) match $term ||
+          keywords[] match $term ||
+          _id in *[_type == "canonVersion" && language == "it" && status == "current" && pt::text(fullText) match $term].canon._ref
+        )
+      ] | order(number asc)[0...30]{_id,number,editorialTitle,status}`,{term});
       return NextResponse.json({results});
     }
 
-    const books = await sanity(`*[_type == "structuralUnit" && unitType == "book"] | order(order asc){_id,number,title,canonicalLabel,canonicalId}`);
-    return NextResponse.json({books});
+    if(browse === "books"){
+      const books = await sanity(`*[_type == "structuralUnit" && unitType == "book"] | order(order asc){_id,number,title,canonicalLabel,canonicalId}`);
+      return NextResponse.json({books});
+    }
+
+    return NextResponse.json({ok:true});
   }catch(error){
     console.error(error);
     return NextResponse.json({error:"Impossibile leggere il corpus CIC da Sanity"},{status:502});
