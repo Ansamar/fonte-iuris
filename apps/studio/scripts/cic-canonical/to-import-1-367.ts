@@ -6,6 +6,7 @@ type Canon={number:number;text:string;segments:Segment[]}
 type Book={canons:Canon[]}
 
 const SOURCE_URL='https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html'
+const AMENDED_CANONS=new Set([111,112,230,237,242,265,295,296])
 
 function unit(n:number){
  if(n<=6)return'cic-1983-book-1'
@@ -24,7 +25,7 @@ function unit(n:number){
 async function main(){
  const input=resolve('scripts/cic-canonical/build/canoni-1-367.json');const output=resolve('scripts/import-cic/data/canons.1-367.canonical.ts')
  const book=JSON.parse(await readFile(input,'utf8')) as Book
- const canons=book.canons.map(c=>({number:c.number,structuralUnitCanonicalId:unit(c.number),status:c.number===230?'amended':'inForce',versions:[{versionId:`cic-1983-can-${c.number}-it-current`,versionLabel:'Testo vigente — fonte ufficiale della Santa Sede',status:'current',language:'it',text:c.text,sourceDocumentTitle:'Codice di Diritto Canonico',sourceCitation:`Codice di Diritto Canonico, can. ${c.number}`,sourceUrl:SOURCE_URL,segments:c.segments.map(s=>({segmentId:s.id,segmentType:s.type,label:s.label,order:s.order,...(s.parentId?{parentSegmentId:s.parentId}:{}),startOffset:s.startOffset,endOffset:s.endOffset,isFormalDivision:true}))}]}))
+ const canons=book.canons.map(c=>({number:c.number,structuralUnitCanonicalId:unit(c.number),status:AMENDED_CANONS.has(c.number)?'amended':'inForce',versions:[{versionId:`cic-1983-can-${c.number}-it-current`,versionLabel:'Testo vigente — fonte ufficiale della Santa Sede',status:'current',language:'it',text:c.text,sourceDocumentTitle:'Codice di Diritto Canonico',sourceCitation:`Codice di Diritto Canonico, can. ${c.number}`,sourceUrl:SOURCE_URL,segments:c.segments.map(s=>({segmentId:s.id,segmentType:s.type,label:s.label,order:s.order,...(s.parentId?{parentSegmentId:s.parentId}:{}),startOffset:s.startOffset,endOffset:s.endOffset,isFormalDivision:true}))}]}))
  await mkdir(dirname(output),{recursive:true});await writeFile(output,`import type {CanonInput} from '../types'\n\nexport const canons1to367Canonical: CanonInput[] = ${JSON.stringify(canons,null,2)}\n`,'utf8')
  console.log(`IMPORT_SOURCE_1_367_OK ${canons.length}/367`)
 }
