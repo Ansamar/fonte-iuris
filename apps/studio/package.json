@@ -23,7 +23,8 @@
     "cic:canonical:book7-source": "tsx scripts/cic-canonical/acquire-book7.ts",
     "cic:canonical:book7-build": "tsx scripts/cic-canonical/compile.ts",
     "cic:canonical:book7-validate": "tsx scripts/cic-canonical/validate.ts",
-    "cic:canonical:book7-import-source": "tsx scripts/cic-canonical/to-import-source.ts"
+    "cic:canonical:book7-import-source": "tsx scripts/cic-canonical/to-import-source.ts",
+    "cic:acquire:1-367": "tsx scripts/cic-canonical/acquire-1-367.ts"
   },
   "keywords": ["sanity"],
   "dependencies": {
