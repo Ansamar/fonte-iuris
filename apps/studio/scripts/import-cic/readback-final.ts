@@ -2,6 +2,10 @@ import {getCliClient} from 'sanity/cli'
 
 const client = getCliClient({apiVersion: '2026-03-25'})
 
+const FIRST_CANON = 1
+const LAST_CANON = 1752
+const EXPECTED_CANONS = LAST_CANON - FIRST_CANON + 1
+
 type Segment = {
   _id: string
   segmentId?: string
@@ -23,7 +27,7 @@ type Canon = {
 }
 
 async function main() {
-  const rows = await client.fetch<Canon[]>(`*[_type == "canon" && number >= 368 && number <= 1752] | order(number asc) {
+  const rows = await client.fetch<Canon[]>(`*[_type == "canon" && number >= ${FIRST_CANON} && number <= ${LAST_CANON}] | order(number asc) {
     _id,
     number,
     "structuralUnitId": structuralUnit->canonicalId,
@@ -39,13 +43,12 @@ async function main() {
     }
   }`)
 
-  const expected = 1752 - 368 + 1
   const numberCounts = new Map<number, number>()
   for (const row of rows) numberCounts.set(row.number, (numberCounts.get(row.number) ?? 0) + 1)
 
   const missing: number[] = []
   const duplicateCanonNumbers: number[] = []
-  for (let n = 368; n <= 1752; n++) {
+  for (let n = FIRST_CANON; n <= LAST_CANON; n++) {
     const count = numberCounts.get(n) ?? 0
     if (count === 0) missing.push(n)
     if (count > 1) duplicateCanonNumbers.push(n)
@@ -98,7 +101,7 @@ async function main() {
     emptyTextVersions.length
 
   console.log('\nREAD-BACK FINALE CIC 1983 — SANITY PRODUCTION')
-  console.log(`Canoni: ${rows.length}/${expected}`)
+  console.log(`Canoni: ${rows.length}/${EXPECTED_CANONS}`)
   console.log(`Intervallo: ${rows[0]?.number ?? '-'}–${rows.at(-1)?.number ?? '-'}`)
   console.log(`Versioni: ${versions.length}`)
   console.log(`Segmenti: ${segments.length}`)
