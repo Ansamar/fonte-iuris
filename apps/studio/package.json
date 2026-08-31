@@ -26,7 +26,9 @@
     "cic:canonical:book7-import-source": "tsx scripts/cic-canonical/to-import-source.ts",
     "cic:acquire:1-367": "tsx scripts/cic-canonical/acquire-1-367.ts",
     "cic:build:1-367": "tsx scripts/cic-canonical/compile-1-367.ts",
-    "cic:validate:1-367": "tsx scripts/cic-canonical/validate-1-367.ts"
+    "cic:validate:1-367": "tsx scripts/cic-canonical/validate-1-367.ts",
+    "cic:import-source:1-367": "tsx scripts/cic-canonical/to-import-1-367.ts",
+    "cic:structure:1-367": "sanity exec scripts/import-cic/setup-1-367-structure.ts --with-user-token"
   },
   "keywords": ["sanity"],
   "dependencies": {
