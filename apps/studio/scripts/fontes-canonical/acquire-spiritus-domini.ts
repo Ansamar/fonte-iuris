@@ -7,11 +7,22 @@ const ACT_URL='https://www.vatican.va/content/francesco/it/motu_proprio/document
 const PROMULGATION_URL='https://www.osservatoreromano.va/it/news/2021-01/quo-007/aperti-alle-donne-i-ministeri-istituiti-del-lettorato-br-e-dell.html'
 const CANON_URL='https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_224-231_it.html'
 
+function normalizeHtmlText(value:string){
+  return value
+    .replace(/&nbsp;/gi,' ')
+    .replace(/&#160;/gi,' ')
+    .replace(/\u00a0/g,' ')
+    .replace(/<[^>]+>/g,' ')
+    .replace(/\s+/g,' ')
+    .trim()
+}
+
 async function acquire(key:string,url:string,markers:string[]){
   const response=await fetch(url,{headers:{'user-agent':'Fonte-Iuris/1.0 canonical-source-acquisition'}})
   if(!response.ok)throw new Error(`${key}: acquisizione fallita HTTP ${response.status}`)
   const html=await response.text()
-  for(const marker of markers)if(!html.includes(marker))throw new Error(`${key}: fonte inattesa, manca ${marker}`)
+  const searchable=normalizeHtmlText(html)
+  for(const marker of markers)if(!searchable.includes(marker))throw new Error(`${key}: fonte inattesa, manca ${marker}`)
   const sha256=createHash('sha256').update(html,'utf8').digest('hex')
   const path=`${key}.official.html`
   await writeFile(join(ROOT,path),html,'utf8')
@@ -21,7 +32,7 @@ async function acquire(key:string,url:string,markers:string[]){
 async function main(){
   await mkdir(ROOT,{recursive:true})
   console.log('\nACQUISIZIONE SPIRITUS DOMINI — FONTI UFFICIALI')
-  const act=await acquire('act',ACT_URL,['SPIRITUS DOMINI','CAN. 230 § 1','entrando in vigore nello stesso giorno','10 di gennaio dell’anno 2021'])
+  const act=await acquire('act',ACT_URL,['SPIRITUS DOMINI','SULLA MODIFICA DEL CAN. 230 § 1 DEL CODICE DI DIRITTO CANONICO','entrando in vigore nello stesso giorno','10 di gennaio dell’anno 2021'])
   const promulgation=await acquire('promulgation',PROMULGATION_URL,['11 gennaio 2021','Spiritus Domini','datata 10 gennaio','pubblicata oggi'])
   const canon=await acquire('canon-230',CANON_URL,['Can. 230','I laici di sesso maschile','Spiritus Domini'])
   const manifest={documentId:'francis-2021-spiritus-domini',sources:[act,promulgation,canon]}
