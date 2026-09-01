@@ -10,6 +10,7 @@
     "deploy-graphql": "sanity graphql deploy",
     "dev": "sanity dev",
     "start": "sanity start",
+    "fontes:validate": "tsx scripts/fontes-canonical/validate.ts",
     "cic:validate": "tsx scripts/import-cic/validate-source.ts",
     "cic:preflight": "tsx scripts/import-cic/preflight-dataset.ts",
     "cic:dry-run": "tsx scripts/import-cic/import.ts",
@@ -46,10 +47,5 @@
     "tsx": "^4.20.5",
     "typescript": "^5.8"
   },
-  "prettier": {
-    "bracketSpacing": false,
-    "printWidth": 100,
-    "semi": false,
-    "singleQuote": true
-  }
+  "prettier": {"bracketSpacing": false, "printWidth": 100, "semi": false, "singleQuote": true}
 }
