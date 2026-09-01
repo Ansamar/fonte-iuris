@@ -3,7 +3,7 @@ import {mkdir, writeFile} from 'node:fs/promises'
 import {join} from 'node:path'
 
 const ROOT=join(process.cwd(),'scripts/fontes-canonical/data/spiritus-domini')
-const ACT_URL='https://www.vatican.va/content/francesco/it/motu_proprio/documents/papa-francesco-motu-proprio-20210110_spiritus-domini.html'
+const ACT_URL='https://www.vatican.va/content/francesco/it/motu_proprio/documents/papa-francesco-motu-proprio_20210110_spiritus-domini.html'
 const PROMULGATION_URL='https://www.osservatoreromano.va/it/news/2021-01/quo-007/aperti-alle-donne-i-ministeri-istituiti-del-lettorato-br-e-dell.html'
 const CANON_URL='https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_224-231_it.html'
 
@@ -12,6 +12,11 @@ function normalizeHtmlText(value:string){
     .replace(/&nbsp;|&#160;|&#xA0;/gi,' ')
     .replace(/&sect;|&#167;|&#xA7;/gi,'§')
     .replace(/&rsquo;|&#8217;|&#x2019;/gi,'’')
+    .replace(/&agrave;|&#224;|&#xE0;/gi,'à')
+    .replace(/&egrave;|&#232;|&#xE8;/gi,'è')
+    .replace(/&igrave;|&#236;|&#xEC;/gi,'ì')
+    .replace(/&ograve;|&#242;|&#xF2;/gi,'ò')
+    .replace(/&ugrave;|&#249;|&#xF9;/gi,'ù')
     .replace(/<[^>]+>/g,' ')
     .replace(/\u00a0/g,' ')
     .replace(/\s+/g,' ')
@@ -52,7 +57,9 @@ async function main(){
   ])
   const canon=await acquire('canon-230',CANON_URL,[
     'Can. 230',
-    'I laici che abbiano l’età e le doti',
+    'I laici che abbiano',
+    'ministeri di lettori e di accoliti',
+    'Redazione originaria',
     'Spiritus Domini',
   ])
   const manifest={documentId:'francis-2021-spiritus-domini',sources:[act,promulgation,canon]}
