@@ -8,21 +8,15 @@ const CANONICAL_PATH = join(OUT_DIR, 'canonical.json')
 async function main() {
   const snapshot = JSON.parse(await readFile(META_PATH, 'utf8'))
   const canonical = {
-    canonicalDataVersion: '1.0.0',
+    canonicalDataVersion: '1.1.0',
     documentId: 'francis-2016-de-concordia-inter-codices',
     title: 'De concordia inter Codices',
     shortTitle: 'De concordia inter Codices',
     documentType: 'motuProprio',
     issuer: 'Franciscus PP.',
     issuedAt: '2016-05-31',
-    promulgation: {
-      method: 'L’Osservatore Romano',
-      publishedAt: '2016-09-16',
-      note: 'Il testo dispone la promulgazione mediante pubblicazione su L’Osservatore Romano e la successiva pubblicazione negli Acta Apostolicae Sedis.',
-    },
     publicationReference: 'AAS 108 (2016) 602–606',
-    effectiveFrom: null,
-    effectiveFromVerification: 'pending-juridical-verification',
+    effectiveFrom: '2016-12-16',
     officialUrl: snapshot.sourceUrl,
     language: 'it',
     territorialScope: 'universal',
@@ -43,12 +37,13 @@ async function main() {
       {article: '11', canon: 1127, locator: '§1', effect: 'replaces'},
     ],
     juridicalVerification: {
-      status: 'pending',
-      note: 'Effetti normativi ricavati dal testo ufficiale. La data di entrata in vigore resta separatamente da verificare prima dell’import in production.',
+      status: 'verified',
+      note: 'Entrata in vigore fissata al 16 dicembre 2016 secondo la vacatio legis del can. 8 §1 CIC applicata alla promulgazione mediante L’Osservatore Romano. Fonte documentaria ufficiale conservata nello snapshot.',
     },
   }
   await writeFile(CANONICAL_PATH, JSON.stringify(canonical, null, 2) + '\n', 'utf8')
   console.log(`DE CONCORDIA CANONICAL BUILT — ${canonical.effects.length} effetti`)
+  console.log(`effectiveFrom=${canonical.effectiveFrom}`)
   console.log(`canonical=${CANONICAL_PATH}`)
 }
 
