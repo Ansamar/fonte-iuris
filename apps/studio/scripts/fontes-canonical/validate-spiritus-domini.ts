@@ -27,7 +27,7 @@ async function main(){
   if(data.issuedAt!=='2021-01-10')fail(errors,`issuedAt=${data.issuedAt}`)
   if(data.effectiveFrom!==EFFECTIVE)fail(errors,`effectiveFrom=${data.effectiveFrom}, atteso ${EFFECTIVE}`)
   if(data.legalForce!=='normative'||data.status!=='inForce'||data.territorialScope!=='universal')fail(errors,'forza/stato/ambito non coerenti')
-  if(!/^https:\/\/www\.vatican\.va\//.test(data.officialUrl??''))fail(errors,'officialUrl non Vatican')
+  if(!/^https:\/\/(?:[a-z0-9-]+\.)*vatican\.va\//i.test(data.officialUrl??''))fail(errors,'officialUrl non appartenente a un dominio ufficiale vatican.va')
   if(data.juridicalVerification?.status!=='verified')fail(errors,'verifica giuridica non marcata verified')
   if(!Array.isArray(data.effects)||data.effects.length!==1)fail(errors,`effetti=${data.effects?.length??0}, atteso 1`)
   const effect=data.effects?.[0]
