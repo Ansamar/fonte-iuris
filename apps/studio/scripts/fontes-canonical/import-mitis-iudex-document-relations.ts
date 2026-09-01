@@ -3,14 +3,14 @@ import {client as readClient} from '../import-cic/client'
 
 const commitMode=process.argv.includes('--commit')
 const client=commitMode?getCliClient({apiVersion:'2026-03-25'}):readClient
-const docId='mitis-iudex-dominus-iesus-2015'
+const documentId='mitis-iudex-dominus-iesus-2015'
 const sanityDocId='source-mitis-iudex-dominus-iesus-2015'
 const officialUrl='https://www.vatican.va/content/francesco/it/motu_proprio/documents/papa-francesco-motu-proprio_20150815_mitis-iudex-dominus-iesus.html'
 const sha256='70ad03b15a7894d4a29b0db756eec99429703deac918f49ffbb9c2c892be4879'
 
 async function main(){
  console.log(`\nMITIS IUDEX — DOCUMENT + 21 REPLACEMENT RELATIONS — ${commitMode?'IMPORT':'DRY RUN'}`)
- const existingDoc=await client.fetch(`*[_type=='sourceDocument' && documentId==$id][0]{_id}`,{id:docId})
+ const existingDoc=await client.fetch(`*[_type=='sourceDocument' && documentId==$id][0]{_id}`,{id:documentId})
  const document={
   _id:existingDoc?._id??sanityDocId,_type:'sourceDocument',documentId,
   title:'Mitis Iudex Dominus Iesus',shortTitle:'Mitis Iudex',documentType:'motuProprio',issuer:'Papa Francesco',
@@ -19,7 +19,7 @@ async function main(){
   snapshot:{sourceUrl:officialUrl,sha256,path:'scripts/fontes-canonical/data/mitis-iudex/sources/mitis-iudex.official.html'},
   canonicalDataVersion:'1',notes:'Riforma del processo canonico per le cause di dichiarazione di nullità del matrimonio. Sostituisce integralmente i cann. 1671–1691 con efficacia dal 2015-12-08.'
  }
- console.log(`${existingDoc?'UPDATE':'CREATE'} sourceDocument — ${docId}`)
+ console.log(`${existingDoc?'UPDATE':'CREATE'} sourceDocument — ${documentId}`)
  if(commitMode){if(existingDoc)await client.patch(existingDoc._id).set(document).commit();else await client.createIfNotExists(document)}
  let create=0,update=0
  for(let n=1671;n<=1691;n++){
