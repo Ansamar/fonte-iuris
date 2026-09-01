@@ -3,9 +3,9 @@ import {mkdir, writeFile} from 'node:fs/promises'
 import {join} from 'node:path'
 
 const ROOT=join(process.cwd(),'scripts/fontes-canonical/data/spiritus-domini')
-const ACT_URL='https://www.vatican.va/content/francesco/it/motu_proprio/documents/papa-francesco-motu-proprio_20210110_spiritus-domini.html'
+const ACT_URL='https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2021/01/11/0016/00032.html'
 const PROMULGATION_URL='https://www.osservatoreromano.va/it/news/2021-01/quo-007/aperti-alle-donne-i-ministeri-istituiti-del-lettorato-br-e-dell.html'
-const CANON_URL='https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_224-231_it.html'
+const CANON_URL='https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_224-231_it.html'
 
 function normalizeHtmlText(value:string){
   return value
