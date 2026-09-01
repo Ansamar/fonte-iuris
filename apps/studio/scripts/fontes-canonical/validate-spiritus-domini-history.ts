@@ -34,7 +34,7 @@ async function main(){
   if(typeof v.text!=='string'||!v.text.trim())fail(errors,'testo storico vuoto')
   else {
    if(!v.text.includes(ORIGINAL))fail(errors,'redazione originaria §1 non presente nel testo storico')
-   if(!/^§\s*1\./m.test(v.text)||!/^§\s*2\./m.test(v.text)||!/^§\s*3\./m.test(v.text))fail(errors,'§1–§3 non tutti presenti nel testo storico')
+   if(!/^§\s*1\s*[.:]?\s+/m.test(v.text)||!/^§\s*2\s*[.:]?\s+/m.test(v.text)||!/^§\s*3\s*[.:]?\s+/m.test(v.text))fail(errors,'§1–§3 non tutti presenti nel testo storico')
    if(/\^\{n\}/.test(v.text))fail(errors,'residuo ^{n} nel testo storico')
   }
   const segs=v.segments??[];if(segs.length!==3)fail(errors,`segmenti=${segs.length}, attesi 3`)
