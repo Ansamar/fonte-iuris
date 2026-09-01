@@ -16,7 +16,6 @@ const SOURCES=[
       'confermata dalla Santa Sede',
       'approvata dalla Santa Sede',
       'Redazione originaria',
-      'Competentias quasdam decernere',
     ],
   },
   {
@@ -27,7 +26,6 @@ const SOURCES=[
       'Associazione pubblica clericale',
       'prelatura personale',
       'Redazione originaria',
-      'Competentias quasdam decernere',
       'in modo che non siano assolutamente ammessi chierici acefali o girovaghi',
     ],
   },
@@ -41,7 +39,6 @@ const SOURCES=[
       'Can. 1310',
       'Nei rimanenti casi si deve ricorrere alla Sede Apostolica',
       'Redazione originaria',
-      'Competentias quasdam decernere',
     ],
   },
 ]
@@ -87,7 +84,7 @@ async function main(){
     scope:'competentias-history-missing',
     canons:[237,242,265,1308,1310],
     sources:frozen,
-    juridicalNote:'Official CIC pages containing both the current text after Competentias quasdam decernere and the embedded Redazione originaria are frozen as the documentary basis for reconstruction of the 1983→2022 temporal histories.',
+    juridicalNote:'Official CIC pages containing both the current text after Competentias quasdam decernere and the embedded Redazione originaria are frozen as the documentary basis for reconstruction of the 1983→2022 temporal histories. Attribution to Competentias is established by the separately frozen and validated official act; CIC archive pages are validated here for the current/original textual states, not for the act title string.',
   }
   await writeFile(join(ROOT,'manifest.json'),JSON.stringify(manifest,null,2)+'\n','utf8')
   console.log('✔ COMPETENTIAS MISSING HISTORY SOURCES OK — fonti ufficiali congelate')
