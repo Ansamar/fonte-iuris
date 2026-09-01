@@ -12,11 +12,19 @@ const MARKERS:any={
   242:{old:["approvata dalla Santa Sede","nuova approvazione della Santa Sede"],cur:["confermata dalla Santa Sede","nuova confermazione della Santa Sede"]},
   265:{old:["prelatura personale","acefali o girovaghi"],cur:["Associazione pubblica clericale","Sede Apostolica"]},
   1308:{old:["riservata alla Sede Apostolica","§5.","istituto religioso clericale di diritto pontificio"],cur:["riservata al Vescovo diocesano","§4.","società di vita apostolica clericali"]},
-  1310:{old:["se il fondatore gli abbia espressamente concesso questa potestà","§3. Nei rimanenti casi si deve ricorrere alla Sede Apostolica"],cur:["uditi gli interessati e il proprio consiglio per gli affari economici","§ 2"]},
+  1310:{old:["se il fondatore gli abbia espressamente concesso questa potestà","§3. Nei rimanenti casi si deve ricorrere alla Sede Apostolica"],cur:["uditi gli interessati e il proprio consiglio per gli affari economici","Nei rimanenti casi si deve ricorrere alla Sede Apostolica"]},
 }
 
 function fail(errors:string[],msg:string){errors.push(msg);console.log(`✖ ${msg}`)}
 function ok(msg:string){console.log(`✔ ${msg}`)}
+function validateVersionLocalSegmentIds(errors:string[],n:number,label:string,segments:any[]){
+ const ids=(segments||[]).map((s:any)=>s.segmentId)
+ if(new Set(ids).size!==ids.length)fail(errors,`Can. ${n} ${label}: segmentId duplicati nella stessa versione`)
+ for(const s of segments||[]){
+  if(!s.segmentId?.startsWith(`can-${n}-`))fail(errors,`Can. ${n} ${label}: segmentId non coerente ${s.segmentId}`)
+  if(typeof s.startOffset!=='number'||typeof s.endOffset!=='number'||s.startOffset<0||s.endOffset<s.startOffset)fail(errors,`Can. ${n} ${label}: offset segmento non validi ${s.segmentId}`)
+ }
+}
 
 async function main(){
  console.log('\nVALIDAZIONE FORTE HISTORY CANONICAL — COMPETENTIAS — CAN. 237, 242, 265, 1308, 1310')
@@ -44,8 +52,8 @@ async function main(){
   for(const m of MARKERS[n].cur)if(!cur.text.includes(m))fail(errors,`Can. ${n} corrente: manca marcatore «${m}»`)
   if(old.versionDocumentId!==`version-cic-1983-can-${n}-it-1983`||old.versionId!==`cic-1983-can-${n}-it-1983`)fail(errors,`Can. ${n}: ID storico non deterministico`)
   if(cur.toVersionDocumentId!==`version-cic-1983-can-${n}-it-2022`||cur.toVersionId!==`cic-1983-can-${n}-it-2022`)fail(errors,`Can. ${n}: ID 2022 non deterministico`)
-  const ids=[...(old.segments||[]),...(cur.segments||[])].map((s:any)=>s.segmentId)
-  if(new Set(ids).size!==ids.length)fail(errors,`Can. ${n}: segmentId duplicati tra versioni nel piano`)
+  validateVersionLocalSegmentIds(errors,n,'storico',old.segments||[])
+  validateVersionLocalSegmentIds(errors,n,'corrente',cur.segments||[])
  }
 
  console.log(`\nErrori: ${errors.length}`)
