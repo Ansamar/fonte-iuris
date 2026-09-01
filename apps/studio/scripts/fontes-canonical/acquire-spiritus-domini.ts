@@ -9,12 +9,14 @@ const CANON_URL='https://www.vatican.va/archive/cod-iuris-canonici/ita/documents
 
 function normalizeHtmlText(value:string){
   return value
-    .replace(/&nbsp;/gi,' ')
-    .replace(/&#160;/gi,' ')
-    .replace(/\u00a0/g,' ')
+    .replace(/&nbsp;|&#160;|&#xA0;/gi,' ')
+    .replace(/&sect;|&#167;|&#xA7;/gi,'§')
+    .replace(/&rsquo;|&#8217;|&#x2019;/gi,'’')
     .replace(/<[^>]+>/g,' ')
+    .replace(/\u00a0/g,' ')
     .replace(/\s+/g,' ')
     .trim()
+    .toLocaleLowerCase('it')
 }
 
 async function acquire(key:string,url:string,markers:string[]){
@@ -22,7 +24,10 @@ async function acquire(key:string,url:string,markers:string[]){
   if(!response.ok)throw new Error(`${key}: acquisizione fallita HTTP ${response.status}`)
   const html=await response.text()
   const searchable=normalizeHtmlText(html)
-  for(const marker of markers)if(!searchable.includes(marker))throw new Error(`${key}: fonte inattesa, manca ${marker}`)
+  for(const marker of markers){
+    const wanted=normalizeHtmlText(marker)
+    if(!searchable.includes(wanted))throw new Error(`${key}: fonte inattesa, manca ${marker}`)
+  }
   const sha256=createHash('sha256').update(html,'utf8').digest('hex')
   const path=`${key}.official.html`
   await writeFile(join(ROOT,path),html,'utf8')
@@ -32,9 +37,24 @@ async function acquire(key:string,url:string,markers:string[]){
 async function main(){
   await mkdir(ROOT,{recursive:true})
   console.log('\nACQUISIZIONE SPIRITUS DOMINI — FONTI UFFICIALI')
-  const act=await acquire('act',ACT_URL,['SPIRITUS DOMINI','SULLA MODIFICA DEL CAN. 230 § 1 DEL CODICE DI DIRITTO CANONICO','entrando in vigore nello stesso giorno','10 di gennaio dell’anno 2021'])
-  const promulgation=await acquire('promulgation',PROMULGATION_URL,['11 gennaio 2021','Spiritus Domini','datata 10 gennaio','pubblicata oggi'])
-  const canon=await acquire('canon-230',CANON_URL,['Can. 230','I laici di sesso maschile','Spiritus Domini'])
+  const act=await acquire('act',ACT_URL,[
+    'Spiritus Domini',
+    'can. 230 § 1',
+    'abbia in avvenire la seguente redazione',
+    'entrando in vigore nello stesso giorno',
+    '10 di gennaio dell’anno 2021',
+  ])
+  const promulgation=await acquire('promulgation',PROMULGATION_URL,[
+    'Spiritus Domini',
+    '11 gennaio 2021',
+    'lettorato',
+    'accolitato',
+  ])
+  const canon=await acquire('canon-230',CANON_URL,[
+    'Can. 230',
+    'I laici che abbiano l’età e le doti',
+    'Spiritus Domini',
+  ])
   const manifest={documentId:'francis-2021-spiritus-domini',sources:[act,promulgation,canon]}
   await writeFile(join(ROOT,'manifest.json'),JSON.stringify(manifest,null,2)+'\n','utf8')
   for(const item of manifest.sources)console.log(`✔ ${item.key}: sha256=${item.sha256}`)
