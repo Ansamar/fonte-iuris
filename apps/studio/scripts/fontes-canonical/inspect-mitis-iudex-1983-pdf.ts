@@ -1,14 +1,18 @@
-import {readFile} from 'node:fs/promises'
+import {access,readFile} from 'node:fs/promises'
 import {join} from 'node:path'
 import {execFileSync} from 'node:child_process'
 
 const ROOT=join(process.cwd(),'scripts/fontes-canonical/data/mitis-iudex/history')
-const PDF=join(ROOT,'cic-1983-aas.official.pdf')
+const PDF=join(ROOT,'cic-1983-aas-75-II.official.pdf')
 const TXT=join(ROOT,'cic-1983-aas.pdftotext.txt')
 
 async function main(){
  console.log('\nMITIS IUDEX — ISPEZIONE TESTIMONE CIC 1983')
- try{execFileSync('pdftotext',['-layout',PDF,TXT],{stdio:'inherit'})}catch{throw new Error('pdftotext non disponibile: installare poppler oppure usare un estrattore PDF equivalente')}
+ await access(PDF).catch(()=>{throw new Error(`PDF congelato non trovato: ${PDF}`)})
+ try{execFileSync('pdftotext',['-layout',PDF,TXT],{stdio:'inherit'})}catch(e:any){
+  if(e?.code==='ENOENT')throw new Error('pdftotext non disponibile')
+  throw new Error(`pdftotext fallito con exit ${e?.status ?? 'sconosciuto'}`)
+ }
  const raw=await readFile(TXT,'utf8')
  const hits=[...raw.matchAll(/(?:Can\.?|CAN\.?|can\.?)\s*1671\b/g)]
  console.log(`✔ testo estratto: ${raw.length} caratteri`)
