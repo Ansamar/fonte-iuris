@@ -9,6 +9,9 @@ async function main() {
   const errors: string[] = []
   const required = ['documentId','title','documentType','issuer','issuedAt','officialUrl','language','territorialScope','status','snapshot','effects']
   for (const key of required) if (data[key] == null || data[key] === '') errors.push(`campo obbligatorio mancante: ${key}`)
+  if (data.legalForce === 'normative') {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(data.effectiveFrom ?? '')) errors.push('effectiveFrom obbligatorio e in formato YYYY-MM-DD per i documenti normativi')
+  }
   if (!/^https:\/\/(www\.)?vatican\.va\//.test(data.officialUrl ?? '') && !/^https:\/\/press\.vatican\.va\//.test(data.officialUrl ?? '')) errors.push('officialUrl non appartiene a una fonte ufficiale vaticana ammessa')
   if (!/^[a-f0-9]{64}$/.test(data.snapshot?.sha256 ?? '')) errors.push('snapshot.sha256 non valido')
   if (!data.snapshot?.path) errors.push('snapshot.path mancante')
