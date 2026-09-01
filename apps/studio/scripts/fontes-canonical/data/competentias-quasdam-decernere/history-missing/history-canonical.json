@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "scope": "competentias-history-missing",
+  "effectiveFrom": "2022-02-15",
+  "canons": [
+    {
+      "canon": 237,
+      "canonRef": "canon-cic-1983-can-237",
+      "existingCurrent": {
+        "versionRef": "version-cic-1983-can-237-it-current",
+        "versionId": "cic-1983-can-237-it-current"
+      },
+      "actions": [
+        {
+          "action": "create-historical",
+          "versionDocumentId": "version-cic-1983-can-237-it-1983",
+          "versionId": "cic-1983-can-237-it-1983",
+          "versionLabel": "Redazione originaria CIC 1983",
+          "status": "historical",
+          "language": "it",
+          "validFrom": "1983-11-27",
+          "validUntil": "2022-02-14",
+          "text": "§1. Dove risulta possibile e opportuno, vi sia nelle singole diocesi il seminario maggiore; altrimenti gli alunni che si preparano ai ministeri sacri vengano affidati ad un altro seminario oppure venga eretto un seminario interdiocesano.\n§2. Non si eriga un seminario interdiocesano se prima non è stata ottenuta l'approvazione della Sede Apostolica, sia in ordine alla erezione del seminario, sia in ordine ai suoi statuti: da parte della Conferenza Episcopale, se si tratta di un seminario per tutto il territorio corrispondente, altrimenti da parte dei Vescovi interessati.",
+          "segments": [
+            {
+              "segmentId": "can-237-par-1",
+              "segmentType": "paragraph",
+              "label": "§ 1",
+              "order": 1,
+              "startOffset": 0,
+              "endOffset": 236,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-237-par-2",
+              "segmentType": "paragraph",
+              "label": "§ 2",
+              "order": 2,
+              "startOffset": 238,
+              "endOffset": 575,
+              "isFormalDivision": true
+            }
+          ]
+        },
+        {
+          "action": "migrate-current-to-2022",
+          "fromVersionRef": "version-cic-1983-can-237-it-current",
+          "fromVersionId": "cic-1983-can-237-it-current",
+          "toVersionDocumentId": "version-cic-1983-can-237-it-2022",
+          "toVersionId": "cic-1983-can-237-it-2022",
+          "versionLabel": "Versione vigente da Competentias quasdam decernere",
+          "status": "current",
+          "language": "it",
+          "validFrom": "2022-02-15",
+          "validUntil": null,
+          "text": "§1. Dove risulta possibile e opportuno, vi sia nelle singole diocesi il seminario maggiore; altrimenti gli alunni che si preparano ai ministeri sacri vengano affidati ad un altro seminario oppure venga eretto un seminario interdiocesano.\n§2. Non si eriga un seminario interdiocesano se prima non è stata ottenuta la conferma della Sede Apostolica, sia in ordine alla erezione del seminario, sia in ordine ai suoi statuti: da parte della Conferenza Episcopale, se si tratta di un seminario per tutto il territorio corrispondente, altrimenti da parte dei Vescovi interessati.",
+          "segments": [
+            {
+              "segmentId": "can-237-par-1",
+              "segmentType": "paragraph",
+              "label": "§ 1",
+              "order": 1,
+              "startOffset": 0,
+              "endOffset": 236,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-237-par-2",
+              "segmentType": "paragraph",
+              "label": "§ 2",
+              "order": 2,
+              "startOffset": 238,
+              "endOffset": 572,
+              "isFormalDivision": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canon": 242,
+      "canonRef": "canon-cic-1983-can-242",
+      "existingCurrent": {
+        "versionRef": "version-cic-1983-can-242-it-current",
+        "versionId": "cic-1983-can-242-it-current"
+      },
+      "actions": [
+        {
+          "action": "create-historical",
+          "versionDocumentId": "version-cic-1983-can-242-it-1983",
+          "versionId": "cic-1983-can-242-it-1983",
+          "versionLabel": "Redazione originaria CIC 1983",
+          "status": "historical",
+          "language": "it",
+          "validFrom": "1983-11-27",
+          "validUntil": "2022-02-14",
+          "text": "§1. In ogni nazione vi sia una Ratio di formazione sacerdotale, emanata dalla Conferenza Episcopale sulla base delle norme fissate dalla suprema autorità della Chiesa e approvata dalla Santa Sede, adattabile alle nuove situazioni con una nuova approvazione della Santa Sede; in essa vengano definiti i principi essenziali e le norme generali della formazione seminaristica, adattate alle necessità pastorali di ogni regione o provincia.\n§2. Le norme della Ratio di cui al §1 siano osservate in tutti i seminari, sia diocesani sia interdiocesani.",
+          "segments": [
+            {
+              "segmentId": "can-242-par-1",
+              "segmentType": "paragraph",
+              "label": "§ 1",
+              "order": 1,
+              "startOffset": 0,
+              "endOffset": 435,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-242-par-2",
+              "segmentType": "paragraph",
+              "label": "§ 2",
+              "order": 2,
+              "startOffset": 437,
+              "endOffset": 544,
+              "isFormalDivision": true
+            }
+          ]
+        },
+        {
+          "action": "migrate-current-to-2022",
+          "fromVersionRef": "version-cic-1983-can-242-it-current",
+          "fromVersionId": "cic-1983-can-242-it-current",
+          "toVersionDocumentId": "version-cic-1983-can-242-it-2022",
+          "toVersionId": "cic-1983-can-242-it-2022",
+          "versionLabel": "Versione vigente da Competentias quasdam decernere",
+          "status": "current",
+          "language": "it",
+          "validFrom": "2022-02-15",
+          "validUntil": null,
+          "text": "§1. In ogni nazione vi sia una Ratio di formazione sacerdotale, emanata dalla Conferenza Episcopale sulla base delle norme fissate dalla suprema autorità della Chiesa e confermata dalla Santa Sede, adattabile alle nuove situazioni con una nuova confermazione della Santa Sede; in essa vengono definiti i principi essenziali e le norme generali della formazione seminaristica, adattate alle necessità pastorali di ogni regione o provincia.\n§2. Le norme della Ratio di cui al §1 siano osservate in tutti i seminari, sia diocesani sia interdiocesani.",
+          "segments": [
+            {
+              "segmentId": "can-242-par-1",
+              "segmentType": "paragraph",
+              "label": "§ 1",
+              "order": 1,
+              "startOffset": 0,
+              "endOffset": 437,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-242-par-2",
+              "segmentType": "paragraph",
+              "label": "§ 2",
+              "order": 2,
+              "startOffset": 439,
+              "endOffset": 546,
+              "isFormalDivision": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canon": 265,
+      "canonRef": "canon-cic-1983-can-265",
+      "existingCurrent": {
+        "versionRef": "version-cic-1983-can-265-it-current",
+        "versionId": "cic-1983-can-265-it-current"
+      },
+      "actions": [
+        {
+          "action": "create-historical",
+          "versionDocumentId": "version-cic-1983-can-265-it-1983",
+          "versionId": "cic-1983-can-265-it-1983",
+          "versionLabel": "Redazione originaria CIC 1983",
+          "status": "historical",
+          "language": "it",
+          "validFrom": "1983-11-27",
+          "validUntil": "2022-02-14",
+          "text": "Ogni chierico deve essere incardinato o in una Chiesa particolare o in una prelatura personale oppure in un istituto di vita consacrata o in una società che ne abbiano la facoltà, in modo che non siano assolutamente ammessi chierici acefali o girovaghi.",
+          "segments": []
+        },
+        {
+          "action": "migrate-current-to-2022",
+          "fromVersionRef": "version-cic-1983-can-265-it-current",
+          "fromVersionId": "cic-1983-can-265-it-current",
+          "toVersionDocumentId": "version-cic-1983-can-265-it-2022",
+          "toVersionId": "cic-1983-can-265-it-2022",
+          "versionLabel": "Versione vigente da Competentias quasdam decernere",
+          "status": "current",
+          "language": "it",
+          "validFrom": "2022-02-15",
+          "validUntil": null,
+          "text": "Ogni chierico deve essere incardinato o in una Chiesa particolare o in una Prelatura personale oppure in un istituto di vita consacrata o in una società che ne abbia la facoltà, o anche in una Associazione pubblica clericale che abbia ottenuto tale facoltà dalla Sede Apostolica, in modo che non siano assolutamente ammessi chierici acefali o girovaghi.",
+          "segments": []
+        }
+      ]
+    },
+    {
+      "canon": 1308,
+      "canonRef": "canon-cic-1983-can-1308",
+      "existingCurrent": {
+        "versionRef": "version-cic-1983-can-1308-it-current",
+        "versionId": "cic-1983-can-1308-it-current"
+      },
+      "actions": [
+        {
+          "action": "create-historical",
+          "versionDocumentId": "version-cic-1983-can-1308-it-1983",
+          "versionId": "cic-1983-can-1308-it-1983",
+          "versionLabel": "Redazione originaria CIC 1983",
+          "status": "historical",
+          "language": "it",
+          "validFrom": "1983-11-27",
+          "validUntil": "2022-02-14",
+          "text": "§1. La riduzione degli oneri delle Messe, da farsi soltanto per causa giusta e necessaria, è riservata alla Sede Apostolica, salvo le disposizioni che seguono.\n§2. Se ciò sia espressamente stabilito nelle tavole di fondazione, l'Ordinario a causa della diminuzione dei redditi può ridurre gli oneri delle Messe.\n§3. Il Vescovo diocesano ha la potestà di ridurre a causa della diminuzione dei redditi e fintantoché tale causa perduri, le Messe dei legati o in qualsiasi modo fondate, che sono autonomi, secondo l'elemosina legittimamente vigente in diocesi, purché non vi sia persona obbligata e che possa essere efficacemente coatta a provvedere all'aumento dell'elemosina.\n§4. Al medesimo compete la potestà di ridurre gli oneri o legati di Messe che gravano su istituti ecclesiastici, se i redditi siano diventati insufficienti a conseguire convenientemente le finalità proprie dell'istituto ecclesiastico stesso.\n§5. Ha le stesse facoltà di cui nei §§3 e 4 il Moderatore supremo di un istituto religioso clericale di diritto pontificio.",
+          "segments": [
+            {
+              "segmentId": "can-1308-par-1",
+              "segmentType": "paragraph",
+              "label": "§ 1",
+              "order": 1,
+              "startOffset": 0,
+              "endOffset": 158,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-1308-par-2",
+              "segmentType": "paragraph",
+              "label": "§ 2",
+              "order": 2,
+              "startOffset": 160,
+              "endOffset": 310,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-1308-par-3",
+              "segmentType": "paragraph",
+              "label": "§ 3",
+              "order": 3,
+              "startOffset": 312,
+              "endOffset": 672,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-1308-par-4",
+              "segmentType": "paragraph",
+              "label": "§ 4",
+              "order": 4,
+              "startOffset": 674,
+              "endOffset": 914,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-1308-par-5",
+              "segmentType": "paragraph",
+              "label": "§ 5",
+              "order": 5,
+              "startOffset": 916,
+              "endOffset": 1038,
+              "isFormalDivision": true
+            }
+          ]
+        },
+        {
+          "action": "migrate-current-to-2022",
+          "fromVersionRef": "version-cic-1983-can-1308-it-current",
+          "fromVersionId": "cic-1983-can-1308-it-current",
+          "toVersionDocumentId": "version-cic-1983-can-1308-it-2022",
+          "toVersionId": "cic-1983-can-1308-it-2022",
+          "versionLabel": "Versione vigente da Competentias quasdam decernere",
+          "status": "current",
+          "language": "it",
+          "validFrom": "2022-02-15",
+          "validUntil": null,
+          "text": "§1. La riduzione degli oneri delle Messe, da farsi soltanto per causa giusta e necessaria, è riservata al Vescovo diocesano e al Moderatore supremo di un istituto di vita consacrata o di una società di vita apostolica clericali.\n§2. Il Vescovo diocesano ha la facoltà di ridurre a causa della diminuzione dei redditi e fintantoché tale causa perduri, le Messe dei legati che sono autonomi, secondo l’elemosina legittimamente vigente in diocesi, purché non vi sia persona obbligata e che possa essere efficacemente coatta a provvedere all’aumento dell’elemosina.\n§3. Al medesimo compete la facoltà di ridurre gli oneri o legati di Messe che gravano su istituti ecclesiastici, se i redditi siano diventati insufficienti a conseguire convenientemente le finalità proprie dell’istituto ecclesiastico stesso.\n§4. Ha le stesse facoltà di cui ai §§ 2 e 3 il Moderatore supremo di un istituto di vita consacrata o di una società di vita apostolica clericali.",
+          "segments": [
+            {
+              "segmentId": "can-1308-par-1",
+              "segmentType": "paragraph",
+              "label": "§ 1",
+              "order": 1,
+              "startOffset": 0,
+              "endOffset": 227,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-1308-par-2",
+              "segmentType": "paragraph",
+              "label": "§ 2",
+              "order": 2,
+              "startOffset": 229,
+              "endOffset": 560,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-1308-par-3",
+              "segmentType": "paragraph",
+              "label": "§ 3",
+              "order": 3,
+              "startOffset": 562,
+              "endOffset": 802,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-1308-par-4",
+              "segmentType": "paragraph",
+              "label": "§ 4",
+              "order": 4,
+              "startOffset": 804,
+              "endOffset": 949,
+              "isFormalDivision": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canon": 1310,
+      "canonRef": "canon-cic-1983-can-1310",
+      "existingCurrent": {
+        "versionRef": "version-cic-1983-can-1310-it-current",
+        "versionId": "cic-1983-can-1310-it-current"
+      },
+      "actions": [
+        {
+          "action": "create-historical",
+          "versionDocumentId": "version-cic-1983-can-1310-it-1983",
+          "versionId": "cic-1983-can-1310-it-1983",
+          "versionLabel": "Redazione originaria CIC 1983",
+          "status": "historical",
+          "language": "it",
+          "validFrom": "1983-11-27",
+          "validUntil": "2022-02-14",
+          "text": "§1. La riduzione, il contenimento e la permuta delle volontà dei fedeli a favore di cause pie possono essere attuate soltanto per causa giusta e necessaria dall'Ordinario, se il fondatore gli abbia espressamente concesso questa potestà.\n§2. Se l'esecuzione degli oneri imposti sia diventata impossibile per la diminuzione dei redditi o per altra causa, senza che gli amministratori ne abbiano colpa alcuna, l'Ordinario, uditi gli interessati e il proprio consiglio per gli affari economici e rispettata nel miglior modo possibile la volontà del fondatore, potrà equamente diminuire gli stessi oneri, ad eccezione della riduzione delle Messe che è regolata dalle disposizioni del can. 1308.\n§3. Nei rimanenti casi si deve ricorrere alla Sede Apostolica.",
+          "segments": [
+            {
+              "segmentId": "can-1310-par-1",
+              "segmentType": "paragraph",
+              "label": "§ 1",
+              "order": 1,
+              "startOffset": 0,
+              "endOffset": 235,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-1310-par-2",
+              "segmentType": "paragraph",
+              "label": "§ 2",
+              "order": 2,
+              "startOffset": 237,
+              "endOffset": 688,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-1310-par-3",
+              "segmentType": "paragraph",
+              "label": "§ 3",
+              "order": 3,
+              "startOffset": 690,
+              "endOffset": 751,
+              "isFormalDivision": true
+            }
+          ]
+        },
+        {
+          "action": "migrate-current-to-2022",
+          "fromVersionRef": "version-cic-1983-can-1310-it-current",
+          "fromVersionId": "cic-1983-can-1310-it-current",
+          "toVersionDocumentId": "version-cic-1983-can-1310-it-2022",
+          "toVersionId": "cic-1983-can-1310-it-2022",
+          "versionLabel": "Versione vigente da Competentias quasdam decernere",
+          "status": "current",
+          "language": "it",
+          "validFrom": "2022-02-15",
+          "validUntil": null,
+          "text": "§1. La riduzione, il contenimento e la permuta delle volontà dei fedeli a favore di cause pie possono essere attuate soltanto per causa giusta e necessaria dall’Ordinario, uditi gli interessati e il proprio consiglio per gli affari economici e rispettata nel miglior modo possibile la volontà del fondatore.\n§2. Nei rimanenti casi si deve ricorrere alla Sede Apostolica.",
+          "segments": [
+            {
+              "segmentId": "can-1310-par-1",
+              "segmentType": "paragraph",
+              "label": "§ 1",
+              "order": 1,
+              "startOffset": 0,
+              "endOffset": 306,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-1310-par-2",
+              "segmentType": "paragraph",
+              "label": "§ 2",
+              "order": 2,
+              "startOffset": 308,
+              "endOffset": 369,
+              "isFormalDivision": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "manifest": "manifest.json",
+    "note": "Le redazioni originarie e vigenti sono attestate negli snapshot ufficiali CIC congelati e validati; Competentias quasdam decernere è la fonte normativa della modifica."
+  }
+}

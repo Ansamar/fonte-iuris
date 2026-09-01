@@ -1,0 +1,12 @@
+{
+  "documentId": "francis-2022-competentias-quasdam-decernere",
+  "sources": [
+    {
+      "key": "act",
+      "sourceUrl": "https://www.vatican.va/content/francesco/it/motu_proprio/documents/20220211-motu-proprio-assegnare-alcune-competenze.html",
+      "capturedAt": "2026-09-01T09:57:43.386Z",
+      "sha256": "1135bf02938525b18ced0f4a525eb812924fea76f66cae20b5de2ef14988c451",
+      "path": "scripts/fontes-canonical/data/competentias-quasdam-decernere/act.official.html"
+    }
+  ]
+}

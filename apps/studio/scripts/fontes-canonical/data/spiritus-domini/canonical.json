@@ -1,0 +1,50 @@
+{
+  "canonicalDataVersion": "1.0.0",
+  "documentId": "francis-2021-spiritus-domini",
+  "title": "Spiritus Domini",
+  "shortTitle": "Spiritus Domini",
+  "documentType": "motuProprio",
+  "issuer": "Franciscus PP.",
+  "issuedAt": "2021-01-10",
+  "effectiveFrom": "2021-01-11",
+  "territorialScope": "universal",
+  "legalForce": "normative",
+  "status": "inForce",
+  "language": "it",
+  "officialUrl": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2021/01/11/0016/00032.html",
+  "snapshots": {
+    "act": {
+      "key": "act",
+      "sourceUrl": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2021/01/11/0016/00032.html",
+      "capturedAt": "2026-09-01T09:42:58.996Z",
+      "sha256": "9fa557d856409fd306a57fb91625f71387c5acfd0d22065aa15eff579c607b3a",
+      "path": "scripts/fontes-canonical/data/spiritus-domini/act.official.html"
+    },
+    "promulgationEvidence": {
+      "key": "promulgation",
+      "sourceUrl": "https://www.osservatoreromano.va/it/news/2021-01/quo-007/aperti-alle-donne-i-ministeri-istituiti-del-lettorato-br-e-dell.html",
+      "capturedAt": "2026-09-01T09:42:59.127Z",
+      "sha256": "f10aacc5a5d806c1250c8dde77be52c8109f2a499c9701bf07f2773542554402",
+      "path": "scripts/fontes-canonical/data/spiritus-domini/promulgation.official.html"
+    },
+    "canon230": {
+      "key": "canon-230",
+      "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_224-231_it.html",
+      "capturedAt": "2026-09-01T09:42:59.275Z",
+      "sha256": "2e9e379beb337934d51c70890f3ab7114d4e5c4a794cc98ac54f18b634f1014f",
+      "path": "scripts/fontes-canonical/data/spiritus-domini/canon-230.official.html"
+    }
+  },
+  "effects": [
+    {
+      "article": "dispositivo",
+      "canon": 230,
+      "locator": "§1",
+      "effect": "replaces"
+    }
+  ],
+  "juridicalVerification": {
+    "status": "verified",
+    "note": "Il Motu Proprio prescrive la promulgazione mediante pubblicazione su L’Osservatore Romano e l’entrata in vigore nello stesso giorno. L’Osservatore Romano del 11 gennaio 2021 dichiara il documento datato 10 gennaio e pubblicato quel giorno; effectiveFrom=2021-01-11."
+  }
+}

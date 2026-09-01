@@ -1,0 +1,26 @@
+{
+  "documentId": "francis-2021-spiritus-domini",
+  "sources": [
+    {
+      "key": "act",
+      "sourceUrl": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2021/01/11/0016/00032.html",
+      "capturedAt": "2026-09-01T09:42:58.996Z",
+      "sha256": "9fa557d856409fd306a57fb91625f71387c5acfd0d22065aa15eff579c607b3a",
+      "path": "scripts/fontes-canonical/data/spiritus-domini/act.official.html"
+    },
+    {
+      "key": "promulgation",
+      "sourceUrl": "https://www.osservatoreromano.va/it/news/2021-01/quo-007/aperti-alle-donne-i-ministeri-istituiti-del-lettorato-br-e-dell.html",
+      "capturedAt": "2026-09-01T09:42:59.127Z",
+      "sha256": "f10aacc5a5d806c1250c8dde77be52c8109f2a499c9701bf07f2773542554402",
+      "path": "scripts/fontes-canonical/data/spiritus-domini/promulgation.official.html"
+    },
+    {
+      "key": "canon-230",
+      "sourceUrl": "https://press.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_224-231_it.html",
+      "capturedAt": "2026-09-01T09:42:59.275Z",
+      "sha256": "2e9e379beb337934d51c70890f3ab7114d4e5c4a794cc98ac54f18b634f1014f",
+      "path": "scripts/fontes-canonical/data/spiritus-domini/canon-230.official.html"
+    }
+  ]
+}

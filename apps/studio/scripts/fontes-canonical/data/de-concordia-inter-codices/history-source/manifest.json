@@ -1,0 +1,49 @@
+{
+  "source": "Santa Sede",
+  "purpose": "De concordia historical canon reconstruction",
+  "language": "it",
+  "retrievedAt": "2026-09-01T09:11:35.396Z",
+  "pages": [
+    {
+      "key": "96-112",
+      "url": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroI_96-112_it.html",
+      "sha256": "43f76a6eacfab785140ffc88333b63a843eb6e2ecb4198227646c746567a06e1",
+      "evidenceMode": "original",
+      "html": "96-112.official.html",
+      "text": "96-112.official.txt"
+    },
+    {
+      "key": "515-552",
+      "url": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_515-552_it.html",
+      "sha256": "2a3e21cb688e59006f3c88745fbefd4766fe4c6ebaf9d0c0dbb305cc6e57a892",
+      "evidenceMode": "original",
+      "html": "515-552.official.html",
+      "text": "515-552.official.txt"
+    },
+    {
+      "key": "864-871",
+      "url": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_864-871_it.html",
+      "sha256": "f844c6a90cf35c81563699e2dbc3ccf33a94e52b5140eebb5ea0737f6c070fda",
+      "evidenceMode": "marked-current",
+      "html": "864-871.official.html",
+      "text": "864-871.official.txt"
+    },
+    {
+      "key": "1108-1123",
+      "url": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1108-1123_it.html",
+      "sha256": "4fefc5e1d2f0b1216335ddf6465873de342b73d2e21ae272f14bf820b06ee75c",
+      "evidenceMode": "original-or-marked",
+      "html": "1108-1123.official.html",
+      "text": "1108-1123.official.txt"
+    },
+    {
+      "key": "1124-1129",
+      "url": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIV_1124-1129_it.html",
+      "sha256": "8c4ad5ddf608b731aecc36fe8e4655696fead632c050f6df9201d61fb604fabd",
+      "evidenceMode": "original-or-marked",
+      "html": "1124-1129.official.html",
+      "text": "1124-1129.official.txt"
+    }
+  ],
+  "manifestSha256": "f4d125b94a0b6565302410c3014a14ec62ee63671882b474c403deb8d9fa6b6f"
+}

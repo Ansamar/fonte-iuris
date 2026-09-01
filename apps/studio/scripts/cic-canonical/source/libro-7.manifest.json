@@ -1,0 +1,14 @@
+{
+  "book": 7,
+  "range": [
+    1400,
+    1752
+  ],
+  "expectedCanons": 353,
+  "language": "it",
+  "source": "Santa Sede",
+  "indexUrl": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html",
+  "retrievedAt": "2026-08-30T15:54:00.638Z",
+  "pages": 64,
+  "sha256": "e2a6b08c1be686f9b6137fced3a48fe4d8d9846ba08516df391883191ed6f287"
+}

@@ -1,0 +1,576 @@
+{
+  "scope": {
+    "fromCanon": 1671,
+    "toCanon": 1691,
+    "reformEffectiveFrom": "2015-12-08"
+  },
+  "canons": [
+    {
+      "canonNumber": 1671,
+      "versions": [
+        {
+          "canonNumber": 1671,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "Causae matrimoniales baptizatorum iure proprio ad iudicem ecclesiasticum spectant.",
+          "versionId": "cic-1983-can-1671-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1671,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1671-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n LIBRO VII \n I PROCESSI \n \n PARTE III \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I \n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n CAPITOLO I (Cann.1671 - 1691)\n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n Articolo 1 \n Il foro competente e i tribunali \n Can. 1671 n - § 1. Le cause matrimoniali dei battezzati per diritto proprio spettano al giudice ecclesiastico.\n§ 2. Le cause sugli effetti puramente civili del matrimonio spettano al magistrato civile, a meno che il diritto particolare non stabilisca che le medesime cause, qualora siano trattate incidentalmente e accessoriamente, possano essere esaminate e decise dal giudice ecclesiastico."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1672,
+      "versions": [
+        {
+          "canonNumber": 1672,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "Causae de effectibus matrimonii mere civilibus pertinent ad civilem magistratum, nisi ius particulare statuat easdem causas, si incidenter et accessorie agantur, posse a iudice ecclesiastico cognosci ac definiri.",
+          "versionId": "cic-1983-can-1672-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1672,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1672-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - Nelle cause di nullit&agrave; del matrimonio, che non siano riservate alla Sede Apostolica, sono competenti: \n \n \n 1° il tribunale del luogo in cui il matrimonio fu celebrato; \n \n 2° il tribunale del luogo in cui una o entrambe le parti hanno il domicilio o il quasi-domicilio; \n \n 3° il tribunale del luogo in cui di fatto si debba raccogliere la maggior parte delle prove."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1673,
+      "versions": [
+        {
+          "canonNumber": 1673,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "In causis de matrimonii nullitate, quae non sint Sedi Apostolicae reservatae, competentes sunt : o I tribunal loci in quo matrimonium celebratum est; 2° tribunal loci in quo pars conventa domicilium vel quasi-domicilium habet; 3° tribunal loci in quo pars actrix domicilium habet, dummodo utraque pars in territorio eiusdem Episcoporum conferentiae degat et Vicarius iudicialis domicilii partis conventae, ipsa audita, consentiat ; 4° tribunal loci in quo de facto colligendae sunt pleraeque probationes, dummodo accedat consensus Vicarii iudicialis domicilii partis conventae, qui prius ipsam interroget, num quid excipiendum habeat. Art. 2 DE IURE IMPUGNANDI MATRIMONIUM",
+          "versionId": "cic-1983-can-1673-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1673,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1673-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - § 1. In ciascuna diocesi il giudice di prima istanza per le cause di nullit&agrave; del matrimonio, per le quali il diritto non faccia espressamente eccezione, &egrave; il Vescovo diocesano, che pu&ograve; esercitare la potest&agrave; giudiziale personalmente o per mezzo di altri, a norma del diritto.\n § 2. Il Vescovo costituisca per la sua diocesi il tribunale diocesano per le cause di nullit&agrave; del matrimonio, salva la facolt&agrave; per lo stesso Vescovo di accedere a un altro viciniore tribunale diocesano o interdiocesano.\n § 3. Le cause di nullit&agrave; del matrimonio sono riservate a un collegio di tre giudici. Esso deve essere presieduto da un giudice chierico, i rimanenti giudici possono anche essere laici.\n § 4. Il Vescovo Moderatore, se non &egrave; possibile costituire il tribunale collegiale in diocesi o nel vicino tribunale che &egrave; stato scelto a norma del § 2, affidi le cause a un unico giudice chierico che, ove sia possibile, si associ due assessori di vita specchiata, esperti in scienze giuridiche o umane, approvati dal Vescovo per questo compito; allo stesso giudice unico competono, salvo che risulti diversamente, le funzioni attribuite al collegio, al preside o al ponente.\n § 5. Il tribunale di seconda istanza per la validit&agrave; deve sempre essere collegiale, secondo il disposto del precedente § 3.\n § 6. Dal tribunale di prima istanza si appella al tribunale metropolitano di seconda istanza, salvo il disposto dei cann. 1438-1439 e 1444. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 2 \n \n Il diritto di impugnare il matrimonio"
+        }
+      ]
+    },
+    {
+      "canonNumber": 1674,
+      "versions": [
+        {
+          "canonNumber": 1674,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "Habiles sunt ad matrimonium impugnandum : o I coniuges; 2° promotor iustitiae, cum nullitas iam divulgata est, si matrimonium convalidari nequeat aut non expediat.",
+          "versionId": "cic-1983-can-1674-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1674,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1674-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - § 1. Sono abili ad impugnare il matrimonio: \n \n \n 1° i coniugi; \n \n 2° il promotore di giustizia, quando la nullit&agrave; sia gi&agrave; stata divulgata, se non si possa convalidare il matrimonio o non sia opportuno.\n \n § 2. Il matrimonio che, viventi entrambi i coniugi, non fu accusato, non pu&ograve; pi&ugrave; esserlo dopo la morte di entrambi o di uno di essi, a meno che la questione della validit&agrave; non pregiudichi la soluzione di un'altra controversia sia in foro canonico sia in foro civile.\n § 3. Se poi un coniuge muore durante il processo, si osservi il can. 1518.\n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n Articolo 3 \n L'introduzione e l'istruzione della causa"
+        }
+      ]
+    },
+    {
+      "canonNumber": 1675,
+      "versions": [
+        {
+          "canonNumber": 1675,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "§ 1. Matrimonium quod, utroque coniuge vivente, non fuit accusatum, post mortem alterutrius vel utriusque coniugis accusari non potest, nisi quaestio de validitate sit praeiudicialis ad aliam solvendam controversiam sive in foro canonico sive in foro civili. § 2. Si autem coniux moriatur pendente causa, servetur can. 1518. Art. 3 DE OFFICIO IUDICUM",
+          "versionId": "cic-1983-can-1675-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1675,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1675-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - Il giudice, prima di accettare la causa, deve avere la certezza che il matrimonio sia irreparabilmente fallito, in modo che sia impossibile ristabilire la convivenza coniugale."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1676,
+      "versions": [
+        {
+          "canonNumber": 1676,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "Iudex, antequam causam acceptet et quotiescumque spem boni exitus perspicit, pastoralia media adhibeat, ut coniuges, si fieri potest, ad matrimonium forte convalidandum et ad coniugalem convictum restaurandum inducantur.",
+          "versionId": "cic-1983-can-1676-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1676,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1676-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - § 1. Ricevuto il libello, il Vicario giudiziale, se ritiene che esso goda di qualche fondamento, lo ammetta e, con decreto apposto in calce allo stesso libello, ordini che una copia venga notificata al difensore del vincolo e, se il libello non &egrave; stato sottoscritto da entrambe le parti, alla parte convenuta, dandole il termine di quindici giorni per esprimere la sua posizione riguardo alla domanda.\n § 2. Trascorso il predetto termine, dopo aver nuovamente ammonito, se e in quanto lo ritenga opportuno, l'altra parte a manifestare la sua posizione, sentito il difensore del vincolo, il Vicario giudiziale con proprio decreto determini la formula del dubbio e stabilisca se la causa debba trattarsi con il processo ordinario o con il processo pi&ugrave; breve a norma dei cann. 1683-1687. Tale decreto sia subito notificato alle parti e al difensore del vincolo.\n § 3. Se la causa deve essere trattata con il processo ordinario, il Vicario giudiziale, con lo stesso decreto, disponga la costituzione del collegio dei giudici o del giudice unico con i due assessori secondo il can. 1673 § 4.\n § 4. Se invece viene disposto il processo pi&ugrave; breve, il Vicario giudiziale proceda a norma del can. 1685.\n § 5. La formula del dubbio deve determinare per quale capo o per quali capi &egrave; impugnata la validit&agrave; delle nozze."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1677,
+      "versions": [
+        {
+          "canonNumber": 1677,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "§ 1. Libello acceptato, praeses vel ponens procedat ad notificationem decreti citationis ad normam can. 1508. § 2. Transacto termino quindecim dierum a notificatione, praeses vel ponens, nisi alterutra pars sessionem ad litem contestandam petierit, intra decem dies formulam dubii vel dubiorum decreto suo statuat ex officio et partibus notificet. § 3. Formula dubii non tantum quaerat an constet de nullitate ma288 L I B . VII - De processibus ê trimonii in casu, sed determinare etiam debet quo capite vel quibus capitibus nuptiarum validitas impugnetur. § 4. Post decem dies a notificatione decreti, si partes nihil opposuerint, praeses vel ponens novo decreto causae instructionem disponat. Art. 4 DE PROBATIONIBUS",
+          "versionId": "cic-1983-can-1677-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1677,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1677-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - § 1. Il difensore del vincolo, i patroni delle parti, e, se intervenga nel giudizio, anche il promotore di giustizia, hanno diritto: 1° di essere presenti all'esame delle parti, dei testi e dei periti, salvo il disposto del can. 1559; 2° di prendere visione degli atti giudiziari, bench&eacute; non ancora pubblicati, e di esaminare i documenti prodotti dalle parti.\n § 2. Le parti non possono assistere all'esame di cui al § 1, n.1."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1678,
+      "versions": [
+        {
+          "canonNumber": 1678,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "§ 1. Defensori vinculi, partium patronis et, si in iudicio sit, etiam promotori iustitiae ius est : o I examini partium, testium et peritorum adesse, salvo praescripto can. 1559; 2° acta iudicialia, etsi nondum publicata, invisere et documenta a partibus producta recognoscere. § 2. Examini, de quo in § 1, n. 1, partes assistere nequeunt.",
+          "versionId": "cic-1983-can-1678-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1678,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1678-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - § 1. Nelle cause di nullit&agrave; del matrimonio, la confessione giudiziale e le dichiarazioni delle parti, sostenute da eventuali testi sulla credibilit&agrave; delle stesse, possono avere valore di prova piena, da valutarsi dal giudice considerati tutti gli indizi e gli amminicoli, se non vi siano altri elementi che le confutino.\n § 2. Nelle medesime cause, la deposizione di un solo teste pu&ograve; fare pienamente fede, se si tratta di un teste qualificato che deponga su cose fatte d'ufficio, o le circostanze di fatti e di persone lo suggeriscono.\n § 3. Nelle cause in materia di impotenza o di difetto del consenso per malattia mentale o per anomalia di natura psichica il giudice si avvalga dell'opera di uno o pi&ugrave; periti, se dalle circostanze non appare evidentemente inutile; nelle altre cause si osservi il disposto del can. 1574.\n § 4. Ogniqualvolta nell'istruttoria della causa fosse insorto un dubbio assai probabile che il matrimonio non sia stato consumato, il tribunale, sentite le parti, pu&ograve; sospendere la causa di nullit&agrave;, completare l'istruttoria in vista della dispensa super rato , ed infine trasmettere gli atti alla Sede Apostolica insieme alla domanda di dispensa di uno o di entrambi i coniugi ed al voto del tribunale e del Vescovo. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 4 \n La sentenza, le sue impugnazioni e la sua esecuzione"
+        }
+      ]
+    },
+    {
+      "canonNumber": 1679,
+      "versions": [
+        {
+          "canonNumber": 1679,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "Nisi probationes aliunde plenae habeantur, iudex, ad partium depositiones ad normam can. 1536 aestimandas, testes de ipsarum partium credibilitate, si fieri potest, adhibeat, praeter alia indicia et adminicula.",
+          "versionId": "cic-1983-can-1679-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1679,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1679-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - La sentenza che per la prima volta ha dichiarato la nullit&agrave; del matrimonio, decorsi i termini stabiliti nei cann. 1630-1633, diventa esecutiva."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1680,
+      "versions": [
+        {
+          "canonNumber": 1680,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "In causis de impotentia vel de consensus defectu propter mentis morbum iudex unius periti vel plurium opera utatur, nisi ex adiunctis inutilis evidenter appareat; in ceteris causis servetur praescriptum can. 1574. Art. 5 DE SENTENTIA ET APPELLATIONE",
+          "versionId": "cic-1983-can-1680-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1680,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1680-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - § 1. Alla parte, che si ritenga onerata, e parimenti al promotore di giustizia e al difensore del vincolo rimane il diritto di interporre querela di nullit&agrave; della sentenza o appello contro la medesima sentenza ai sensi dei cann. 1619-1640.\n § 2. Decorsi i termini stabiliti dal diritto per l'appello e la sua prosecuzione, dopo che il tribunale di istanza superiore ha ricevuto gli atti giudiziari, si costituisca il collegio dei giudici, si designi il difensore del vincolo e le parti vengano ammonite a presentare le osservazioni entro un termine prestabilito; trascorso tale termine, il tribunale collegiale, se l'appello risulta manifestamente dilatorio, confermi con proprio decreto la sentenza di prima istanza.\n § 3. Se l'appello &egrave; stato ammesso, si deve procedere allo stesso modo come in prima istanza, con i dovuti adattamenti.\n § 4. Se nel grado di appello viene introdotto un nuovo capo di nullit&agrave; del matrimonio, il tribunale lo pu&ograve; ammettere e su di esso giudicare come se fosse in prima istanza."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1681,
+      "versions": [
+        {
+          "canonNumber": 1681,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "Quoties in instructione causae dubium valde probabile emerserit de non secuta matrimonii consummatione, tribunal potest, suspensa de consensu partium causa nullitatis, instructionem complere pro dispensatione super rato, ac tandem acta transmittere ad Sedem Apostolicam una cum petitione dispensationis ab alterutro vel utroque coniuge et cum voto tribunalis et Episcopi.",
+          "versionId": "cic-1983-can-1681-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1681,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1681-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - Se &egrave; stata emanata una sentenza esecutiva, si pu&ograve; ricorrere in qualunque momento al tribunale di terzo grado per la nuova proposizione della causa a norma del can. 1644, adducendo nuovi e gravi prove o argomenti entro il termine perentorio di trenta giorni dalla proposizione dell'impugnazione."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1682,
+      "versions": [
+        {
+          "canonNumber": 1682,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "§ 1. Sententia, quae matrimonii nullitatem primum declaraverit, una cum appellationibus, si quae sint, et ceteris iudicii actis, intra viginti dies a sententiae publicatione ad tribunal appellationis ex officio transmittatur. § 2. Si sententia pro matrimonii nullitate prolata sit in primo iudicii gradu, tribunal appellationis, perpensis animadversionibus defensoris vinculi et, si quae sint, etiam partium, suo decreto vel decisionem continenter confirmet vel ad ordinarium examen novi gradus causam admittat.",
+          "versionId": "cic-1983-can-1682-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1682,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1682-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - § 1. Dopo che la sentenza che ha dichiarato la nullit&agrave; del matrimonio &egrave; divenuta esecutiva, le parti il cui matrimonio &egrave; stato dichiarato nullo possono contrarre nuove nozze, a meno che non lo proibisca un divieto apposto alla sentenza stessa oppure stabilito dall'Ordinario del luogo.\n§ 2. Non appena la sentenza &egrave; divenuta esecutiva, il Vicario giudiziale la deve notificare all'Ordinario del luogo in cui fu celebrato il matrimonio. Questi poi deve provvedere affinch&eacute; al pi&ugrave; presto si faccia menzione nei registri dei matrimoni e dei battezzati della nullit&agrave; di matrimonio decretata e degli eventuali divieti stabiliti. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 5 \n Il processo matrimoniale pi&ugrave; breve davanti al Vescovo"
+        }
+      ]
+    },
+    {
+      "canonNumber": 1683,
+      "versions": [
+        {
+          "canonNumber": 1683,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "Si in gradu appellationis novum nullitatis matrimonii caput afferatur, tribunal potest, tamquam in prima instantia, illud admittere et de eo iudicare.",
+          "versionId": "cic-1983-can-1683-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1683,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1683-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "1687. Tale decreto sia subito notificato alle parti e al difensore del vincolo.\n § 3. Se la causa deve essere trattata con il processo ordinario, il Vicario giudiziale, con lo stesso decreto, disponga la costituzione del collegio dei giudici o del giudice unico con i due assessori secondo il can. 1673 § 4.\n § 4. Se invece viene disposto il processo pi&ugrave; breve, il Vicario giudiziale proceda a norma del can. 1685.\n § 5. La formula del dubbio deve determinare per quale capo o per quali capi &egrave; impugnata la validit&agrave; delle nozze. Can. 1677 n - § 1. Il difensore del vincolo, i patroni delle parti, e, se intervenga nel giudizio, anche il promotore di giustizia, hanno diritto: 1° di essere presenti all'esame delle parti, dei testi e dei periti, salvo il disposto del can. 1559; 2° di prendere visione degli atti giudiziari, bench&eacute; non ancora pubblicati, e di esaminare i documenti prodotti dalle parti.\n § 2. Le parti non possono assistere all'esame di cui al § 1, n.1. Can. 1678 n - § 1. Nelle cause di nullit&agrave; del matrimonio, la confessione giudiziale e le dichiarazioni delle parti, sostenute da eventuali testi sulla credibilit&agrave; delle stesse, possono avere valore di prova piena, da valutarsi dal giudice considerati tutti gli indizi e gli amminicoli, se non vi siano altri elementi che le confutino.\n § 2. Nelle medesime cause, la deposizione di un solo teste pu&ograve; fare pienamente fede, se si tratta di un teste qualificato che deponga su cose fatte d'ufficio, o le circostanze di fatti e di persone lo suggeriscono.\n § 3. Nelle cause in materia di impotenza o di difetto del consenso per malattia mentale o per anomalia di natura psichica il giudice si avvalga dell'opera di uno o pi&ugrave; periti, se dalle circostanze non appare evidentemente inutile; nelle altre cause si osservi il disposto del can. 1574.\n § 4. Ogniqualvolta nell'istruttoria della causa fosse insorto un dubbio assai probabile che il matrimonio non sia stato consumato, il tribunale, sentite le parti, pu&ograve; sospendere la causa di nullit&agrave;, completare l'istruttoria in vista della dispensa super rato , ed infine trasmettere gli atti alla Sede Apostolica insieme alla domanda di dispensa di uno o di entrambi i coniugi ed al voto del tribunale e del Vescovo. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 4 \n La sentenza, le sue impugnazioni e la sua esecuzione \n Can. 1679 n - La sentenza che per la prima volta ha dichiarato la nullit&agrave; del matrimonio, decorsi i termini stabiliti nei cann. 1630-1633, diventa esecutiva.\n Can. 1680 n - § 1. Alla parte, che si ritenga onerata, e parimenti al promotore di giustizia e al difensore del vincolo rimane il diritto di interporre querela di nullit&agrave; della sentenza o appello contro la medesima sentenza ai sensi dei cann. 1619-1640.\n § 2. Decorsi i termini stabiliti dal diritto per l'appello e la sua prosecuzione, dopo che il tribunale di istanza superiore ha ricevuto gli atti giudiziari, si costituisca il collegio dei giudici, si designi il difensore del vincolo e le parti vengano ammonite a presentare le osservazioni entro un termine prestabilito; trascorso tale termine, il tribunale collegiale, se l'appello risulta manifestamente dilatorio, confermi con proprio decreto la sentenza di prima istanza.\n § 3. Se l'appello &egrave; stato ammesso, si deve procedere allo stesso modo come in prima istanza, con i dovuti adattamenti.\n § 4. Se nel grado di appello viene introdotto un nuovo capo di nullit&agrave; del matrimonio, il tribunale lo pu&ograve; ammettere e su di esso giudicare come se fosse in prima istanza.\n Can. 1681 n - Se &egrave; stata emanata una sentenza esecutiva, si pu&ograve; ricorrere in qualunque momento al tribunale di terzo grado per la nuova proposizione della causa a norma del can. 1644, adducendo nuovi e gravi prove o argomenti entro il termine perentorio di trenta giorni dalla proposizione dell'impugnazione.\n Can. 1682 n - § 1. Dopo che la sentenza che ha dichiarato la nullit&agrave; del matrimonio &egrave; divenuta esecutiva, le parti il cui matrimonio &egrave; stato dichiarato nullo possono contrarre nuove nozze, a meno che non lo proibisca un divieto apposto alla sentenza stessa oppure stabilito dall'Ordinario del luogo.\n§ 2. Non appena la sentenza &egrave; divenuta esecutiva, il Vicario giudiziale la deve notificare all'Ordinario del luogo in cui fu celebrato il matrimonio. Questi poi deve provvedere affinch&eacute; al pi&ugrave; presto si faccia menzione nei registri dei matrimoni e dei battezzati della nullit&agrave; di matrimonio decretata e degli eventuali divieti stabiliti. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 5 \n Il processo matrimoniale pi&ugrave; breve davanti al Vescovo \n Can. 1683 n - Allo stesso Vescovo diocesano compete giudicare la cause di nullit&agrave; del matrimonio con il processo pi&ugrave; breve ogniqualvolta:\n \n \n 1° la domanda sia proposta da entrambi i coniugi o da uno di essi, col consenso dell'altro;\n \n 2° ricorrano circostanze di fatti e di persone, sostenute da testimonianze o documenti, che non richiedano una inchiesta o una istruzione pi&ugrave; accurata, e rendano manifesta la nullit&agrave;."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1684,
+      "versions": [
+        {
+          "canonNumber": 1684,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "§ 1. Postquam sententia, quae matrimonii nullitatem primum declaravit, in gradu appellationis confirmata est vel decreto vel altera sententia, ii, quorum matrimonium declaratum est nullum, possunt novas nuptias contrahere statim ac decretum vel altera sententia ipsis notificata est, nisi vetito ipsi sententiae aut decreto apposito vel ab Ordinario loci statuto id prohibeatur. § 2. Praescripta can. 1644 servanda sunt, etiam si sententia, quae matrimonii nullitatem declaraverit, non altera sententia sed decreto confirmata sit.",
+          "versionId": "cic-1983-can-1684-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1684,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1684-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - Il libello con cui si introduce il processo pi&ugrave; breve, oltre agli elementi elencati nel can. 1504, deve: \n \n \n 1° esporre brevemente, integralmente e chiaramente i fatti su cui si fonda la domanda; \n \n 2° indicare le prove, che possano essere immediatamente raccolte dal giudice; \n \n 3° esibire in allegato i documenti su cui si fonda la domanda."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1685,
+      "versions": [
+        {
+          "canonNumber": 1685,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "Statim ac sententia facta est exsecutiva, Vicarius iudicialis debet eandem notificare Ordinario loci in quo matrimonium celebratum est. Is autem curare debet ut quam primum de decreta nullitate matrimonii et de vetitis forte statutis in matrimoniorum et baptizatorum libris mentio fiat. Art. 6 DE PROCESSU DOCUMENTALI",
+          "versionId": "cic-1983-can-1685-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1685,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1685-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": ".\n § 5. La formula del dubbio deve determinare per quale capo o per quali capi &egrave; impugnata la validit&agrave; delle nozze. Can. 1677 n - § 1. Il difensore del vincolo, i patroni delle parti, e, se intervenga nel giudizio, anche il promotore di giustizia, hanno diritto: 1° di essere presenti all'esame delle parti, dei testi e dei periti, salvo il disposto del can. 1559; 2° di prendere visione degli atti giudiziari, bench&eacute; non ancora pubblicati, e di esaminare i documenti prodotti dalle parti.\n § 2. Le parti non possono assistere all'esame di cui al § 1, n.1. Can. 1678 n - § 1. Nelle cause di nullit&agrave; del matrimonio, la confessione giudiziale e le dichiarazioni delle parti, sostenute da eventuali testi sulla credibilit&agrave; delle stesse, possono avere valore di prova piena, da valutarsi dal giudice considerati tutti gli indizi e gli amminicoli, se non vi siano altri elementi che le confutino.\n § 2. Nelle medesime cause, la deposizione di un solo teste pu&ograve; fare pienamente fede, se si tratta di un teste qualificato che deponga su cose fatte d'ufficio, o le circostanze di fatti e di persone lo suggeriscono.\n § 3. Nelle cause in materia di impotenza o di difetto del consenso per malattia mentale o per anomalia di natura psichica il giudice si avvalga dell'opera di uno o pi&ugrave; periti, se dalle circostanze non appare evidentemente inutile; nelle altre cause si osservi il disposto del can. 1574.\n § 4. Ogniqualvolta nell'istruttoria della causa fosse insorto un dubbio assai probabile che il matrimonio non sia stato consumato, il tribunale, sentite le parti, pu&ograve; sospendere la causa di nullit&agrave;, completare l'istruttoria in vista della dispensa super rato , ed infine trasmettere gli atti alla Sede Apostolica insieme alla domanda di dispensa di uno o di entrambi i coniugi ed al voto del tribunale e del Vescovo. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 4 \n La sentenza, le sue impugnazioni e la sua esecuzione \n Can. 1679 n - La sentenza che per la prima volta ha dichiarato la nullit&agrave; del matrimonio, decorsi i termini stabiliti nei cann. 1630-1633, diventa esecutiva.\n Can. 1680 n - § 1. Alla parte, che si ritenga onerata, e parimenti al promotore di giustizia e al difensore del vincolo rimane il diritto di interporre querela di nullit&agrave; della sentenza o appello contro la medesima sentenza ai sensi dei cann. 1619-1640.\n § 2. Decorsi i termini stabiliti dal diritto per l'appello e la sua prosecuzione, dopo che il tribunale di istanza superiore ha ricevuto gli atti giudiziari, si costituisca il collegio dei giudici, si designi il difensore del vincolo e le parti vengano ammonite a presentare le osservazioni entro un termine prestabilito; trascorso tale termine, il tribunale collegiale, se l'appello risulta manifestamente dilatorio, confermi con proprio decreto la sentenza di prima istanza.\n § 3. Se l'appello &egrave; stato ammesso, si deve procedere allo stesso modo come in prima istanza, con i dovuti adattamenti.\n § 4. Se nel grado di appello viene introdotto un nuovo capo di nullit&agrave; del matrimonio, il tribunale lo pu&ograve; ammettere e su di esso giudicare come se fosse in prima istanza.\n Can. 1681 n - Se &egrave; stata emanata una sentenza esecutiva, si pu&ograve; ricorrere in qualunque momento al tribunale di terzo grado per la nuova proposizione della causa a norma del can. 1644, adducendo nuovi e gravi prove o argomenti entro il termine perentorio di trenta giorni dalla proposizione dell'impugnazione.\n Can. 1682 n - § 1. Dopo che la sentenza che ha dichiarato la nullit&agrave; del matrimonio &egrave; divenuta esecutiva, le parti il cui matrimonio &egrave; stato dichiarato nullo possono contrarre nuove nozze, a meno che non lo proibisca un divieto apposto alla sentenza stessa oppure stabilito dall'Ordinario del luogo.\n§ 2. Non appena la sentenza &egrave; divenuta esecutiva, il Vicario giudiziale la deve notificare all'Ordinario del luogo in cui fu celebrato il matrimonio. Questi poi deve provvedere affinch&eacute; al pi&ugrave; presto si faccia menzione nei registri dei matrimoni e dei battezzati della nullit&agrave; di matrimonio decretata e degli eventuali divieti stabiliti. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 5 \n Il processo matrimoniale pi&ugrave; breve davanti al Vescovo \n Can. 1683 n - Allo stesso Vescovo diocesano compete giudicare la cause di nullit&agrave; del matrimonio con il processo pi&ugrave; breve ogniqualvolta:\n \n \n 1° la domanda sia proposta da entrambi i coniugi o da uno di essi, col consenso dell'altro;\n \n 2° ricorrano circostanze di fatti e di persone, sostenute da testimonianze o documenti, che non richiedano una inchiesta o una istruzione pi&ugrave; accurata, e rendano manifesta la nullit&agrave;.\n \n Can. 1684 n - Il libello con cui si introduce il processo pi&ugrave; breve, oltre agli elementi elencati nel can. 1504, deve: \n \n \n 1° esporre brevemente, integralmente e chiaramente i fatti su cui si fonda la domanda; \n \n 2° indicare le prove, che possano essere immediatamente raccolte dal giudice; \n \n 3° esibire in allegato i documenti su cui si fonda la domanda.\n \n Can. 1685 n - Il Vicario giudiziale, nello stesso decreto con cui determina la formula del dubbio nomini l'istruttore e l'assessore e citi per la sessione, da celebrarsi a norma del"
+        }
+      ]
+    },
+    {
+      "canonNumber": 1686,
+      "versions": [
+        {
+          "canonNumber": 1686,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "Recepta petitione ad\" normam can. 1677 proposita, Vicarius iudicialis vel iudex ab ipso designatus potest, praetermissis sollemnitatibus ordinarii processus sed citatis partibus et cum interventu defensoris vinculi, matrimonii nullitatem sententia declarare, si ex documento, quod nulli contradictioni vel exceptioni sit obnoxium, certo constet de exsistentia impedimenti dirimentis vel de defectu legitimae formae, dummodo pari certitudine pateat dispensationem datam non esse, aut de defectu validi mandati procuratoris.",
+          "versionId": "cic-1983-can-1686-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1686,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1686-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "non oltre trenta giorni, tutti coloro che devono parteciparvi.\n Can. 1686 n - L'istruttore, per quanto possibile, raccolga le prove in una sola sessione e fissi il termine di quindici giorni per la presentazione delle osservazioni in favore del vincolo e delle difese di parte, se ve ne siano."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1687,
+      "versions": [
+        {
+          "canonNumber": 1687,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "§ 1. Adversus hanc declarationem defensor vinculi, si prudenter existimaverit vel vitia de quibus in can. 1686 vel dispensationis defectum non esse certa, appellare debet ad iudicem secundae instantiae, ad quem acta sunt transmittenda quique scripto monendus est agi de processu documentali. § 2. Integrum manet parti, quae se gravatam putet, ius appellandi.",
+          "versionId": "cic-1983-can-1687-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1687,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1687-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": ". Tale decreto sia subito notificato alle parti e al difensore del vincolo.\n § 3. Se la causa deve essere trattata con il processo ordinario, il Vicario giudiziale, con lo stesso decreto, disponga la costituzione del collegio dei giudici o del giudice unico con i due assessori secondo il can. 1673 § 4.\n § 4. Se invece viene disposto il processo pi&ugrave; breve, il Vicario giudiziale proceda a norma del can. 1685.\n § 5. La formula del dubbio deve determinare per quale capo o per quali capi &egrave; impugnata la validit&agrave; delle nozze. Can. 1677 n - § 1. Il difensore del vincolo, i patroni delle parti, e, se intervenga nel giudizio, anche il promotore di giustizia, hanno diritto: 1° di essere presenti all'esame delle parti, dei testi e dei periti, salvo il disposto del can. 1559; 2° di prendere visione degli atti giudiziari, bench&eacute; non ancora pubblicati, e di esaminare i documenti prodotti dalle parti.\n § 2. Le parti non possono assistere all'esame di cui al § 1, n.1. Can. 1678 n - § 1. Nelle cause di nullit&agrave; del matrimonio, la confessione giudiziale e le dichiarazioni delle parti, sostenute da eventuali testi sulla credibilit&agrave; delle stesse, possono avere valore di prova piena, da valutarsi dal giudice considerati tutti gli indizi e gli amminicoli, se non vi siano altri elementi che le confutino.\n § 2. Nelle medesime cause, la deposizione di un solo teste pu&ograve; fare pienamente fede, se si tratta di un teste qualificato che deponga su cose fatte d'ufficio, o le circostanze di fatti e di persone lo suggeriscono.\n § 3. Nelle cause in materia di impotenza o di difetto del consenso per malattia mentale o per anomalia di natura psichica il giudice si avvalga dell'opera di uno o pi&ugrave; periti, se dalle circostanze non appare evidentemente inutile; nelle altre cause si osservi il disposto del can. 1574.\n § 4. Ogniqualvolta nell'istruttoria della causa fosse insorto un dubbio assai probabile che il matrimonio non sia stato consumato, il tribunale, sentite le parti, pu&ograve; sospendere la causa di nullit&agrave;, completare l'istruttoria in vista della dispensa super rato , ed infine trasmettere gli atti alla Sede Apostolica insieme alla domanda di dispensa di uno o di entrambi i coniugi ed al voto del tribunale e del Vescovo. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 4 \n La sentenza, le sue impugnazioni e la sua esecuzione \n Can. 1679 n - La sentenza che per la prima volta ha dichiarato la nullit&agrave; del matrimonio, decorsi i termini stabiliti nei cann. 1630-1633, diventa esecutiva.\n Can. 1680 n - § 1. Alla parte, che si ritenga onerata, e parimenti al promotore di giustizia e al difensore del vincolo rimane il diritto di interporre querela di nullit&agrave; della sentenza o appello contro la medesima sentenza ai sensi dei cann. 1619-1640.\n § 2. Decorsi i termini stabiliti dal diritto per l'appello e la sua prosecuzione, dopo che il tribunale di istanza superiore ha ricevuto gli atti giudiziari, si costituisca il collegio dei giudici, si designi il difensore del vincolo e le parti vengano ammonite a presentare le osservazioni entro un termine prestabilito; trascorso tale termine, il tribunale collegiale, se l'appello risulta manifestamente dilatorio, confermi con proprio decreto la sentenza di prima istanza.\n § 3. Se l'appello &egrave; stato ammesso, si deve procedere allo stesso modo come in prima istanza, con i dovuti adattamenti.\n § 4. Se nel grado di appello viene introdotto un nuovo capo di nullit&agrave; del matrimonio, il tribunale lo pu&ograve; ammettere e su di esso giudicare come se fosse in prima istanza.\n Can. 1681 n - Se &egrave; stata emanata una sentenza esecutiva, si pu&ograve; ricorrere in qualunque momento al tribunale di terzo grado per la nuova proposizione della causa a norma del can. 1644, adducendo nuovi e gravi prove o argomenti entro il termine perentorio di trenta giorni dalla proposizione dell'impugnazione.\n Can. 1682 n - § 1. Dopo che la sentenza che ha dichiarato la nullit&agrave; del matrimonio &egrave; divenuta esecutiva, le parti il cui matrimonio &egrave; stato dichiarato nullo possono contrarre nuove nozze, a meno che non lo proibisca un divieto apposto alla sentenza stessa oppure stabilito dall'Ordinario del luogo.\n§ 2. Non appena la sentenza &egrave; divenuta esecutiva, il Vicario giudiziale la deve notificare all'Ordinario del luogo in cui fu celebrato il matrimonio. Questi poi deve provvedere affinch&eacute; al pi&ugrave; presto si faccia menzione nei registri dei matrimoni e dei battezzati della nullit&agrave; di matrimonio decretata e degli eventuali divieti stabiliti. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 5 \n Il processo matrimoniale pi&ugrave; breve davanti al Vescovo \n Can. 1683 n - Allo stesso Vescovo diocesano compete giudicare la cause di nullit&agrave; del matrimonio con il processo pi&ugrave; breve ogniqualvolta:\n \n \n 1° la domanda sia proposta da entrambi i coniugi o da uno di essi, col consenso dell'altro;\n \n 2° ricorrano circostanze di fatti e di persone, sostenute da testimonianze o documenti, che non richiedano una inchiesta o una istruzione pi&ugrave; accurata, e rendano manifesta la nullit&agrave;.\n \n Can. 1684 n - Il libello con cui si introduce il processo pi&ugrave; breve, oltre agli elementi elencati nel can. 1504, deve: \n \n \n 1° esporre brevemente, integralmente e chiaramente i fatti su cui si fonda la domanda; \n \n 2° indicare le prove, che possano essere immediatamente raccolte dal giudice; \n \n 3° esibire in allegato i documenti su cui si fonda la domanda.\n \n Can. 1685 n - Il Vicario giudiziale, nello stesso decreto con cui determina la formula del dubbio nomini l'istruttore e l'assessore e citi per la sessione, da celebrarsi a norma del can. 1686 non oltre trenta giorni, tutti coloro che devono parteciparvi.\n Can. 1686 n - L'istruttore, per quanto possibile, raccolga le prove in una sola sessione e fissi il termine di quindici giorni per la presentazione delle osservazioni in favore del vincolo e delle difese di parte, se ve ne siano.\n Can. 1687 n - § 1. Ricevuti gli atti, il Vescovo diocesano, consultatosi con l'istruttore e l'assessore, vagliate le osservazioni del difensore del vincolo e, se vi siano, le difese delle parti, se raggiunge la certezza morale sulla nullit&agrave; del matrimonio, emani la sentenza. Altrimenti rimetta la causa al processo ordinario.\n § 2. Il testo integrale della sentenza, con la motivazione, sia notificato al pi&ugrave; presto alle parti.\n § 3. Contro la sentenza del Vescovo si d&agrave; appello al Metropolita o alla Rota Romana; se la sentenza &egrave; stata emessa dal Metropolita, si d&agrave; appello al suffraganeo pi&ugrave; anziano; e contro la sentenza di altro Vescovo che non ha un'autorit&agrave; superiore sotto il Romano Pontefice, si d&agrave; appello al Vescovo da esso stabilmente designato.\n § 4. Se l'appello evidentemente appare meramente dilatorio, il Metropolita o il Vescovo di cui al § 3, o il Decano della Rota Romana, lo rigetti a limine con un suo decreto; se invece l'appello &egrave; ammesso, si rimetta la causa all'esame ordinario di secondo grado. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n LIBRO VII \n I PROCESSI \n \n PARTE III \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n CAPITOLO I (Cann.1671 - 1691)\n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n Articolo 6 \n Il processo documentale"
+        }
+      ]
+    },
+    {
+      "canonNumber": 1688,
+      "versions": [
+        {
+          "canonNumber": 1688,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "Iudex alterius instantiae, cum interventu defensoris vinculi et auditis partibus, decernet eodem modo, de quo in can. 1686, utrum sententia sit confirmanda, an potius procedendum in causa sit iuxta ordinarium tramitem iuris ; quo in casu eam remittit ad tribunal primae instantiae. 290 L I B . V I I - De processibus Art. 7 NORMAE GENERALES",
+          "versionId": "cic-1983-can-1688-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1688,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1688-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - Ricevuta la domanda presentata a norma del can. 1676, il Vescovo diocesano o il Vicario giudiziale o il Giudice designato, tralasciate le formalit&agrave; del processo ordinario, citate per&ograve; le parti e con l'intervento del difensore del vincolo, pu&ograve; dichiarare con sentenza la nullit&agrave; del matrimonio, se da un documento che non sia soggetto a contraddizione o ad eccezione alcuna, consti con certezza dell'esistenza di un impedimento dirimente o del difetto della forma legittima, purch&eacute; sia chiaro con eguale sicurezza che non fu concessa la dispensa, oppure del difetto di un mandato valido in capo al procuratore."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1689,
+      "versions": [
+        {
+          "canonNumber": 1689,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "In sententia partes moneantur de obligationibus moralibus vel etiam civilibus, quibus forte teneantur, altera erga alteram et erga prolem, ad sustentationem et educationem praestandam.",
+          "versionId": "cic-1983-can-1689-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1689,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1689-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - § 1. Contro questa dichiarazione il difensore del vincolo, se prudentemente giudichi che non vi sia certezza dei difetti di cui al can. 1688 ovvero della mancata dispensa, deve appellare al giudice di seconda istanza, al quale si devono trasmettere gli atti avvertendolo per scritto che si tratta di un processo documentale.\n § 2. Alla parte che si ritiene onerata resta il diritto di appellare."
+        }
+      ]
+    },
+    {
+      "canonNumber": 1690,
+      "versions": [
+        {
+          "canonNumber": 1690,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "Causae ad matrimonii nullitatem declarandam nequeunt processu contentioso orali tractari.",
+          "versionId": "cic-1983-can-1690-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1690,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1690-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": "n - Il giudice di seconda istanza, con l'intervento del difensore del vincolo e dopo aver udito le parti, decida allo stesso modo di cui nel can. 1688 se la sentenza debba essere confermata o se piuttosto si debba procedere nella causa per il tramite ordinario del diritto; nel qual caso la rimandi al tribunale di prima istanza.\n \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n LIBRO VII \n I PROCESSI \n \n PARTE III \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n CAPITOLO I (Cann.1671 -"
+        }
+      ]
+    },
+    {
+      "canonNumber": 1691,
+      "versions": [
+        {
+          "canonNumber": 1691,
+          "language": "la",
+          "validFrom": "1983-11-27",
+          "validUntil": "2015-12-07",
+          "status": "historical",
+          "sourceKey": "cic-1983-aas",
+          "fullText": "In ceteris quae ad rationem procedendi attinent, applicandi sunt, nisi rei natura obstet, canones de iudiciis in genere et de iudicio contentioso ordinario, servatis specialibus normis circa causas de statu personarum et causas ad bonum publicum spectantes. CAPUT II DE CAUSIS SEPARATIONIS CONIUGUM",
+          "versionId": "cic-1983-can-1691-la-1983",
+          "versionLabel": "CIC 1983 — redazione originaria"
+        },
+        {
+          "canonNumber": 1691,
+          "language": "it",
+          "validFrom": "2015-12-08",
+          "validUntil": null,
+          "status": "current",
+          "sourceKey": "official-vatican-cic-post-mitis-iudex",
+          "versionId": "cic-1983-can-1691-it-2015",
+          "versionLabel": "Mitis Iudex — redazione vigente dal 2015-12-08",
+          "fullText": ")\n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n Articolo 1 \n Il foro competente e i tribunali \n Can. 1671 n - § 1. Le cause matrimoniali dei battezzati per diritto proprio spettano al giudice ecclesiastico.\n§ 2. Le cause sugli effetti puramente civili del matrimonio spettano al magistrato civile, a meno che il diritto particolare non stabilisca che le medesime cause, qualora siano trattate incidentalmente e accessoriamente, possano essere esaminate e decise dal giudice ecclesiastico. Can. 1672 n - Nelle cause di nullit&agrave; del matrimonio, che non siano riservate alla Sede Apostolica, sono competenti: \n \n \n 1° il tribunale del luogo in cui il matrimonio fu celebrato; \n \n 2° il tribunale del luogo in cui una o entrambe le parti hanno il domicilio o il quasi-domicilio; \n \n 3° il tribunale del luogo in cui di fatto si debba raccogliere la maggior parte delle prove.\n \n Can. 1673 n - § 1. In ciascuna diocesi il giudice di prima istanza per le cause di nullit&agrave; del matrimonio, per le quali il diritto non faccia espressamente eccezione, &egrave; il Vescovo diocesano, che pu&ograve; esercitare la potest&agrave; giudiziale personalmente o per mezzo di altri, a norma del diritto.\n § 2. Il Vescovo costituisca per la sua diocesi il tribunale diocesano per le cause di nullit&agrave; del matrimonio, salva la facolt&agrave; per lo stesso Vescovo di accedere a un altro viciniore tribunale diocesano o interdiocesano.\n § 3. Le cause di nullit&agrave; del matrimonio sono riservate a un collegio di tre giudici. Esso deve essere presieduto da un giudice chierico, i rimanenti giudici possono anche essere laici.\n § 4. Il Vescovo Moderatore, se non &egrave; possibile costituire il tribunale collegiale in diocesi o nel vicino tribunale che &egrave; stato scelto a norma del § 2, affidi le cause a un unico giudice chierico che, ove sia possibile, si associ due assessori di vita specchiata, esperti in scienze giuridiche o umane, approvati dal Vescovo per questo compito; allo stesso giudice unico competono, salvo che risulti diversamente, le funzioni attribuite al collegio, al preside o al ponente.\n § 5. Il tribunale di seconda istanza per la validit&agrave; deve sempre essere collegiale, secondo il disposto del precedente § 3.\n § 6. Dal tribunale di prima istanza si appella al tribunale metropolitano di seconda istanza, salvo il disposto dei cann. 1438-1439 e 1444. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 2 \n \n Il diritto di impugnare il matrimonio \n \n Can. 1674 n - § 1. Sono abili ad impugnare il matrimonio: \n \n \n 1° i coniugi; \n \n 2° il promotore di giustizia, quando la nullit&agrave; sia gi&agrave; stata divulgata, se non si possa convalidare il matrimonio o non sia opportuno.\n \n § 2. Il matrimonio che, viventi entrambi i coniugi, non fu accusato, non pu&ograve; pi&ugrave; esserlo dopo la morte di entrambi o di uno di essi, a meno che la questione della validit&agrave; non pregiudichi la soluzione di un'altra controversia sia in foro canonico sia in foro civile.\n § 3. Se poi un coniuge muore durante il processo, si osservi il can. 1518.\n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n Articolo 3 \n L'introduzione e l'istruzione della causa \n \n Can. 1675 n - Il giudice, prima di accettare la causa, deve avere la certezza che il matrimonio sia irreparabilmente fallito, in modo che sia impossibile ristabilire la convivenza coniugale.\n Can. 1676 n - § 1. Ricevuto il libello, il Vicario giudiziale, se ritiene che esso goda di qualche fondamento, lo ammetta e, con decreto apposto in calce allo stesso libello, ordini che una copia venga notificata al difensore del vincolo e, se il libello non &egrave; stato sottoscritto da entrambe le parti, alla parte convenuta, dandole il termine di quindici giorni per esprimere la sua posizione riguardo alla domanda.\n § 2. Trascorso il predetto termine, dopo aver nuovamente ammonito, se e in quanto lo ritenga opportuno, l'altra parte a manifestare la sua posizione, sentito il difensore del vincolo, il Vicario giudiziale con proprio decreto determini la formula del dubbio e stabilisca se la causa debba trattarsi con il processo ordinario o con il processo pi&ugrave; breve a norma dei cann. 1683-1687. Tale decreto sia subito notificato alle parti e al difensore del vincolo.\n § 3. Se la causa deve essere trattata con il processo ordinario, il Vicario giudiziale, con lo stesso decreto, disponga la costituzione del collegio dei giudici o del giudice unico con i due assessori secondo il can. 1673 § 4.\n § 4. Se invece viene disposto il processo pi&ugrave; breve, il Vicario giudiziale proceda a norma del can. 1685.\n § 5. La formula del dubbio deve determinare per quale capo o per quali capi &egrave; impugnata la validit&agrave; delle nozze. Can. 1677 n - § 1. Il difensore del vincolo, i patroni delle parti, e, se intervenga nel giudizio, anche il promotore di giustizia, hanno diritto: 1° di essere presenti all'esame delle parti, dei testi e dei periti, salvo il disposto del can. 1559; 2° di prendere visione degli atti giudiziari, bench&eacute; non ancora pubblicati, e di esaminare i documenti prodotti dalle parti.\n § 2. Le parti non possono assistere all'esame di cui al § 1, n.1. Can. 1678 n - § 1. Nelle cause di nullit&agrave; del matrimonio, la confessione giudiziale e le dichiarazioni delle parti, sostenute da eventuali testi sulla credibilit&agrave; delle stesse, possono avere valore di prova piena, da valutarsi dal giudice considerati tutti gli indizi e gli amminicoli, se non vi siano altri elementi che le confutino.\n § 2. Nelle medesime cause, la deposizione di un solo teste pu&ograve; fare pienamente fede, se si tratta di un teste qualificato che deponga su cose fatte d'ufficio, o le circostanze di fatti e di persone lo suggeriscono.\n § 3. Nelle cause in materia di impotenza o di difetto del consenso per malattia mentale o per anomalia di natura psichica il giudice si avvalga dell'opera di uno o pi&ugrave; periti, se dalle circostanze non appare evidentemente inutile; nelle altre cause si osservi il disposto del can. 1574.\n § 4. Ogniqualvolta nell'istruttoria della causa fosse insorto un dubbio assai probabile che il matrimonio non sia stato consumato, il tribunale, sentite le parti, pu&ograve; sospendere la causa di nullit&agrave;, completare l'istruttoria in vista della dispensa super rato , ed infine trasmettere gli atti alla Sede Apostolica insieme alla domanda di dispensa di uno o di entrambi i coniugi ed al voto del tribunale e del Vescovo. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 4 \n La sentenza, le sue impugnazioni e la sua esecuzione \n Can. 1679 n - La sentenza che per la prima volta ha dichiarato la nullit&agrave; del matrimonio, decorsi i termini stabiliti nei cann. 1630-1633, diventa esecutiva.\n Can. 1680 n - § 1. Alla parte, che si ritenga onerata, e parimenti al promotore di giustizia e al difensore del vincolo rimane il diritto di interporre querela di nullit&agrave; della sentenza o appello contro la medesima sentenza ai sensi dei cann. 1619-1640.\n § 2. Decorsi i termini stabiliti dal diritto per l'appello e la sua prosecuzione, dopo che il tribunale di istanza superiore ha ricevuto gli atti giudiziari, si costituisca il collegio dei giudici, si designi il difensore del vincolo e le parti vengano ammonite a presentare le osservazioni entro un termine prestabilito; trascorso tale termine, il tribunale collegiale, se l'appello risulta manifestamente dilatorio, confermi con proprio decreto la sentenza di prima istanza.\n § 3. Se l'appello &egrave; stato ammesso, si deve procedere allo stesso modo come in prima istanza, con i dovuti adattamenti.\n § 4. Se nel grado di appello viene introdotto un nuovo capo di nullit&agrave; del matrimonio, il tribunale lo pu&ograve; ammettere e su di esso giudicare come se fosse in prima istanza.\n Can. 1681 n - Se &egrave; stata emanata una sentenza esecutiva, si pu&ograve; ricorrere in qualunque momento al tribunale di terzo grado per la nuova proposizione della causa a norma del can. 1644, adducendo nuovi e gravi prove o argomenti entro il termine perentorio di trenta giorni dalla proposizione dell'impugnazione.\n Can. 1682 n - § 1. Dopo che la sentenza che ha dichiarato la nullit&agrave; del matrimonio &egrave; divenuta esecutiva, le parti il cui matrimonio &egrave; stato dichiarato nullo possono contrarre nuove nozze, a meno che non lo proibisca un divieto apposto alla sentenza stessa oppure stabilito dall'Ordinario del luogo.\n§ 2. Non appena la sentenza &egrave; divenuta esecutiva, il Vicario giudiziale la deve notificare all'Ordinario del luogo in cui fu celebrato il matrimonio. Questi poi deve provvedere affinch&eacute; al pi&ugrave; presto si faccia menzione nei registri dei matrimoni e dei battezzati della nullit&agrave; di matrimonio decretata e degli eventuali divieti stabiliti. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n \n LIBRO VII \n \n I PROCESSI \n \n \n PARTE III \n \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n \n CAPITOLO I (Cann.1671 - 1691)\n \n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n \n \n Articolo 5 \n Il processo matrimoniale pi&ugrave; breve davanti al Vescovo \n Can. 1683 n - Allo stesso Vescovo diocesano compete giudicare la cause di nullit&agrave; del matrimonio con il processo pi&ugrave; breve ogniqualvolta:\n \n \n 1° la domanda sia proposta da entrambi i coniugi o da uno di essi, col consenso dell'altro;\n \n 2° ricorrano circostanze di fatti e di persone, sostenute da testimonianze o documenti, che non richiedano una inchiesta o una istruzione pi&ugrave; accurata, e rendano manifesta la nullit&agrave;.\n \n Can. 1684 n - Il libello con cui si introduce il processo pi&ugrave; breve, oltre agli elementi elencati nel can. 1504, deve: \n \n \n 1° esporre brevemente, integralmente e chiaramente i fatti su cui si fonda la domanda; \n \n 2° indicare le prove, che possano essere immediatamente raccolte dal giudice; \n \n 3° esibire in allegato i documenti su cui si fonda la domanda.\n \n Can. 1685 n - Il Vicario giudiziale, nello stesso decreto con cui determina la formula del dubbio nomini l'istruttore e l'assessore e citi per la sessione, da celebrarsi a norma del can. 1686 non oltre trenta giorni, tutti coloro che devono parteciparvi.\n Can. 1686 n - L'istruttore, per quanto possibile, raccolga le prove in una sola sessione e fissi il termine di quindici giorni per la presentazione delle osservazioni in favore del vincolo e delle difese di parte, se ve ne siano.\n Can. 1687 n - § 1. Ricevuti gli atti, il Vescovo diocesano, consultatosi con l'istruttore e l'assessore, vagliate le osservazioni del difensore del vincolo e, se vi siano, le difese delle parti, se raggiunge la certezza morale sulla nullit&agrave; del matrimonio, emani la sentenza. Altrimenti rimetta la causa al processo ordinario.\n § 2. Il testo integrale della sentenza, con la motivazione, sia notificato al pi&ugrave; presto alle parti.\n § 3. Contro la sentenza del Vescovo si d&agrave; appello al Metropolita o alla Rota Romana; se la sentenza &egrave; stata emessa dal Metropolita, si d&agrave; appello al suffraganeo pi&ugrave; anziano; e contro la sentenza di altro Vescovo che non ha un'autorit&agrave; superiore sotto il Romano Pontefice, si d&agrave; appello al Vescovo da esso stabilmente designato.\n § 4. Se l'appello evidentemente appare meramente dilatorio, il Metropolita o il Vescovo di cui al § 3, o il Decano della Rota Romana, lo rigetti a limine con un suo decreto; se invece l'appello &egrave; ammesso, si rimetta la causa all'esame ordinario di secondo grado. \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n LIBRO VII \n I PROCESSI \n \n PARTE III \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n CAPITOLO I (Cann.1671 - 1691)\n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n Articolo 6 \n Il processo documentale \n Can. 1688 n - Ricevuta la domanda presentata a norma del can. 1676, il Vescovo diocesano o il Vicario giudiziale o il Giudice designato, tralasciate le formalit&agrave; del processo ordinario, citate per&ograve; le parti e con l'intervento del difensore del vincolo, pu&ograve; dichiarare con sentenza la nullit&agrave; del matrimonio, se da un documento che non sia soggetto a contraddizione o ad eccezione alcuna, consti con certezza dell'esistenza di un impedimento dirimente o del difetto della forma legittima, purch&eacute; sia chiaro con eguale sicurezza che non fu concessa la dispensa, oppure del difetto di un mandato valido in capo al procuratore.\n Can. 1689 n - § 1. Contro questa dichiarazione il difensore del vincolo, se prudentemente giudichi che non vi sia certezza dei difetti di cui al can. 1688 ovvero della mancata dispensa, deve appellare al giudice di seconda istanza, al quale si devono trasmettere gli atti avvertendolo per scritto che si tratta di un processo documentale.\n § 2. Alla parte che si ritiene onerata resta il diritto di appellare.\n Can. 1690 n - Il giudice di seconda istanza, con l'intervento del difensore del vincolo e dopo aver udito le parti, decida allo stesso modo di cui nel can. 1688 se la sentenza debba essere confermata o se piuttosto si debba procedere nella causa per il tramite ordinario del diritto; nel qual caso la rimandi al tribunale di prima istanza.\n \n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)\nLibro VII: I processi (Cann. 1400-1752); III: Alcuni processi speciali (Cann. 1671-1716); Titolo I: I processi matrimoniali (Cann. 1671-1707); Codice di Diritto Canonico \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n CODICE DI DIRITTO CANONICO \n LIBRO VII \n I PROCESSI \n \n PARTE III \n ALCUNI PROCESSI SPECIALI \n \n TITOLO I\n I PROCESSI MATRIMONIALI \n (Cann. 1671 - 1707) \n \n CAPITOLO I (Cann.1671 - 1691)\n LE CAUSE PER LA DICHIARAZIONE DI NULLIT&Agrave; DEL MATRIMONIO \n \n Articolo 7 \n Norme generali \n Can. 1691 n - § 1. Nella sentenza si ammoniscano le parti sugli obblighi morali o anche civili, cui siano eventualmente tenute l'una verso l'altra e verso la prole, per quanto riguarda il sostentamento e l'educazione.\n § 2. Le cause per la dichiarazione di nullit&agrave; del matrimonio non possono essere trattate con il processo contenzioso orale di cui nei cann. 1656-1670.\n § 3. In tutte le altre cose che si riferiscono alla procedura, si devono applicare, a meno che la natura della cosa si opponga, i canoni sui giudizi in generale e sul giudizio contenzioso ordinario, osservate le norme speciali per le cause sullo stato delle persone e per le cause riguardanti il bene pubblico.\n \n ( n : Indica che il testo corrisponde alla nuova versione o a un nuovo paragrafo)\n Cf: Lettera Apostolica in forma di 'Motu Proprio' Mitis Iudex Dominus Iesus , sulla riforma del processo canonico per le cause di dichiarazione di nullit&agrave; del matrimonio nel Codice di Diritto Canonico (15 agosto 2015)"
+        }
+      ]
+    }
+  ]
+}

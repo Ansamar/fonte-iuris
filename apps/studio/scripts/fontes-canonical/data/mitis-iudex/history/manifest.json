@@ -1,0 +1,86 @@
+{
+  "scope": "mitis-iudex-1671-1691-history",
+  "effectiveFrom": "2015-12-08",
+  "canons": [
+    1671,
+    1672,
+    1673,
+    1674,
+    1675,
+    1676,
+    1677,
+    1678,
+    1679,
+    1680,
+    1681,
+    1682,
+    1683,
+    1684,
+    1685,
+    1686,
+    1687,
+    1688,
+    1689,
+    1690,
+    1691
+  ],
+  "sources": [
+    {
+      "key": "mitis-iudex",
+      "sourceUrl": "https://www.vatican.va/content/francesco/it/motu_proprio/documents/papa-francesco-motu-proprio_20150815_mitis-iudex-dominus-iesus.html",
+      "capturedAt": "2026-09-01T14:34:48.726Z",
+      "sha256": "70ad03b15a7894d4a29b0db756eec99429703deac918f49ffbb9c2c892be4879",
+      "path": "scripts/fontes-canonical/data/mitis-iudex/history/mitis-iudex.official.html"
+    },
+    {
+      "key": "cic-1671-1673",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroVII_1671-1673_it.html",
+      "capturedAt": "2026-09-01T14:34:48.750Z",
+      "sha256": "8ad4fd0435c21fa04f13b5adb4be767f4076382939db1f9b7c74f210447bcb9a",
+      "path": "scripts/fontes-canonical/data/mitis-iudex/history/cic-1671-1673.official.html"
+    },
+    {
+      "key": "cic-1674",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroVII_1674_it.html",
+      "capturedAt": "2026-09-01T14:34:48.907Z",
+      "sha256": "69cdcb1ee0bb35197e38e3b2ba7199d226e91594bce5fb56ce97dbf38957867a",
+      "path": "scripts/fontes-canonical/data/mitis-iudex/history/cic-1674.official.html"
+    },
+    {
+      "key": "cic-1675-1678",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroVII_1675-1678_it.html",
+      "capturedAt": "2026-09-01T14:34:49.056Z",
+      "sha256": "d648ae92c70158981376f273b1a3901cedb4523e2c080e35eb3db264edb3e53d",
+      "path": "scripts/fontes-canonical/data/mitis-iudex/history/cic-1675-1678.official.html"
+    },
+    {
+      "key": "cic-1679-1682",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroVII_1679-1682_it.html",
+      "capturedAt": "2026-09-01T14:34:49.206Z",
+      "sha256": "063a2d78ee92d95f9ada3a68a02a27b7054d8aaa3c302030c455143524c850b7",
+      "path": "scripts/fontes-canonical/data/mitis-iudex/history/cic-1679-1682.official.html"
+    },
+    {
+      "key": "cic-1683-1687",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroVII_1683-1687_it.html",
+      "capturedAt": "2026-09-01T14:34:49.372Z",
+      "sha256": "a7a412184c4f18fa70d24efd821105ef4ea000df7d7c4c7320e71a2239f7a344",
+      "path": "scripts/fontes-canonical/data/mitis-iudex/history/cic-1683-1687.official.html"
+    },
+    {
+      "key": "cic-1688-1690",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroVII_1688-1690_it.html",
+      "capturedAt": "2026-09-01T14:34:49.534Z",
+      "sha256": "39c06e3553d7948cff9e6e2707b8a905dffd69e4e61607d850cf30bc21c33b59",
+      "path": "scripts/fontes-canonical/data/mitis-iudex/history/cic-1688-1690.official.html"
+    },
+    {
+      "key": "cic-1691",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroVII_1691_it.html",
+      "capturedAt": "2026-09-01T14:34:49.686Z",
+      "sha256": "9d19eba177436c6896fd1636f50b76b74fd1fc72288ec4093c246ecfd5526bb2",
+      "path": "scripts/fontes-canonical/data/mitis-iudex/history/cic-1691.official.html"
+    }
+  ],
+  "juridicalNote": "The official Mitis Iudex act establishes integral replacement of CIC cann. 1671–1691 effective 2015-12-08. Official CIC Italian archive pages are frozen as documentary witnesses for the post-reform redactions. The archive pages mark the text as new (^n) and link Mitis Iudex; they do not embed the 1983 redaction, which must therefore be acquired from a separate official pre-reform witness before historical versions are built."
+}

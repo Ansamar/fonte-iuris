@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "documentId": "francis-2021-spiritus-domini",
+  "effectiveFrom": "2021-01-11",
+  "historicalValidFrom": "1983-11-27",
+  "historicalValidUntil": "2021-01-10",
+  "sourceManifest": "manifest.json",
+  "versions": [
+    {
+      "canon": 230,
+      "canonRef": "canon-cic-1983-can-230",
+      "versionId": "cic-1983-can-230-it-1983",
+      "versionDocumentId": "version-cic-1983-can-230-it-1983",
+      "versionLabel": "Testo previgente — fino al 10 gennaio 2021",
+      "status": "historical",
+      "language": "it",
+      "validFrom": "1983-11-27",
+      "validUntil": "2021-01-10",
+      "text": "§1. I laici di sesso maschile, che abbiano l'età e le doti determinate con decreto dalla Conferenza Episcopale, possono essere assunti stabilmente, mediante il rito liturgico stabilito, ai ministeri di lettori e di accoliti; tuttavia tale conferimento non attribuisce loro il diritto al sostentamento o alla rimunerazione da parte della Chiesa.\n§2. I laici possono assolvere per incarico temporaneo la funzione di lettore nelle azioni liturgiche; così pure tutti i laici possono esercitare le funzioni di commentatore, cantore o altre ancora a norma del diritto.\n§3 . Ove lo suggerisca la necessità della Chiesa, in mancanza di ministri, anche i laici, pur senza essere lettori o accoliti, possono supplire alcuni dei loro uffici, cioè esercitare il ministero della parola, presiedere alle preghiere liturgiche, amministrare il battesimo e distribuire la sacra Comunione, secondo le disposizioni del diritto.",
+      "sourceCitation": "Codice di Diritto Canonico, can. 230 — redazione previgente a Spiritus Domini",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_224-231_it.html",
+      "currentVersionRef": "version-cic-1983-can-230-it-current",
+      "currentVersionId": "cic-1983-can-230-it-current",
+      "currentValidFrom": "2021-01-11",
+      "segments": [
+        {
+          "segmentId": "can-230-par-1",
+          "segmentType": "paragraph",
+          "label": "§ 1",
+          "order": 1,
+          "startOffset": 0,
+          "endOffset": 344,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-230-par-2",
+          "segmentType": "paragraph",
+          "label": "§ 2",
+          "order": 2,
+          "startOffset": 345,
+          "endOffset": 562,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-230-par-3",
+          "segmentType": "paragraph",
+          "label": "§ 3",
+          "order": 3,
+          "startOffset": 563,
+          "endOffset": 907,
+          "isFormalDivision": true
+        }
+      ]
+    }
+  ]
+}

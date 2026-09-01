@@ -1,0 +1,27 @@
+{
+  "scope": "competentias-history-699-700",
+  "sources": [
+    {
+      "key": "cic-694-704",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_694-704_it.html",
+      "capturedAt": "2026-09-01T10:15:36.929Z",
+      "sha256": "7f3110694dbfe867a387daee076a56339d06465f6fcdc657c1a5a105f534039c",
+      "path": "scripts/fontes-canonical/data/competentias-quasdam-decernere/history-699-700/cic-694-704.official.html"
+    },
+    {
+      "key": "expedit-ut-iura",
+      "sourceUrl": "https://www.vatican.va/content/francesco/it/motu_proprio/documents/20230402-motu-proprio-expedit-ut-iura.html",
+      "capturedAt": "2026-09-01T10:15:37.160Z",
+      "sha256": "69e132b99c44b5cfb244ef207e9ac28070155e81b858b65afbd1562ee3ae08e7",
+      "path": "scripts/fontes-canonical/data/competentias-quasdam-decernere/history-699-700/expedit-ut-iura.official.html"
+    },
+    {
+      "key": "rescriptum-699-2026",
+      "sourceUrl": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2026/05/28/0450/00884.html",
+      "capturedAt": "2026-09-01T10:15:37.297Z",
+      "sha256": "c355fe1bf0f48b86ca550b5353607ffedf5e770811d15338157badd4bf185a90",
+      "path": "scripts/fontes-canonical/data/competentias-quasdam-decernere/history-699-700/rescriptum-699-2026.official.html"
+    }
+  ],
+  "juridicalNote": "Can. 699: Competentias modifies §2 from 2022-02-15; the 2026 Rescriptum creates a special faculty/exception and must not be treated as a textual replacement of the canon. Can. 700: Competentias creates the 2022 text; Expedit ut iura creates a further version effective 2023-05-07."
+}

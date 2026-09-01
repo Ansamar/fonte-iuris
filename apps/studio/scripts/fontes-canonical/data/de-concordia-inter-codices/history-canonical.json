@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 1,
+  "documentId": "francis-2016-de-concordia-inter-codices",
+  "effectiveFrom": "2016-12-16",
+  "historicalValidFrom": "1983-11-27",
+  "historicalValidUntil": "2016-12-15",
+  "sourceManifest": "history-source/manifest.json",
+  "versions": [
+    {
+      "canon": 111,
+      "canonRef": "canon-cic-1983-can-111",
+      "versionId": "cic-1983-can-111-it-1983",
+      "versionDocumentId": "version-cic-1983-can-111-it-1983",
+      "versionLabel": "Testo previgente — fino al 15 dicembre 2016",
+      "status": "historical",
+      "language": "it",
+      "validFrom": "1983-11-27",
+      "validUntil": "2016-12-15",
+      "text": "§1. Con la ricezione del battesimo è ascritto alla Chiesa latina il figlio dei genitori, che ad essa appartengono o, se uno dei due non appartiene ad essa, ambedue i genitori di comune accordo abbiano optato che la prole fosse battezzata nella Chiesa latina; che se manca il comune accordo, è ascritto alla Chiesa rituale, cui appartiene il padre.\n§2. Qualsiasi battezzando che abbia compiuto quattordici anni di età, può liberamente scegliere di essere battezzato nella Chiesa latina o in un'altra Chiesa rituale di diritto proprio; nel qual caso, egli appartiene a quella Chiesa che avrà scelto.\nIl can. 112 CIC è integralmente sostituito dal testo seguente, che include un nuovo paragrafo e modifica alcune espressioni:",
+      "sourceCitation": "Codice di Diritto Canonico, can. 111 — redazione previgente a De concordia inter Codices",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html",
+      "currentVersionRef": "version-cic-1983-can-111-it-current",
+      "currentVersionId": "cic-1983-can-111-it-current",
+      "currentValidFrom": "2016-12-16",
+      "segments": [
+        {
+          "segmentId": "can-111-par-1",
+          "segmentType": "paragraph",
+          "label": "§ 1",
+          "order": 1,
+          "startOffset": 0,
+          "endOffset": 347,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-111-par-2",
+          "segmentType": "paragraph",
+          "label": "§ 2",
+          "order": 2,
+          "startOffset": 348,
+          "endOffset": 721,
+          "isFormalDivision": true
+        }
+      ]
+    },
+    {
+      "canon": 112,
+      "canonRef": "canon-cic-1983-can-112",
+      "versionId": "cic-1983-can-112-it-1983",
+      "versionDocumentId": "version-cic-1983-can-112-it-1983",
+      "versionLabel": "Testo previgente — fino al 15 dicembre 2016",
+      "status": "historical",
+      "language": "it",
+      "validFrom": "1983-11-27",
+      "validUntil": "2016-12-15",
+      "text": "§1. Dopo aver ricevuto il battesimo, sono ascritti a un'altra Chiesa rituale di diritto proprio:\n1) chi ne abbia ottenuto la licenza da parte della Sede Apostolica;\n2) il coniuge che, nel celebrare il matrimonio o durante il medesimo, abbia dichiarato di voler passare alla Chiesa rituale di diritto proprio dell'altro coniuge; sciolto però il matrimonio, può ritornare liberamente alla Chiesa latina;\n3) i figli di quelli, di cui nei nn. 1 e 2, prima del compimento dei quattordici anni di età e parimenti, nel matrimonio misto, i figli della parte cattolica, che sia passata legittimamente a un'altra Chiesa rituale; raggiunta però questa età, i medesimi possono ritornare alla Chiesa latina.\n§2. L'usanza, anche se a lungo protratta, di ricevere i sacramenti secondo il rito di una Chiesa rituale di diritto proprio, non comporta l'ascrizione alla medesima Chiesa.",
+      "sourceCitation": "Codice di Diritto Canonico, can. 112 — redazione previgente a De concordia inter Codices",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html",
+      "currentVersionRef": "version-cic-1983-can-112-it-current",
+      "currentVersionId": "cic-1983-can-112-it-current",
+      "currentValidFrom": "2016-12-16",
+      "segments": [
+        {
+          "segmentId": "can-112-par-1",
+          "segmentType": "paragraph",
+          "label": "§ 1",
+          "order": 1,
+          "startOffset": 0,
+          "endOffset": 694,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-112-par-1-num-1",
+          "segmentType": "number",
+          "label": "1°",
+          "order": 1,
+          "parentSegmentId": "can-112-par-1",
+          "startOffset": 97,
+          "endOffset": 164,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-112-par-1-num-2",
+          "segmentType": "number",
+          "label": "2°",
+          "order": 2,
+          "parentSegmentId": "can-112-par-1",
+          "startOffset": 165,
+          "endOffset": 401,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-112-par-1-num-3",
+          "segmentType": "number",
+          "label": "3°",
+          "order": 3,
+          "parentSegmentId": "can-112-par-1",
+          "startOffset": 402,
+          "endOffset": 694,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-112-par-2",
+          "segmentType": "paragraph",
+          "label": "§ 2",
+          "order": 2,
+          "startOffset": 695,
+          "endOffset": 866,
+          "isFormalDivision": true
+        }
+      ]
+    },
+    {
+      "canon": 535,
+      "canonRef": "canon-cic-1983-can-535",
+      "versionId": "cic-1983-can-535-it-1983",
+      "versionDocumentId": "version-cic-1983-can-535-it-1983",
+      "versionLabel": "Testo previgente — fino al 15 dicembre 2016",
+      "status": "historical",
+      "language": "it",
+      "validFrom": "1983-11-27",
+      "validUntil": "2016-12-15",
+      "text": "§1. In ogni parrocchia vi siano i libri parrocchiali, cioè il libro dei battezzati, dei matrimoni, dei defunti ed eventualmente altri libri secondo le disposizioni date dalla Conferenza Episcopale o dal Vescovo diocesano; il parroco provveda che tali libri siano redatti accuratamente e diligentemente conservati.\n§2. Nel libro dei battezzati si annoti anche la confermazione e tutto ciò che riguarda lo stato canonico dei fedeli, in rapporto al matrimonio, salvo il disposto del can. 1133, all'adozione, come pure in rapporto all'ordine sacro, alla professione perpetua emessa in un istituto religioso e al cambiamento del rito; tali annotazioni vengano sempre riportate nei certificati di battesimo.§3. Ogni parrocchia abbia il proprio sigillo; gli attestati emessi sullo stato canonico dei fedeli, come pure tutti gli atti che possono avere rilevanza giuridica, siano sottoscritti dal parroco o da un suo delegato e muniti del sigillo parrocchiale.\n§4. In ogni parrocchia vi sia il tabularium o archivio, in cui vengano custoditi i libri parrocchiali, insieme con le lettere dei Vescovi e gli altri documenti che si devono conservare per la loro necessità o utilità; tali libri e documenti devono essere controllati dal Vescovo diocesano o dal suo delegato durante la visita o in altro tempo opportuno e il parroco faccia attenzione che essi non vadano in mano ad estranei.\n§5. Anche i libri parrocchiali più antichi vengano custoditi diligentemente, secondo le disposizioni del diritto particolare.",
+      "sourceCitation": "Codice di Diritto Canonico, can. 535 — redazione previgente a De concordia inter Codices",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html",
+      "currentVersionRef": "version-cic-1983-can-535-it-2016",
+      "currentVersionId": "cic-1983-can-535-it-2016",
+      "currentValidFrom": "2016-12-16",
+      "segments": [
+        {
+          "segmentId": "can-535-par-1",
+          "segmentType": "paragraph",
+          "label": "§ 1",
+          "order": 1,
+          "startOffset": 0,
+          "endOffset": 313,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-535-par-2",
+          "segmentType": "paragraph",
+          "label": "§ 2",
+          "order": 2,
+          "startOffset": 314,
+          "endOffset": 951,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-535-par-4",
+          "segmentType": "paragraph",
+          "label": "§ 4",
+          "order": 4,
+          "startOffset": 952,
+          "endOffset": 1376,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-535-par-5",
+          "segmentType": "paragraph",
+          "label": "§ 5",
+          "order": 5,
+          "startOffset": 1377,
+          "endOffset": 1501,
+          "isFormalDivision": true
+        }
+      ]
+    },
+    {
+      "canon": 868,
+      "canonRef": "canon-cic-1983-can-868",
+      "versionId": "cic-1983-can-868-it-1983",
+      "versionDocumentId": "version-cic-1983-can-868-it-1983",
+      "versionLabel": "Testo previgente — fino al 15 dicembre 2016",
+      "status": "historical",
+      "language": "it",
+      "validFrom": "1983-11-27",
+      "validUntil": "2016-12-15",
+      "text": "§1. Per battezzare lecitamente un bambino si esige:\n1) che i genitori o almeno uno di essi o chi tiene legittimamente il loro posto, vi consentano;\n2) che vi sia la fondata speranza che sarà educato nella religione cattolica; se tale speranza manca del tutto, il battesimo venga differito, secondo le disposizioni del diritto particolare, dandone ragione ai genitori.\n§2. Il bambino di genitori cattolici e persino di non cattolici, in pericolo di morte è battezzato lecitamente anche contro la volontà dei genitori.",
+      "sourceCitation": "Codice di Diritto Canonico, can. 868 — redazione previgente a De concordia inter Codices",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html",
+      "currentVersionRef": "version-cic-1983-can-868-it-current",
+      "currentVersionId": "cic-1983-can-868-it-current",
+      "currentValidFrom": "2016-12-16",
+      "segments": [
+        {
+          "segmentId": "can-868-par-1",
+          "segmentType": "paragraph",
+          "label": "§ 1",
+          "order": 1,
+          "startOffset": 0,
+          "endOffset": 367,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-868-par-1-num-1",
+          "segmentType": "number",
+          "label": "1°",
+          "order": 1,
+          "parentSegmentId": "can-868-par-1",
+          "startOffset": 52,
+          "endOffset": 147,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-868-par-1-num-2",
+          "segmentType": "number",
+          "label": "2°",
+          "order": 2,
+          "parentSegmentId": "can-868-par-1",
+          "startOffset": 148,
+          "endOffset": 367,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-868-par-2",
+          "segmentType": "paragraph",
+          "label": "§ 2",
+          "order": 2,
+          "startOffset": 368,
+          "endOffset": 515,
+          "isFormalDivision": true
+        }
+      ]
+    },
+    {
+      "canon": 1108,
+      "canonRef": "canon-cic-1983-can-1108",
+      "versionId": "cic-1983-can-1108-it-1983",
+      "versionDocumentId": "version-cic-1983-can-1108-it-1983",
+      "versionLabel": "Testo previgente — fino al 15 dicembre 2016",
+      "status": "historical",
+      "language": "it",
+      "validFrom": "1983-11-27",
+      "validUntil": "2016-12-15",
+      "text": "§1. Sono validi soltanto i matrimoni che si contraggono alla presenza dell'Ordinario del luogo o del parroco o del sacerdote oppure diacono delegato da uno di essi che sono assistenti, nonché alla presenza di due testimoni, conformemente, tuttavia, alle norme stabilite nei canoni seguenti, e salve le eccezioni di cui nei cann. 144 , 1112, §1, 1116 e 1127, §§2-3 .\n§2. Si intende assistente al matrimonio soltanto colui che, di persona, chiede la manifestazione del consenso dei contraenti e la riceve in nome della Chiesa.",
+      "sourceCitation": "Codice di Diritto Canonico, can. 1108 — redazione previgente a De concordia inter Codices",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html",
+      "currentVersionRef": "version-cic-1983-can-1108-it-current",
+      "currentVersionId": "cic-1983-can-1108-it-current",
+      "currentValidFrom": "2016-12-16",
+      "segments": [
+        {
+          "segmentId": "can-1108-par-1",
+          "segmentType": "paragraph",
+          "label": "§ 1",
+          "order": 1,
+          "startOffset": 0,
+          "endOffset": 365,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-1108-par-2",
+          "segmentType": "paragraph",
+          "label": "§ 2",
+          "order": 2,
+          "startOffset": 366,
+          "endOffset": 523,
+          "isFormalDivision": true
+        }
+      ]
+    },
+    {
+      "canon": 1109,
+      "canonRef": "canon-cic-1983-can-1109",
+      "versionId": "cic-1983-can-1109-it-1983",
+      "versionDocumentId": "version-cic-1983-can-1109-it-1983",
+      "versionLabel": "Testo previgente — fino al 15 dicembre 2016",
+      "status": "historical",
+      "language": "it",
+      "validFrom": "1983-11-27",
+      "validUntil": "2016-12-15",
+      "text": "L'Ordinario del luogo e il parroco, eccetto che con sentenza o decreto siano stati scomunicati o interdetti o sospesi dall'ufficio oppure dichiarati tali, in forza dell'ufficio assistono validamente, entro i confini del proprio territorio, ai matrimoni non solo dei sudditi, ma anche dei non sudditi, purché almeno uno di essi sia di rito latino.",
+      "sourceCitation": "Codice di Diritto Canonico, can. 1109 — redazione previgente a De concordia inter Codices",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html",
+      "currentVersionRef": "version-cic-1983-can-1109-it-current",
+      "currentVersionId": "cic-1983-can-1109-it-current",
+      "currentValidFrom": "2016-12-16",
+      "segments": []
+    },
+    {
+      "canon": 1111,
+      "canonRef": "canon-cic-1983-can-1111",
+      "versionId": "cic-1983-can-1111-it-1983",
+      "versionDocumentId": "version-cic-1983-can-1111-it-1983",
+      "versionLabel": "Testo previgente — fino al 15 dicembre 2016",
+      "status": "historical",
+      "language": "it",
+      "validFrom": "1983-11-27",
+      "validUntil": "2016-12-15",
+      "text": "§1. L'Ordinario del luogo e il parroco, fintanto che esercitano validamente l'ufficio, possono delegare a sacerdoti e diaconi la facoltà anche generale di assistere ai matrimoni entro i confini del proprio territorio.§2. Perché sia valida, la delega della facoltà di assistere ai matrimoni deve essere data espressamente a persone determinate; e se si tratta di delega speciale, deve essere data anche per un matrimonio determinato; se poi si tratta di delega generale, deve essere concessa per iscritto.",
+      "sourceCitation": "Codice di Diritto Canonico, can. 1111 — redazione previgente a De concordia inter Codices",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html",
+      "currentVersionRef": "version-cic-1983-can-1111-it-current",
+      "currentVersionId": "cic-1983-can-1111-it-current",
+      "currentValidFrom": "2016-12-16",
+      "segments": [
+        {
+          "segmentId": "can-1111-par-1",
+          "segmentType": "paragraph",
+          "label": "§ 1",
+          "order": 1,
+          "startOffset": 0,
+          "endOffset": 503,
+          "isFormalDivision": true
+        }
+      ]
+    },
+    {
+      "canon": 1112,
+      "canonRef": "canon-cic-1983-can-1112",
+      "versionId": "cic-1983-can-1112-it-1983",
+      "versionDocumentId": "version-cic-1983-can-1112-it-1983",
+      "versionLabel": "Testo previgente — fino al 15 dicembre 2016",
+      "status": "historical",
+      "language": "it",
+      "validFrom": "1983-11-27",
+      "validUntil": "2016-12-15",
+      "text": "§1. Dove mancano sacerdoti e diaconi, il Vescovo diocesano, previo il voto favorevole della Conferenza Episcopale e ottenuta la licenza dalla Santa Sede, può delegare dei laici perché assistano ai matrimoni.\nPer la nuova redazione del Canone 1117 cf: Lettera Apostolica in forma di Motu Proprio Omnium in mentem , con la quale vengono mutate alcune norme del Codice di Diritto Canonico (26 ottobre 2009)§2. Si scelga un laico idoneo, capace di istruire gli sposi e preparato a compiere nel debito modo la liturgia del matrimonio.",
+      "sourceCitation": "Codice di Diritto Canonico, can. 1112 — redazione previgente a De concordia inter Codices",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html",
+      "currentVersionRef": "version-cic-1983-can-1112-it-current",
+      "currentVersionId": "cic-1983-can-1112-it-current",
+      "currentValidFrom": "2016-12-16",
+      "segments": [
+        {
+          "segmentId": "can-1112-par-1",
+          "segmentType": "paragraph",
+          "label": "§ 1",
+          "order": 1,
+          "startOffset": 0,
+          "endOffset": 528,
+          "isFormalDivision": true
+        }
+      ]
+    },
+    {
+      "canon": 1116,
+      "canonRef": "canon-cic-1983-can-1116",
+      "versionId": "cic-1983-can-1116-it-1983",
+      "versionDocumentId": "version-cic-1983-can-1116-it-1983",
+      "versionLabel": "Testo previgente — fino al 15 dicembre 2016",
+      "status": "historical",
+      "language": "it",
+      "validFrom": "1983-11-27",
+      "validUntil": "2016-12-15",
+      "text": "§1. Se non si può avere o andare senza grave incomodo dall'assistente competente a norma del diritto, coloro che intendono celebrare un vero matrimonio, possono contrarlo validamente e lecitamente alla presenza dei soli testimoni:\n1) in pericolo di morte;\n2) al di fuori del pericolo di morte, purché si preveda prudentemente che tale stato di cose durerà per un mese.\n§2. Nell'uno e nell'altro caso, se vi è un altro sacerdote o diacono che possa essere presente, deve essere chiamato e assistere, insieme ai testimoni, alla celebrazione del matrimonio, salva la validità del matrimonio in presenza dei soli testimoni.",
+      "sourceCitation": "Codice di Diritto Canonico, can. 1116 — redazione previgente a De concordia inter Codices",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html",
+      "currentVersionRef": "version-cic-1983-can-1116-it-current",
+      "currentVersionId": "cic-1983-can-1116-it-current",
+      "currentValidFrom": "2016-12-16",
+      "segments": [
+        {
+          "segmentId": "can-1116-par-1",
+          "segmentType": "paragraph",
+          "label": "§ 1",
+          "order": 1,
+          "startOffset": 0,
+          "endOffset": 368,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-1116-par-1-num-1",
+          "segmentType": "number",
+          "label": "1°",
+          "order": 1,
+          "parentSegmentId": "can-1116-par-1",
+          "startOffset": 231,
+          "endOffset": 255,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-1116-par-1-num-2",
+          "segmentType": "number",
+          "label": "2°",
+          "order": 2,
+          "parentSegmentId": "can-1116-par-1",
+          "startOffset": 256,
+          "endOffset": 368,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-1116-par-2",
+          "segmentType": "paragraph",
+          "label": "§ 2",
+          "order": 2,
+          "startOffset": 369,
+          "endOffset": 618,
+          "isFormalDivision": true
+        }
+      ]
+    },
+    {
+      "canon": 1127,
+      "canonRef": "canon-cic-1983-can-1127",
+      "versionId": "cic-1983-can-1127-it-1983",
+      "versionDocumentId": "version-cic-1983-can-1127-it-1983",
+      "versionLabel": "Testo previgente — fino al 15 dicembre 2016",
+      "status": "historical",
+      "language": "it",
+      "validFrom": "1983-11-27",
+      "validUntil": "2016-12-15",
+      "text": "§1 . Relativamente alla forma da usare nel matrimonio misto, si osservino le disposizioni del can. 1108; se tuttavia la parte cattolica contrae matrimonio con una parte non cattolica di rito orientale, l'osservanza della forma canonica della celebrazione è necessaria solo per la liceità; per la validità, invece, si richiede l'intervento di un ministro sacro, salvo quant'altro è da osservarsi a norma del diritto.§2. Qualora gravi difficoltà si oppongano alla osservanza della forma canonica, l'Ordinario del luogo della parte cattolica ha il diritto di dispensare da essa in singoli casi, previa consultazione, però, dell'Ordinario del luogo in cui viene celebrato il matrimonio, e salva, per la validità, una qualche forma pubblica di celebrazione; spetta alla Conferenza Episcopale stabilire norme per le quali la predetta dispensa venga concessa per uguali criteri.\n§3. È vietato, sia prima sia dopo la celebrazione canonica a norma del §1, dar luogo a un'altra celebrazione religiosa del medesimo matrimonio nella quale si dia o si rinnovi il consenso matrimoniale; parimenti non si deve compiere una celebrazione religiosa in cui l'assistente cattolico e il ministro non cattolico, celebrando ciascuno il proprio rito, richiedano insieme il consenso delle parti.",
+      "sourceCitation": "Codice di Diritto Canonico, can. 1127 — redazione previgente a De concordia inter Codices",
+      "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_it.html",
+      "currentVersionRef": "version-cic-1983-can-1127-it-current",
+      "currentVersionId": "cic-1983-can-1127-it-current",
+      "currentValidFrom": "2016-12-16",
+      "segments": [
+        {
+          "segmentId": "can-1127-par-1",
+          "segmentType": "paragraph",
+          "label": "§ 1",
+          "order": 1,
+          "startOffset": 0,
+          "endOffset": 871,
+          "isFormalDivision": true
+        },
+        {
+          "segmentId": "can-1127-par-3",
+          "segmentType": "paragraph",
+          "label": "§ 3",
+          "order": 3,
+          "startOffset": 872,
+          "endOffset": 1269,
+          "isFormalDivision": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "scope": "competentias-history-699-700",
+  "effectiveFrom": "2022-02-15",
+  "notes": [
+    "Can. 699: il Rescriptum 2026 è una facoltà speciale collegata al §2 e non genera una nuova versione testuale del canone.",
+    "Can. 700: Expedit ut iura (2023) pubblica la nuova formulazione autentica in latino; non viene fabbricata una versione italiana corrente non attestata come testo normativo ufficiale."
+  ],
+  "canons": [
+    {
+      "canon": 699,
+      "canonRef": "canon-cic-1983-can-699",
+      "actions": [
+        {
+          "action": "patch-existing",
+          "versionRef": "version-cic-1983-can-699-it-1983",
+          "versionId": "cic-1983-can-699-it-1983",
+          "status": "historical",
+          "validFrom": "1983-11-27",
+          "validUntil": "2022-02-14",
+          "text": "§1. Il Moderatore supremo con il suo consiglio, che per la validità deve constare di almeno quattro membri, proceda collegialmente ad una accurata valutazione delle prove, degli argomenti e delle difese e, se ciò risulta per votazione segreta, emetterà il decreto di dimissione; questo, per essere valido, esprima almeno sommariamente i motivi, in diritto e in fatto.\n§2. Nei monasteri sui iuris, di cui al can. 615, la decisione circa la dimissione compete al Vescovo diocesano, al quale il Superiore deve sottoporre gli atti revisionati dal suo consiglio.",
+          "segments": [
+            {
+              "segmentId": "can-699-par-1",
+              "segmentType": "paragraph",
+              "label": "§ 1",
+              "order": 1,
+              "startOffset": 0,
+              "endOffset": 367,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-699-par-2",
+              "segmentType": "paragraph",
+              "label": "§ 2",
+              "order": 2,
+              "startOffset": 368,
+              "endOffset": 556,
+              "isFormalDivision": true
+            }
+          ]
+        },
+        {
+          "action": "create",
+          "versionId": "cic-1983-can-699-it-2022",
+          "versionDocumentId": "version-cic-1983-can-699-it-2022",
+          "versionLabel": "Versione vigente da Competentias quasdam decernere",
+          "status": "current",
+          "language": "it",
+          "validFrom": "2022-02-15",
+          "validUntil": null,
+          "text": "§1. Il Moderatore supremo con il suo consiglio, che per la validità deve constare di almeno quattro membri, proceda collegialmente ad una accurata valutazione delle prove, degli argomenti e delle difese e, se ciò risulta per votazione segreta, emetterà il decreto di dimissione; questo, per essere valido, esprima almeno sommariamente i motivi, in diritto e in fatto.\n§2. Nei monasteri sui iuris, di cui al can. 615, la decisione circa la dimissione di un professo compete al Superiore maggiore con il consenso del suo consiglio.",
+          "segments": [
+            {
+              "segmentId": "can-699-par-1",
+              "segmentType": "paragraph",
+              "label": "§ 1",
+              "order": 1,
+              "startOffset": 0,
+              "endOffset": 367,
+              "isFormalDivision": true
+            },
+            {
+              "segmentId": "can-699-par-2",
+              "segmentType": "paragraph",
+              "label": "§ 2",
+              "order": 2,
+              "startOffset": 368,
+              "endOffset": 528,
+              "isFormalDivision": true
+            }
+          ],
+          "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_694-704_it.html"
+        },
+        {
+          "action": "retire-incorrect-version",
+          "versionRef": "version-cic-1983-can-699-it-2026",
+          "versionId": "cic-1983-can-699-it-2026",
+          "reason": "Il Rescriptum 2026 non sostituisce il testo del can. 699 §2; introduce una facoltà speciale."
+        }
+      ],
+      "relationsLater": [
+        {
+          "source": "rescriptum-699-2026",
+          "relationType": "derogates",
+          "target": "can-699-par-2",
+          "effectiveFrom": "2026-03-25"
+        }
+      ]
+    },
+    {
+      "canon": 700,
+      "canonRef": "canon-cic-1983-can-700",
+      "actions": [
+        {
+          "action": "patch-existing",
+          "versionRef": "version-cic-1983-can-700-it-1983",
+          "versionId": "cic-1983-can-700-it-1983",
+          "status": "historical",
+          "validFrom": "1983-11-27",
+          "validUntil": "2022-02-14",
+          "text": "Il decreto di dimissione non ha vigore se non fu confermato dalla Santa Sede, alla quale vanno trasmessi il decreto stesso e tutti gli atti; per gli istituti di diritto diocesano la conferma spetta al Vescovo della diocesi in cui sorge la casa alla quale il religioso è ascritto. Il decreto tuttavia per avere valore deve indicare il diritto, di cui gode il religioso dimesso, di ricorrere all'autorità competente entro dieci giorni dalla ricezione della notifica. Il ricorso ha effetto sospensivo.",
+          "segments": []
+        },
+        {
+          "action": "create",
+          "versionId": "cic-1983-can-700-it-2022",
+          "versionDocumentId": "version-cic-1983-can-700-it-2022",
+          "versionLabel": "Versione da Competentias quasdam decernere a Expedit ut iura",
+          "status": "historical",
+          "language": "it",
+          "validFrom": "2022-02-15",
+          "validUntil": "2023-05-06",
+          "text": "Il decreto di dimissione emesso nei confronti di un professo ha vigore nel momento in cui viene notificato all’interessato. Il decreto tuttavia per avere valore, deve indicare il diritto, di cui gode il religioso dimesso, di ricorrere all’autorità competente entro dieci giorni dalla ricezione della notifica. Il ricorso ha effetto sospensivo.",
+          "segments": [],
+          "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroII_694-704_it.html"
+        },
+        {
+          "action": "keep-existing-current",
+          "versionRef": "version-cic-1983-can-700-la-2023",
+          "versionId": "cic-1983-can-700-la-2023",
+          "status": "current",
+          "language": "la",
+          "validFrom": "2023-05-07",
+          "validUntil": null,
+          "text": "Decretum dimissionis in sodalem professum latum vim habet simul ac ei, cuius interest, notificatur. Decretum vero, ut valeat, indicare debet ius, quo dimissus gaudet, recurrendi, absque petitione de qua in can. 1734, § 1, intra triginta dies a recepta notificatione ad auctoritatem competentem. Recursus effectum habet suspensivum.",
+          "segments": [],
+          "sourceUrl": "https://www.vatican.va/content/francesco/it/motu_proprio/documents/20230402-motu-proprio-expedit-ut-iura.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "key": "cic-1983-aas",
+  "sourceUrl": "https://www.vatican.va/archive/aas/documents/AAS-75-1983-II-ocr.pdf",
+  "capturedAt": "2026-09-01T14:36:07.353Z",
+  "sha256": "85cd71a9fcf1086ec348e345201f2541cb47289ce5e7ff4a63b9da0b8a2543e3",
+  "path": "scripts/fontes-canonical/data/mitis-iudex/history/cic-1983-aas-75-II.official.pdf",
+  "authority": "Acta Apostolicae Sedis 75 (1983), Pars II",
+  "purpose": "Authentic promulgated 1983 Latin CIC witness for reconstruction of cann. 1671–1691 before Mitis Iudex."
+}
