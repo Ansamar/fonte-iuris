@@ -17,7 +17,7 @@ const CAN700_2022="Il decreto di dimissione emesso nei confronti di un professo 
 
 function ptText(blocks:any[]|undefined){return (blocks||[]).map(b=>(b.children||[]).map((c:any)=>c.text||'').join('')).filter(Boolean).join('\n').trim()}
 function normalize(s:string){return s.replace(/\^\{n\}/g,'').replace(/[ \t]+/g,' ').replace(/ *\n */g,'\n').replace(/\n{2,}/g,'\n').trim()}
-function normalizeHtml(s:string){return s.replace(/&nbsp;|&#160;|&#xA0;/gi,' ').replace(/&sect;|&#167;|&#xA7;/gi,'§').replace(/&rsquo;|&#8217;|&#x2019;/gi,'’').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim()}
+function normalizeHtml(s:string){return s.replace(/&nbsp;|&#160;|&#xA0;/gi,' ').replace(/&sect;|&#167;|&#xA7;/gi,'§').replace(/&rsquo;|&#8217;|&#x2019;/gi,'’').replace(/&agrave;|&#224;|&#xE0;/gi,'à').replace(/&egrave;|&#232;|&#xE8;/gi,'è').replace(/&igrave;|&#236;|&#xEC;/gi,'ì').replace(/&ograve;|&#242;|&#xF2;/gi,'ò').replace(/&ugrave;|&#249;|&#xF9;/gi,'ù').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim()}
 function replaceParagraph(current:string,n:number,replacement:string){const matches=[...current.matchAll(/^§\s*(\d+)\.?\s*/gm)];const m=matches.find(x=>Number(x[1])===n);if(!m)throw new Error(`§${n} non trovato`);const i=matches.indexOf(m);const start=m.index??0;const end=matches[i+1]?.index??current.length;return normalize(current.slice(0,start)+replacement.trim()+'\n'+current.slice(end))}
 function compileParagraphs(canon:number,text:string){const out:any[]=[];const matches=[...text.matchAll(/^§\s*(\d+)\s*[.:]?\s*/gm)];for(let i=0;i<matches.length;i++){const m=matches[i];const p=Number(m[1]);const start=m.index??0;const end=matches[i+1]?.index??text.length;out.push({segmentId:`can-${canon}-par-${p}`,segmentType:'paragraph',label:`§ ${p}`,order:p,startOffset:start,endOffset:Math.max(start,end-1),isFormalDivision:true})}return out}
 
@@ -35,7 +35,16 @@ async function main(){
  if(!cicSource||!expeditSource||!rescriptSource)throw new Error('manifest storico 699–700 incompleto')
  const cicHtml=normalizeHtml(await readFile(join(process.cwd(),cicSource.path),'utf8'))
  const expeditHtml=normalizeHtml(await readFile(join(process.cwd(),expeditSource.path),'utf8'))
- if(!cicHtml.includes('Redazione originaria')||!cicHtml.includes(CAN699_P2_2022.replace(/^§2\.\s*/,''))||!cicHtml.includes(CAN700_2022))throw new Error('snapshot CIC non contiene le redazioni 699–700 attese')
+ const cicMarkers=[
+  'Redazione originaria',
+  'Can. 699',
+  'compete al Superiore maggiore con il consenso del suo consiglio',
+  'Can. 700',
+  'Il decreto di dimissione emesso nei confronti di un professo ha vigore nel momento in cui viene notificato',
+  'entro dieci giorni dalla ricezione della notifica',
+  'Il ricorso ha effetto sospensivo',
+ ]
+ for(const marker of cicMarkers){if(!cicHtml.includes(marker))throw new Error(`snapshot CIC non contiene il marcatore atteso: ${marker}`)}
  if(!expeditHtml.includes('trenta giorni')||!expeditHtml.includes('can. 1734'))throw new Error('snapshot Expedit non contiene la modifica 2023 attesa')
 
  const c699=await getCanon(699), c700=await getCanon(700)
