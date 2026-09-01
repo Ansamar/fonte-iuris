@@ -11,7 +11,7 @@ const SOURCES=[
     markers:[
       'Can. 237',
       'ottenuta la conferma della Sede Apostolica',
-      'ottenuta l’approvazione della Sede Apostolica',
+      "ottenuta l'approvazione della Sede Apostolica",
       'Can. 242',
       'confermata dalla Santa Sede',
       'approvata dalla Santa Sede',
@@ -50,7 +50,8 @@ function normalizeHtmlText(value:string){
   return value
     .replace(/&nbsp;|&#160;|&#xA0;/gi,' ')
     .replace(/&sect;|&#167;|&#xA7;/gi,'§')
-    .replace(/&rsquo;|&#8217;|&#x2019;/gi,'’')
+    .replace(/&rsquo;|&#8217;|&#x2019;/gi,"'")
+    .replace(/[’‘]/g,"'")
     .replace(/&agrave;|&#224;|&#xE0;/gi,'à')
     .replace(/&egrave;|&#232;|&#xE8;/gi,'è')
     .replace(/&igrave;|&#236;|&#xEC;/gi,'ì')
