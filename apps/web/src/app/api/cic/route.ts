@@ -148,7 +148,7 @@ export async function GET(request:NextRequest){
         )
       ][0...120]{
         _id,number,editorialTitle,keywords,status,
-        "text": *[_type == "canonVersion" && canon._ref == ^._id && language == "it" && status == "current"] | order(validFrom desc)[0].fullText,
+        "text": pt::text(((*[_type == "canonVersion" && canon._ref == ^._id && language == "it" && status == "current"] | order(validFrom desc))[0]).fullText),
         "structure": structuralUnit->{title,"parent":parent->{title,"parent":parent->{title,"parent":parent->{title,"parent":parent->{title}}}}}
       }`,{term});
 
