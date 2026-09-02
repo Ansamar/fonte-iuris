@@ -56,6 +56,48 @@ const canonProjection = `{
   }
 }`;
 
+type SearchRow={
+  _id:string;
+  number:number;
+  editorialTitle?:string;
+  keywords?:string[];
+  status:string;
+  text?:string;
+  structure?:{title?:string;parent?:{title?:string;parent?:{title?:string;parent?:{title?:string;parent?:{title?:string}}}}};
+};
+
+function normalize(value?:string){return (value??"").toLocaleLowerCase("it").normalize("NFD").replace(/[\u0300-\u036f]/g,"");}
+function structureTitles(row:SearchRow){
+  const titles:string[]=[];
+  let current:SearchRow["structure"]|undefined=row.structure;
+  while(current){if(current.title)titles.unshift(current.title);current=current.parent;}
+  return titles;
+}
+function excerpt(text:string|undefined, query:string){
+  const clean=(text??"").replace(/\s+/g," ").trim();
+  if(!clean)return "";
+  const hay=normalize(clean); const needle=normalize(query);
+  const hit=hay.indexOf(needle);
+  const start=hit<0?0:Math.max(0,hit-55);
+  const end=Math.min(clean.length,start+175);
+  return `${start>0?"…":""}${clean.slice(start,end).trim()}${end<clean.length?"…":""}`;
+}
+function rank(row:SearchRow, query:string){
+  const needle=normalize(query);
+  const title=normalize(row.editorialTitle);
+  const path=normalize(structureTitles(row).join(" "));
+  const keywords=normalize((row.keywords??[]).join(" "));
+  const text=normalize(row.text);
+  let score=0;
+  if(title===needle)score+=80; else if(title.includes(needle))score+=40;
+  if(keywords.includes(needle))score+=32;
+  if(path.includes(needle))score+=28;
+  if(text.includes(needle))score+=10;
+  const occurrences=needle?text.split(needle).length-1:0;
+  score+=Math.min(occurrences,8);
+  return score;
+}
+
 export async function GET(request:NextRequest){
   try{
     const numberParam = request.nextUrl.searchParams.get("number");
@@ -93,14 +135,36 @@ export async function GET(request:NextRequest){
         const exact = await sanity(`*[_type == "canon" && number == $number][0]{_id,number,editorialTitle,status}`,{number:numeric});
         if(exact) return NextResponse.json({results:[exact]});
       }
+
       const term = `*${queryParam.toLowerCase()}*`;
-      const results = await sanity(`*[
+      const rows = await sanity<SearchRow[]>(`*[
         _type == "canon" && (
           lower(coalesce(editorialTitle,"")) match $term ||
           keywords[] match $term ||
+          structuralUnit->title match $term ||
+          structuralUnit->parent->title match $term ||
+          structuralUnit->parent->parent->title match $term ||
           _id in *[_type == "canonVersion" && language == "it" && status == "current" && pt::text(fullText) match $term].canon._ref
         )
-      ] | order(number asc)[0...30]{_id,number,editorialTitle,status}`,{term});
+      ][0...120]{
+        _id,number,editorialTitle,keywords,status,
+        "text": *[_type == "canonVersion" && canon._ref == ^._id && language == "it" && status == "current"] | order(validFrom desc)[0].fullText,
+        "structure": structuralUnit->{title,"parent":parent->{title,"parent":parent->{title,"parent":parent->{title,"parent":parent->{title}}}}}
+      }`,{term});
+
+      const results=rows.map(row=>{
+        const titles=structureTitles(row);
+        return {
+          _id:row._id,
+          number:row.number,
+          editorialTitle:row.editorialTitle,
+          status:row.status,
+          contextPath:titles.slice(-3).join(" · "),
+          snippet:excerpt(row.text,queryParam),
+          matchReason:titles.some(t=>normalize(t).includes(normalize(queryParam)))?"Collocazione sistematica":(row.keywords??[]).some(k=>normalize(k).includes(normalize(queryParam)))?"Materia indicizzata":"Testo normativo",
+          score:rank(row,queryParam)
+        };
+      }).sort((a,b)=>b.score-a.score||a.number-b.number).slice(0,30);
       return NextResponse.json({results});
     }
 
