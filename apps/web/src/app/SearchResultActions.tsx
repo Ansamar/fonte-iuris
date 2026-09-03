@@ -6,12 +6,37 @@ type SearchResult={
   _id:string;
   resultType:"canon"|"italianProvision"|"sourceDocument"|"legalRelation";
   label:string;
+  tone?:string;
   title:string;
   targetNumber?:number;
 };
 
+const toneByLabel:Record<string,string>={
+  "Canone":"canon",
+  "Motu proprio":"motu",
+  "Costituzione apostolica":"constitution",
+  "Decreto":"decree",
+  "Rescritto":"rescript",
+  "Istruzione":"instruction",
+  "Codice":"code",
+  "Documento":"document",
+  "Relazione normativa":"relation",
+};
+
+function applySearchTones(){
+  document.querySelectorAll<HTMLButtonElement>(".search-results .result").forEach(button=>{
+    const label=button.querySelector(":scope > span")?.textContent?.trim()??"";
+    const tone=toneByLabel[label]??"document";
+    button.dataset.searchTone=tone;
+  });
+}
+
 export default function SearchResultActions(){
   useEffect(()=>{
+    applySearchTones();
+    const observer=new MutationObserver(applySearchTones);
+    observer.observe(document.body,{childList:true,subtree:true});
+
     const handleMouseDown=(event:MouseEvent)=>{
       const target=event.target as HTMLElement|null;
       const button=target?.closest<HTMLButtonElement>(".search-results .result");
@@ -44,7 +69,10 @@ export default function SearchResultActions(){
     };
 
     document.addEventListener("mousedown",handleMouseDown,true);
-    return()=>document.removeEventListener("mousedown",handleMouseDown,true);
+    return()=>{
+      observer.disconnect();
+      document.removeEventListener("mousedown",handleMouseDown,true);
+    };
   },[]);
 
   return null;
