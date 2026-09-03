@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {notFound} from "next/navigation";
+import LegalCorpusShell from "../../LegalCorpusShell";
 import styles from "./legal-page.module.css";
 
 const PROJECT_ID="2rq93txn";
@@ -31,8 +32,8 @@ function statusLabel(status?:string){return status==="inForce"?"Vigente":status=
 function scopeLabel(scope?:string){return scope==="universal"?"Universale":scope==="italy"?"Italia":scope||""}
 function forceLabel(force?:string){return force==="normative"?"Normativa":force||""}
 function relationLabel(type?:string){const map:Record<string,string>={interprets:"Interpreta",implements:"Attua",determines:"Determina",specifies:"Specifica",integrates:"Integra",derogates:"Deroga",replaces:"Sostituisce",repeals:"Abroga",refersTo:"Rinvio",presupposes:"Presuppone",appliesInItaly:"Applicazione in Italia",regulatesProcedure:"Regola la procedura",amendsText:"Modifica il testo",concordance:"Concordanza",exception:"Eccezione"};return map[type??""]||type||"Relazione normativa"}
-function decodeEntities(text:string){const entities:Record<string,string>={amp:"&",lt:"<",gt:">",quot:'"',apos:"'",nbsp:" ",agrave:"à",egrave:"è",eacute:"é",igrave:"ì",ograve:"ò",ugrave:"ù",ccedil:"ç",ntilde:"ñ",ecirc:"ê",aacute:"á",iacute:"í",oacute:"ó",uacute:"ú"};return text.replace(/&([a-z]+);/gi,(m,key)=>entities[key.toLowerCase()]??m).replace(/&#(\d+);/g,(_,n)=>String.fromCharCode(Number(n)));}
-function cleanOfficialText(raw?:string){if(!raw)return "";const junk=new Set(["la santa sede","italiano","italian","français","english","português","español","deutsch","polski","العربية"]);return decodeEntities(raw).split(/\r?\n/).map(line=>line.trimEnd()).filter(line=>!junk.has(line.trim().toLocaleLowerCase("it"))).join("\n").replace(/\n{3,}/g,"\n\n").trim();}
+function decodeEntities(text:string){const entities:Record<string,string>={amp:"&",lt:"<",gt:">",quot:'"',apos:"'",nbsp:" ",agrave:"à",egrave:"è",eacute:"é",igrave:"ì",ograve:"ò",ugrave:"ù",ccedil:"ç",ntilde:"ñ",ecirc:"ê",aacute:"á",iacute:"í",oacute:"ó",uacute:"ú",times:"×"};return text.replace(/&([a-z]+);/gi,(m,key)=>entities[key.toLowerCase()]??m).replace(/&#(\d+);/g,(_,n)=>String.fromCharCode(Number(n)));}
+function cleanOfficialText(raw?:string){if(!raw)return "";const junk=new Set(["la santa sede","italiano","italian","français","english","português","español","deutsch","polski","العربية","中文","latine","×","magisterium","calendario","celebrazioni liturgiche","biglietti udienze e celebrazioni pontificie"]);return decodeEntities(raw).split(/\r?\n/).map(line=>line.trimEnd()).filter(line=>!junk.has(line.trim().toLocaleLowerCase("it"))).join("\n").replace(/\n{3,}/g,"\n\n").trim();}
 
 export default async function LegalPage({params}:{params:Promise<{id:string}>}){
   const {id}=await params;const doc=await loadLegal(decodeURIComponent(id));if(!doc)notFound();const p=doc.provision;
@@ -40,8 +41,7 @@ export default async function LegalPage({params}:{params:Promise<{id:string}>}){
   const scope=p?.territorialScope||doc.territorialScope,force=p?.legalForce||doc.legalForce;
   const text=cleanOfficialText(p?.normativeText||doc.sourceText);const relations=Array.from(new Map((doc.relations??[]).map((r:any)=>[r._id,r])).values()) as any[];
   const kind=(p?.provisionType||doc.documentType||"Atto normativo").replace(/([a-z])([A-Z])/g,"$1 $2");
-  return <main className={styles.shell}>
-    <header className={styles.header}><Link href="/fonti" className={styles.back}>← Fonte Iuris</Link><span className={styles.sectionLabel}>Fonti normative · lettura interna</span></header>
+  return <LegalCorpusShell section="Lettura interna">
     <div className={styles.layout}>
       <article className={styles.article}>
         <div className={styles.hero}>
@@ -60,5 +60,5 @@ export default async function LegalPage({params}:{params:Promise<{id:string}>}){
         <section className={styles.panel}><h3>Provenienza</h3><div className={styles.fact}><b>Corpus</b><span>Fonte Iuris · testo acquisito e consultabile internamente</span></div>{doc.officialUrl&&<a className={styles.sourceLink} href={doc.officialUrl} target="_blank" rel="noreferrer">Fonte ufficiale esterna ↗</a>}<Link href="/fonti" className={styles.returnLink}>← Torna alle fonti normative</Link></section>
       </aside>
     </div>
-  </main>
+  </LegalCorpusShell>
 }
