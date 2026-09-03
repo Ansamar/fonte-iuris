@@ -33,7 +33,24 @@ function scopeLabel(scope?:string){return scope==="universal"?"Universale":scope
 function forceLabel(force?:string){return force==="normative"?"Normativa":force||""}
 function relationLabel(type?:string){const map:Record<string,string>={interprets:"Interpreta",implements:"Attua",determines:"Determina",specifies:"Specifica",integrates:"Integra",derogates:"Deroga",replaces:"Sostituisce",repeals:"Abroga",refersTo:"Rinvio",presupposes:"Presuppone",appliesInItaly:"Applicazione in Italia",regulatesProcedure:"Regola la procedura",amendsText:"Modifica il testo",concordance:"Concordanza",exception:"Eccezione"};return map[type??""]||type||"Relazione normativa"}
 function decodeEntities(text:string){const entities:Record<string,string>={amp:"&",lt:"<",gt:">",quot:'"',apos:"'",nbsp:" ",agrave:"à",egrave:"è",eacute:"é",igrave:"ì",ograve:"ò",ugrave:"ù",ccedil:"ç",ntilde:"ñ",ecirc:"ê",aacute:"á",iacute:"í",oacute:"ó",uacute:"ú",times:"×"};return text.replace(/&([a-z]+);/gi,(m,key)=>entities[key.toLowerCase()]??m).replace(/&#(\d+);/g,(_,n)=>String.fromCharCode(Number(n)));}
-function cleanOfficialText(raw?:string){if(!raw)return "";const junk=new Set(["la santa sede","italiano","italian","français","english","português","español","deutsch","polski","العربية","中文","latine","×","magisterium","calendario","celebrazioni liturgiche","biglietti udienze e celebrazioni pontificie"]);return decodeEntities(raw).split(/\r?\n/).map(line=>line.trimEnd()).filter(line=>!junk.has(line.trim().toLocaleLowerCase("it"))).join("\n").replace(/\n{3,}/g,"\n\n").trim();}
+function cleanOfficialText(raw?:string){
+  if(!raw)return "";
+  const junk=new Set([
+    "la santa sede","italiano","italian","français","english","português","español","deutsch","polski","العربية","العربيّة","中文","latine","×",
+    "magisterium","calendario","celebrazioni liturgiche","biglietti udienze e celebrazioni pontificie","sommi pontefici","collegio cardinalizio",
+    "curia romana e altre organizzazioni","sinodo","sala stampa","vatican news - radio vaticana","l'osservatore romano","francesco","motu proprio",
+    "a","generazione pdf in corso.....","generazione pdf in corso...","de","en","es","fr","hr","it","la","pl","pt","zh_cn","zh_tw","-"
+  ]);
+  const languageMenu=/^(?:-\s*)?(?:DE|EN|ES|FR|HR|IT|LA|PL|PT|ZH_CN|ZH_TW)(?:\s*-\s*(?:DE|EN|ES|FR|HR|IT|LA|PL|PT|ZH_CN|ZH_TW))*$/i;
+  const lines=decodeEntities(raw).split(/\r?\n/).map(line=>line.trimEnd()).filter(line=>{
+    const trimmed=line.trim();
+    const key=trimmed.toLocaleLowerCase("it");
+    if(junk.has(key))return false;
+    if(languageMenu.test(trimmed))return false;
+    return true;
+  });
+  return lines.join("\n").replace(/\n{3,}/g,"\n\n").trim();
+}
 
 export default async function LegalPage({params}:{params:Promise<{id:string}>}){
   const {id}=await params;const doc=await loadLegal(decodeURIComponent(id));if(!doc)notFound();const p=doc.provision;
