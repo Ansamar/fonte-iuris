@@ -1,23 +1,22 @@
-import Link from "next/link";
 import LegalCorpusShell from "../LegalCorpusShell";
+import FontiBrowser,{type Source} from "./FontiBrowser";
 
 const PROJECT_ID="2rq93txn";
 const DATASET="production";
 const API_VERSION="2026-03-25";
-
-type Source={_id:string;title:string;shortTitle?:string;documentType?:string;issuer?:string;status?:string;effectiveFrom?:string;effectiveUntil?:string;officialCitation?:string;territorialScope?:string;legalForce?:string;summary?:string;relationCount:number};
 
 async function loadSources():Promise<Source[]>{
  const query=`*[_type=="sourceDocument"]|order(effectiveFrom desc,title asc){_id,title,shortTitle,documentType,issuer,status,effectiveFrom,effectiveUntil,officialCitation,territorialScope,legalForce,"summary":(*[_type=="italianProvision" && sourceDocument._ref==^._id][0].summary),"relationCount":count(*[_type=="legalRelation" && (sourceDocument._ref==^._id || source._ref==^._id || target._ref==^._id)])}`;
  const url=new URL(`https://${PROJECT_ID}.api.sanity.io/v${API_VERSION}/data/query/${DATASET}`);url.searchParams.set("query",query);
  const res=await fetch(url,{cache:"no-store"});if(!res.ok)throw new Error("Corpus fonti non disponibile");return (await res.json()).result??[];
 }
-function statusLabel(v?:string){return v==="inForce"?"Vigente":v==="amended"?"Modificato":v==="repealed"?"Abrogato":v==="historical"?"Storico":v||"Registrato"}
-function kind(v?:string,title?:string){const s=`${v??""} ${title??""}`.toLowerCase();if(s.includes("motu proprio"))return "Motu proprio";if(s.includes("costituzione"))return "Costituzione apostolica";if(s.includes("decreto"))return "Decreto";if(s.includes("rescript")||s.includes("rescritto"))return "Rescritto";if(s.includes("codex")||s.includes("codice"))return "Codice";return v||"Documento normativo"}
-function displayTitle(s:Source){const short=s.shortTitle?.trim();if(short)return short;const k=kind(s.documentType,s.title);return s.title.replace(new RegExp(`^${k}\\s+`,`i`),"").trim()||s.title}
 
 export default async function FontiPage(){const sources=await loadSources();return <LegalCorpusShell section="Corpus normativo">
- <div style={{maxWidth:1280,margin:"0 auto",padding:"34px 28px"}}><p style={{margin:0,color:"var(--gold)",fontWeight:800,textTransform:"uppercase",fontSize:12}}>Fonti normative</p><h1 style={{fontFamily:"Georgia,serif",color:"var(--blue)",fontSize:"2.2rem",margin:"8px 0"}}>Corpus delle fonti normative</h1><p style={{maxWidth:760,color:"var(--muted)",lineHeight:1.6,margin:"0 0 28px"}}>Atti universali e fonti applicabili in Italia già acquisiti nel corpus. Ogni atto è consultabile integralmente dentro Fonte Iuris, con vigenza, provenienza e relazioni con i canoni.</p>
- <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(310px,1fr))",gap:14}}>{sources.map(s=><Link key={s._id} href={`/legal/${encodeURIComponent(s._id)}`} style={{textDecoration:"none",color:"inherit",background:"var(--surface)",border:"1px solid var(--line)",borderRadius:11,padding:20,display:"block",boxShadow:"0 2px 8px rgba(10,30,50,.03)"}}><div style={{display:"flex",justifyContent:"space-between",gap:12,alignItems:"center",marginBottom:10}}><span style={{fontSize:11,fontWeight:800,textTransform:"uppercase",color:"var(--gold)"}}>{kind(s.documentType,s.title)}</span><span style={{fontSize:11,padding:"4px 8px",borderRadius:12,background:"var(--green-soft)",color:"var(--green)",fontWeight:700}}>{statusLabel(s.status)}</span></div><h2 style={{fontFamily:"Georgia,serif",fontSize:"1.15rem",lineHeight:1.3,color:"var(--blue)",margin:"0 0 9px"}}>{displayTitle(s)}</h2>{s.shortTitle&&s.shortTitle!==s.title&&<p style={{fontSize:12,lineHeight:1.45,margin:"0 0 10px"}}>{s.title}</p>}<p style={{fontSize:12,color:"var(--muted)",margin:"0 0 12px"}}>{[s.issuer,s.effectiveFrom?`in vigore dal ${s.effectiveFrom}`:null,s.territorialScope==="italy"?"Italia":null].filter(Boolean).join(" · ")}</p>{s.summary&&<p style={{fontSize:13,lineHeight:1.55,margin:"0 0 13px"}}>{s.summary}</p>}<div style={{display:"flex",justifyContent:"space-between",gap:10,borderTop:"1px solid var(--line)",paddingTop:11,fontSize:11,color:"var(--muted)"}}><span>{s.relationCount} relazioni normative</span><strong style={{color:"var(--blue)"}}>Apri l’atto →</strong></div></Link>)}</div>
- <p style={{color:"var(--muted)",fontSize:12,marginTop:22}}>{sources.length} atti documentali presenti nel corpus.</p></div>
+ <div style={{maxWidth:1280,margin:"0 auto",padding:"34px 28px"}}>
+  <p style={{margin:0,color:"var(--gold)",fontWeight:800,textTransform:"uppercase",fontSize:12}}>Fonti normative</p>
+  <h1 style={{fontFamily:"Georgia,serif",color:"var(--blue)",fontSize:"2.2rem",margin:"8px 0"}}>Corpus delle fonti normative</h1>
+  <p style={{maxWidth:760,color:"var(--muted)",lineHeight:1.6,margin:"0 0 28px"}}>Atti universali e fonti applicabili in Italia già acquisiti nel corpus. Ogni atto è consultabile integralmente dentro Fonte Iuris, con vigenza, provenienza e relazioni con i canoni.</p>
+  <FontiBrowser sources={sources}/>
+  <p style={{color:"var(--muted)",fontSize:12,marginTop:22}}>{sources.length} atti documentali presenti nel corpus.</p>
+ </div>
  </LegalCorpusShell>}
