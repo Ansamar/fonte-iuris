@@ -1,0 +1,114 @@
+[
+  {
+    "_id":"materia-beni-temporali-chiesa",
+    "_type":"legalConcept",
+    "label":"I beni temporali della Chiesa",
+    "slug":{"_type":"slug","current":"beni-temporali-della-chiesa"},
+    "academicLevel":"academic",
+    "definition":"Disciplina canonica del patrimonio temporale ecclesiale: fondamento e fini dei beni, soggetti titolari, acquisto, amministrazione, contratti, alienazione, pie volontà e fondazioni. Il Libro V configura i beni come strumenti ordinati alla missione della Chiesa e sottopone i beni ecclesiastici a un regime di responsabilità, vigilanza e destinazione conforme ai fini ecclesiali.",
+    "synonyms":["diritto patrimoniale canonico","beni ecclesiastici","patrimonio ecclesiastico"],
+    "relatedCanons":[{"_type":"reference","_ref":"canon-1254"},{"_type":"reference","_ref":"canon-1255"},{"_type":"reference","_ref":"canon-1256"},{"_type":"reference","_ref":"canon-1257"},{"_type":"reference","_ref":"canon-1258"}],
+    "sourceResearch":{"status":"official-verified","officialSourcesCheckedAt":"2026-09-04","editorialNote":"Verificato sul testo ufficiale CIC, Libro V, cann. 1254-1310."}
+  },
+  {
+    "_id":"materia-beni-fondamento-fini-soggetti",
+    "_type":"legalConcept",
+    "label":"Fondamento, fini e soggetti dei beni ecclesiastici",
+    "slug":{"_type":"slug","current":"fondamento-fini-soggetti-beni-ecclesiastici"},
+    "academicLevel":"academic",
+    "definition":"Il diritto nativo della Chiesa di acquistare, possedere, amministrare e alienare beni temporali è funzionale ai fini propri indicati dal can. 1254 §2: culto divino, sostentamento dei ministri, apostolato e carità, specialmente verso i poveri. La titolarità patrimoniale va distinta secondo la persona giuridica e secondo la natura pubblica o privata del soggetto canonico.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-beni-temporali-chiesa"},
+    "relatedCanons":[{"_type":"reference","_ref":"canon-1254"},{"_type":"reference","_ref":"canon-1255"},{"_type":"reference","_ref":"canon-1256"},{"_type":"reference","_ref":"canon-1257"},{"_type":"reference","_ref":"canon-1258"}]
+  },
+  {
+    "_id":"materia-beni-acquisto",
+    "_type":"legalConcept",
+    "label":"Acquisto dei beni e contribuzione dei fedeli",
+    "slug":{"_type":"slug","current":"acquisto-beni-contribuzione-fedeli"},
+    "academicLevel":"academic",
+    "definition":"L'acquisto dei beni ecclesiastici comprende i modi giusti riconosciuti dal diritto naturale e positivo, le offerte dei fedeli, i tributi e le esazioni nei limiti canonici, le collette, la prescrizione e la disciplina dei beni ricevuti dalla Chiesa. Il sistema coniuga libertà dei fedeli, diritto della Chiesa a procurarsi i mezzi necessari e garanzie sulla destinazione delle offerte.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-beni-temporali-chiesa"},
+    "relatedCanons":[{"_type":"reference","_ref":"canon-1259"},{"_type":"reference","_ref":"canon-1260"},{"_type":"reference","_ref":"canon-1261"},{"_type":"reference","_ref":"canon-1262"},{"_type":"reference","_ref":"canon-1263"},{"_type":"reference","_ref":"canon-1267"},{"_type":"reference","_ref":"canon-1270"}]
+  },
+  {
+    "_id":"materia-beni-amministrazione-vigilanza",
+    "_type":"legalConcept",
+    "label":"Amministrazione e vigilanza sui beni ecclesiastici",
+    "slug":{"_type":"slug","current":"amministrazione-vigilanza-beni-ecclesiastici"},
+    "academicLevel":"academic",
+    "definition":"L'amministrazione dei beni ecclesiastici è esercitata dal soggetto competente sotto la vigilanza dell'autorità ecclesiastica. Il Libro V disciplina responsabilità dell'Ordinario, istituti diocesani, amministratori, atti di ordinaria e straordinaria amministrazione e sistemi di controllo, secondo criteri di diligenza, legalità, conservazione e destinazione ecclesiale del patrimonio.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-beni-temporali-chiesa"},
+    "relatedCanons":[{"_type":"reference","_ref":"canon-1273"},{"_type":"reference","_ref":"canon-1274"},{"_type":"reference","_ref":"canon-1276"},{"_type":"reference","_ref":"canon-1279"},{"_type":"reference","_ref":"canon-1281"},{"_type":"reference","_ref":"canon-1284"}]
+  },
+  {
+    "_id":"materia-beni-amministratori-obblighi",
+    "_type":"legalConcept",
+    "label":"Obblighi e responsabilità degli amministratori",
+    "slug":{"_type":"slug","current":"obblighi-responsabilita-amministratori-beni"},
+    "academicLevel":"academic",
+    "definition":"Gli amministratori devono adempiere l'ufficio con la diligenza del buon padre di famiglia, tutelare la proprietà, osservare diritto canonico e civile, curare redditività e impiego conforme dei beni, tenere ordinatamente libri e documenti e rendere conto dell'amministrazione. La responsabilità patrimoniale si collega alla distinzione fra atti legittimamente compiuti e atti eccedenti poteri o limiti.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-beni-amministrazione-vigilanza"},
+    "relatedCanons":[{"_type":"reference","_ref":"canon-1282"},{"_type":"reference","_ref":"canon-1283"},{"_type":"reference","_ref":"canon-1284"},{"_type":"reference","_ref":"canon-1287"},{"_type":"reference","_ref":"canon-1288"}]
+  },
+  {
+    "_id":"materia-beni-contratti-diritto-civile",
+    "_type":"legalConcept",
+    "label":"Contratti canonici e rinvio al diritto civile",
+    "slug":{"_type":"slug","current":"contratti-canonici-rinvio-diritto-civile"},
+    "academicLevel":"academic",
+    "definition":"Il can. 1290 recepisce nel diritto canonico, con i limiti del diritto divino e delle norme canoniche speciali, la disciplina civile territoriale dei contratti e dei pagamenti. Ne deriva un'area di coordinamento fra ordinamento canonico e ordinamento statale particolarmente rilevante nella gestione patrimoniale delle persone giuridiche ecclesiastiche.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-beni-temporali-chiesa"},
+    "relatedCanons":[{"_type":"reference","_ref":"canon-1290"}]
+  },
+  {
+    "_id":"materia-beni-alienazione-patrimonio-stabile",
+    "_type":"legalConcept",
+    "label":"Alienazione e patrimonio stabile",
+    "slug":{"_type":"slug","current":"alienazione-patrimonio-stabile"},
+    "academicLevel":"academic",
+    "definition":"L'alienazione dei beni legittimamente assegnati al patrimonio stabile di una persona giuridica pubblica è sottoposta a licenze e controlli graduati secondo valore e natura del bene. La disciplina tutela stabilità patrimoniale e finalità ecclesiali mediante competenze dell'autorità, consensi, giusta causa, stima e ulteriori cautele previste dal diritto.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-beni-temporali-chiesa"},
+    "relatedCanons":[{"_type":"reference","_ref":"canon-1291"},{"_type":"reference","_ref":"canon-1292"},{"_type":"reference","_ref":"canon-1293"},{"_type":"reference","_ref":"canon-1294"},{"_type":"reference","_ref":"canon-1295"},{"_type":"reference","_ref":"canon-1296"}]
+  },
+  {
+    "_id":"materia-beni-negozi-pericolosi",
+    "_type":"legalConcept",
+    "label":"Negozi che possono peggiorare la condizione patrimoniale",
+    "slug":{"_type":"slug","current":"negozi-peggioramento-condizione-patrimoniale"},
+    "academicLevel":"academic",
+    "definition":"Le garanzie poste per l'alienazione si estendono, nei termini del can. 1295, ai negozi dai quali la situazione patrimoniale della persona giuridica può risultare peggiorata. La categoria amplia la tutela oltre il trasferimento della proprietà e impone una valutazione sostanziale del rischio economico dell'operazione.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-beni-alienazione-patrimonio-stabile"},
+    "relatedCanons":[{"_type":"reference","_ref":"canon-1295"},{"_type":"reference","_ref":"canon-1298"}]
+  },
+  {
+    "_id":"materia-beni-pie-volonta",
+    "_type":"legalConcept",
+    "label":"Pie volontà",
+    "slug":{"_type":"slug","current":"pie-volonta"},
+    "academicLevel":"academic",
+    "definition":"Le disposizioni patrimoniali per cause pie, inter vivos o mortis causa, una volta legittimamente accettate devono essere fedelmente adempiute. L'Ordinario esercita funzioni di esecuzione e vigilanza e il diritto canonico coordina volontà del disponente, formalità civili, destinazione ecclesiale e controllo dell'autorità.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-beni-temporali-chiesa"},
+    "relatedCanons":[{"_type":"reference","_ref":"canon-1299"},{"_type":"reference","_ref":"canon-1300"},{"_type":"reference","_ref":"canon-1301"},{"_type":"reference","_ref":"canon-1302"}]
+  },
+  {
+    "_id":"materia-beni-pie-fondazioni",
+    "_type":"legalConcept",
+    "label":"Pie fondazioni",
+    "slug":{"_type":"slug","current":"pie-fondazioni"},
+    "academicLevel":"academic",
+    "definition":"Il diritto distingue fondazioni pie autonome, erette in persona giuridica, e fondazioni pie non autonome, costituite da beni affidati a una persona giuridica pubblica con un onere durevole. Accettazione, investimento, registrazione, adempimento degli oneri e vigilanza sono disciplinati per garantire la volontà del fondatore e la sostenibilità dell'obbligazione.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-beni-pie-volonta"},
+    "relatedCanons":[{"_type":"reference","_ref":"canon-1303"},{"_type":"reference","_ref":"canon-1304"},{"_type":"reference","_ref":"canon-1305"},{"_type":"reference","_ref":"canon-1306"},{"_type":"reference","_ref":"canon-1307"}]
+  },
+  {
+    "_id":"materia-beni-riduzione-oneri-pie-cause",
+    "_type":"legalConcept",
+    "label":"Riduzione degli oneri e modifica delle pie volontà",
+    "slug":{"_type":"slug","current":"riduzione-oneri-modifica-pie-volonta"},
+    "academicLevel":"academic",
+    "definition":"La disciplina vigente dei cann. 1308-1310 regola la riduzione e il trasferimento degli oneri delle Messe e la riduzione, il contenimento o la permuta delle volontà dei fedeli per cause pie. È materia di particolare rilievo temporale perché il testo vigente dei cann. 1308 e 1310 differisce dalla redazione originaria del 1983 e richiede quindi lettura storico-normativa delle competenze attribuite all'autorità ecclesiastica.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-beni-pie-volonta"},
+    "relatedCanons":[{"_type":"reference","_ref":"canon-1308"},{"_type":"reference","_ref":"canon-1309"},{"_type":"reference","_ref":"canon-1310"}],
+    "sourceResearch":{"status":"official-verified","officialSourcesCheckedAt":"2026-09-04","editorialNote":"Il testo ufficiale Vatican.va segnala come nuova versione i cann. 1308 e 1310 e conserva a confronto la redazione originaria."}
+  }
+]
