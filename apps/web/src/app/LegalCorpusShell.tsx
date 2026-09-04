@@ -15,8 +15,24 @@ export default function LegalCorpusShell({children,section="Fonti normative",act
  const [theme,setTheme]=useState<Theme>("light");
  const [fontSize,setFontSize]=useState<FontSize>("normal");
  const [settings,setSettings]=useState(false);
- useEffect(()=>{const t=localStorage.getItem("fi-theme") as Theme|null;const f=localStorage.getItem("fi-font") as FontSize|null;if(t)setTheme(t);if(f)setFontSize(f)},[]);
- useEffect(()=>{document.documentElement.dataset.theme=theme;document.documentElement.dataset.font=fontSize;localStorage.setItem("fi-theme",theme);localStorage.setItem("fi-font",fontSize)},[theme,fontSize]);
+ const [preferencesReady,setPreferencesReady]=useState(false);
+ useEffect(()=>{
+  const storedTheme=localStorage.getItem("fi-theme");
+  const storedFont=localStorage.getItem("fi-font");
+  const nextTheme:Theme=storedTheme==="dark"?"dark":"light";
+  const nextFont:FontSize=storedFont==="large"||storedFont==="xlarge"?storedFont:"normal";
+  setTheme(nextTheme);setFontSize(nextFont);
+  document.documentElement.dataset.theme=nextTheme;
+  document.documentElement.dataset.font=nextFont;
+  setPreferencesReady(true);
+ },[]);
+ useEffect(()=>{
+  if(!preferencesReady)return;
+  document.documentElement.dataset.theme=theme;
+  document.documentElement.dataset.font=fontSize;
+  localStorage.setItem("fi-theme",theme);
+  localStorage.setItem("fi-font",fontSize);
+ },[theme,fontSize,preferencesReady]);
  const topHref=activeSection==="materie"?"/materie":"/fonti";
  const topLabel=activeSection==="materie"?"Materie":"Fonti normative";
  return <main className={styles.shell}>
