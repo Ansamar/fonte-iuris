@@ -5,10 +5,10 @@ const PROJECT_ID="2rq93txn";
 const DATASET="production";
 const API_VERSION="2026-03-25";
 
-type Concept={_id:string;label:string;definition:string;synonyms?:string[];broaderConcept?:{_id:string;label:string}|null;relatedCanons?:Array<{_id:string;number:number;editorialTitle?:string}>};
+type Concept={_id:string;label:string;slug?:{current:string};definition:string;synonyms?:string[];broaderConcept?:{_id:string;label:string}|null;relatedCanons?:Array<{_id:string;number:number;editorialTitle?:string}>};
 
 async function loadConcepts():Promise<Concept[]>{
-  const query=`*[_type=="legalConcept"]|order(label asc){_id,label,definition,synonyms,"broaderConcept":broaderConcept->{_id,label},"relatedCanons":relatedCanons[]->{_id,number,editorialTitle}}`;
+  const query=`*[_type=="legalConcept"]|order(label asc){_id,label,slug,definition,synonyms,"broaderConcept":broaderConcept->{_id,label},"relatedCanons":relatedCanons[]->{_id,number,editorialTitle}}`;
   const url=new URL(`https://${PROJECT_ID}.api.sanity.io/v${API_VERSION}/data/query/${DATASET}`);
   url.searchParams.set("query",query);
   const res=await fetch(url,{cache:"no-store"});
