@@ -1,12 +1,12 @@
-import {createClient} from '@sanity/client'
+import {getCliClient} from 'sanity/cli'
 import {readFileSync} from 'node:fs'
 import {resolve} from 'node:path'
 
 async function main(){
- const client=createClient({projectId:'2rq93txn',dataset:'production',apiVersion:'2026-03-25',useCdn:false,token:process.env.SANITY_AUTH_TOKEN})
- const input=process.argv[2]
+ const client=getCliClient({apiVersion:'2026-03-25'}).withConfig({dataset:'production',useCdn:false})
+ const input=process.argv.find((arg)=>arg.endsWith('.json'))
  const dryRun=process.argv.includes('--dry-run')
- if(!input)throw new Error('Uso: npx tsx scripts/materie/import-materie-canonical.ts <file.json> [--dry-run]')
+ if(!input)throw new Error('File JSON mancante')
  const file=resolve(process.cwd(),input)
  const docs=JSON.parse(readFileSync(file,'utf8'))
  if(!Array.isArray(docs)||!docs.length)throw new Error('Il file canonico deve contenere un array non vuoto')
@@ -19,7 +19,6 @@ async function main(){
  }
  console.log(`VALIDAZIONE OK · ${docs.length} materie · ${dryRun?'DRY RUN':'IMPORT'}`)
  if(dryRun)return
- if(!process.env.SANITY_AUTH_TOKEN)throw new Error('SANITY_AUTH_TOKEN mancante')
  let tx=client.transaction()
  for(const d of docs)tx=tx.createOrReplace(d)
  const result=await tx.commit({visibility:'sync'})
