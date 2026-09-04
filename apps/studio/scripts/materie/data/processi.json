@@ -1,0 +1,194 @@
+[
+  {
+    "_id":"materia-processi",
+    "_type":"legalConcept",
+    "label":"I processi",
+    "slug":{"_type":"slug","current":"processi"},
+    "academicLevel":"academic",
+    "definition":"Sistema del diritto processuale canonico latino: tutela giudiziale dei diritti, accertamento dei fatti giuridici, irrogazione o dichiarazione delle pene e procedimenti speciali e amministrativi disciplinati dal Libro VII del CIC, cann. 1400–1752.",
+    "synonyms":["Diritto processuale canonico","Libro VII CIC"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"Struttura verificata sul testo ufficiale vigente del CIC, Libro VII."}
+  },
+  {
+    "_id":"materia-processi-oggetto-giurisdizione",
+    "_type":"legalConcept",
+    "label":"Oggetto del giudizio e potestà giudiziaria",
+    "slug":{"_type":"slug","current":"processi-oggetto-giurisdizione"},
+    "academicLevel":"academic",
+    "definition":"Oggetto del giudizio canonico, potestà propria della Chiesa e delimitazione rispetto alle controversie originate da atti di potestà amministrativa; comprende inoltre le norme peculiari per le cause di canonizzazione.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "synonyms":["Potestà giudiziaria","Oggetto del giudizio"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1400–1403."}
+  },
+  {
+    "_id":"materia-processi-foro-competente",
+    "_type":"legalConcept",
+    "label":"Foro competente e competenza dei tribunali",
+    "slug":{"_type":"slug","current":"processi-foro-competente"},
+    "academicLevel":"academic",
+    "definition":"Disciplina della competenza giudiziaria: riserve pontificie, incompetenza assoluta e relativa, titoli di competenza e criteri per l'individuazione del tribunale legittimamente competente.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "synonyms":["Competenza giudiziaria","Foro canonico"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1404–1416."}
+  },
+  {
+    "_id":"materia-processi-tribunali",
+    "_type":"legalConcept",
+    "label":"Tribunali ecclesiastici e gradi di giudizio",
+    "slug":{"_type":"slug","current":"processi-tribunali"},
+    "academicLevel":"academic",
+    "definition":"Ordinamento dei tribunali di prima e seconda istanza e dei tribunali della Sede Apostolica; funzioni del Vescovo giudice, del Vicario giudiziale, dei giudici, del promotore di giustizia, del difensore del vincolo e del notaio, nonché disciplina dell'appello alla Rota Romana.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "synonyms":["Tribunali ecclesiastici","Gradi di giudizio","Rota Romana"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1417–1445."}
+  },
+  {
+    "_id":"materia-processi-disciplina-tribunali",
+    "_type":"legalConcept",
+    "label":"Disciplina dei tribunali e atti processuali",
+    "slug":{"_type":"slug","current":"processi-disciplina-tribunali"},
+    "academicLevel":"academic",
+    "definition":"Doveri del giudice e dei ministri del tribunale, ordine di trattazione delle cause, termini e dilazioni, luogo del giudizio, accesso all'aula, redazione, lingua, autenticazione e conservazione degli atti processuali; assume rilievo il principio della composizione pacifica delle controversie quando compatibile con la giustizia.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1446–1475."}
+  },
+  {
+    "_id":"materia-processi-parti-patrocinio",
+    "_type":"legalConcept",
+    "label":"Parti, capacità processuale, procuratori e avvocati",
+    "slug":{"_type":"slug","current":"processi-parti-patrocinio"},
+    "academicLevel":"academic",
+    "definition":"Posizione processuale delle parti, capacità di stare in giudizio, rappresentanza, tutela dei minori e di chi è privo dell'uso di ragione, nonché disciplina del procuratore e dell'avvocato. Nel processo penale l'accusato deve sempre essere assistito da un avvocato.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "synonyms":["Patrocinio canonico","Avvocato canonico"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1476–1490."}
+  },
+  {
+    "_id":"materia-processi-azioni-eccezioni",
+    "_type":"legalConcept",
+    "label":"Azioni ed eccezioni",
+    "slug":{"_type":"slug","current":"processi-azioni-eccezioni"},
+    "academicLevel":"academic",
+    "definition":"Strumenti di tutela processuale dei diritti mediante azioni ed eccezioni, con particolare attenzione alla durata delle azioni, alle azioni possessorie e ai provvedimenti cautelari previsti dall'ordinamento canonico.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1491–1500."}
+  },
+  {
+    "_id":"materia-processi-contenzioso-ordinario",
+    "_type":"legalConcept",
+    "label":"Giudizio contenzioso ordinario",
+    "slug":{"_type":"slug","current":"processi-contenzioso-ordinario"},
+    "academicLevel":"academic",
+    "definition":"Modello ordinario del processo contenzioso: introduzione della causa, citazione e notificazione, contestazione della lite, istanza, prove, cause incidentali, pubblicazione degli atti, conclusione, discussione e decisione.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "synonyms":["Processo contenzioso ordinario"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC Parte II, Sezione I, cann. 1501–1655."}
+  },
+  {
+    "_id":"materia-processi-prove",
+    "_type":"legalConcept",
+    "label":"Sistema probatorio canonico",
+    "slug":{"_type":"slug","current":"processi-prove"},
+    "academicLevel":"academic",
+    "definition":"Disciplina dell'ammissione, assunzione e valutazione delle prove: dichiarazioni delle parti, documenti, testimoni, periti, accesso e ricognizione giudiziaria, presunzioni; il sistema è ordinato al raggiungimento della certezza morale richiesta per la decisione.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi-contenzioso-ordinario"},
+    "synonyms":["Prova canonica","Istruzione probatoria"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1526–1586, nel quadro del giudizio contenzioso ordinario."}
+  },
+  {
+    "_id":"materia-processi-sentenza-impugnazioni",
+    "_type":"legalConcept",
+    "label":"Sentenza, impugnazioni e cosa giudicata",
+    "slug":{"_type":"slug","current":"processi-sentenza-impugnazioni"},
+    "academicLevel":"academic",
+    "definition":"Decisione giudiziale e relativi mezzi di controllo: nullità della sentenza, appello, cosa giudicata, restitutio in integrum e disciplina delle spese e del gratuito patrocinio, secondo la struttura del giudizio contenzioso ordinario.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi-contenzioso-ordinario"},
+    "synonyms":["Impugnazioni canoniche","Appello canonico","Cosa giudicata"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1607–1649."}
+  },
+  {
+    "_id":"materia-processi-contenzioso-orale",
+    "_type":"legalConcept",
+    "label":"Processo contenzioso orale",
+    "slug":{"_type":"slug","current":"processi-contenzioso-orale"},
+    "academicLevel":"academic",
+    "definition":"Forma processuale contenziosa semplificata e concentrata prevista per le cause ammesse dal diritto, distinta dal processo ordinario e non utilizzabile per le cause di dichiarazione di nullità matrimoniale.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "synonyms":["Giudizio contenzioso orale"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1656–1670; per l'esclusione nelle nullità matrimoniali, can. 1691 §2 vigente."}
+  },
+  {
+    "_id":"materia-processi-matrimoniali",
+    "_type":"legalConcept",
+    "label":"Processi matrimoniali",
+    "slug":{"_type":"slug","current":"processi-matrimoniali"},
+    "academicLevel":"academic",
+    "definition":"Processi relativi al matrimonio, con particolare rilievo alle cause di dichiarazione di nullità: competenza, diritto di impugnare il matrimonio, introduzione e istruzione della causa, sentenza, processo matrimoniale più breve davanti al Vescovo, processo documentale, impugnazioni ed effetti. La disciplina vigente deve essere letta alla luce della riforma di Mitis Iudex Dominus Iesus del 2015.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "synonyms":["Nullità matrimoniale","Processo matrimoniale canonico","Processus brevior"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1671–1707; cann. 1671–1691 nella versione riformata da Mitis Iudex Dominus Iesus. Fonte e storia normativa già presenti nel corpus Fonte Iuris."}
+  },
+  {
+    "_id":"materia-processi-nullita-ordinazione",
+    "_type":"legalConcept",
+    "label":"Nullità della sacra ordinazione",
+    "slug":{"_type":"slug","current":"processi-nullita-sacra-ordinazione"},
+    "academicLevel":"academic",
+    "definition":"Processo speciale diretto alla dichiarazione della nullità della sacra ordinazione, disciplinato autonomamente dal Libro VII e riservato quanto alla legittimazione e alla trattazione alle norme proprie dell'ordinamento canonico.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1708–1712."}
+  },
+  {
+    "_id":"materia-processi-evitare-giudizi",
+    "_type":"legalConcept",
+    "label":"Modi per evitare i giudizi",
+    "slug":{"_type":"slug","current":"processi-modi-evitare-giudizi"},
+    "academicLevel":"academic",
+    "definition":"Transazione, compromesso e giudizio arbitrale come strumenti di composizione delle controversie, nei limiti posti dalla natura dei diritti e dal bene pubblico ecclesiale.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "synonyms":["Transazione canonica","Arbitrato canonico"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1713–1716; collegamento sistematico con can. 1446."}
+  },
+  {
+    "_id":"materia-processi-penale",
+    "_type":"legalConcept",
+    "label":"Processo penale canonico",
+    "slug":{"_type":"slug","current":"processo-penale-canonico"},
+    "academicLevel":"academic",
+    "definition":"Procedimento per l'accertamento del delitto e l'irrogazione o dichiarazione della pena: indagine previa, decisione circa la via procedurale, processo penale giudiziale e azione per la riparazione dei danni. Va letto in coordinamento con il Libro VI vigente e con la legislazione penale extracodiciale applicabile.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "synonyms":["Procedura penale canonica","Indagine previa"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1717–1731; coordinamento necessario con Libro VI e fonti penali speciali."}
+  },
+  {
+    "_id":"materia-processi-ricorso-amministrativo",
+    "_type":"legalConcept",
+    "label":"Ricorso contro i decreti amministrativi",
+    "slug":{"_type":"slug","current":"ricorso-decreti-amministrativi"},
+    "academicLevel":"academic",
+    "definition":"Tutela gerarchica contro gli atti amministrativi singolari emanati in foro esterno fuori del giudizio: ricerca di soluzione equa, richiesta previa nei casi previsti, sospensione dell'esecuzione, termine perentorio del ricorso, diritto al patrocinio e poteri decisori del Superiore gerarchico.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "synonyms":["Ricorso gerarchico","Giustizia amministrativa canonica"],
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1732–1739."}
+  },
+  {
+    "_id":"materia-processi-rimozione-parroci",
+    "_type":"legalConcept",
+    "label":"Rimozione dei parroci",
+    "slug":{"_type":"slug","current":"rimozione-parroci"},
+    "academicLevel":"academic",
+    "definition":"Procedimento amministrativo speciale per la rimozione del parroco quando il suo ministero risulti dannoso o almeno inefficace per una delle cause previste dal diritto, con garanzie procedurali e consultive proprie.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1740–1747."}
+  },
+  {
+    "_id":"materia-processi-trasferimento-parroci",
+    "_type":"legalConcept",
+    "label":"Trasferimento dei parroci",
+    "slug":{"_type":"slug","current":"trasferimento-parroci"},
+    "academicLevel":"academic",
+    "definition":"Procedimento speciale per il trasferimento del parroco quando il bene delle anime o la necessità o utilità della Chiesa lo richiedano, secondo le garanzie e le forme stabilite dal diritto; il Libro VII si conclude con il principio della salus animarum quale legge suprema della Chiesa.",
+    "broaderConcept":{"_type":"reference","_ref":"materia-processi"},
+    "sourceResearch":{"status":"official-verified","editorialNote":"CIC cann. 1748–1752."}
+  }
+]
