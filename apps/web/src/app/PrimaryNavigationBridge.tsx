@@ -12,6 +12,11 @@ export default function PrimaryNavigationBridge(){
       if(label.includes("fonti normative")){
         event.preventDefault();
         window.location.href="/fonti";
+        return;
+      }
+      if(label.includes("materie")){
+        event.preventDefault();
+        window.location.href="/materie";
       }
     };
     document.addEventListener("click",onClick,true);
