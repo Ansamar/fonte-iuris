@@ -6,9 +6,9 @@ const DATASET="production";
 const API_VERSION="2026-03-25";
 
 async function loadSources():Promise<Source[]>{
- const query=`*[_type=="sourceDocument"]|order(effectiveFrom desc,title asc){_id,title,shortTitle,documentType,issuer,status,effectiveFrom,effectiveUntil,officialCitation,territorialScope,legalForce,"summary":(*[_type=="italianProvision" && sourceDocument._ref==^._id][0].summary),"relationCount":count(*[_type=="legalRelation" && (sourceDocument._ref==^._id || source._ref==^._id || target._ref==^._id)])}`;
+ const query=`*[_type=="sourceDocument"]|order(effectiveFrom desc,title asc){_id,title,shortTitle,documentType,issuer,status,effectiveFrom,effectiveUntil,officialCitation,territorialScope,legalForce,"summary":(*[_type=="italianProvision" && sourceDocument._ref==^._id][0].summary),"relations":*[_type=="legalRelation" && (sourceDocument._ref==^._id || source._ref==^._id || source._ref in *[_type=="italianProvision" && sourceDocument._ref==^._id]._id || target._ref==^._id)]{relationType,"targetNumber":target->number,"sourceNumber":source->number}}`;
  const url=new URL(`https://${PROJECT_ID}.api.sanity.io/v${API_VERSION}/data/query/${DATASET}`);url.searchParams.set("query",query);
- const res=await fetch(url,{cache:"no-store"});if(!res.ok)throw new Error("Corpus fonti non disponibile");return (await res.json()).result??[];
+ const res=await fetch(url,{cache:"no-store"});if(!res.ok)throw new Error("Corpus fonti non disponibile");const result=(await res.json()).result??[];return result.map((s:any)=>({...s,relationCount:s.relations?.length??0}));
 }
 
 export default async function FontiPage(){const sources=await loadSources();return <LegalCorpusShell section="Corpus normativo">
