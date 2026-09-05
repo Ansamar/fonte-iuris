@@ -1,0 +1,55 @@
+import {defineField, defineType} from 'sanity'
+
+export const pastoralDocumentType = defineType({
+  name: 'pastoralDocument',
+  title: 'Documento pastorale',
+  type: 'document',
+  fields: [
+    defineField({name:'pastoralId',title:'Identificatore stabile',type:'string',validation:(Rule)=>Rule.required()}),
+    defineField({name:'title',title:'Titolo',type:'string',validation:(Rule)=>Rule.required()}),
+    defineField({name:'shortTitle',title:'Titolo breve',type:'string'}),
+    defineField({name:'pastoralType',title:'Tipologia pastorale',type:'string',options:{list:[
+      {title:'Direttorio',value:'directory'},
+      {title:'Orientamenti',value:'guidelines'},
+      {title:'Vademecum',value:'vademecum'},
+      {title:'Nota pastorale',value:'pastoralNote'},
+      {title:'Testo comune / indirizzo pastorale',value:'commonPastoralText'},
+      {title:'Lettera / documento applicativo',value:'applicativePastoralDocument'},
+      {title:'Altro',value:'other'},
+    ]},validation:(Rule)=>Rule.required()}),
+    defineField({name:'issuer',title:'Autorità / organismo emanante',type:'string',validation:(Rule)=>Rule.required()}),
+    defineField({name:'issuedAt',title:'Data',type:'date'}),
+    defineField({name:'territorialScope',title:'Ambito',type:'string',options:{list:[
+      {title:'Universale',value:'universal'},
+      {title:'Italia',value:'italy'},
+      {title:'Regione ecclesiastica',value:'ecclesiasticalRegion'},
+      {title:'Diocesi',value:'diocese'},
+      {title:'Altro particolare',value:'particular'},
+    ]},validation:(Rule)=>Rule.required()}),
+    defineField({name:'addressees',title:'Destinatari',type:'array',of:[{type:'string'}],options:{layout:'tags'}}),
+    defineField({name:'juridicalCharacter',title:'Qualificazione giuridico-pastorale',type:'string',initialValue:'pastoral',options:{list:[
+      {title:'Pastorale',value:'pastoral'},
+      {title:'Pastorale con funzione interpretativa',value:'pastoralInterpretative'},
+      {title:'Pastorale con funzione applicativa',value:'pastoralApplicative'},
+      {title:'Mista / da qualificare',value:'mixed'},
+    ]},validation:(Rule)=>Rule.required()}),
+    defineField({name:'sourceDocument',title:'Fonte documentale',type:'reference',to:[{type:'sourceDocument'}],validation:(Rule)=>Rule.required(),description:'Conserva testo, URL ufficiale, pubblicazione, snapshot e hash. Questa entità descrive il contenuto pastorale e la sua rilevanza canonica.'}),
+    defineField({name:'summary',title:'Sintesi editoriale',type:'text',rows:5}),
+    defineField({name:'pastoralPurpose',title:'Finalità pastorale',type:'text',rows:5}),
+    defineField({name:'canonicalRelevance',title:'Rilevanza canonica',type:'text',rows:6,description:'Spiega come il documento orienta applicazione, comprensione o prassi senza attribuirgli automaticamente forza normativa.'}),
+    defineField({name:'relatedCanons',title:'Canoni collegati',type:'array',of:[{type:'reference',to:[{type:'canon'}]}]}),
+    defineField({name:'relatedConcepts',title:'Materie collegate',type:'array',of:[{type:'reference',to:[{type:'legalConcept'}]}]}),
+    defineField({name:'keywords',title:'Parole chiave',type:'array',of:[{type:'string'}],options:{layout:'tags'}}),
+    defineField({name:'sourceResearch',title:'Controllo delle fonti',type:'object',fields:[
+      {name:'status',title:'Stato verifica',type:'string',initialValue:'pending',options:{list:[
+        {title:'Da verificare',value:'pending'},
+        {title:'Fonte ufficiale verificata',value:'official-verified'},
+        {title:'Verifica editoriale completata',value:'editorial-verified'},
+      ]}},
+      {name:'checkedAt',title:'Verificato il',type:'datetime'},
+      {name:'note',title:'Nota',type:'text',rows:3},
+    ]}),
+    defineField({name:'notes',title:'Note redazionali',type:'array',of:[{type:'block'}]}),
+  ],
+  preview:{select:{title:'title',issuer:'issuer',pastoralType:'pastoralType'},prepare({title,issuer,pastoralType}){return {title,subtitle:`${pastoralType ?? 'documento pastorale'} · ${issuer ?? ''}`}}},
+})
