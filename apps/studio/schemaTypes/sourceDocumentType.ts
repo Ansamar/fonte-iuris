@@ -1,18 +1,18 @@
 import {defineField, defineType} from 'sanity'
 
 export const sourceDocumentType = defineType({
-  name: 'sourceDocument', title: 'Fonte normativa', type: 'document',
+  name: 'sourceDocument', title: 'Fonte documentale', type: 'document',
   fields: [
     defineField({name: 'documentId', title: 'Identificatore canonico', type: 'string', validation: (Rule) => Rule.required()}),
     defineField({name: 'title', title: 'Titolo', type: 'string', validation: (Rule) => Rule.required()}),
     defineField({name: 'shortTitle', title: 'Titolo breve', type: 'string'}),
-    defineField({name: 'documentType', title: 'Natura giuridica', type: 'string', options: {list: [
+    defineField({name: 'documentType', title: 'Natura del documento', type: 'string', options: {list: [
       {title: 'Codice', value: 'code'}, {title: 'Costituzione apostolica', value: 'apostolicConstitution'}, {title: 'Motu proprio', value: 'motuProprio'},
       {title: 'Legge', value: 'law'}, {title: 'Decreto', value: 'decree'}, {title: 'Istruzione', value: 'instruction'}, {title: 'Rescritto', value: 'rescript'},
       {title: 'Interpretazione autentica', value: 'authenticInterpretation'}, {title: 'Delibera', value: 'resolution'}, {title: 'Norma particolare', value: 'particularLaw'},
-      {title: 'Documento pastorale', value: 'pastoralDocument'}, {title: 'Altro', value: 'other'},
+      {title: 'Documento pastorale', value: 'pastoralDocument'}, {title: 'Decisione giurisprudenziale', value: 'judicialDecision'}, {title: 'Altro', value: 'other'},
     ]}, validation: (Rule) => Rule.required()}),
-    defineField({name: 'issuer', title: 'Autorità emanante', type: 'string', validation: (Rule) => Rule.required()}),
+    defineField({name: 'issuer', title: 'Autorità emanante / organismo', type: 'string', validation: (Rule) => Rule.required()}),
     defineField({name: 'issuedAt', title: 'Data di emanazione', type: 'date'}),
     defineField({name: 'promulgatedAt', title: 'Data di promulgazione', type: 'date'}),
     defineField({name: 'publishedAt', title: 'Data di pubblicazione', type: 'date'}),
@@ -22,7 +22,7 @@ export const sourceDocumentType = defineType({
     defineField({name: 'territorialScope', title: 'Ambito territoriale', type: 'string', initialValue: 'universal', options: {list: [
       {title: 'Universale', value: 'universal'}, {title: 'Italia', value: 'italy'}, {title: 'Particolare / locale', value: 'particular'}, {title: 'Altro', value: 'other'},
     ]}, validation: (Rule) => Rule.required()}),
-    defineField({name: 'legalForce', title: 'Valore / forza', type: 'string', options: {list: [
+    defineField({name: 'legalForce', title: 'Valore / funzione', type: 'string', options: {list: [
       {title: 'Normativo', value: 'normative'}, {title: 'Interpretativo', value: 'interpretative'}, {title: 'Applicativo', value: 'applicative'},
       {title: 'Pastorale', value: 'pastoral'}, {title: 'Prassi / giurisprudenza', value: 'practice'},
     ]}}),
