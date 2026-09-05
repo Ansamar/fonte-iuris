@@ -33,10 +33,20 @@ async function main(){
    if(!exists)throw new Error(`${d._id}: fonte documentale inesistente ${source}`)
   }
   for(const r of d.relatedCanons??[]){
-   const id=refId(r)
-   if(!id)throw new Error(`${d._id}: riferimento canone non valido`)
-   const exists=await client.fetch(`defined(*[_id==$id && _type=='canon'][0]._id)`,{id})
-   if(!exists)throw new Error(`${d._id}: canone inesistente ${id}`)
+   const requested=refId(r)
+   if(!requested)throw new Error(`${d._id}: riferimento canone non valido`)
+   const canon=await client.fetch(`*[_type=='canon' && (_id==$id || canonicalId==$id)][0]{_id,canonicalId,number}`,{id:requested})
+   if(!canon)throw new Error(`${d._id}: canone inesistente ${requested}`)
+   r._ref=canon._id
+  }
+  for(const holding of d.holdings??[]){
+   for(const r of holding.relatedCanons??[]){
+    const requested=refId(r)
+    if(!requested)throw new Error(`${d._id}: riferimento canone non valido in holding`)
+    const canon=await client.fetch(`*[_type=='canon' && (_id==$id || canonicalId==$id)][0]{_id,canonicalId,number}`,{id:requested})
+    if(!canon)throw new Error(`${d._id}: canone inesistente ${requested} in holding`)
+    r._ref=canon._id
+   }
   }
  }
  console.log(`VALIDAZIONE OK · ${sourceIds.size} fonti · ${decisionIds.size} decisioni · ${dryRun?'DRY RUN':'IMPORT'}`)
