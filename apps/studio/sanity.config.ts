@@ -10,6 +10,8 @@ import {canonSegmentType} from './schemaTypes/canonSegmentType'
 import {legalRelationType} from './schemaTypes/legalRelationType'
 import {sourceDocumentType} from './schemaTypes/sourceDocumentType'
 import {italianProvisionType} from './schemaTypes/italianProvisionType'
+import {pastoralDocumentType} from './schemaTypes/pastoralDocumentType'
+import {jurisprudentialDecisionType} from './schemaTypes/jurisprudentialDecisionType'
 import {legalConceptType} from './schemaTypes/legalConceptType'
 import {bibliographicItemType} from './schemaTypes/bibliographicItemType'
 import {structure} from './schemaTypes/structure'
@@ -38,6 +40,8 @@ export default defineConfig({
       legalRelationType,
       sourceDocumentType,
       italianProvisionType,
+      pastoralDocumentType,
+      jurisprudentialDecisionType,
       legalConceptType,
       bibliographicItemType,
     ],
