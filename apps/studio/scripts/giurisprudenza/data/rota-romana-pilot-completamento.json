@@ -1,0 +1,82 @@
+[
+  {
+    "_id": "source-rota-defilippi-san-diego-2009-04-23",
+    "_type": "sourceDocument",
+    "documentId": "rota-defilippi-san-diego-2009-04-23-source",
+    "title": "San Diego — coram Defilippi, 23 aprile 2009",
+    "issuer": "Tribunale della Rota Romana",
+    "documentType": "judicialDecision",
+    "officialUrl": "https://www.rotaromana.va/",
+    "publicationReference": "RRDec CI (2009), 59–74; traduzione scientifica integrale: Studia Canonica 51 (2017), 637–660",
+    "legalForce": "practice"
+  },
+  {
+    "_id": "juris-rota-defilippi-san-diego-2009-04-23",
+    "_type": "jurisprudentialDecision",
+    "decisionId": "rrt-defilippi-san-diego-2009-04-23",
+    "title": "San Diego — incapacità di assumere gli obblighi essenziali e disturbo ossessivo-compulsivo di personalità",
+    "tribunal": "Tribunale della Rota Romana",
+    "tribunalLevel": "romanRota",
+    "decisionType": "sentence",
+    "decisionDate": "2009-04-23",
+    "caseLabel": "San Diego",
+    "ponens": "Ioannes Baptista Defilippi",
+    "language": "la",
+    "publicationStatus": "verifiedSecondary",
+    "privacyStatus": "publicAnonymized",
+    "documentaryLevel": "fullTextSecondaryVerified",
+    "sourceDocument": {"_type": "reference", "_ref": "source-rota-defilippi-san-diego-2009-04-23"},
+    "proceduralOutcome": "affirmative",
+    "rotalGrounds": [
+      {"_key": "g1095-3", "canon": 1095, "paragraph": "3", "label": "incapacitas assumendi essentiales matrimonii obligationes", "outcome": "affirmative"}
+    ],
+    "rotalPublication": {"volume": "CI", "year": 2009, "pages": "59–74"},
+    "ratioSummary": "La valutazione rotale, anche mediante un terzo perito d'ufficio, ritenne provata con certezza morale e scientifica la presenza nel convenuto, al tempo del matrimonio, di un disturbo ossessivo-compulsivo di personalità e subordinatamente di tratti schizoidi, di natura e gravità tali da renderlo incapace di assumere obblighi essenziali derivanti dal bonum coniugum.",
+    "relatedCanons": [{"_type": "reference", "_ref": "cic-1983-can-1095"}],
+    "sourceResearch": {
+      "status": "juridical-verified",
+      "note": "Identità, data, ponens, caput e contenuto sostanziale verificati sulla pubblicazione integrale in Studia Canonica 51 (2017), 637–660 e sulla relativa indicizzazione scientifica; collocazione RRDec CI, 59–74 attestata dalla bibliografia della traduzione."
+    }
+  },
+  {
+    "_id": "source-rota-ordinariato-castrense-usa-erlebach-2010-11-26",
+    "_type": "sourceDocument",
+    "documentId": "rota-ordinariato-castrense-usa-erlebach-2010-11-26-source",
+    "title": "Ordinariato Castrense USA — coram Erlebach, 26 novembre 2010",
+    "issuer": "Tribunale della Rota Romana",
+    "documentType": "judicialDecision",
+    "officialUrl": "https://www.rotaromana.va/",
+    "publicationReference": "RRDec CII (2010), sent. 158/2010; testo integrale: Revista Española de Derecho Canónico 70 (2013), 657–680",
+    "legalForce": "practice"
+  },
+  {
+    "_id": "juris-rota-ordinariato-castrense-usa-erlebach-2010-11-26",
+    "_type": "jurisprudentialDecision",
+    "decisionId": "rrt-erlebach-158-2010-2010-11-26",
+    "title": "Ordinariato Castrense USA — grave difetto di discrezione di giudizio e istruzione probatoria",
+    "tribunal": "Tribunale della Rota Romana",
+    "tribunalLevel": "romanRota",
+    "decisionType": "sentence",
+    "decisionDate": "2010-11-26",
+    "officialCitation": "Sent. 158/2010",
+    "caseLabel": "Ordinariato Castrense degli Stati Uniti d’America",
+    "ponens": "Gregorius Erlebach",
+    "instanceLevel": "second",
+    "language": "la",
+    "publicationStatus": "verifiedSecondary",
+    "privacyStatus": "publicAnonymized",
+    "documentaryLevel": "fullTextSecondaryVerified",
+    "sourceDocument": {"_type": "reference", "_ref": "source-rota-ordinariato-castrense-usa-erlebach-2010-11-26"},
+    "proceduralOutcome": "affirmative",
+    "rotalGrounds": [
+      {"_key": "g1095-2", "canon": 1095, "paragraph": "2", "label": "gravis defectus discretionis iudicii", "outcome": "affirmative"}
+    ],
+    "rotalPublication": {"volume": "CII", "year": 2010, "decisionIndex": 158},
+    "ratioSummary": "In secondo grado la Rota superò la decisione negativa di prima istanza dopo l'acquisizione di una perizia psicologica d'ufficio e di un'ampia ricostruzione biografica dell'attore. Il complesso probatorio consentì ai giudici rotali di raggiungere la certezza morale sul grave difetto di discrezione di giudizio, mostrando al contempo la rilevanza della corretta istruzione della causa.",
+    "relatedCanons": [{"_type": "reference", "_ref": "cic-1983-can-1095"}],
+    "sourceResearch": {
+      "status": "juridical-verified",
+      "note": "Testo della sentenza 158/2010 pubblicato in REDC 70 (2013), 657–680; causa proveniente dall'Ordinariato Castrense USA. La sintesi scientifica conferma il secondo grado, la precedente decisione negativa e il raggiungimento della certezza morale in Rota."
+    }
+  }
+]
