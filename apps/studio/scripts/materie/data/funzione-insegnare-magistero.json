@@ -12,9 +12,6 @@
     "codicialDiscipline":"I cann. 747-755 stabiliscono i principi generali; i cann. 756-780 disciplinano il ministero della Parola; i cann. 781-792 l'azione missionaria; i cann. 793-821 l'educazione cattolica; i cann. 822-832 gli strumenti di comunicazione sociale e i libri; il can. 833 la professione di fede.",
     "interpretation":"La lettura sistematica richiede di distinguere tra infallibilità, magistero autentico non infallibile, obblighi di adesione, libertà della ricerca teologica e disciplina delle forme concrete di insegnamento. Il grado di assenso richiesto dipende dalla qualificazione dell'atto e dalla materia insegnata.",
     "controversialIssues":"Questioni centrali sono la qualificazione giuridica degli atti magisteriali, i diversi gradi di assenso, il rapporto tra libertà accademica e mandato ecclesiale, la competenza dei diversi soggetti del magistero e i confini fra dottrina, disciplina e prudenza pastorale.",
-    "bibliography":[
-      {"_key":"cicIII","citation":"Codex Iuris Canonici (1983), Liber III, cann. 747-833.","kind":"documento","url":"https://www.vatican.va/archive/cod-iuris-canonici/latin/documents/cic_liberIII_la.html"}
-    ],
     "sourceResearch":{"status":"official-verified","editorialNote":"Struttura verificata sul testo ufficiale del CIC pubblicato dalla Santa Sede."}
   },
   {
@@ -185,9 +182,6 @@
     "systematicFramework":"CIC 1983, Titolo V, can. 833.",
     "codicialDiscipline":"Il can. 833 individua categorie di persone tenute a emettere personalmente la professione di fede, specificando l'autorità o il soggetto davanti al quale l'atto deve essere compiuto nelle diverse fattispecie.",
     "interpretation":"La professione di fede è un atto giuridicamente qualificato distinto dal giuramento di fedeltà e da altre dichiarazioni dottrinali; la sua disciplina deve essere letta insieme alle formule approvate e alla normativa complementare pertinente.",
-    "bibliography":[
-      {"_key":"cic833","citation":"Codex Iuris Canonici (1983), can. 833.","kind":"documento","url":"https://www.vatican.va/archive/cod-iuris-canonici/ita/documents/cic_libroIII_833_it.html"}
-    ],
     "sourceResearch":{"status":"official-verified","editorialNote":"Fonte primaria verificata sul testo ufficiale del can. 833 pubblicato dalla Santa Sede."}
   }
 ]
