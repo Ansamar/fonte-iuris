@@ -1,6 +1,7 @@
 import {getCliClient} from 'sanity/cli'
 
 const ID='legal-concept-consenso-matrimoniale'
+const CEI_SOURCE_ID='source-cei-1990-decreto-generale-matrimonio-canonico'
 const CANONS=[1057,1095,1096,1097,1098,1099,1100,1101,1102,1103,1104,1105,1106,1107]
 const PORTABLE_FIELDS=[
  'systematicFramework',
@@ -45,6 +46,9 @@ async function main(){
  const missing=CANONS.filter((n)=>!byNumber.has(n))
  if(missing.length)throw new Error(`Canoni mancanti: ${missing.join(', ')}`)
 
+ const source=await client.fetch(`*[_id==$id][0]{_id,title,documentType,status,officialUrl}`,{id:CEI_SOURCE_ID}) as any
+ if(!source)throw new Error(`Fonte mancante: ${CEI_SOURCE_ID}`)
+
  const set:any={}
  if(!doc.interpretation&&doc.interpretationDoctrine)set.interpretation=toPortableText(doc.interpretationDoctrine,`${ID}-interpretation`)
  for(const field of PORTABLE_FIELDS){
@@ -63,10 +67,16 @@ async function main(){
   _type:'reference',
   _ref:byNumber.get(number),
  }))
+ set.relatedSources=[{
+  _key:'cei-decreto-matrimonio-1990',
+  _type:'reference',
+  _ref:source._id,
+ }]
 
  console.log(`CONSENSO MATRIMONIALE · ${dryRun?'DRY RUN':'PATCH'}`)
  console.log(`Portable Text: ${Object.keys(set).filter((k)=>PORTABLE_FIELDS.includes(k as any)).join(', ')||'nessuna modifica'}`)
  console.log(`Canoni collegati: ${CANONS.join(', ')} · ${CANONS.length}/${CANONS.length}`)
+ console.log(`Fonte collegata: ${source.title} · ${source._id}`)
  console.log(`Controllo fonti: ${set.sourceResearch?.status||doc.sourceResearch?.status||'non impostato'}`)
  if(dryRun)return
 
@@ -75,12 +85,13 @@ async function main(){
   .unset(['interpretationDoctrine','sourceVerificationStatus','sourceNotes'])
   .commit({visibility:'sync'})
 
- const readback=await client.fetch(`*[_id==$id][0]{_id,label,"canoni":relatedCanons[]->number,"portable":{
+ const readback=await client.fetch(`*[_id==$id][0]{_id,label,"canoni":relatedCanons[]->number,"fonti":relatedSources[]->{_id,title,documentType,status},"portable":{
   "systematicFramework":systematicFramework[]._type,
   "interpretation":interpretation[]._type,
   "jurisprudencePractice":jurisprudencePractice[]._type
  },sourceResearch}`,{id:ID})
  if(!readback||readback.canoni?.length!==CANONS.length)throw new Error('Read-back incompleto dopo patch')
+ if(readback.fonti?.length!==1||readback.fonti[0]?._id!==CEI_SOURCE_ID)throw new Error('Read-back fonte CEI incompleto dopo patch')
  console.log(JSON.stringify(readback,null,2))
  console.log('PATCH OK · Consenso matrimoniale aggiornato e verificato')
 }
