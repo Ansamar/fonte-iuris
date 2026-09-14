@@ -14,6 +14,7 @@ async function main(){
 
  const doc=await client.getDocument(ID) as any
  if(!doc)throw new Error(`${ID}: documento non trovato`)
+ if(doc.bibliography!==undefined)throw new Error(`${ID}: bibliography inline legacy ancora presente; interrompo`)
 
  const canons=await client.fetch(
   `*[_type=='canon' && number >= $start && number <= $end] | order(number asc){_id,number}`,
@@ -50,7 +51,7 @@ async function main(){
  console.log(`MATRIMONIO CANONICO · ${dryRun?'DRY RUN':'PATCH'}`)
  console.log(`Canoni: ${CANON_START}-${CANON_END} · ${canons.length}/${expectedCount}`)
  console.log(`Fonti: ${SOURCE_IDS.map((id)=>sourceById.get(id)?.title).join(' · ')}`)
- console.log(`Bibliografia legacy preservata: ${Array.isArray(doc.bibliography)?doc.bibliography.length:0} voci`)
+ console.log('Bibliografia scientifica: gestita esclusivamente tramite bibliographicItem')
  if(dryRun)return
 
  await client.patch(ID)
@@ -58,7 +59,7 @@ async function main(){
   .commit({visibility:'sync'})
 
  const readback=await client.fetch(
-  `*[_id==$id][0]{_id,label,"canoni":relatedCanons[]->number,"fonti":relatedSources[]->{_id,title},"bibliografia":count(bibliography)}`,
+  `*[_id==$id][0]{_id,label,"canoni":relatedCanons[]->number,"fonti":relatedSources[]->{_id,title},"bibliographyDefined":defined(bibliography)}`,
   {id:ID},
  ) as any
  if(!readback)throw new Error('Read-back mancante')
@@ -66,10 +67,10 @@ async function main(){
  const readbackSourceIds=(readback.fonti||[]).map((s:any)=>s._id).sort()
  const expectedSourceIds=[...SOURCE_IDS].sort()
  if(JSON.stringify(readbackSourceIds)!==JSON.stringify(expectedSourceIds))throw new Error('Read-back fonti incompleto')
- if(readback.bibliografia!==3)throw new Error(`Bibliografia legacy alterata: attese 3 voci, trovate ${readback.bibliografia}`)
+ if(readback.bibliographyDefined)throw new Error('Read-back non conforme: bibliography inline legacy presente')
 
  console.log(JSON.stringify(readback,null,2))
- console.log('PATCH OK · relazioni Matrimonio canonico aggiornate e bibliografia legacy preservata')
+ console.log('PATCH OK · relazioni Matrimonio canonico aggiornate · bibliography inline assente')
 }
 
 main().catch((error)=>{
