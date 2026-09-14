@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "15cf3eff-d593-4892-8dce-626726a25db6",
+    "_type": "bibliographicItem",
+    "title": "New Commentary on the Code of Canon Law",
+    "authors": ["John P. Beal", "James A. Coriden", "Thomas J. Green"],
+    "publicationType": "commentary",
+    "year": 2000,
+    "publisher": "Paulist Press",
+    "citation": "John P. Beal, James A. Coriden, Thomas J. Green (eds.), New Commentary on the Code of Canon Law, Paulist Press, New York, 2000.",
+    "url": "https://www.paulistpress.com/Products/0502-0/new-commentary-on-the-code-of-canon-law.aspx",
+    "notes": "Metadati bibliografici verificati sul catalogo dell'editore Paulist Press e su WorldCat. Collegamento al dossier del consenso matrimoniale come commentario generale ai cann. 1057 e 1095-1107.",
+    "relatedCanonNumbers": [1057,1095,1096,1097,1098,1099,1100,1101,1102,1103,1104,1105,1106,1107],
+    "relatedConceptIds": ["legal-concept-consenso-matrimoniale"]
+  },
+  {
+    "_id": "bibliographic-item-exegetical-commentary-code-2004",
+    "_type": "bibliographicItem",
+    "title": "Exegetical Commentary on the Code of Canon Law",
+    "authors": ["Ángel Marzoa", "Jorge Miras", "Rafael Rodríguez-Ocaña"],
+    "publicationType": "commentary",
+    "year": 2004,
+    "publisher": "Wilson & Lafleur; Midwest Theological Forum",
+    "citation": "Ángel Marzoa, Jorge Miras, Rafael Rodríguez-Ocaña (eds.), Exegetical Commentary on the Code of Canon Law, English language ed., Wilson & Lafleur; Midwest Theological Forum, Montréal/Chicago, 2004.",
+    "url": "https://search.worldcat.org/title/53186662",
+    "notes": "Metadati bibliografici verificati su WorldCat. Commentario esegetico generale collegato al dossier del consenso matrimoniale e ai cann. 1057 e 1095-1107.",
+    "relatedCanonNumbers": [1057,1095,1096,1097,1098,1099,1100,1101,1102,1103,1104,1105,1106,1107],
+    "relatedConceptIds": ["legal-concept-consenso-matrimoniale"]
+  },
+  {
+    "_id": "bibliographic-item-code-canon-law-annotated-2004",
+    "_type": "bibliographicItem",
+    "title": "Code of Canon Law Annotated",
+    "authors": ["Ernest Caparros", "Michel Thériault", "Jean Thorn"],
+    "publicationType": "commentary",
+    "year": 2004,
+    "publisher": "Wilson & Lafleur; Midwest Theological Forum",
+    "citation": "Ernest Caparros, Michel Thériault, Jean Thorn et al. (eds.), Code of Canon Law Annotated, 2nd ed., revised and updated, Wilson & Lafleur; Midwest Theological Forum, Montréal/Woodridge, IL, 2004.",
+    "url": "https://search.worldcat.org/title/54079802",
+    "notes": "Metadati bibliografici verificati su WorldCat. Edizione annotata del Codice collegata al dossier del consenso matrimoniale e ai cann. 1057 e 1095-1107.",
+    "relatedCanonNumbers": [1057,1095,1096,1097,1098,1099,1100,1101,1102,1103,1104,1105,1106,1107],
+    "relatedConceptIds": ["legal-concept-consenso-matrimoniale"]
+  }
+]
