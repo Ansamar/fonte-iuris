@@ -19,7 +19,6 @@ export const legalConceptType = defineType({
     defineField({name:'interpretation',title:'Interpretazione e dottrina',type:'array',of:blocks}),
     defineField({name:'jurisprudencePractice',title:'Giurisprudenza e prassi',type:'array',of:blocks}),
     defineField({name:'controversialIssues',title:'Questioni problematiche e controverse',type:'array',of:blocks}),
-    defineField({name:'bibliography',title:'Bibliografia scientifica',type:'array',of:[{type:'object',name:'bibliographicEntry',fields:[{name:'citation',title:'Citazione',type:'string',validation:(Rule)=>Rule.required()},{name:'kind',title:'Tipologia',type:'string',options:{list:['commentario','monografia','articolo','documento','giurisprudenza','altro']}},{name:'url',title:'URL',type:'url'},{name:'note',title:'Nota',type:'text',rows:2}]}]}),
     defineField({name:'synonyms',title:'Sinonimi / termini collegati',type:'array',of:[{type:'string'}],options:{layout:'tags'}}),
     defineField({name:'broaderConcept',title:'Materia superiore',type:'reference',to:[{type:'legalConcept'}],description:'Gerarchia tematica: es. Impedimenti matrimoniali → Matrimonio canonico.'}),
     defineField({name:'relatedCanons',title:'Canoni collegati',type:'array',of:[{type:'reference',to:[{type:'canon'}]}]}),
