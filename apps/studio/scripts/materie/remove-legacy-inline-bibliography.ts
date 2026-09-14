@@ -16,6 +16,21 @@ const expectedCitations = [
 ]
 
 async function main() {
+  const cfg = client.config()
+  const probe = await client.fetch<{
+    _id: string
+    _type: string
+    label?: string
+    bibliographyDefined: boolean
+    bibliographyCount: number
+  } | null>(
+    `*[_id==$id][0]{_id,_type,label,"bibliographyDefined":defined(bibliography),"bibliographyCount":count(bibliography)}`,
+    {id: targetId},
+  )
+
+  console.log('DIAGNOSTICA CLIENT')
+  console.log(JSON.stringify({projectId: cfg.projectId, dataset: cfg.dataset, perspective: cfg.perspective, probe}, null, 2))
+
   const withInline = await client.fetch<Array<{_id: string; label?: string; bibliography?: Array<{citation?: string}>}>>(
     `*[_type=="legalConcept" && defined(bibliography) && count(bibliography)>0]{_id,label,bibliography}`,
   )
