@@ -58,6 +58,7 @@ function normalizeDocument(input:any){
  delete d.interpretationDoctrine
  delete d.sourceVerificationStatus
  delete d.sourceNotes
+ delete d.bibliography
  return d
 }
 
@@ -76,6 +77,7 @@ async function main(){
   if(ids.has(d._id))throw new Error(`ID duplicato nel batch: ${d._id}`)
   ids.add(d._id)
   if(d.broaderConcept?._ref===d._id)throw new Error(`${d._id}: broaderConcept autoreferenziale`)
+  if('bibliography' in d)throw new Error(`${d._id}: bibliography inline non ammessa; usare documenti bibliographicItem`)
   for(const field of PORTABLE_TEXT_FIELDS){
    if(d[field]!=null&&!Array.isArray(d[field]))throw new Error(`${d._id}: ${field} non normalizzato`)
   }
