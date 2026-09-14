@@ -6,7 +6,7 @@ import styles from "./materia-detail.module.css";
 const PROJECT_ID="2rq93txn",DATASET="production",API_VERSION="2026-03-25";
 
 type Ref={_id:string;label?:string;title?:string;number?:number;slug?:{current:string};documentType?:string;issuer?:string;editorialTitle?:string};
-type Bib={citation:string;kind?:string;url?:string;note?:string};
+type BibliographicItem={_id:string;title:string;authors?:string[];publicationType?:string;year?:number;publisher?:string;citation?:string;url?:string;notes?:string};
 type Materia={
   _id:string;
   label:string;
@@ -22,7 +22,7 @@ type Materia={
   interpretation?:unknown;
   jurisprudencePractice?:unknown;
   controversialIssues?:unknown;
-  bibliography?:Bib[];
+  scientificBibliography?:BibliographicItem[];
   synonyms?:string[];
   broaderConcept?:Ref;
   children?:Materia[];
@@ -39,6 +39,14 @@ function text(v:unknown){
   if(typeof v==="string")return v;
   if(!Array.isArray(v))return "";
   return v.map((b:any)=>b?.children?.map((c:any)=>c?.text??"").join("")??"").filter(Boolean).join("\n\n");
+}
+
+function bibliographyLabel(item:BibliographicItem){
+  if(item.citation?.trim())return item.citation.trim();
+  const authorLine=item.authors?.length?item.authors.join(", "):"";
+  const head=[authorLine,item.title].filter(Boolean).join(", ");
+  const tail=[item.publisher,item.year].filter(Boolean).join(", ");
+  return [head,tail].filter(Boolean).join(", ");
 }
 
 const marriageOrder=[
@@ -74,6 +82,7 @@ async function load(slug:string):Promise<Materia|null>{
     "relatedSources":relatedSources[]->{_id,title,documentType,issuer},
     "relatedProvisions":relatedProvisions[]->{_id,title},
     "relatedConcepts":relatedConcepts[]->{_id,label,slug},
+    "scientificBibliography":*[_type=="bibliographicItem"&&^._id in relatedConcepts[]._ref]|order(year asc,title asc){_id,title,authors,publicationType,year,publisher,citation,url,notes},
     "marriageCanons":*[_type=="canon"&&number>=1055&&number<=1165]|order(number asc){_id,number,editorialTitle},
     "marriageSources":*[_type=="sourceDocument"&&(
       title match "*Mitis Iudex*" ||
@@ -114,6 +123,7 @@ export default async function MateriaDetail({params}:{params:Promise<{slug:strin
   const canons=isMarriage&&m.marriageCanons?.length?m.marriageCanons:m.relatedCanons??[];
   const sources=isMarriage&&m.marriageSources?.length?m.marriageSources:m.relatedSources??[];
   const provisions=isMarriage&&m.marriageProvisions?.length?m.marriageProvisions:m.relatedProvisions??[];
+  const bibliography=m.scientificBibliography??[];
   const children=[...(m.children??[])].sort((a,b)=>isMarriage?marriageRank(a.label)-marriageRank(b.label)||a.label.localeCompare(b.label,"it"):a.label.localeCompare(b.label,"it"));
 
   return <LegalCorpusShell section="Dossier accademico" activeSection="materie">
@@ -158,7 +168,7 @@ export default async function MateriaDetail({params}:{params:Promise<{slug:strin
           <div className={styles.tocBox}>
             <p className={styles.sideLabel}>Nel dossier</p>
             {visible.map(([id,title])=><a href={`#${id}`} key={id}>{title}</a>)}
-            {m.bibliography?.length?<a href="#bibliografia">Bibliografia scientifica</a>:null}
+            {bibliography.length?<a href="#bibliografia">Bibliografia scientifica</a>:null}
           </div>
         </aside>
 
@@ -176,12 +186,15 @@ export default async function MateriaDetail({params}:{params:Promise<{slug:strin
             {content(key).split("\n\n").map((p,i)=><p key={i}>{p}</p>)}
           </section>)}
 
-          {m.bibliography?.length?<section id="bibliografia" className={styles.section}>
+          {bibliography.length?<section id="bibliografia" className={styles.section}>
             <div className={styles.sectionHeading}>
               <span>{String(visible.length+1).padStart(2,"0")}</span>
               <h2>Bibliografia scientifica</h2>
             </div>
-            <ol className={styles.bibliography}>{m.bibliography.map((b,i)=><li key={i}>{b.citation}{b.note?` — ${b.note}`:""}</li>)}</ol>
+            <ol className={styles.bibliography}>{bibliography.map((b)=><li key={b._id}>
+              {b.url?<a href={b.url} target="_blank" rel="noreferrer">{bibliographyLabel(b)}</a>:bibliographyLabel(b)}
+              {b.notes?` — ${b.notes}`:""}
+            </li>)}</ol>
           </section>:null}
         </article>
 
