@@ -1,6 +1,11 @@
 import {getCliClient} from 'sanity/cli'
 
-const client = getCliClient({apiVersion: '2026-03-25'})
+const client = getCliClient({apiVersion: '2026-03-25'}).withConfig({
+  projectId: '2rq93txn',
+  dataset: 'production',
+  useCdn: false,
+  perspective: 'raw',
+})
 const dryRun = process.argv.includes('--dry-run')
 const targetId = 'legal-concept-matrimonio-canonico'
 
