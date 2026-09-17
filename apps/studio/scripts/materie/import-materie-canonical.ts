@@ -82,10 +82,41 @@ async function main(){
    if(d[field]!=null&&!Array.isArray(d[field]))throw new Error(`${d._id}: ${field} non normalizzato`)
   }
  }
- console.log(`VALIDAZIONE OK · ${docs.length} materie · schema corrente · ${dryRun?'DRY RUN':'IMPORT'}`)
+ const relationFields=[
+  'relatedCanons',
+  'relatedSegments',
+  'relatedSources',
+  'relatedProvisions',
+  'relatedConcepts',
+ ] as const
+
+ const existingDocs=await client.fetch(
+  `*[_type=='legalConcept' && _id in $ids]`,
+  {ids:[...ids]},
+ )
+
+ const existingById=new Map<string,any>(
+  existingDocs.map((d:any)=>[d._id,d]),
+ )
+
+ const safeDocs=docs.map((d:any)=>{
+  const existing=existingById.get(d._id)
+  if(!existing)return d
+
+  const merged={...d}
+  for(const field of relationFields){
+   if(!(field in d)&&existing[field]!=null){
+    merged[field]=existing[field]
+   }
+  }
+  return merged
+ })
+
+ console.log(`VALIDAZIONE OK · ${safeDocs.length} materie · schema corrente · relazioni preservate · ${dryRun?'DRY RUN':'IMPORT'}`)
  if(dryRun)return
+
  let tx=client.transaction()
- for(const d of docs)tx=tx.createOrReplace(d)
+ for(const d of safeDocs)tx=tx.createOrReplace(d)
  const result=await tx.commit({visibility:'sync'})
  const readback=await client.fetch(`*[_type=='legalConcept' && _id in $ids]{_id,label,slug,definition,systematicFramework,sourceResearch}`,{ids:[...ids]})
  if(readback.length!==docs.length)throw new Error(`Read-back incompleto: ${readback.length}/${docs.length}`)
