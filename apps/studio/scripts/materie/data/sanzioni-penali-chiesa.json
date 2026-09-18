@@ -1,0 +1,455 @@
+[
+  {
+    "_id": "legal-concept-sanzioni-penali-chiesa",
+    "_type": "legalConcept",
+    "label": "Le sanzioni penali nella Chiesa",
+    "slug": {
+      "_type": "slug",
+      "current": "sanzioni-penali-chiesa"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina canonica dei delitti, delle sanzioni penali, della loro applicazione e remissione e delle singole fattispecie delittuose previste dal Libro VI del Codice di Diritto Canonico.",
+    "academicSummary": "Il Libro VI disciplina l'esercizio della potestà penale nella Chiesa, collegando la tutela dell'ordine ecclesiale alla responsabilità dell'autore del delitto, alla determinazione delle pene e alle modalità della loro applicazione. Alla parte generale, dedicata ai principi del sistema penale canonico, segue la disciplina delle singole categorie di delitti e delle pene ad esse collegate.",
+    "systematicFramework": "CIC, Libro VI, cann. 1311-1399. Il Libro è articolato nella Parte I, Delitti e pene in genere, e nella Parte II, I singoli delitti e le pene costituite per essi.",
+    "codicialDiscipline": "I cann. 1311-1363 disciplinano principi generali, legge e precetto penale, soggetto passivo, pene e altre punizioni, applicazione e remissione. I cann. 1364-1399 organizzano invece le fattispecie delittuose secondo i beni e gli interessi ecclesiali tutelati.",
+    "normativeEvolution": "Il corpus Fonte Iuris conserva per il Libro VI il testo italiano corrente in versioni identificate come 2021. Per i canoni verificati non è attualmente presente una parallela canonVersion italiana storica del 1983 e i campi effectiveFrom/effectiveTo non risultano valorizzati. La ricostruzione diacronica della disciplina deve pertanto rimanere distinta dalla descrizione del testo vigente conservato nel corpus.",
+    "interpretation": "Il diritto penale canonico deve essere interpretato tenendo distinti il precetto violato, l'imputabilità, la fattispecie delittuosa, la pena prevista e il procedimento necessario per infliggerla o dichiararla. Finalità pastorale e carattere propriamente giuridico della sanzione operano congiuntamente nel sistema.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata: CIC, Libro VI, cann. 1311-1399. Nel corpus Fonte Iuris il testo corrente verificato è identificato mediante canonVersion italiane 2021; la serie storica 1983 non è attualmente rappresentata in parallelo."
+    }
+  },
+  {
+    "_id": "legal-concept-delitti-pene-genere",
+    "_type": "legalConcept",
+    "label": "Delitti e pene in genere",
+    "slug": {
+      "_type": "slug",
+      "current": "delitti-e-pene-in-genere"
+    },
+    "academicLevel": "academic",
+    "definition": "Parte generale del diritto penale canonico relativa ai presupposti della punizione, alle norme penali, all'imputabilità, alle specie di pena e alla loro applicazione, remissione e prescrizione.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-sanzioni-penali-chiesa"
+    },
+    "academicSummary": "La Parte I costruisce la grammatica generale del sistema penale canonico. Essa individua i presupposti dell'intervento punitivo e disciplina la legge e il precetto penale, la responsabilità del soggetto, le diverse sanzioni e gli strumenti per applicarle, farle cessare o estinguere le relative azioni.",
+    "systematicFramework": "CIC, Libro VI, Parte I, cann. 1311-1363.",
+    "codicialDiscipline": "La Parte comprende sei Titoli: punizione dei delitti in generale; legge e precetto penale; soggetto passivo delle sanzioni; pene e altre punizioni; applicazione delle pene; remissione delle pene e prescrizione delle azioni.",
+    "interpretation": "Le disposizioni della Parte generale costituiscono il quadro necessario per leggere le fattispecie della Parte II: una norma incriminatrice non può essere isolata dalle regole sull'imputabilità, sulle circostanze, sulla tipologia della pena e sulla sua applicazione.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte I, cann. 1311-1363."
+    }
+  },
+  {
+    "_id": "legal-concept-punizione-delitti-generale",
+    "_type": "legalConcept",
+    "label": "La punizione dei delitti in generale",
+    "slug": {
+      "_type": "slug",
+      "current": "punizione-delitti-in-generale"
+    },
+    "academicLevel": "academic",
+    "definition": "Principi fondamentali relativi al diritto della Chiesa di ricorrere a sanzioni penali e alle finalità dell'intervento punitivo.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-delitti-pene-genere"
+    },
+    "academicSummary": "I canoni introduttivi affermano la potestà penale propria della Chiesa e collocano l'impiego delle sanzioni entro la responsabilità di governo della comunità ecclesiale. La pena è inserita in un sistema orientato alla tutela della giustizia, alla correzione del reo e alla riparazione dello scandalo.",
+    "systematicFramework": "CIC, Libro VI, Parte I, Titolo I, cann. 1311-1312.",
+    "codicialDiscipline": "Il can. 1311 enuncia il diritto nativo e proprio della Chiesa di costringere con sanzioni penali i fedeli autori di delitti e indica i criteri dell'azione dell'autorità. Il can. 1312 distingue censure, pene espiatorie, rimedi penali e penitenze.",
+    "interpretation": "Questi canoni forniscono la chiave sistematica dell'intero Libro VI: la potestà punitiva è giuridica ma il suo esercizio è inserito nelle finalità proprie dell'ordinamento ecclesiale.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte I, Titolo I, cann. 1311-1312."
+    }
+  },
+  {
+    "_id": "legal-concept-legge-precetto-penale",
+    "_type": "legalConcept",
+    "label": "Legge penale e precetto penale",
+    "slug": {
+      "_type": "slug",
+      "current": "legge-e-precetto-penale"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina delle fonti della previsione penale canonica, della successione delle leggi penali e dei limiti entro i quali legge e precetto possono stabilire sanzioni.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-delitti-pene-genere"
+    },
+    "academicSummary": "Il Titolo II disciplina il rapporto tra norma penale e fatto punibile. Particolare rilievo assumono la legge più favorevole al reo, i limiti alla retroattività, la determinazione delle pene e la distinzione tra legge penale e precetto penale.",
+    "systematicFramework": "CIC, Libro VI, Parte I, Titolo II, cann. 1313-1320.",
+    "codicialDiscipline": "Le norme regolano successione delle leggi, estensione della legge penale, determinazione o indeterminazione della pena e potestà di munire leggi o precetti di sanzioni entro i limiti stabiliti dal diritto.",
+    "interpretation": "L'individuazione della fonte della sanzione è preliminare alla sua applicazione. Occorre distinguere la pena stabilita dalla legge da quella collegata a un precetto e verificare sempre quale disciplina temporale sia applicabile al fatto.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte I, Titolo II, cann. 1313-1320."
+    }
+  },
+  {
+    "_id": "legal-concept-soggetto-passivo-sanzioni-penali",
+    "_type": "legalConcept",
+    "label": "Il soggetto passivo delle sanzioni penali",
+    "slug": {
+      "_type": "slug",
+      "current": "soggetto-passivo-sanzioni-penali"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina canonica dell'imputabilità del delitto e delle circostanze che escludono, attenuano o aggravano la responsabilità penale.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-delitti-pene-genere"
+    },
+    "academicSummary": "Il Titolo III pone al centro la responsabilità personale. La violazione esterna non è sufficiente, da sola, a definire la responsabilità penale: il Codice disciplina dolo, colpa e circostanze soggettive e oggettive che incidono sulla punibilità e sulla misura della pena.",
+    "systematicFramework": "CIC, Libro VI, Parte I, Titolo III, cann. 1321-1330.",
+    "codicialDiscipline": "I canoni regolano imputabilità, presunzione d'innocenza, cause di esclusione della pena, circostanze attenuanti e aggravanti, facoltà del giudice e disciplina della partecipazione al delitto.",
+    "interpretation": "L'accertamento della fattispecie oggettiva deve essere distinto dal giudizio sull'imputabilità. La risposta penale dipende anche dalle circostanze previste dal diritto e non può essere dedotta automaticamente dalla sola materialità della violazione.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte I, Titolo III, cann. 1321-1330."
+    }
+  },
+  {
+    "_id": "legal-concept-pene-altre-punizioni",
+    "_type": "legalConcept",
+    "label": "Le pene e le altre punizioni",
+    "slug": {
+      "_type": "slug",
+      "current": "pene-e-altre-punizioni"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina delle principali categorie di sanzioni e degli ulteriori strumenti penali previsti dall'ordinamento canonico.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-delitti-pene-genere"
+    },
+    "academicSummary": "Il Titolo IV organizza le conseguenze giuridiche del delitto distinguendo le censure dalle pene espiatorie e collocando accanto ad esse rimedi penali e penitenze. La struttura consente di differenziare natura, effetti e presupposti dei diversi strumenti.",
+    "systematicFramework": "CIC, Libro VI, Parte I, Titolo IV, cann. 1331-1340.",
+    "codicialDiscipline": "Il Titolo comprende tre Capitoli: censure, pene espiatorie, rimedi penali e penitenze.",
+    "interpretation": "La qualificazione della misura è essenziale perché determina regime, effetti e modalità di cessazione. Censure, pene espiatorie, rimedi e penitenze non costituiscono categorie fungibili.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte I, Titolo IV, cann. 1331-1340."
+    }
+  },
+  {
+    "_id": "legal-concept-censure",
+    "_type": "legalConcept",
+    "label": "Le censure",
+    "slug": {
+      "_type": "slug",
+      "current": "censure"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina delle pene medicinali o censure e dei loro effetti nell'ordinamento canonico.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-pene-altre-punizioni"
+    },
+    "academicSummary": "Le censure costituiscono una categoria specifica di pena canonica. Il Codice disciplina scomunica, interdetto e sospensione determinandone gli effetti giuridici e, per la sospensione, l'ambito soggettivo proprio.",
+    "systematicFramework": "CIC, Libro VI, Parte I, Titolo IV, Capitolo I, cann. 1331-1335.",
+    "codicialDiscipline": "I canoni definiscono gli effetti della scomunica, dell'interdetto e della sospensione e precisano limiti e modalità operative delle proibizioni conseguenti.",
+    "interpretation": "L'interpretazione richiede di individuare con precisione la censura applicata e gli effetti concretamente previsti dalla norma, evitando di attribuire indistintamente a ciascuna censura gli effetti propri delle altre.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte I, Titolo IV, Capitolo I, cann. 1331-1335."
+    }
+  },
+  {
+    "_id": "legal-concept-pene-espiatorie",
+    "_type": "legalConcept",
+    "label": "Le pene espiatorie",
+    "slug": {
+      "_type": "slug",
+      "current": "pene-espiatorie"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina delle pene espiatorie, consistenti in ingiunzioni, proibizioni o privazioni stabilite secondo il diritto.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-pene-altre-punizioni"
+    },
+    "academicSummary": "Le pene espiatorie incidono stabilmente o temporaneamente su situazioni giuridiche del soggetto. Il Codice ne organizza le forme attraverso ingiunzioni, proibizioni e privazioni, fino alla dimissione dallo stato clericale nei casi previsti.",
+    "systematicFramework": "CIC, Libro VI, Parte I, Titolo IV, Capitolo II, cann. 1336-1338.",
+    "codicialDiscipline": "Il can. 1336 elenca le principali pene espiatorie; i canoni successivi ne precisano regime e limiti, anche in relazione agli uffici, alle potestà e ai diritti interessati.",
+    "interpretation": "La determinazione concreta della pena richiede di verificare contenuto, durata, estensione territoriale o funzionale e situazione giuridica sulla quale essa incide.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte I, Titolo IV, Capitolo II, cann. 1336-1338."
+    }
+  },
+  {
+    "_id": "legal-concept-rimedi-penali-penitenze",
+    "_type": "legalConcept",
+    "label": "Rimedi penali e penitenze",
+    "slug": {
+      "_type": "slug",
+      "current": "rimedi-penali-e-penitenze"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina degli strumenti preventivi, correttivi e sostitutivi o integrativi della pena.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-pene-altre-punizioni"
+    },
+    "academicSummary": "Rimedi penali e penitenze completano il sistema sanzionatorio con strumenti che possono operare prima o accanto alla pena. Ammonizione e riprensione assumono particolare rilievo nella prevenzione e correzione delle condotte.",
+    "systematicFramework": "CIC, Libro VI, Parte I, Titolo IV, Capitolo III, cann. 1339-1340.",
+    "codicialDiscipline": "Il can. 1339 disciplina ammonizione e riprensione e le relative condizioni; il can. 1340 regola la penitenza come opera di religione, pietà o carità.",
+    "interpretation": "Occorre distinguere la funzione preventiva o correttiva del rimedio penale dalla funzione della pena propriamente detta e verificare i presupposti giuridici del singolo strumento.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte I, Titolo IV, Capitolo III, cann. 1339-1340."
+    }
+  },
+  {
+    "_id": "legal-concept-applicazione-pene",
+    "_type": "legalConcept",
+    "label": "L'applicazione delle pene",
+    "slug": {
+      "_type": "slug",
+      "current": "applicazione-delle-pene"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina dei criteri, delle competenze e delle modalità secondo cui l'autorità ecclesiastica procede all'inflizione o dichiarazione delle pene.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-delitti-pene-genere"
+    },
+    "academicSummary": "Il Titolo V disciplina il passaggio dalla previsione astratta della sanzione alla sua applicazione concreta. L'autorità deve valutare gli strumenti pastorali e giuridici disponibili, la gravità del caso e le condizioni stabilite dal diritto per procedere penalmente.",
+    "systematicFramework": "CIC, Libro VI, Parte I, Titolo V, cann. 1341-1353.",
+    "codicialDiscipline": "Le norme regolano avvio della procedura, discrezionalità nei limiti consentiti, pene latae e ferendae sententiae, pluralità di delitti, sospensione dell'esecuzione e tutela delle necessità del reo.",
+    "interpretation": "L'applicazione della pena non coincide con la mera constatazione del delitto: richiede l'esercizio della competenza dell'autorità secondo le condizioni sostanziali e procedurali stabilite dall'ordinamento.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte I, Titolo V, cann. 1341-1353."
+    }
+  },
+  {
+    "_id": "legal-concept-remissione-pene-prescrizione",
+    "_type": "legalConcept",
+    "label": "La remissione delle pene e la prescrizione delle azioni",
+    "slug": {
+      "_type": "slug",
+      "current": "remissione-pene-prescrizione-azioni"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina della remissione delle pene canoniche e dell'estinzione per prescrizione dell'azione criminale e dell'azione per l'esecuzione della pena.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-delitti-pene-genere"
+    },
+    "academicSummary": "Il Titolo VI disciplina la cessazione degli effetti penali mediante remissione e regola la prescrizione delle azioni. La competenza a rimettere la pena e i limiti alla remissione dipendono dalla natura della sanzione e dall'autorità che l'ha stabilita o applicata.",
+    "systematicFramework": "CIC, Libro VI, Parte I, Titolo VI, cann. 1354-1363.",
+    "codicialDiscipline": "I canoni individuano autorità competenti, condizioni della remissione, casi urgenti e disciplina della prescrizione dell'azione criminale e dell'azione per l'esecuzione della pena.",
+    "interpretation": "Remissione e prescrizione devono essere tenute concettualmente distinte: la prima è un atto giuridico relativo alla pena, mentre la seconda opera secondo i termini e le condizioni stabiliti dal diritto per le azioni.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte I, Titolo VI, cann. 1354-1363."
+    }
+  },
+  {
+    "_id": "legal-concept-singoli-delitti-pene",
+    "_type": "legalConcept",
+    "label": "I singoli delitti e le pene costituite per essi",
+    "slug": {
+      "_type": "slug",
+      "current": "singoli-delitti-e-pene"
+    },
+    "academicLevel": "academic",
+    "definition": "Parte speciale del diritto penale canonico contenente le principali categorie di delitti e le sanzioni stabilite per essi.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-sanzioni-penali-chiesa"
+    },
+    "academicSummary": "La Parte II organizza le fattispecie penali secondo i beni ecclesiali direttamente tutelati: fede e unità, autorità e incarichi, sacramenti, buona fama e verità, obblighi speciali, vita, dignità e libertà della persona, con una norma generale conclusiva.",
+    "systematicFramework": "CIC, Libro VI, Parte II, cann. 1364-1399.",
+    "codicialDiscipline": "La Parte comprende sette Titoli che individuano gruppi di fattispecie delittuose e le relative conseguenze penali.",
+    "interpretation": "Le fattispecie della Parte speciale devono essere lette insieme alle disposizioni della Parte generale su imputabilità, circostanze, specie di pena, applicazione e remissione.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte II, cann. 1364-1399."
+    }
+  },
+  {
+    "_id": "legal-concept-delitti-fede-unita-chiesa",
+    "_type": "legalConcept",
+    "label": "Delitti contro la fede e l'unità della Chiesa",
+    "slug": {
+      "_type": "slug",
+      "current": "delitti-contro-fede-unita-chiesa"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina penale delle condotte che offendono la fede professata e l'unità ecclesiale.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-singoli-delitti-pene"
+    },
+    "academicSummary": "Il Titolo I apre la Parte speciale tutelando beni direttamente connessi alla comunione ecclesiale e alla professione della fede. Le fattispecie comprendono apostasia, eresia e scisma e ulteriori condotte specificamente previste dal Codice.",
+    "systematicFramework": "CIC, Libro VI, Parte II, Titolo I, cann. 1364-1369.",
+    "codicialDiscipline": "I canoni stabiliscono fattispecie e pene relative alle violazioni ricondotte dal Codice alla tutela della fede e dell'unità della Chiesa.",
+    "interpretation": "La qualificazione canonica delle singole condotte richiede l'accertamento degli elementi della fattispecie e dei presupposti soggettivi previsti dal diritto, oltre all'applicazione delle norme generali del Libro VI.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte II, Titolo I, cann. 1364-1369."
+    }
+  },
+  {
+    "_id": "legal-concept-delitti-autorita-incarichi",
+    "_type": "legalConcept",
+    "label": "Delitti contro le autorità ecclesiastiche e l'esercizio degli incarichi",
+    "slug": {
+      "_type": "slug",
+      "current": "delitti-autorita-ecclesiastiche-incarichi"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina delle fattispecie penali che offendono l'autorità ecclesiastica o il corretto esercizio di uffici, incarichi e funzioni.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-singoli-delitti-pene"
+    },
+    "academicSummary": "Il Titolo II raccoglie condotte eterogenee accomunate dalla tutela dell'autorità ecclesiastica e del corretto esercizio delle responsabilità nella Chiesa, comprendendo disobbedienza, violazioni di obblighi, abusi e altre condotte tipizzate.",
+    "systematicFramework": "CIC, Libro VI, Parte II, Titolo II, cann. 1370-1378.",
+    "codicialDiscipline": "Le norme disciplinano offese e disobbedienza verso l'autorità, violazioni connesse a obblighi giuridici e fattispecie di abuso o esercizio illegittimo della potestà, dell'ufficio o dell'incarico.",
+    "interpretation": "La varietà delle fattispecie impone di individuare per ciascun canone il soggetto attivo, la condotta, l'eventuale risultato richiesto e la sanzione applicabile.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte II, Titolo II, cann. 1370-1378."
+    }
+  },
+  {
+    "_id": "legal-concept-delitti-sacramenti",
+    "_type": "legalConcept",
+    "label": "Delitti contro i sacramenti",
+    "slug": {
+      "_type": "slug",
+      "current": "delitti-contro-sacramenti"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina penale delle condotte che ledono la celebrazione, amministrazione e tutela dei sacramenti.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-singoli-delitti-pene"
+    },
+    "academicSummary": "Il Titolo III tutela penalmente la disciplina sacramentale attraverso fattispecie riferite a celebrazione, amministrazione e ricezione dei sacramenti e ad altre condotte che ne compromettono la corretta tutela giuridica.",
+    "systematicFramework": "CIC, Libro VI, Parte II, Titolo III, cann. 1379-1389.",
+    "codicialDiscipline": "I canoni individuano specifici delitti in materia sacramentale e le relative pene, con particolare attenzione agli atti riservati, alla celebrazione illegittima e alla tutela di obblighi connessi ai sacramenti.",
+    "interpretation": "La disciplina penale sacramentale deve essere coordinata con le norme sostanziali del Libro IV che definiscono validità, liceità, ministro e condizioni degli atti sacramentali.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte II, Titolo III, cann. 1379-1389."
+    }
+  },
+  {
+    "_id": "legal-concept-delitti-buona-fama-falso",
+    "_type": "legalConcept",
+    "label": "Delitti contro la buona fama e delitto di falso",
+    "slug": {
+      "_type": "slug",
+      "current": "delitti-buona-fama-e-falso"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina delle fattispecie penali poste a tutela della buona fama e dell'autenticità e veridicità giuridicamente rilevanti.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-singoli-delitti-pene"
+    },
+    "academicSummary": "Il Titolo IV riunisce fattispecie che proteggono la reputazione della persona e l'affidabilità di dichiarazioni o atti rilevanti per l'ordinamento ecclesiale.",
+    "systematicFramework": "CIC, Libro VI, Parte II, Titolo IV, cann. 1390-1391.",
+    "codicialDiscipline": "I due canoni disciplinano le condotte tipizzate dal Codice contro la buona fama e le diverse forme di falsità penalmente rilevanti.",
+    "interpretation": "La tutela penale deve essere distinta dagli ulteriori rimedi canonici eventualmente disponibili: l'esistenza di un pregiudizio alla reputazione o di una falsità non sostituisce l'accertamento degli elementi della specifica fattispecie penale.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte II, Titolo IV, cann. 1390-1391."
+    }
+  },
+  {
+    "_id": "legal-concept-delitti-obblighi-speciali",
+    "_type": "legalConcept",
+    "label": "Delitti contro obblighi speciali",
+    "slug": {
+      "_type": "slug",
+      "current": "delitti-contro-obblighi-speciali"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina delle violazioni penalmente rilevanti di obblighi connessi a particolari stati, condizioni o responsabilità ecclesiali.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-singoli-delitti-pene"
+    },
+    "academicSummary": "Il Titolo V tutela obblighi che gravano in modo specifico su determinati soggetti nell'ordinamento canonico. Le fattispecie richiedono pertanto una particolare attenzione alla qualità soggettiva dell'autore.",
+    "systematicFramework": "CIC, Libro VI, Parte II, Titolo V, cann. 1392-1396.",
+    "codicialDiscipline": "I canoni prevedono delitti collegati alla violazione di obblighi speciali e determinano le relative conseguenze penali secondo la qualità del soggetto e la condotta realizzata.",
+    "interpretation": "Prima dell'applicazione della norma penale occorre verificare l'esistenza e la fonte dell'obbligo speciale, la sua riferibilità al soggetto e gli ulteriori elementi richiesti dalla fattispecie.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte II, Titolo V, cann. 1392-1396."
+    }
+  },
+  {
+    "_id": "legal-concept-delitti-vita-dignita-liberta",
+    "_type": "legalConcept",
+    "label": "Delitti contro la vita, la dignità e la libertà dell'uomo",
+    "slug": {
+      "_type": "slug",
+      "current": "delitti-vita-dignita-liberta-uomo"
+    },
+    "academicLevel": "academic",
+    "definition": "Disciplina penale canonica delle condotte che offendono la vita, la dignità o la libertà della persona.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-singoli-delitti-pene"
+    },
+    "academicSummary": "Il Titolo VI concentra la tutela penale su beni fondamentali della persona. Le fattispecie previste richiedono una lettura rigorosa degli elementi soggettivi e oggettivi e delle qualità personali eventualmente richieste dalla norma.",
+    "systematicFramework": "CIC, Libro VI, Parte II, Titolo VI, cann. 1397-1398.",
+    "codicialDiscipline": "I canoni disciplinano specifiche offese alla vita e all'integrità della persona e fattispecie particolarmente gravi contro minori, persone vulnerabili o soggetti ai quali il diritto riconosce particolare tutela.",
+    "interpretation": "La gravità delle condotte non elimina l'esigenza di una qualificazione giuridica precisa: soggetto attivo, persona offesa, condotta e pena devono essere determinati secondo il testo della fattispecie e le norme generali del Libro VI.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte II, Titolo VI, cann. 1397-1398."
+    }
+  },
+  {
+    "_id": "legal-concept-norma-generale-penale",
+    "_type": "legalConcept",
+    "label": "Norma generale",
+    "slug": {
+      "_type": "slug",
+      "current": "norma-generale-penale"
+    },
+    "academicLevel": "academic",
+    "definition": "Norma penale generale che consente, alle condizioni stabilite dal Codice, di punire gravi violazioni esterne della legge divina o canonica anche oltre i casi espressamente previsti.",
+    "broaderConcept": {
+      "_type": "reference",
+      "_ref": "legal-concept-singoli-delitti-pene"
+    },
+    "academicSummary": "Il can. 1399 chiude il Libro VI con una clausola generale eccezionale. La norma collega la possibilità di punire una violazione non già ricompresa nelle fattispecie precedenti alla speciale gravità della violazione e all'urgenza di prevenire o riparare gli scandali.",
+    "systematicFramework": "CIC, Libro VI, Parte II, Titolo VII, can. 1399.",
+    "codicialDiscipline": "Il can. 1399 prevede che, oltre i casi stabiliti dalla legge, una violazione esterna della legge divina o canonica possa essere punita con giusta pena quando ricorrano le condizioni espressamente indicate.",
+    "interpretation": "La natura generale della disposizione richiede particolare rigore interpretativo. Essa non rende indeterminato l'intero sistema penale, ma opera nei limiti delle condizioni poste dallo stesso canone e delle garanzie della Parte generale.",
+    "sourceResearch": {
+      "_type": "object",
+      "status": "official-verified",
+      "editorialNote": "Fonte primaria verificata nel corpus Fonte Iuris: CIC, Libro VI, Parte II, Titolo VII, can. 1399."
+    }
+  }
+]
