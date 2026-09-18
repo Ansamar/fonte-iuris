@@ -1,0 +1,72 @@
+[
+  {
+    "_id":"legal-concept-beni-temporali-chiesa",
+    "_type":"legalConcept",
+    "label":"I beni temporali della Chiesa",
+    "slug":{"_type":"slug","current":"beni-temporali-chiesa"},
+    "academicLevel":"academic",
+    "definition":"Disciplina canonica dell'acquisto, amministrazione e alienazione dei beni temporali della Chiesa, nonché delle pie volontà e delle pie fondazioni.",
+    "academicSummary":"Il Libro V del CIC disciplina la dimensione patrimoniale dell'ordinamento ecclesiale a partire dal diritto nativo della Chiesa di acquistare, possedere, amministrare e alienare beni temporali per il perseguimento dei propri fini. La disciplina patrimoniale non considera il bene ecclesiastico come realtà autonoma rispetto alla missione della Chiesa: culto divino, sostentamento del clero e degli altri ministri e opere di apostolato e carità costituiscono il quadro finalistico entro il quale devono essere interpretati acquisto, amministrazione e disposizione del patrimonio.",
+    "systematicFramework":"CIC 1983, Libro V, cann. 1254-1310. I cann. 1254-1258 stabiliscono i principi generali; seguono i Titoli sull'acquisto dei beni, sull'amministrazione, sui contratti e specialmente sull'alienazione, e sulle pie volontà e pie fondazioni.",
+    "codicialDiscipline":"I cann. 1254-1258 definiscono capacità patrimoniale, fini propri, soggetti titolari e nozione di beni ecclesiastici. I successivi Titoli regolano le modalità di acquisizione, l'organizzazione e responsabilità dell'amministrazione, i negozi patrimoniali e le tutele previste per l'alienazione, nonché l'esecuzione delle volontà pie e il regime delle fondazioni.",
+    "interpretation":"La disciplina patrimoniale deve essere letta coordinando autonomia dei soggetti ecclesiastici, vigilanza dell'autorità competente, destinazione ecclesiale dei beni e tutela del patrimonio. La qualificazione di un bene come ecclesiastico e l'individuazione del soggetto titolare sono preliminari alla determinazione del regime giuridico applicabile.",
+    "sourceResearch":{"_type":"object","status":"official-verified","editorialNote":"Fonte primaria verificata: Codex Iuris Canonici, Libro V, cann. 1254-1310. Il corpus Fonte Iuris conserva la struttura dei quattro Titoli del Libro V."}
+  },
+  {
+    "_id":"legal-concept-acquisto-beni",
+    "_type":"legalConcept",
+    "label":"Acquisto dei beni",
+    "slug":{"_type":"slug","current":"acquisto-dei-beni"},
+    "academicLevel":"academic",
+    "definition":"Disciplina canonica dei modi mediante i quali la Chiesa e le persone giuridiche ecclesiastiche acquistano beni temporali e delle principali forme di contribuzione dei fedeli.",
+    "broaderConcept":{"_type":"reference","_ref":"legal-concept-beni-temporali-chiesa"},
+    "academicSummary":"Il Titolo I disciplina l'acquisizione dei beni riconoscendo alla Chiesa la possibilità di utilizzare i modi legittimi previsti dal diritto naturale o positivo e ammessi agli altri soggetti. Accanto a tale principio generale, il Codice regola offerte dei fedeli, collette, imposizioni e contributi, prescrizione e rapporti patrimoniali con gli istituti destinati al sostentamento del clero e alle esigenze comuni.",
+    "systematicFramework":"CIC 1983, Libro V, Titolo I, cann. 1259-1272.",
+    "codicialDiscipline":"La disciplina comprende i modi di acquisto, il diritto della Chiesa di richiedere quanto necessario ai propri fini, offerte e collette, tributi e contributi, prescrizione dei beni e disposizioni relative agli istituti e patrimoni destinati alle necessità ecclesiali.",
+    "interpretation":"Le diverse forme di acquisizione devono essere giuridicamente distinte. Offerta spontanea, colletta, tributo e contributo obbligatorio rispondono a presupposti e competenze differenti e non costituiscono categorie intercambiabili.",
+    "sourceResearch":{"_type":"object","status":"official-verified","editorialNote":"Fonte primaria verificata: CIC 1983, Libro V, Titolo I, cann. 1259-1272."}
+  },
+  {
+    "_id":"legal-concept-amministrazione-beni",
+    "_type":"legalConcept",
+    "label":"Amministrazione dei beni",
+    "slug":{"_type":"slug","current":"amministrazione-dei-beni"},
+    "academicLevel":"academic",
+    "definition":"Disciplina canonica della titolarità delle funzioni amministrative, della vigilanza, degli atti di amministrazione e degli obblighi degli amministratori dei beni ecclesiastici.",
+    "broaderConcept":{"_type":"reference","_ref":"legal-concept-beni-temporali-chiesa"},
+    "academicSummary":"Il Titolo II organizza l'amministrazione dei beni ecclesiastici individuando competenze, responsabilità e controlli. L'amministrazione spetta a chi regge immediatamente la persona cui i beni appartengono, salvo disposizioni diverse, mentre all'autorità ecclesiastica competente spettano funzioni di vigilanza. Il Codice disciplina inoltre gli atti eccedenti l'amministrazione ordinaria e stabilisce specifici doveri degli amministratori.",
+    "systematicFramework":"CIC 1983, Libro V, Titolo II, cann. 1273-1289.",
+    "codicialDiscipline":"Le norme regolano la funzione di vigilanza, l'organizzazione dell'amministrazione, i consigli e gli organismi competenti, la distinzione degli atti di amministrazione e gli obblighi degli amministratori in materia di conservazione dei beni, osservanza del diritto civile, contabilità, rendiconto e destinazione delle entrate.",
+    "interpretation":"La distinzione fra amministrazione ordinaria e straordinaria assume rilievo per la determinazione delle competenze e delle autorizzazioni richieste. Essa deve essere applicata considerando il diritto universale insieme agli statuti e alle determinazioni legittimamente emanate dall'autorità competente.",
+    "sourceResearch":{"_type":"object","status":"official-verified","editorialNote":"Fonte primaria verificata: CIC 1983, Libro V, Titolo II, cann. 1273-1289."}
+  },
+  {
+    "_id":"legal-concept-contratti-alienazione",
+    "_type":"legalConcept",
+    "label":"Contratti e alienazione",
+    "slug":{"_type":"slug","current":"contratti-e-alienazione"},
+    "academicLevel":"academic",
+    "definition":"Disciplina canonica dei contratti aventi ad oggetto beni ecclesiastici e, in particolare, degli atti di alienazione e dei negozi che possono peggiorare la situazione patrimoniale della persona giuridica.",
+    "broaderConcept":{"_type":"reference","_ref":"legal-concept-beni-temporali-chiesa"},
+    "academicSummary":"Il Titolo III coordina il ricorso al diritto civile in materia contrattuale con specifiche garanzie canoniche poste a tutela del patrimonio ecclesiastico. L'alienazione di determinati beni richiede licenze e, secondo valore e natura del bene, ulteriori requisiti. La tutela si estende anche ai negozi dai quali la situazione patrimoniale della persona giuridica potrebbe risultare peggiorata.",
+    "systematicFramework":"CIC 1983, Libro V, Titolo III, cann. 1290-1298.",
+    "codicialDiscipline":"Il Codice recepisce, nei limiti stabiliti dal diritto canonico, la disciplina civile dei contratti e dei pagamenti e stabilisce requisiti specifici per l'alienazione. Sono regolati competenza, valutazione dei beni, giusta causa, autorizzazioni e conseguenze degli atti posti senza le formalità canoniche richieste.",
+    "interpretation":"La disciplina non può essere ridotta alla sola alienazione in senso civilistico. Occorre verificare anche i negozi capaci di deteriorare la condizione patrimoniale della persona giuridica e distinguere gli effetti canonici dell'atto dalle eventuali conseguenze riconosciute nell'ordinamento civile.",
+    "sourceResearch":{"_type":"object","status":"official-verified","editorialNote":"Fonte primaria verificata: CIC 1983, Libro V, Titolo III, cann. 1290-1298."}
+  },
+  {
+    "_id":"legal-concept-pie-volonta-fondazioni",
+    "_type":"legalConcept",
+    "label":"Pie volontà e pie fondazioni",
+    "slug":{"_type":"slug","current":"pie-volonta-e-pie-fondazioni"},
+    "academicLevel":"academic",
+    "definition":"Disciplina canonica delle disposizioni di beni per cause pie, della loro esecuzione e delle pie fondazioni autonome e non autonome.",
+    "broaderConcept":{"_type":"reference","_ref":"legal-concept-beni-temporali-chiesa"},
+    "academicSummary":"Il Titolo IV tutela la volontà di chi destina beni a cause pie e ne disciplina accettazione, amministrazione ed esecuzione. Una posizione centrale è attribuita all'Ordinario quale esecutore delle pie volontà secondo il diritto. Il Codice regola inoltre le pie fondazioni e le condizioni alle quali gli oneri possono essere ridotti, moderati o trasferiti.",
+    "systematicFramework":"CIC 1983, Libro V, Titolo IV, cann. 1299-1310.",
+    "codicialDiscipline":"Le norme disciplinano capacità di disporre per cause pie, affidamento fiduciario, esecuzione e vigilanza sulle pie volontà, costituzione e amministrazione delle pie fondazioni, nonché riduzione degli oneri, in particolare di quelli connessi alle Messe.",
+    "normativeEvolution":"Nel corpus Fonte Iuris i cann. 1308 e 1310 conservano una versione italiana storica del 1983 e una versione italiana corrente identificata come 2022. La ricostruzione della disciplina deve pertanto distinguere temporalmente i testi e non trattare la formulazione vigente come immutata rispetto al Codice promulgato nel 1983.",
+    "interpretation":"La volontà del disponente costituisce un elemento centrale della disciplina, ma la sua esecuzione si colloca nell'ordinamento canonico e sotto la vigilanza dell'autorità competente. Le facoltà di riduzione, moderazione o trasferimento degli oneri devono quindi essere esercitate entro i presupposti e le competenze stabiliti dal diritto.",
+    "sourceResearch":{"_type":"object","status":"official-verified","editorialNote":"Fonte primaria verificata: CIC 1983, Libro V, Titolo IV, cann. 1299-1310. Il corpus conserva versioni 1983 historical e 2022 current dei cann. 1308 e 1310; i relativi campi effectiveFrom/effectiveTo non sono valorizzati."}
+  }
+]
